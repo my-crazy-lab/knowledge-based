@@ -17,3 +17,16 @@ References: [github_karanpratapsingh_system-design](https://github.com/karanprat
 
 - how it work?
 - Push CDNs vs Pull CDNs
+
+## [TL_101004] Proxy overview
+
+- Forward
+- Reverse
+
+## [TL_101005] Database overview
+
+- Master - Slaves
+- Master - Master
+- Sync - Async
+
+## [TL_101006] Database overview

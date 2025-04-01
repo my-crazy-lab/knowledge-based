@@ -4,29 +4,10 @@ References: [github_karanpratapsingh_system-design](https://github.com/karanprat
 
 ## [TL_101002] Caching overview
 
-- CPU Caching
-- Distributed cache
-    - random-access memory (RAM)
-- Cache eviction
-- Cache Invalidation
-    - Write-through cache
-    - Write-around cache
-    - Write-back cache
-
 ## [TL_101003] CDN overview
-
-- how it work?
-- Push CDNs vs Pull CDNs
 
 ## [TL_101004] Proxy overview
 
-- Forward
-- Reverse
-
 ## [TL_101005] Database overview
 
-- Master - Slaves
-- Master - Master
-- Sync - Async
-
-## [TL_101006] Database overview
+## [TL_101006] Services architecture and events pattern

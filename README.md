@@ -31,3 +31,7 @@
     - 48x: Desktop app
         - 481: Electron
 - 5xx: Best practices
+
+### Marker
+
+- Philosophy [P]

@@ -24,15 +24,21 @@
         - 421: Nextjs
     - 43x: Game
     - 44x: Database
+        - 441: Overview concept
+        - 422: Zero downtime migration
     - 45x: Programming
     - 46x: OS
     - 47x: Server (BE)
         - 471: Deno
+        - 472: Micro services
     - 48x: Desktop app
         - 481: Electron
     - 49x: Blockchain
         - 491: Solana and Web3
 - 5xx: Best practices
+- 6xx: Cyber security
+    - 61x: Network security
+        - 611: IPv4, IPv6
 
 ### Marker
 

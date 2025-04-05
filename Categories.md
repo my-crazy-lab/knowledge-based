@@ -37,3 +37,9 @@
 - What happens if we lose control?
 
 ## [TB_201002] Data Science for Business
+
+# Technical notes
+
+## [TN_501xxx] Best practices
+
+### [TN_501001] (05/04/2025) Thinking about learning method

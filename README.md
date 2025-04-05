@@ -18,3 +18,4 @@
 - 2xx: AI ML 
 - 3xx: Algorithm
 - 4xx: Related application
+- 5xx: Best practices

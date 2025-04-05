@@ -18,4 +18,16 @@
 - 2xx: AI ML 
 - 3xx: Algorithm
 - 4xx: Related application
+    - 41x: Mobile
+        - 411: React native ecosystem
+    - 42x: Web
+        - 421: Nextjs
+    - 43x: Game
+    - 44x: Database
+    - 45x: Programming
+    - 46x: OS
+    - 47x: Server (BE)
+        - 471: Deno
+    - 48x: Desktop app
+        - 481: Electron
 - 5xx: Best practices

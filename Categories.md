@@ -28,6 +28,22 @@
 
 ### [TP_101005] Uber
 
+## [TL_411xxx] React Native ecosystem
+
+### [TL_411001] Learn from Open-source
+
+## [TL_471xxx] Deno
+
+### [TL_471001] Overview + quick started
+
+## [TL_421xxx] Nextjs
+
+### [TL_421001] Based on a Open source to learn concept
+
+## [TL_481xxx] Electron
+
+### [TL_481001] Overview
+
 # Technical book
 
 - 201xxx: AI ML based on SWE for real quick business started, minimize Math

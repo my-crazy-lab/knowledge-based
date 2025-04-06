@@ -33,8 +33,12 @@
         - 472: Micro services
     - 48x: Desktop app
         - 481: Electron
-    - 49x: Blockchain
+    - 49(1->3): Blockchain
         - 491: Solana and Web3
+    - 49(4->6): DevOps, DevSecOps, MLOps
+        - 494: DevOps
+        - 495: DevSecOps
+        - 496: MLOps
 - 5xx: Best practices
 - 6xx: Cyber security
     - 61x: Network security

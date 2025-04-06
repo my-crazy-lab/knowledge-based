@@ -27,12 +27,12 @@
 - Simple, easy, safe
 - Con: don't know correct the amount of downtime
 
-### Master/Read replica switch migration
+### ?? Master/Read replica switch migration
 
 - Create a replica Read
 - After that, downtime a little bit and switch from current Master into Read, and make it become Master.
 
-### Master/Master migration
+### ?? Master/Master migration
 
 - Greatest risk.
 - No downtime

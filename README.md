@@ -1,4 +1,4 @@
-```js
+ ```js
 function generateId(){
     const LENGTH = 4;
     const CHARS = [1,2,3,4,5,6,7,8,9,0,
@@ -14,6 +14,31 @@ function generateId(){
 }
 console.log(generateId())
 ```
+
+```text
+Give me list questions and answers so I can review my knowledge, based on:
+
+```
+
+---
+
+**Catalog**
+
+- [System design](#system-design)  
+- [AI ML](#ai-m)  
+- [Algorithm](#algorithm)  
+- [Mobile](#mobile)  
+- [Web](#web)  
+- [Game](#game)  
+- [Database](#database)  
+- [OS](#os)  
+- [Server (BE)](#server-be)  
+- [Desktop app](#desktop-app)  
+- [Blockchain](#lockchain)  
+- [Dev Sec ML Ops](#dev-sec-ml-ops)  
+- [Cyber security](#cyber-security)  
+
+---
 
 # System design
 
@@ -37,8 +62,6 @@ console.log(generateId())
 
 # Blockchain
 
-# DevOps - DevSecOps - MLOps
+# Dev Sec ML Ops
 
 # Cyber security
-
-# 

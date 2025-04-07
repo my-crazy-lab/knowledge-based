@@ -1,6 +1,6 @@
  ```js
 function generateId(){
-    const LENGTH = 4;
+    const LENGTH = 6;
     const CHARS = [1,2,3,4,5,6,7,8,9,0,
     'q','w','e','r','t','y','u','i','o','p',
     'l','k','j','h','g','f','d','s','a',

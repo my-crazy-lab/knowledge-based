@@ -58,22 +58,8 @@
 - Dynamic Secrets
 - Access Control and Auditing
 
-## Secure: Runtime Defence & Monitoring
-
-- 
-
 ## Red Hat OpenShift
 
-- 
-
-## Secure Databases
-
-- 
-
-## Serverless
-
-- 
-
-## Service Mesh
-
-- 
+- Architecture
+    - CoreOS
+    - 

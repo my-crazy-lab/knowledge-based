@@ -6,4 +6,3 @@
 - Self-Healing Mechanisms
 - **Retry Logic with Backoff**: retry logic for failed requests, but with an exponential backoff strategy
 - Monitoring and Alerting
-

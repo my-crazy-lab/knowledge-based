@@ -1,0 +1,17 @@
+#!/bin/bash  
+
+# Read the commit message from the first argument  
+COMMIT_MSG_FILE="$1"  
+COMMIT_MSG=$(<"$COMMIT_MSG_FILE")  
+
+# Define the required format using a regex pattern  
+# Accepts: technical-learning:, technical-practicing:, tech-notes:  
+REQUIRED_FORMAT="^(learning|notes|draft|chore|config): .+"  
+
+# Check if the commit message matches the required format  
+if ! [[ $COMMIT_MSG =~ $REQUIRED_FORMAT ]]; then  
+    echo "Error: Commit message must follow the format 'prefix: description'"  
+    echo "Accepted prefixes: technical-learning, technical-practicing, tech-notes"  
+    echo "Your commit message was: $COMMIT_MSG"  
+    exit 1  
+fi  

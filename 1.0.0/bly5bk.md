@@ -35,5 +35,5 @@
 # Source map format
 
 - Source maps are tools in modern web for debugging easier
-    - x_facebook_sources
-    - x_google_ignoreList: by default
+    - **x_facebook_sources**
+    - **x_google_ignoreList**: by default

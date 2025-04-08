@@ -49,3 +49,35 @@
     - Improved start-up time
     - Decreased memory usage
     - Smaller app size
+
+# New architecture
+
+- Why?
+    - Synchronous Layout and Effects
+        - Building adaptive UI experiences often requires measuring the size and position of your views and adjusting layout
+    - Support for Concurrent Renderer and Features
+    - Fast JavaScript/Native Interfacing
+        - Removes async bridge between JS and native, replaces by JS Interface (JSI)
+            - JSI is an interface that allows JavaScript to hold a reference to a C++ object and vice-versa
+
+# Rendering
+
+## Fabric
+
+- New rendering system
+    - More render logic in C++
+
+## Render, Commit, and Mount
+
+- Render pipeline
+    - render
+    - commit 
+    - mount
+
+## View Flattening
+
+- View Flattening is an optimization by the React Native renderer to avoid deep layout trees.
+
+## Threading Model
+
+- The React Native renderer distributes the work of the render pipeline across multiple threads. 

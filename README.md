@@ -24,8 +24,14 @@ Give me list questions and answers so I can review my knowledge, based on:
 11. [Blockchain](#lockchain)  
 12. [Dev Sec ML Ops](#dev-sec-ml-ops)  
 13. [Cyber security](#cyber-security)  
+14. [Books](#books)
 
 ---
+
+# Books
+
+- Learning Domain-driven design
+    - **`hxzy09`** 
 
 # System design
 
@@ -50,6 +56,9 @@ Give me list questions and answers so I can review my knowledge, based on:
 # Web
 
 ## React
+
+- **`522nan`**
+    - [Update some new hooks](https://react.dev/reference/react/hooks)
 
 # Game
 

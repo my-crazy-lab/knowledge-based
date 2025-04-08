@@ -19,6 +19,7 @@ Give me list questions and answers so I can review my knowledge, based on:
 7. [Database](#database)  
 8. [OS](#os)  
 9. [Server (BE)](#server-be)  
+    - [Nodejs](#nodejs)
 10. [Desktop app](#desktop-app)  
 11. [Blockchain](#lockchain)  
 12. [Dev Sec ML Ops](#dev-sec-ml-ops)  
@@ -37,9 +38,9 @@ Give me list questions and answers so I can review my knowledge, based on:
 ## React Native
 
 - **`mdzu7u`**
-    - [Reactnative docs v1](https://reactnative.dev/docs/performance)
-        - Performance Overview
-        - JavaScript Environment
+    - [Performance Overview](https://reactnative.dev/docs/performance)
+    - [JavaScript Environment](https://reactnative.dev/docs/performance)
+    - [Native platform](https://reactnative.dev/docs/native-platform)
 
 ## Metro
 
@@ -57,6 +58,11 @@ Give me list questions and answers so I can review my knowledge, based on:
 # OS
 
 # Server (BE)
+
+## Nodejs
+
+- **`y5s9eb`**
+    - [Compare web stream and nodejs stream](https://betterstack.com/community/guides/scaling-nodejs/nodejs-streams-vs-web-streams-api/)
 
 # Desktop app
 

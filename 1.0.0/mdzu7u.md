@@ -1,4 +1,4 @@
-# Overview
+# Performance overview
 
 ## JS frame rate (JavaScript thread)
 
@@ -35,3 +35,17 @@
 - Call `require` inline or Automatically inline require calls
 - Use random access module bundles (non-Hermes) (also known as RAM bundles)
     - limit the amount of JavaScript code that needs to be parsed and loaded into memory. Each module is stored as a separate string (or file) which is only parsed when the module needs to be executed.
+
+# JS runtime
+
+## Timer
+
+- React native implement browser timers differently.
+
+## Hermes
+
+- JS engine
+- Hermes > JavaScriptCore (just)by:
+    - Improved start-up time
+    - Decreased memory usage
+    - Smaller app size

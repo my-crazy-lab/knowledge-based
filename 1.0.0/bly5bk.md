@@ -1,4 +1,6 @@
-# Bundle format
+# Metro
+
+## Bundle format
 
 - **Plain bundle**
     - standard, all files in 1 global .js file
@@ -10,7 +12,7 @@
 - **File RAM** bundle
     - usually use by Android: access to zipped file faster
 
-# Caching
+## Caching
 
 - Use **local cache** of transformer modules -> doesn't need to retransform modules unless the source changed
 - **Remote cache**: reducing time spent locally building, setup (at Meta):
@@ -18,7 +20,7 @@
     - metro build + HttpStore
     - Config Metro at Dev machines, use HttpGetStore
 
-# Module resolution
+## Module resolution
 
 - Is the process of translating module names to module paths at build time
 - Implement by: **Nodejs resolution** algorithms + **specific features**:
@@ -32,7 +34,7 @@
         - override almost everything about how modules are resolved.
 - Resolution algorithm [metro-resolver](https://github.com/facebook/metro/blob/main/packages/metro-resolver/src/resolve.js)
 
-# Source map format
+## Source map format
 
 - Source maps are tools in modern web for debugging easier
     - **x_facebook_sources**

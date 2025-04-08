@@ -16,6 +16,22 @@
 
 -  **`ScrollView`** and **`NavigatorIOS`** live in main thread (not through JS thread), so it's feel better than **`Navigator`**
 
-## Common sources
+## Common problems
 
-- 
+- Dev mode always slower than production, because runtime provide warning and error messages
+- Logger can cause a big bottleneck in the JavaScript thread, so make sure remove them when bundling
+    - Why? It's sync, when logging complex object it take extra time. 
+- **`ListView`** is bad for large list, use **`SectionList`** or **`FlatList`** instead
+
+# Speeding up your Build phase
+
+- Only build App local based on the Arch needed `--active-arch-only`
+- Use compiler cache
+
+# Optimizing JS loading
+
+- Use Hermes
+- Lazy-load 
+- Call `require` inline or Automatically inline require calls
+- Use random access module bundles (non-Hermes) (also known as RAM bundles)
+    - limit the amount of JavaScript code that needs to be parsed and loaded into memory. Each module is stored as a separate string (or file) which is only parsed when the module needs to be executed.

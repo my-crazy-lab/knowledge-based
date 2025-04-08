@@ -1,20 +1,3 @@
- ```js
-function generateId(){
-    const LENGTH = 6;
-    const CHARS = [1,2,3,4,5,6,7,8,9,0,
-    'q','w','e','r','t','y','u','i','o','p',
-    'l','k','j','h','g','f','d','s','a',
-    'z','x','c','v','b','n','m']
-
-    let id=""
-    for(let i =0;i<=LENGTH-1;i++){
-        id+=CHARS[Math.floor(Math.random() * CHARS.length)]
-    }
-    return id;
-}
-console.log(generateId())
-```
-
 ```text
 Give me list questions and answers so I can review my knowledge, based on:
 
@@ -24,19 +7,22 @@ Give me list questions and answers so I can review my knowledge, based on:
 
 **Catalog**
 
-- [System design](#system-design)  
-- [AI ML](#ai-m)  
-- [Algorithm](#algorithm)  
-- [Mobile](#mobile)  
-- [Web](#web)  
-- [Game](#game)  
-- [Database](#database)  
-- [OS](#os)  
-- [Server (BE)](#server-be)  
-- [Desktop app](#desktop-app)  
-- [Blockchain](#lockchain)  
-- [Dev Sec ML Ops](#dev-sec-ml-ops)  
-- [Cyber security](#cyber-security)  
+1. [System design](#system-design)  
+2. [AI ML](#ai-m)  
+3. [Algorithm](#algorithm)  
+4. [Mobile](#mobile)  
+    - [React Native](#react-native)
+    - [Metro](#metro)  
+5. [Web](#web)
+    - [React](#react)  
+6. [Game](#game)  
+7. [Database](#database)  
+8. [OS](#os)  
+9. [Server (BE)](#server-be)  
+10. [Desktop app](#desktop-app)  
+11. [Blockchain](#lockchain)  
+12. [Dev Sec ML Ops](#dev-sec-ml-ops)  
+13. [Cyber security](#cyber-security)  
 
 ---
 
@@ -48,7 +34,21 @@ Give me list questions and answers so I can review my knowledge, based on:
 
 # Mobile
 
+## React Native
+
+- **`mdzu7u`**
+    - [Reactnative docs v1](https://reactnative.dev/docs/performance)
+        - Performance Overview
+        - JavaScript Environment
+
+## Metro
+
+- **`bly5bk`**
+    - [Metro docs](https://metrobundler.dev/docs/bundling): Bundle, caching, module resolution, source map format
+
 # Web
+
+## React
 
 # Game
 

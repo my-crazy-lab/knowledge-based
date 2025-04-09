@@ -1,10 +1,3 @@
-```text
-Give me list questions and answers so I can review my knowledge, based on:
-
-```
-
----
-
 **Catalog**
 
 1. [System design](#system-design)  

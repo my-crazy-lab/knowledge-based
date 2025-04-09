@@ -61,6 +61,9 @@ Give me list questions and answers so I can review my knowledge, based on:
 
 - **`522nan`**
     - [Update some new hooks](https://react.dev/reference/react/hooks)
+- **`j85yn5`**
+    - [Some news api react](https://react.dev/reference/react/apis)
+    - [Some news api react-dom](https://react.dev/reference/react-dom)
 
 # Game
 

@@ -31,7 +31,9 @@ Give me list questions and answers so I can review my knowledge, based on:
 # Books
 
 - Learning Domain-driven design
-    - **`hxzy09`** 
+    - **`hxzy09`**
+- Data Science for Business
+    - **`cxn9wz`**: pages 48 -> 68
 
 # System design
 

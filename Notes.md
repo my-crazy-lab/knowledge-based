@@ -21,6 +21,19 @@
 - Note-taking system
     - Processed notes (kiến thức rút gọn, dễ tra lại) (Refactor)
     - Personal glossary (từ điển technical riêng) (Link & Index)
+- Technical Mastery Focus 
+    - Giảm thực hành **lặp đi lặp lại**
+    - Tăng input **khó**
+    - Đọc - Hiểu - **System hóa** kiến thức sâu
+    - Kết hợp: docs, paper, architecture, pattern design, source code real
+    - Output hóa: note, blog, teaching content
+    - Strategy
+        - Tryhard block
+            - Hard Focus or Skill Grind :muscle:
+            - Review & Expand :running:
+        - Morning: 90 :muscle: - 20(break) - 120 :muscle:
+        - Afternoon: 90 :muscle: - 30(break) - 120 :muscle: - 60 :running:
+        - Night: 90 :muscle: - 30(break) - 60 :running:
 - Review
     - Weekly: which learn? Which need refactor?
         - Tổng giờ Deep Work:
@@ -42,19 +55,6 @@
         - Nạp cảm hứng
         - Success Log Daily
         - Check Future Vision
-- Technical Mastery Focus 
-    - Giảm thực hành lặp đi lặp lại
-    - Tăng input khó
-    - Đọc - Hiểu - System hóa kiến thức sâu
-    - Kết hợp đọc docs, paper, architecture, pattern design, source code real
-    - Output hóa bằng note, blog, teaching content
-    - Tryhard block
-        - Hard Focus or Skill Grind :muscle:
-        - Review & Expand :running:
-    - Lịch Trình
-        - Morning: 90:muscle: - 20(break) - 120:muscle:
-        - Afternoon: 90:muscle: - 30(break) - 120:muscle: - 60:running:
-        - Night: 90:muscle: - 30(break) - 60:running:
 
 # Read book correctly
 

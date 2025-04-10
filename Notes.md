@@ -61,4 +61,9 @@
 - Always answer: Why need read it?
 - Summary each 0.5 or 1 page
 
+```
+Giúp mình dịch sang tiếng việt và thêm một ít giải thích, nhưng bạn cần bám sát nội dung:
+
+```
+
 # Draft

@@ -1,5 +1,9 @@
 # Technical
 
+## AI ML
+
+- Why chatGPT return the answer more humanable than when I call OpenAI API or when ask in Sider?
+
 ## Nvim
 
 - [Packer (nvim package management) docs](https://github.com/wbthomason/packer.nvim)
@@ -29,11 +33,11 @@
     - Output hóa: note, blog, teaching content
     - Strategy
         - Tryhard block
-            - Hard Focus or Skill Grind :muscle:
-            - Review & Expand :running:
-        - Morning: 90 :muscle: - 20(break) - 120 :muscle:
-        - Afternoon: 90 :muscle: - 30(break) - 120 :muscle: - 60 :running:
-        - Night: 90 :muscle: - 30(break) - 60 :running:
+            - Hard Focus or Skill Grind
+            - Review & Expand
+        - [08:30-12:15]: 💪1h30 - 🚧15m - 💪2h
+        - [13:00-18:30]: 💪1h30 - 🚧15m - 💪2h - 🚧15m - 💪1h - 🏃30m
+        - [20:30-23:00]: 💪1h30 - 🏃1h
 - Review
     - Weekly: which learn? Which need refactor?
         - Tổng giờ Deep Work:
@@ -60,10 +64,11 @@
 
 - Always answer: Why need read it?
 - Summary each 0.5 or 1 page
+- Translate prompt
+    ```
+    Giúp mình dịch sang tiếng việt và thêm một ít giải thích, nhưng bạn cần bám sát nội dung:
 
-```
-Giúp mình dịch sang tiếng việt và thêm một ít giải thích, nhưng bạn cần bám sát nội dung:
+    ```
 
-```
 
 # Draft

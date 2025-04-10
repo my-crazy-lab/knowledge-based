@@ -28,7 +28,7 @@
     - **`qqo5s7`**: 59 :arrow_right: 86
 - Data Science for Business
     - **`cxn9wz`**: 48 :arrow_right: 67
-    - **`s2nnpb`**: 68 :arrow_right:
+    - **`s2nnpb`**: 68 :arrow_right: 96
 
 # System design
 

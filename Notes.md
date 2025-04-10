@@ -11,3 +11,27 @@
 - [TechCrunch](https://techcrunch.com/latest/)
 
 # Draft
+
+# Learn correctly
+
+`Không tối ưu theo "thoải mái" → Mà tối ưu theo "Hiệu suất - Phục hồi - Áp lực có kiểm soát"`
+
+- Tryhard block
+    - Hard Focus
+    - Skill Grind
+    - Review & Expand
+- Note-taking system
+    - Processed notes (kiến thức rút gọn, dễ tra lại) (Refactor)
+    - Personal glossary (từ điển technical riêng) (Link & Index)
+- Review
+    - Weekly: which learn? Which need refactor?
+        - Tổng giờ Deep Work:
+        - Số block Focus thành công:
+        - Học được gì?
+        - 
+    - Monthly: good, bad, which need optimize? 
+
+# Read book correctly
+
+- `Always answer: Why need read it?`
+- `Sumary`

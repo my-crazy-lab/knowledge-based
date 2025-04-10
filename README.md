@@ -24,9 +24,11 @@
 # Books
 
 - Learning Domain-driven design
-    - **`hxzy09`**
+    - **`hxzy09`**: 29 :arrow_right: 59
+    - **`qqo5s7`**
 - Data Science for Business
-    - **`cxn9wz`**: pages 48 -> 68
+    - **`cxn9wz`**: 48 :arrow_right: 68
+    - **`s2nnpb`**
 
 # System design
 

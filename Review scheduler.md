@@ -12,6 +12,8 @@ Give me list questions and answers so I can review my knowledge, based on:
     - [1] cxn9wz
     - [1] j85yn5
 - **11/04/25**
+    - [1] qqo5s7
+    - [1] s2nnpb
 - **12/04/25**
     - [2] mdzu7u
     - [2] bly5bk

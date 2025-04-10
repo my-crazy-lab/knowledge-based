@@ -6,7 +6,7 @@ COMMIT_MSG=$(<"$COMMIT_MSG_FILE")
 
 # Define the required format using a regex pattern  
 # Accepts: technical-learning:, technical-practicing:, tech-notes:  
-REQUIRED_FORMAT="^(learning|notes|draft|chore|config): .+"  
+REQUIRED_FORMAT="^(learning|notes|draft|chore|config|review): .+"  
 
 # Check if the commit message matches the required format  
 if ! [[ $COMMIT_MSG =~ $REQUIRED_FORMAT ]]; then  

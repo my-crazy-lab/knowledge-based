@@ -47,14 +47,14 @@
 - Habit: 3 Nhóm Habit Quan Trọng Nhất
     - Physical Energy Habits
         - Ngủ
-        - Uống
         - Ăn
+        - Uống
         - Vận động
     - Mental Energy Habits
         - Zone
         - Giảm switch
         - clear não
-        - tự quan sát
+        - Tự quan sát
     - Emotional Energy Habits
         - Nạp cảm hứng
         - Success Log Daily

@@ -26,10 +26,12 @@
 - Learning Domain-driven design
     - **`hxzy09`**: 29 :arrow_right: 58
     - **`qqo5s7`**: 59 :arrow_right: 86
-    - **`j4kegr`**: 87 :arrow_right:
+    - **`sohwje`**: 87 :arrow_right: 162
+    - **`j4kegr`**: 163 :arrow_right:
 - Data Science for Business
     - **`cxn9wz`**: 48 :arrow_right: 67
     - **`s2nnpb`**: 68 :arrow_right: 96
+    - **`inkjdo`**: 97 :arrow_right: 119
     - w3y60i
 
 # System design

@@ -66,7 +66,7 @@
 - Summary each 0.5 or 1 page
 - Translate prompt
     ```
-    Giúp mình dịch sang tiếng việt và thêm một ít giải thích, nhưng bạn cần bám sát nội dung:
+    Giúp mình dịch và làm nó dễ hiểu hơn, cũng như đưa ra các kiến thức liên quan nha, nhưng bạn cần bám sát nội dung:
 
     ```
 

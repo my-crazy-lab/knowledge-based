@@ -16,6 +16,7 @@
         - Entropy thấp → Nhóm gần như đồng nhất (rất thuần khiết).
         - Entropy = 0 → Nhóm thuần khiết hoàn toàn.
     - `Entropy = - p1 * log2(p1) - p2 * log2(p2) - ...`
+    - ![This is a screenshot](Figure41.png)  
 - Entropy chỉ đo mức độ hỗn loạn hoặc độ thuần khiết của 1 tập dữ liệu (1 nhóm nhỏ), nhưng mục tiêu thật sự khi xây dựng mô hình là:
     - `Chọn thuộc tính (attribute) nào giúp phân chia dữ liệu ra các nhóm con càng "thuần khiết" càng tốt.`
     - dùng Information Gain (IG) để đo lường mức độ hữu ích của một thuộc tính trong việc phân chia dữ liệu.

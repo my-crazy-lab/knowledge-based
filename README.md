@@ -32,7 +32,8 @@
     - **`cxn9wz`**: 48 :arrow_right: 67
     - **`s2nnpb`**: 68 :arrow_right: 96
     - **`inkjdo`**: 97 :arrow_right: 119
-    - w3y60i
+- Machine Learning Yearning
+    - **`w3y60i`**: 1 :arrow_right: 60
 
 # System design
 

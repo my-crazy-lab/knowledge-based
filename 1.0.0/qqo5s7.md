@@ -50,17 +50,16 @@
 - take it or leave it, no real motivation to support its clients’ needs 
 - downstream conforms to the upstream bounded context’s model
 
-### Anticorruption Layer
+### Anti corruption Layer
 
 - Scenario
     - When the downstream bounded context contains a core subdomain
-    - When the upstream model is inecient or inconvenient for the consumer’s needs
+    - When the upstream model is unstable or inconvenient for the consumer’s needs
     - When the supplier’s contract changes oen
 
 ### Open-Host Service
 
-- instead of the consumer, the supplier implements the translation of its internal
-model.
+- instead of the consumer, the supplier implements the translation of its internal model.
 - allowing the consumer to migrate to the new version gradually
 
 ### Separate Ways

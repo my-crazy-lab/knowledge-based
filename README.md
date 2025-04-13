@@ -28,13 +28,13 @@
     - **`s2nnpb`**: 68 :arrow_right: 96
     - **`inkjdo`**: 97 :arrow_right: 119
 - Designing Data-Intensive Applications
-    - **`tkzqg5`**: 91 :arrow_right:
+    - **`tkzqg5`**: 91 :arrow_right: 106
 - Learning Domain-driven design
     - **`hxzy09`**: 29 :arrow_right: 58
     - **`qqo5s7`**: 59 :arrow_right: 86
     - **`sohwje`**: 87 :arrow_right: 162
     - **`j4kegr`**: 163 :arrow_right: 201
-    - **`c7dq63`**: 202 :arrow_right:
+    - **`c7dq63`**: 202 :arrow_right: done
 - :white_check_mark: Machine Learning Yearning (Vi)
     - **`w3y60i`**: 1 :arrow_right: 60
 

@@ -42,7 +42,9 @@
 
 - LSM-tree có thể chậm khi tra cứu các key không tồn tại
     - bạn phải kiểm tra memtable, rồi các đoạn từ mới đến cũ (có thể phải đọc từ đĩa mỗi lần) trước khi chắc chắn key không tồn tại.
-    - Bloom filter: cho biết rằng một key không tồn tại, từ đó giúp tránh nhiều lần đọc đĩa không cần thiết.
+    - Bloom filter: cho biết rằng một key không tồn tại, từ đó giúp tránh nhiều lần đọc đĩa không cần thiết
+        - [Ref](https://www.youtube.com/watch?v=SCNk2lqXv6w&t=14s)
+        - 
 - Cũng có nhiều chiến lược khác nhau để xác định thứ tự và thời điểm gộp SSTable. Hai chiến lược phổ biến nhất là:
     - Size-tiered compaction (nén theo kích thước): các SSTable nhỏ và mới sẽ được gộp dần vào các SSTable lớn và cũ hơn.
     - Leveled compaction (nén theo tầng): phạm vi key được chia nhỏ thành các SSTable nhỏ hơn, và dữ liệu cũ được chuyển vào các “tầng” riêng biệt, giúp quá trình gộp diễn ra từ từ và ít tốn dung lượng đĩa.

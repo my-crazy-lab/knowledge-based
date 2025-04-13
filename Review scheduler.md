@@ -7,12 +7,6 @@ Give me list questions and answers so I can review my knowledge, based on:
 
 ---
 
-- **13/04/25**
-    - [1] j4kegr
-    - [1] w3y60i
-    - [2] hxzy09
-    - [2] cxn9wz
-    - [2] j85yn5
 - **14/04/25**
     - [1] tkzqg5
     - [1] c7dq63
@@ -21,6 +15,8 @@ Give me list questions and answers so I can review my knowledge, based on:
     - [2] qqo5s7
     - [2] s2nnpb
 - **16/04/25**
+    - [1] j4kegr
+    - [1] w3y60i
 - **17/04/25**
 - **18/04/25**
 - **19/04/25**
@@ -29,6 +25,9 @@ Give me list questions and answers so I can review my knowledge, based on:
     - [2] y5s9eb
     - [2] 522nan
 - **20/04/25**
+    - [2] hxzy09
+    - [2] cxn9wz
+    - [2] j85yn5
 - **21/04/25**
 - **22/04/25**
 - **23/04/25**

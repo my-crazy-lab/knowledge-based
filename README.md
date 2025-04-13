@@ -24,19 +24,21 @@
 # Books
 
 - Data Science for Business
-    - **`cxn9wz`**: 48 :arrow_right: 67
-    - **`s2nnpb`**: 68 :arrow_right: 96
-    - **`inkjdo`**: 97 :arrow_right: 119
+    - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
+    - [68 :arrow_right: 96](./1.0.0/s2nnpb)
+    - [97 :arrow_right: 119](./1.0.0/inkjdo)
 - Designing Data-Intensive Applications
-    - **`tkzqg5`**: 91 :arrow_right: 106
+    - [91 :arrow_right: 106](./1.0.0/tkzqg5)
+- Refactoring - Improving the Design of Existing Code
+    - [1 :arrow_right: 1](./1.0.0/4mw4a3)
 - Learning Domain-driven design
-    - **`hxzy09`**: 29 :arrow_right: 58
-    - **`qqo5s7`**: 59 :arrow_right: 86
-    - **`sohwje`**: 87 :arrow_right: 162
-    - **`j4kegr`**: 163 :arrow_right: 201
-    - **`c7dq63`**: 202 :arrow_right: done
+    - [29 :arrow_right: 58](./1.0.0/hxzy09)
+    - [59 :arrow_right: 86](./1.0.0/qqo5s7)
+    - [87 :arrow_right: 162](./1.0.0/sohwje)
+    - [163 :arrow_right: 201](./1.0.0/j4kegr)
+    - [202 :arrow_right: done](./1.0.0/c7dq63)
 - :white_check_mark: Machine Learning Yearning (Vi)
-    - **`w3y60i`**: 1 :arrow_right: 60
+    - [1 :arrow_right: 60](./1.0.0/w3y60i)
 
 # System design
 

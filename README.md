@@ -25,20 +25,20 @@
 
 - Data Science for Business
     - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
-    - [68 :arrow_right: 96](./1.0.0/s2nnpb)
-    - [97 :arrow_right: 119](./1.0.0/inkjdo)
+    - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)
+    - [97 :arrow_right: 119](./1.0.0/inkjdo.md)
 - Designing Data-Intensive Applications
-    - [91 :arrow_right: 106](./1.0.0/tkzqg5)
+    - [91 :arrow_right: 106](./1.0.0/tkzqg5.md)
 - Refactoring - Improving the Design of Existing Code
-    - [1 :arrow_right: 1](./1.0.0/4mw4a3)
+    - [1 :arrow_right: 1](./1.0.0/4mw4a3.md)
 - Learning Domain-driven design
-    - [29 :arrow_right: 58](./1.0.0/hxzy09)
-    - [59 :arrow_right: 86](./1.0.0/qqo5s7)
-    - [87 :arrow_right: 162](./1.0.0/sohwje)
-    - [163 :arrow_right: 201](./1.0.0/j4kegr)
-    - [202 :arrow_right: done](./1.0.0/c7dq63)
+    - [29 :arrow_right: 58](./1.0.0/hxzy09.md)
+    - [59 :arrow_right: 86](./1.0.0/qqo5s7.md)
+    - [87 :arrow_right: 162](./1.0.0/sohwje.md)
+    - [163 :arrow_right: 201](./1.0.0/j4kegr.md)
+    - [202 :arrow_right: done](./1.0.0/c7dq63.md)
 - :white_check_mark: Machine Learning Yearning (Vi)
-    - [1 :arrow_right: 60](./1.0.0/w3y60i)
+    - [1 :arrow_right: 60](./1.0.0/w3y60i.md)
 
 # System design
 

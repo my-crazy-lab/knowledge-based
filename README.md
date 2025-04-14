@@ -29,8 +29,9 @@
     - [97 :arrow_right: 119](./1.0.0/inkjdo.md)
 - Designing Data-Intensive Applications
     - [91 :arrow_right: 106](./1.0.0/tkzqg5.md)
+    - [107 :arrow_right: 167](./1.0.0/4mw4a3.md)
+    - [168 :arrow_right: ](./1.0.0/)
 - Refactoring - Improving the Design of Existing Code
-    - [1 :arrow_right: 17](./1.0.0/4mw4a3.md)
 - Learning Domain-driven design
     - [29 :arrow_right: 58](./1.0.0/hxzy09.md)
     - [59 :arrow_right: 86](./1.0.0/qqo5s7.md)

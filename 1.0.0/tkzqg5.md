@@ -1,10 +1,10 @@
 # Storage and Retrieval
 
-- Bất kỳ loại chỉ mục nào cũng làm chậm quá trình ghi, vì chỉ mục cũng cần được cập nhật mỗi khi dữ liệu được ghi.
 
 ## Hash indexes
 
-- phù hợp với các tình huống mà mỗi khóa được cập nhật thường xuyên
+- Bất kỳ loại Index nào cũng làm chậm quá trình ghi, vì Index cũng cần được cập nhật mỗi khi dữ liệu được ghi.
+- Phù hợp với các tình huống mà mỗi khóa được cập nhật thường xuyên
     - Ví dụ, khóa có thể là URL của một video mèo, còn giá trị là số lần nó được phát (mỗi lần người dùng nhấn nút play, số lần được tăng thêm).
     - Trong loại workload này, có rất nhiều thao tác ghi, nhưng không có quá nhiều khóa riêng biệt — tức là số lượng ghi trên mỗi khóa rất lớn, nhưng tổng số khóa có thể được giữ trong bộ nhớ.
 - Vậy làm sao để không đầy đĩa?

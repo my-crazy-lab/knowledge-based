@@ -29,7 +29,7 @@
     - [97 :arrow_right: 119](./1.0.0/inkjdo.md)
 - Designing Data-Intensive Applications
     - [91 :arrow_right: 106](./1.0.0/tkzqg5.md)
-    - [107 :arrow_right: 167](./1.0.0/4mw4a3.md)
+    - [107 :arrow_right: 206](./1.0.0/4mw4a3.md): Detecting Concurrent Writes
     - [168 :arrow_right: ](./1.0.0/)
 - Refactoring - Improving the Design of Existing Code
 - Learning Domain-driven design

@@ -1,5 +1,16 @@
 # Technical
 
+## Questions
+
+- Gg Drive sử dụng Replicate như thế nào để có nhiều users modified được đồng thời, vì theo mình biết phải xử lí conflict rất nhiều khi Sync data
+    - Operational transformation: Là thuật toán giải quyết xung đột đứng sau các ứng dụng chỉnh sửa cộng tác như Etherpad  và Google Docs -> research cai nay
+- Clients with offline operation: **CouchDB**
+    - Demo nó thôi
+- Demo Binary encoding từ checklist
+- Thrift and Protocol Buffers: xài Thrift thử
+- Xài Arvo sau khi hiểu tại sao cần nó, có thể cần cho cái đang làm
+- 
+
 ## AI ML
 
 - Why chatGPT return the answer more humanable than when I call OpenAI API or when ask in Sider?

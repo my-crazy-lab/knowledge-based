@@ -24,7 +24,7 @@
 ## Boundaries
 
 - Physical Boundaries
-    -  Each bounded context should be implemented as an individual service/project, with the technology stack that best fits its needs.
+    - Each bounded context should be implemented as an individual service/project, with the technology stack that best fits its needs.
 - Ownership Boundaries
     - define communication protocols for integrating their models and systems explicitly
 

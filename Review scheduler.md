@@ -1,4 +1,9 @@
-## Space repetition(days): 1 + practices | 3 + memory palace | 7 + mind map | 14 | 30
+## Space repetition(days)
+
+1. Vấn đề & giải pháp thực tế ⇒ *case thực* + *Diễn giải lại* ⇒ `1` `3` `7`
+2. công cụ / framework ⇒ *Minimal hands-on* + *Build cheatsheet* ⇒ `1` `7` + `compare when learn same tools`
+3. Lý thuyết chi tiết ⇒ *Feynman* + *Active Recall* + *Mindmap* ⇒ `1` `3` `7` `14`
+4. Khái niệm / System ⇒ *Skim* + *Note* + *Case study* + *hệ thống* ⇒ `1` `3` `7` `14` `30`
 
 ```text
 Give me list questions and answers so I can review my knowledge, based on:

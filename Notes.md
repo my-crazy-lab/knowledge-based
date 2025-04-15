@@ -81,5 +81,9 @@
 
     ```
 
+# Get inspired
+
+- Skim 1 kiến thức thú vị
+- Viết “Why Log”
 
 # Draft

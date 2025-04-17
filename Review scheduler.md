@@ -16,6 +16,7 @@ Give me list questions and answers so I can review my knowledge, based on:
     - [1] o70doc
     - [1] 4mw4a3
     - [1] n20071
+    - [1] o6n1x2
     - [2] tkzqg5
 - **18/04/25**
 - **19/04/25**

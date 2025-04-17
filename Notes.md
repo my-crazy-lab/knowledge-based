@@ -84,6 +84,8 @@
 # Get inspired
 
 - Skim 1 kiến thức thú vị
-- Viết “Why Log”
+    - music :v
+- Viết **Why Log**
+- Other stories
 
 # Draft

@@ -12,19 +12,19 @@ Give me list questions and answers so I can review my knowledge, based on:
 
 ---
 
-- **17/04/25**
-    - [1] o70doc
-    - [1] 4mw4a3
-    - [1] n20071
-    - [2] tkzqg5
-- **18/04/25**
-    - [1] o6n1x2
 - **19/04/25**
+    - [2] tkzqg5
+    - [2] 4mw4a3
+
+    - [1] o70doc
+    - [1] n20071
+    - [1] o6n1x2
+- **20/04/25**
     - [2] mdzu7u
     - [2] bly5bk
     - [2] y5s9eb
     - [2] 522nan
-- **20/04/25**
+
     - [2] hxzy09
     - [2] cxn9wz
     - [2] j85yn5

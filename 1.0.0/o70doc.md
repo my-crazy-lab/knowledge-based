@@ -121,7 +121,6 @@
 - Việc cân bằng lại xảy ra tự động hay cần thao tác thủ công?
     - **Hoàn toàn tự động**: Hệ thống tự quyết định khi nào cần chuyển partition từ node này sang node khác, không cần quản trị viên can thiệp.
     - **Hoàn toàn thủ công**: Quản trị viên chỉ định thủ công việc phân bổ partition cho các node, và chỉ thay đổi khi có hành động cụ thể từ người quản trị.
-- 
 
 ## Request routing
 

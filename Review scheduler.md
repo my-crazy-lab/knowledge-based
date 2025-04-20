@@ -13,7 +13,6 @@ Give me list questions and answers so I can review my knowledge, based on:
 ---
 
 - **20/04/25**
-    - [1] o70doc
     - [1] n20071
     - [1] o6n1x2
     - [2] hxzy09
@@ -28,6 +27,7 @@ Give me list questions and answers so I can review my knowledge, based on:
     - [3] j4kegr
     - [3] w3y60i
 - **23/04/25**
+    - [2] o70doc
 - **24/04/25**
     - [3] c7dq63
 - **25/04/25**

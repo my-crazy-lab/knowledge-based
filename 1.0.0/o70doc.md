@@ -1,3 +1,25 @@
+**Catalog**
+
+1. [Partition](#partition)
+    - [Key Range Partitioning](#key-range-partitioning)
+    - [Partitioning by Hash of Key](#partitioning-by-hash-of-key)
+    - [Secondary Indexes](#secondary-indexes)
+    - [Rebalancing Partitions](#rebalancing-partitions)
+    - [Request routing](#request-routing)
+    - [Parallel Query execution](#parallel-query-execution)
+2. [Transactions](#transactions)
+    - [Weak Isolation Levels](#weak-isolation-levels)
+    - [Read committed](#read-committed)
+    - [Snapshot Isolation & Repeatable Read](#snapshot-isolation--repeatable-read)
+    - [Automatically detecting lost updates](#automatically-detecting-lost-updates)
+    - [Compare-and-set](#compareandset)
+    - [Conflict resolution and replication](#conflict-resolution-and-replication)
+    - [Write Skew and Phantoms](#write-skew-and-phantoms)
+    - [Materializing conflicts](#materializing-conflicts)
+    - [Serializability](#serializability)
+
+---
+
 # Partition
 
 - nếu việc partitioning không công bằng, một số partitioning có nhiều dữ liệu hoặc nhiều truy vấn hơn những partitioning khác, ta gọi đó là hiện tượng lệch tải (skew). 
@@ -99,7 +121,6 @@
 - Việc cân bằng lại xảy ra tự động hay cần thao tác thủ công?
     - **Hoàn toàn tự động**: Hệ thống tự quyết định khi nào cần chuyển partition từ node này sang node khác, không cần quản trị viên can thiệp.
     - **Hoàn toàn thủ công**: Quản trị viên chỉ định thủ công việc phân bổ partition cho các node, và chỉ thay đổi khi có hành động cụ thể từ người quản trị.
-- 
 
 ## Request routing
 

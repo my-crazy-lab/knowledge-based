@@ -14,7 +14,7 @@
 
 ## Caching
 
-- Use **local cache** of transformer modules -> doesn't need to retransform modules unless the source changed
+- Use **local cache** of transformer modules -> doesn't need to re-transform modules unless the source changed
 - **Remote cache**: reducing time spent locally building, setup (at Meta):
     - Storage backend: S3 bucket
     - metro build + HttpStore

@@ -1,0 +1,62 @@
+Distributed system
+  The trouble
+  clocks
+    NTP
+    Time of day lock
+    Monotonic
+      Slewing
+    Clock sync and Accuracy
+      smearing
+    process pauses
+      lease
+  limiting the impact of GC
+  Truth and lies
+      Network error 
+      Node error
+  Fencing tokens
+  Byzantine faults
+  Consistency and consensus
+    Linearizability
+      locking and Leader election
+      Constraints and uniqueness guarantess
+      cross channel timing dependencies
+      Implementing
+        Linearizability and quorum
+      The cost
+      Network delays
+    Ordering Guarantees
+      causally consistent
+      Sequence number ordering
+      Noncausal sequence number generators
+      Lamport timestamps
+    total order broadcast or Atomic broadcast
+      Scope of ordering guarantee
+      Reliable delivery
+      Totally ordered delivery
+    Distributed and consensus
+      FLP
+      Two phase commit
+        Coordinator || Transaction manager
+        commit point
+        doubt || uncertain
+        blocking atomic commit protocol
+      Three phase commit
+      Heterogeneous distributed transactions
+        Exactly once message processing
+      X/Open XA (eXtended Architecture)
+      orphaned transactions
+      Consensus algorithm 
+        epoch
+        quorum
+        majority
+  Membership and Coordination Services
+    ZooKeeper || etcd
+    Chubby
+      Linearizable atomic operations
+      Total ordering of operations
+        zxid
+        cversion
+      Failure detection
+      Change notifications
+    Allocating work to nodes
+    Service discovery

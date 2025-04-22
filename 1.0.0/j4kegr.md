@@ -8,7 +8,7 @@
 ### Synchronous
 
 - nhúng trực tiếp logic chuyển đổi vào mã nguồn của ngữ cảnh giới hạn
-- việc chuyển đổi mô hình có thể hiệu quả hơn nếu được tách riêng ra một thành phần bên ngoài, ví dụ như thông qua mẫu thiết kế API Gateway.tổng hợp các yêu cầu đến và xử lý theo lô (batch) nhằm tối ưu hiệu năng. Trong trường hợp này, việc tổng hợp có thể cần thiết cho cả yêu cầu đồng bộ và bất đồng bộ,
+- việc chuyển đổi mô hình có thể hiệu quả hơn nếu được tách riêng ra một thành phần bên ngoài, ví dụ như thông qua mẫu thiết kế API Gateway tổng hợp các yêu cầu đến và xử lý theo lô (batch) nhằm tối ưu hiệu năng. Trong trường hợp này, việc tổng hợp có thể cần thiết cho cả yêu cầu đồng bộ và bất đồng bộ,
 
 ### Asynchronous
 

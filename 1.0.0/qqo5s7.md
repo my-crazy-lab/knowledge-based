@@ -31,7 +31,7 @@
 ## Real Life 
 
 - semantic domain
-    -  defined as an area of meaning and the words used to talk about it 
+    - defined as an area of meaning and the words used to talk about it 
     - like PORT (fe & be communicate)
 - Science
 

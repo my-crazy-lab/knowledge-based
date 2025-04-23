@@ -3,7 +3,7 @@
 ## JS frame rate (JavaScript thread)
 
 - Most React Native applications, the business logic will run on the JavaScript thread
-- Update UI will send over to the native side at the end of each iteration of event loop, before frame dealine.
+- Update UI will send over to the native side at the end of each iteration of event loop, before frame deadline.
     - Animation, async control by JS would appear freeze during rendering.
     - Longer than 100ms, user can feel it.
 - Usually happen at **`Navigator`** transitions

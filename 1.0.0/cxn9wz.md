@@ -68,7 +68,7 @@ classDef pink color:#000000,fill:#F8BBD0,stroke:#C2185B,stroke-width:2px;
 ## Analytics techniques
 
 - Statistics
-- Database quering
+- Database querying
 - Data warehouses
     - Collect and coalesce data from across an enterprise
 - Regression Analysis

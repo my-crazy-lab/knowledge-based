@@ -1,4 +1,3 @@
-qg5.md
 **Catalog**
 
 1. [Storage and Retrieval](#storage-and-retrieval)

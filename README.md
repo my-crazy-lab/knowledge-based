@@ -44,6 +44,8 @@
     - [Summary](./1.0.0/wfu2jf.md)
 - :white_check_mark: Machine Learning Yearning (Vi)
     - [1 :arrow_right: 60](./1.0.0/w3y60i.md)
+- The Web Application Hacker's Handbook
+    - [1 :arrow_right: ](./1.0.0/siqgx4.md)
 
 # System design
 
@@ -99,3 +101,10 @@
 # Dev Sec ML Ops
 
 # Cyber security
+
+# English
+
+## Vocabulary
+
+- [27 04 25](./1.0.0/yagy18.md)
+- [30 04 25](./1.0.0/d9vx1k.md)

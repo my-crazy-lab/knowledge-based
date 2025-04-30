@@ -1,0 +1,9 @@
+- Phần lớn các cuộc tấn công vào ứng dụng web đều liên quan đến việc gửi dữ liệu đầu vào được "chế tạo" để gây ra các sự kiện mà nhà thiết kế ứng dụng không dự đoán hoặc không mong muốn
+- có một khoảng cách rất lớn giữa việc tạo ra mã chạy được và mã an toàn.
+- Nhiều ứng dụng web được tạo ra bởi những người có ý tốt nhưng đơn giản là thiếu kiến thức và kinh nghiệm để nhận biết được những điểm mà vấn đề bảo mật có thể phát sinh.
+- Công Nghệ Bị Khai Thác Quá Mức
+    - Nhiều công nghệ cốt lõi được sử dụng trong các ứng dụng web ngày nay được phát triển từ thời điểm mà bối cảnh của World Wide Web còn rất khác. 
+    - Kể từ đó, chúng đã bị đẩy đi quá xa khỏi mục đích ban đầu, ví dụ như việc sử dụng JavaScript làm phương thức truyền dữ liệu trong nhiều ứng dụng dựa trên AJAX. 
+    - Khi kỳ vọng về chức năng của ứng dụng web tăng lên nhanh chóng, thì các công nghệ dùng để hiện thực những chức năng đó lại không bắt kịp, buộc phải kéo giãn và thích nghi với yêu cầu mới. 
+    - Không có gì ngạc nhiên khi điều này dẫn đến các lỗ hổng bảo mật xuất hiện do những hệ quả không lường trước.
+- 

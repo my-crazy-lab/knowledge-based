@@ -12,7 +12,7 @@ Give me list questions and answers so I can review my knowledge, based on:
 
 ---
 
-- **30/04/25**
+- **30/04/25** (debt)
     - [2] tkzqg5
     - [2] 4mw4a3
     - [2] o70doc

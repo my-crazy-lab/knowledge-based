@@ -12,19 +12,17 @@ Give me list questions and answers so I can review my knowledge, based on:
 
 ---
 
-- **30/04/25** (debt)
+- **03/05/25**
+    - [1] b83o0r
+    - [2] yagy18
+- **04/05/25**
     - [2] tkzqg5
     - [2] 4mw4a3
     - [2] o70doc
     - [2] n20071
     - [2] o6n1x2
-- **01/05/25**
-    - [1] d9vx1k
-- **02/05/25**
-- **03/05/25**
-    - [2] yagy18
-- **04/05/25**
 - **05/05/25**
+    - [2] d9vx1k
 - **06/05/25**
     - [4] qqo5s7
     - [4] s2nnpb

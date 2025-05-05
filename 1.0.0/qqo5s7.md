@@ -78,8 +78,7 @@
 ### Separate Ways
 
 -  When the subdomain in question is Generic, and if the generic solution is easy to integrate, it may be more cost-effective to integrate it locally in each bounded context
-    - Duplicating the functionality would be less expensive than
-collaborating.
+    - Duplicating the functionality would be less expensive than collaborating.
 
 ## Context Map
 

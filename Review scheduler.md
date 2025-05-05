@@ -12,20 +12,17 @@ Give me list questions and answers so I can review my knowledge, based on:
 
 ---
 
-- **05/05/25**
+- **Voca debt**
     - [1] y5pqpp
     - [2] d9vx1k
-- **06/05/25**
     - [2] b83o0r
+- **Book debt**
     - [2] tkzqg5
     - [2] 4mw4a3
     - [2] o70doc
     - [2] n20071
     - [2] o6n1x2
-    - [4] qqo5s7
-    - [4] s2nnpb
-    - [4] j4kegr
-    - [4] w3y60i
+- **06/05/25**
 - **07/05/25**
 - **08/05/25**
     - [4] mdzu7u
@@ -49,3 +46,8 @@ Give me list questions and answers so I can review my knowledge, based on:
 - **18/05/25**
 - **19/05/25**
 - **20/05/25**
+- **06/06/25**
+    - [5] qqo5s7
+    - [5] s2nnpb
+    - [5] j4kegr
+    - [5] w3y60i

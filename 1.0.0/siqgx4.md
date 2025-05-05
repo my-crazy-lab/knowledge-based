@@ -75,3 +75,8 @@
 - Thông thường, các lập trình viên của ứng dụng giả định rằng cơ chế truyền dữ liệu sẽ đảm bảo dữ liệu không bị sửa đổi trong quá trình truyền qua client.
     - mọi dữ liệu được gửi từ client tới server đều nằm trong sự kiểm soát của người dùng, vì vậy giả định rằng dữ liệu sẽ không bị thay đổi là sai lầm và thường khiến ứng dụng dễ bị khai thác tấn công.
 - Nếu client không giao tiếp với server để quyết định kết quả, ứng dụng này chắc chắn có lỗ hổng.
+
+# Attack application
+
+- Nếu bạn có thể giải mã token phiên, dù điều này không cho phép bạn xâm nhập ngay vào phiên của người dùng khác, nhưng bạn có thể hiểu được cấu trúc rõ ràng của token. Điều này rất hữu ích khi thực hiện tấn công bit-flipping để thay đổi nội dung của token và thay đổi người dùng mục tiêu.
+- 

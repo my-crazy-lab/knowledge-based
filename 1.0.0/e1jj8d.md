@@ -1,0 +1,4 @@
+- allow you to diagnose problems before they escalate to failures.
+- The rise of Cloud computing
+- Large Product Assortment
+- Elasticity refers to the ability to increase or decrease resources arbitrarily.

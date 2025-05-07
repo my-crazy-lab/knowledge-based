@@ -1,7 +1,6 @@
 - The rise of Cloud computing
 - Large Product Assortment
 
-
 # Overview
 
 - Elasticity refers to the ability to increase or decrease resources arbitrarily.

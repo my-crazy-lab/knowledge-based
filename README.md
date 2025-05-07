@@ -1,26 +1,3 @@
-**Catalog**
-
-1. [System design](#system-design)  
-2. [AI ML](#ai-m)  
-3. [Algorithm](#algorithm)  
-4. [Mobile](#mobile)  
-    - [React Native](#react-native)
-    - [Metro](#metro)  
-5. [Web](#web)
-    - [React](#react)  
-6. [Game](#game)  
-7. [Database](#database)  
-8. [OS](#os)  
-9. [Server (BE)](#server-be)  
-    - [Nodejs](#nodejs)
-10. [Desktop app](#desktop-app)  
-11. [Blockchain](#lockchain)  
-12. [Dev Sec ML Ops](#dev-sec-ml-ops)  
-13. [Cyber security](#cyber-security)  
-14. [Books](#books)
-
----
-
 # Books
 
 - Data Science for Business
@@ -46,10 +23,10 @@
     - [1 :arrow_right: 60](./1.0.0/w3y60i.md)
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: ](./1.0.0/siqgx4.md)
-- Multiplayer Game Programming: Architecting Networked Games
+- :white_check_mark: Multiplayer Game Programming: Architecting Networked Games
     - [Done](./1.0.0/d17bqf.md)
 - eCommerce in the Cloud
-    - [](jmzd7s)
+    - [](./1.0.0/jmzd7s.md)
 
 # System design
 
@@ -112,3 +89,23 @@
 
 - [27 04 25](./1.0.0/yagy18.md)
 - [30 04 25](./1.0.0/d9vx1k.md)
+- [07 05 25](./1.0.0/e1jj8d.md)
+
+# Problem around me
+
+1. which make mongodb down and slow? Lock, IO, bottleneck, max disk, replicalag, ...
+2. :white_check_mark: [MongoDB Monitoring Checklist (Self-Hosted)](./1.0.0/d886qg.md)
+3. In application, when I hit mongodb more times, can i graceful stop?
+4. the relation between pub sub, http and mongo connection pool / cursor
+5. Anatomy the mongo pipeline
+6. Which steps when pushing private key in git host
+7. how nrock and zerotrust cloudfare work, for private IP into public IP
+8. how Elastic search sync into MongoDB?
+9. why the redirect work in chrome, but not work in safari and opera
+10. dbt, Spark, Airflow technical debt
+
+# Lessons learned
+
+# Tech market
+
+

@@ -22,11 +22,11 @@
 - :white_check_mark: Machine Learning Yearning (Vi)
     - [1 :arrow_right: 60](./1.0.0/w3y60i.md)
 - The Web Application Hacker's Handbook
-    - [1 :arrow_right: ](./1.0.0/siqgx4.md)
+    - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
 - :white_check_mark: Multiplayer Game Programming: Architecting Networked Games
     - [Done](./1.0.0/d17bqf.md)
 - eCommerce in the Cloud
-    - [](./1.0.0/jmzd7s.md)
+    - [1 :arrow_right: 101](./1.0.0/jmzd7s.md)
 
 # System design
 

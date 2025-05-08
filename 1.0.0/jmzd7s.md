@@ -1,3 +1,5 @@
+# Vocabulary
+
 - The rise of Cloud computing
 - Large Product Assortment
 
@@ -18,3 +20,7 @@ demand refers to the ability to provision at any time
     - Thêm nữa, CDN chỉ có vài điểm máy chủ (endpoints) tại mỗi quốc gia, nên sự kiện lớn như El Buen Fin có thể khiến toàn bộ hạ tầng tại Mexico bị quá tải.
 - Nếu bạn muốn xử lý các đợt tăng đột biến (spike) trong lưu lượng, chi phí xây dựng sẵn toàn bộ hạ tầng chỉ để sử dụng vài lần trong năm là cực kỳ cao so với việc dùng cloud.
 
+
+# Chapter 4: Auto scaling the Cloud
+
+- 

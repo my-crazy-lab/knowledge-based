@@ -93,8 +93,7 @@
 
 # Problem around me
 
-1. which make mongodb down and slow? Lock, IO, bottleneck, max disk, replicalag, ...
-2. :white_check_mark: [MongoDB Monitoring Checklist (Self-Hosted)](./1.0.0/d886qg.md)
+1. :white_check_mark: [MongoDB Monitoring Checklist (Self-Hosted)](./1.0.0/d886qg.md)
 3. In application, when I hit mongodb more times, can i graceful stop?
 4. the relation between pub sub, http and mongo connection pool / cursor
 5. Anatomy the mongo pipeline

@@ -93,10 +93,9 @@
 
 # Problem around me
 
-1. :white_check_mark: [MongoDB Monitoring Checklist (Self-Hosted)](./1.0.0/d886qg.md)
-3. In application, when I hit mongodb more times, can i graceful stop?
+1. :white_check_mark: [MongoDB questions checklist](./1.0.0/d886qg.md)
+    - TODO: more Anatomy the mongo pipeline + Cursor-Driven Pipeline Execution
 4. the relation between pub sub, http and mongo connection pool / cursor
-5. Anatomy the mongo pipeline
 6. Which steps when pushing private key in git host
 7. how nrock and zerotrust cloudfare work, for private IP into public IP
 8. how Elastic search sync into MongoDB?

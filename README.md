@@ -26,7 +26,7 @@
 - :white_check_mark: Multiplayer Game Programming: Architecting Networked Games
     - [Done](./1.0.0/d17bqf.md)
 - eCommerce in the Cloud
-    - [1 :arrow_right: 101](./1.0.0/jmzd7s.md)
+    - [1 :arrow_right: 163](./1.0.0/jmzd7s.md)
 
 # System design
 
@@ -93,9 +93,8 @@
 
 # Problem around me
 
-1. :white_check_mark: [MongoDB questions checklist](./1.0.0/d886qg.md)
-    - TODO: more Anatomy the mongo pipeline + Cursor-Driven Pipeline Execution
-4. the relation between pub sub, http and mongo connection pool / cursor
+- :white_check_mark: [MongoDB questions checklist](./1.0.0/d886qg.md)
+
 6. Which steps when pushing private key in git host
 7. how nrock and zerotrust cloudfare work, for private IP into public IP
 8. how Elastic search sync into MongoDB?

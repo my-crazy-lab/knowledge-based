@@ -100,6 +100,8 @@
 8. how Elastic search sync into MongoDB?
 9. why the redirect work in chrome, but not work in safari and opera
 10. dbt, Spark, Airflow technical debt
+11. streaming 1 file take more times or not? what is best practices when work with files between 2 Nodes?
+12. i want do more about prompting, and practices more about ai :))
 
 # Lessons learned
 

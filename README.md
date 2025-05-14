@@ -27,6 +27,8 @@
     - [Done](./1.0.0/d17bqf.md)
 - eCommerce in the Cloud
     - [1 :arrow_right: 163](./1.0.0/jmzd7s.md)
+- :white_check_mark: gemini for google workspace prompting guide 101
+    - [1 :arrow_right: DONE](./1.0.0/9w5kku.md)
 
 # System design
 
@@ -94,14 +96,16 @@
 # Problem around me
 
 - :white_check_mark: [MongoDB questions checklist](./1.0.0/d886qg.md)
-
-6. Which steps when pushing private key in git host
-7. how nrock and zerotrust cloudfare work, for private IP into public IP
-8. how Elastic search sync into MongoDB?
-9. why the redirect work in chrome, but not work in safari and opera
-10. dbt, Spark, Airflow technical debt
-11. streaming 1 file take more times or not? what is best practices when work with files between 2 Nodes?
-12. i want do more about prompting, and practices more about ai :))
+- :white_check_mark: [Best practices work with file transfer?](./1.0.0/lsdy45.md)
+- Which steps when pushing private key in git host
+- how nrock and zerotrust cloudfare work, for private IP into public IP
+- how Elastic search sync into MongoDB?
+- why the redirect work in chrome, but not work in safari and opera
+- dbt, Spark, Airflow technical debt
+- i want do more about prompting, and practices more about ai :))
+- ai generate documents
+- realtime remix
+- mono repo: best practices, why choose? pros / cons
 
 # Lessons learned
 

@@ -26,7 +26,7 @@
 - :white_check_mark: Multiplayer Game Programming: Architecting Networked Games
     - [Done](./1.0.0/d17bqf.md)
 - eCommerce in the Cloud
-    - [1 :arrow_right: 163](./1.0.0/jmzd7s.md)
+    - [1 :arrow_right: 207](./1.0.0/jmzd7s.md)
 - :white_check_mark: gemini for google workspace prompting guide 101
     - [1 :arrow_right: DONE](./1.0.0/9w5kku.md)
 
@@ -97,18 +97,29 @@
 
 - :white_check_mark: [MongoDB questions checklist](./1.0.0/d886qg.md)
 - :white_check_mark: [Best practices work with file transfer?](./1.0.0/lsdy45.md)
-- Which steps when pushing private key in git host
-- how nrock and zerotrust cloudfare work, for private IP into public IP
-- how Elastic search sync into MongoDB?
-- why the redirect work in chrome, but not work in safari and opera
-- dbt, Spark, Airflow technical debt
-- i want do more about prompting, and practices more about ai :))
+- :white_check_mark: why the redirect work in chrome, but not work in safari and opera
+    - Browser Caching and Redirect Behavior
+    - SSL Certificate and HTTPS Configuration
+    - Reverse Proxy Configuration 
+    - Content Security Policy (CSP)
+- :white_check_mark: [Build encode/decode base64 with non blocking patternn](./1.0.0/r85a1o.md)
+- python là ngôn ngữ single thread hay multi thread?
 - ai generate documents
-- realtime remix
 - mono repo: best practices, why choose? pros / cons
+- i want do more about prompting, and practices more about ai :D
+- i want do more about prompting, and practices more about ai :))
+- Which steps when pushing private key in git host
+- realtime remix
+- how Elastic search sync into MongoDB?
+- how nrock and zerotrust cloudfare work, for private IP into public IP
+- dbt, Spark, Airflow technical debt
+- cấu trúc dữ liệu không khóa (lockless data structures) LÀ GÌ?
 
 # Lessons learned
 
 # Tech market
 
+### notes 
 
+- LLm just smart and take workflow by prompt?
+- work with .wav

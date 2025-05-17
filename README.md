@@ -103,20 +103,52 @@
     - Reverse Proxy Configuration 
     - Content Security Policy (CSP)
 - :white_check_mark: [Build encode/decode base64 with non blocking patternn](./1.0.0/r85a1o.md)
-- MEteor call before pubsub is better than pure pubsub?
-- python là ngôn ngữ single thread hay multi thread?
-- work with .wav
+- Meteor call before pubsub is better than pure pubsub?
+- :white_check_mark: python là ngôn ngữ single thread hay multi thread?
+    - GIL – Global Interpreter Lock Python (CPython – trình thông dịch phổ biến nhất của Python) có một cơ chế gọi là GIL (Global Interpreter Lock). GIL chỉ cho phép một thread thực thi mã Python tại một thời điểm, ngay cả khi có nhiều luồng đang chạy.
+    → Điều này có nghĩa là:
+    - Với tác vụ CPU-bound (xử lý nặng CPU): Multi-thread trong Python không mang lại hiệu quả cao, vì các luồng bị GIL giới hạn.
+    - Với tác vụ I/O-bound (đọc/ghi file, network, chờ kết quả): Multi-thread vẫn hiệu quả, vì trong thời gian chờ I/O, GIL được nhường cho luồng khác.
+    - Lí do:
+    - CPython — là phiên bản phổ biến nhất của Python — sử dụng reference counting (đếm số tham chiếu) để quản lý bộ nhớ.
+    - Vấn đề:
+        - Khi nhiều luồng cùng truy cập và thay đổi số tham chiếu của một đối tượng Python (vd: một biến hoặc danh sách), nếu không có cơ chế đồng bộ hóa (synchronization), thì rất dễ gây race condition → kết quả sai, rò rỉ bộ nhớ, hoặc crash
+    - Giải pháp:
+        - GIL được tạo ra để bảo vệ các thao tác không an toàn, như tăng/giảm bộ đếm tham chiếu, đảm bảo rằng chỉ một luồng được thực thi mã Python tại một thời điểm
+    - Dùng multiprocessing: Thư viện multiprocessing tạo ra nhiều processes (tiến trình) riêng biệt, mỗi tiến trình có GIL riêng. Phù hợp cho tác vụ CPU-bound.
+    - Dùng async/await (asynchronous programming): Hiệu quả cho tác vụ I/O-bound mà không cần dùng nhiều threads.
+
+| Tiêu chí            | CPU-bound                         | I/O-bound                               |
+| ------------------- | --------------------------------- | --------------------------------------- |
+| Tài nguyên giới hạn | CPU                               | Thiết bị I/O (disk, network...)         |
+| Thời gian "chờ"     | Ít hoặc không có                  | Nhiều thời gian chờ dữ liệu phản hồi    |
+| Xử lý song song     | Dùng `multiprocessing` hiệu quả   | Dùng `asyncio` / `async/await` hiệu quả |
+| Bị GIL ảnh hưởng?   | Có (trừ khi dùng multiprocessing) | Ít (vì thời gian chờ có thể nhường GIL) |
+
+- :white_check_mark: work with .wav
+    - Model use wav instead mp3 because(size of mp3 < wav): chất lượng cao hơn, không nén -> tốt trong huấn luyện, tổng hợp, xử lý tín hiệu	
 - LLm just smart and take workflow by prompt?
 - ai generate documents
 - mono repo: best practices, why choose? pros / cons
 - i want do more about prompting, and practices more about ai :D
 - i want do more about prompting, and practices more about ai :))
-- Which steps when pushing private key in git host
+- :white_check_mark: Which steps when pushing private key in git host
+    - Xóa key khỏi Git history with git fitter
+    - Cách hoạt động kỹ thuật bên trong:
+        - Quét toàn bộ commit trong lịch sử Git (từ commit đầu tiên đến hiện tại)
+        - Với mỗi commit:
+        - Bóc tách toàn bộ nội dung của commit (file, thư mục, metadata…)
+        - Nếu file private_key.pem tồn tại → loại bỏ nó
+        - Commit mới được tạo ra, có nội dung giống commit cũ nhưng KHÔNG có file đó
+        - Gán lại toàn bộ lịch sử: các commit mới được nối lại giống như lịch sử gốc
+        - Tạo một repo mới trong thư mục .git với lịch sử sạch → thay thế repo cũ
 - realtime remix
 - how Elastic search sync into MongoDB?
 - how nrock and zerotrust cloudfare work, for private IP into public IP
 - dbt, Spark, Airflow technical debt
-- cấu trúc dữ liệu không khóa (lockless data structures) LÀ GÌ?
+- :white_check_mark: cấu trúc dữ liệu không khóa (lockless data structures) LÀ GÌ?
+    - Cấu trúc dữ liệu không khóa (lockless data structures) là những cấu trúc dữ liệu được thiết kế để cho phép nhiều luồng (threads) truy cập và thao tác đồng thời mà không cần sử dụng cơ chế khóa (lock) như mutex hay semaphore để bảo vệ sự đồng bộ.
+- các thuật toán liên quan cấu trúc dữ liệu không khóa (lockless data structures)
 
 # Lessons learned
 

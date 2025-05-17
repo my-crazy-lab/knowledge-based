@@ -103,6 +103,7 @@
     - Reverse Proxy Configuration 
     - Content Security Policy (CSP)
 - :white_check_mark: [Build encode/decode base64 with non blocking patternn](./1.0.0/r85a1o.md)
+- MEteor call before pubsub is better than pure pubsub?
 - python là ngôn ngữ single thread hay multi thread?
 - work with .wav
 - LLm just smart and take workflow by prompt?

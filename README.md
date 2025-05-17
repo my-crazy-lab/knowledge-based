@@ -104,6 +104,8 @@
     - Content Security Policy (CSP)
 - :white_check_mark: [Build encode/decode base64 with non blocking patternn](./1.0.0/r85a1o.md)
 - python là ngôn ngữ single thread hay multi thread?
+- work with .wav
+- LLm just smart and take workflow by prompt?
 - ai generate documents
 - mono repo: best practices, why choose? pros / cons
 - i want do more about prompting, and practices more about ai :D
@@ -118,8 +120,3 @@
 # Lessons learned
 
 # Tech market
-
-### notes 
-
-- LLm just smart and take workflow by prompt?
-- work with .wav

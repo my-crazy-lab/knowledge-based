@@ -127,11 +127,9 @@
 
 - :white_check_mark: work with .wav
     - Model use wav instead mp3 because(size of mp3 < wav): chất lượng cao hơn, không nén -> tốt trong huấn luyện, tổng hợp, xử lý tín hiệu	
-- LLm just smart and take workflow by prompt?
+- :white_check_mark: LLm just smart and take workflow by prompt?
 - ai generate documents
-- mono repo: best practices, why choose? pros / cons
-- i want do more about prompting, and practices more about ai :D
-- i want do more about prompting, and practices more about ai :))
+- :white_check_mark: mono repo: best practices, why choose? pros / cons
 - :white_check_mark: Which steps when pushing private key in git host
     - Xóa key khỏi Git history with git fitter
     - Cách hoạt động kỹ thuật bên trong:
@@ -143,8 +141,11 @@
         - Gán lại toàn bộ lịch sử: các commit mới được nối lại giống như lịch sử gốc
         - Tạo một repo mới trong thư mục .git với lịch sử sạch → thay thế repo cũ
 - realtime remix
-- how Elastic search sync into MongoDB?
-- how nrock and zerotrust cloudfare work, for private IP into public IP
+- :white_check_mark: how Elastic search sync into MongoDB?
+- :white_check_mark: how nrock and zerotrust cloudfare work, for private IP into public IP
+    - Long-lived tunnel = kết nối TCP từ máy bạn mở ra ngoài, giữ sống liên tục.
+    - Server ngrok không cần gọi vào, chỉ gửi dữ liệu ngược lại qua đường đã mở.
+    - Nhờ đó, bạn có thể expose server local ra Internet mà không cần public IP hay mở port.
 - dbt, Spark, Airflow technical debt
 - :white_check_mark: cấu trúc dữ liệu không khóa (lockless data structures) LÀ GÌ?
     - Cấu trúc dữ liệu không khóa (lockless data structures) là những cấu trúc dữ liệu được thiết kế để cho phép nhiều luồng (threads) truy cập và thao tác đồng thời mà không cần sử dụng cơ chế khóa (lock) như mutex hay semaphore để bảo vệ sự đồng bộ.

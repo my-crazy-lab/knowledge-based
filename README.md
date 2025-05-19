@@ -30,12 +30,6 @@
 - :white_check_mark: gemini for google workspace prompting guide 101
     - [1 :arrow_right: DONE](./1.0.0/9w5kku.md)
 
-# System design
-
-# AI ML
-
-# Algorithm
-
 # Mobile
 
 ## React Native
@@ -60,15 +54,11 @@
     - [Some news api react](https://react.dev/reference/react/apis)
     - [Some news api react-dom](https://react.dev/reference/react-dom)
 
-# Game
-
 # Database
 
 ## SQL
 
 - [Anatomy Of A SQL Engine](./1.0.0/zc8ms2.md)
-
-# OS
 
 # Server (BE)
 
@@ -76,14 +66,6 @@
 
 - **`y5s9eb`**
     - [Compare web stream and nodejs stream](https://betterstack.com/community/guides/scaling-nodejs/nodejs-streams-vs-web-streams-api/)
-
-# Desktop app
-
-# Blockchain
-
-# Dev Sec ML Ops
-
-# Cyber security
 
 # English
 
@@ -175,3 +157,24 @@
 - realtime remix
 - ai generate documents
 
+# Hard working
+
+- [Trí tuệ nhân tạo nâng cao](./1.0.0/qrw1qq.md)
+
+# System design
+
+# AI ML
+
+# Algorithm
+
+# Game
+
+# OS
+
+# Desktop app
+
+# Blockchain
+
+# Dev Sec ML Ops
+
+# Cyber security

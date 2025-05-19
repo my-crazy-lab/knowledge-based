@@ -26,7 +26,7 @@
 - :white_check_mark: Multiplayer Game Programming: Architecting Networked Games
     - [Done](./1.0.0/d17bqf.md)
 - eCommerce in the Cloud
-    - [1 :arrow_right: 207](./1.0.0/jmzd7s.md)
+    - [1 :arrow_right: 219](./1.0.0/jmzd7s.md) Assigning customers to a single data center
 - :white_check_mark: gemini for google workspace prompting guide 101
     - [1 :arrow_right: DONE](./1.0.0/9w5kku.md)
 
@@ -95,6 +95,10 @@
 
 # Problem around me
 
+- Meteor call before pubsub is better than pure pubsub?
+- [các thuật toán liên quan cấu trúc dữ liệu không khóa (lockless data structures)](./1.0.0/byxj6f.md)
+- :white_check_mark: Cac model hien tai khac nhau nhu the nao
+- :white_check_mark: logic trong prompt va logic code trong orchestrator?
 - :white_check_mark: [MongoDB questions checklist](./1.0.0/d886qg.md)
 - :white_check_mark: [Best practices work with file transfer?](./1.0.0/lsdy45.md)
 - :white_check_mark: why the redirect work in chrome, but not work in safari and opera
@@ -103,7 +107,6 @@
     - Reverse Proxy Configuration 
     - Content Security Policy (CSP)
 - :white_check_mark: [Build encode/decode base64 with non blocking patternn](./1.0.0/r85a1o.md)
-- Meteor call before pubsub is better than pure pubsub?
 - :white_check_mark: python là ngôn ngữ single thread hay multi thread?
     - GIL – Global Interpreter Lock Python (CPython – trình thông dịch phổ biến nhất của Python) có một cơ chế gọi là GIL (Global Interpreter Lock). GIL chỉ cho phép một thread thực thi mã Python tại một thời điểm, ngay cả khi có nhiều luồng đang chạy.
     → Điều này có nghĩa là:
@@ -128,7 +131,6 @@
 - :white_check_mark: work with .wav
     - Model use wav instead mp3 because(size of mp3 < wav): chất lượng cao hơn, không nén -> tốt trong huấn luyện, tổng hợp, xử lý tín hiệu	
 - :white_check_mark: LLm just smart and take workflow by prompt?
-- ai generate documents
 - :white_check_mark: mono repo: best practices, why choose? pros / cons
 - :white_check_mark: Which steps when pushing private key in git host
     - Xóa key khỏi Git history with git fitter
@@ -140,17 +142,36 @@
         - Commit mới được tạo ra, có nội dung giống commit cũ nhưng KHÔNG có file đó
         - Gán lại toàn bộ lịch sử: các commit mới được nối lại giống như lịch sử gốc
         - Tạo một repo mới trong thư mục .git với lịch sử sạch → thay thế repo cũ
-- realtime remix
 - :white_check_mark: how Elastic search sync into MongoDB?
 - :white_check_mark: how nrock and zerotrust cloudfare work, for private IP into public IP
     - Long-lived tunnel = kết nối TCP từ máy bạn mở ra ngoài, giữ sống liên tục.
     - Server ngrok không cần gọi vào, chỉ gửi dữ liệu ngược lại qua đường đã mở.
     - Nhờ đó, bạn có thể expose server local ra Internet mà không cần public IP hay mở port.
-- dbt, Spark, Airflow technical debt
 - :white_check_mark: cấu trúc dữ liệu không khóa (lockless data structures) LÀ GÌ?
     - Cấu trúc dữ liệu không khóa (lockless data structures) là những cấu trúc dữ liệu được thiết kế để cho phép nhiều luồng (threads) truy cập và thao tác đồng thời mà không cần sử dụng cơ chế khóa (lock) như mutex hay semaphore để bảo vệ sự đồng bộ.
-- các thuật toán liên quan cấu trúc dữ liệu không khóa (lockless data structures)
 
 # Lessons learned
 
-# Tech market
+- https://muratbuffalo.blogspot.com/2025/01/use-of-time-in-distributed-databases_14.html?ref=dailydev
+- https://blog.omega-prime.co.uk/2025/04/11/ai-lab-business/
+- https://www.iea.org/reports/energy-and-ai
+- https://philiplaine.com/posts/getting-forked-by-microsoft/
+- https://nextcloud.com/blog/nextcloud-android-file-upload-issue-google/
+- https://www.thecoder.cafe/p/complex-systems
+
+# Technical market
+
+- https://spiraldb.com/post/so-you-want-to-use-object-storage
+- https://github.com/matthewp/views-the-hard-way
+- https://pramodkumbhar.com/2023/11/pahole-to-analyz-data-structure-memory-layouts-with-ease/
+- https://cyolo.io/blog/leak-and-seek-a-go-runtime-mystery
+- https://pscanf.com/s/341/
+- https://adamfaulkner.github.io/binary_formats_are_better_than_json_in_browsers.html
+- https://www.warpstream.com/blog/taking-out-the-trash-garbage-collection-of-object-storage-at-massive-scale
+
+# Technical debt
+
+- dbt, Spark, Airflow technical
+- realtime remix
+- ai generate documents
+

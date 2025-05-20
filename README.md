@@ -26,7 +26,7 @@
 - :white_check_mark: Multiplayer Game Programming: Architecting Networked Games
     - [Done](./1.0.0/d17bqf.md)
 - eCommerce in the Cloud
-    - [1 :arrow_right: 219](./1.0.0/jmzd7s.md) Assigning customers to a single data center
+    - [1 :arrow_right: 235](./1.0.0/jmzd7s.md) chapter 11
 - :white_check_mark: gemini for google workspace prompting guide 101
     - [1 :arrow_right: DONE](./1.0.0/9w5kku.md)
 
@@ -78,7 +78,7 @@
 # Problem around me
 
 - Meteor call before pubsub is better than pure pubsub?
-- [các thuật toán liên quan cấu trúc dữ liệu không khóa (lockless data structures)](./1.0.0/byxj6f.md)
+- :white_check_mark: [các thuật toán liên quan cấu trúc dữ liệu không khóa (lockless data structures)](./1.0.0/byxj6f.md)
 - :white_check_mark: Cac model hien tai khac nhau nhu the nao
 - :white_check_mark: logic trong prompt va logic code trong orchestrator?
 - :white_check_mark: [MongoDB questions checklist](./1.0.0/d886qg.md)

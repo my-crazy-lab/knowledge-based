@@ -6,22 +6,26 @@
 
 # Các mức độ không khóa
 
-Obstruction-free: Đảm bảo tiến trình nếu không có sự cạnh tranh từ các luồng khác.
+- Obstruction-free: Đảm bảo tiến trình nếu không có sự cạnh tranh từ các luồng khác.
+- Lock-free: Đảm bảo rằng ít nhất một luồng sẽ tiến triển trong một khoảng thời gian hữu hạn.
+- Wait-free: Đảm bảo rằng tất cả các luồng sẽ hoàn thành trong một số bước hữu hạn
 
-Lock-free: Đảm bảo rằng ít nhất một luồng sẽ tiến triển trong một khoảng thời gian hữu hạn.
+| Tính chất            | Obstruction-Free         | Lock-Free           | Wait-Free         |
+| -------------------- | ------------------------ | ------------------- | ----------------- |
+| Có tiến triển không? | ✅ (nếu không tranh chấp) | ✅ (ít nhất 1 luồng) | ✅ (mọi luồng)     |
+| Chống deadlock       | ✅                        | ✅                   | ✅                 |
+| Chống starvation     | ❌                        | ❌                   | ✅                 |
+| Hiệu suất            | Trung bình               | Cao                 | Thấp / khó tối ưu |
+| Dễ triển khai        | Dễ                       | Trung bình          | Rất khó           |
 
-Wait-free: Đảm bảo rằng tất cả các luồng sẽ hoàn thành trong một số bước hữu hạn
 
-# 📚 Tài liệu và nguồn tham khảo
+# Pros and solutions
 
-Baeldung: Giới thiệu về lập trình không khóa với các ví dụ trong Java.
-
-LWN.net: Bài viết về các thuật toán không khóa trong nhân Linux.
-
-Wikipedia: Thông tin tổng quan về các thuật toán không khóa và các phép toán nguyên tử như CAS.
-
-GitHub - DNedic/lockfree: Bộ sưu tập các cấu trúc dữ liệu không khóa như hàng đợi, ngăn xếp, v.v.
-
-University of Cambridge: Nghiên cứu về các cấu trúc dữ liệu không khóa như skip lists, cây tìm kiếm nhị phân, cây đỏ-đen.
-
-https://hub.paper-checker.com/blog/efficient-design-of-lock-free-data-structures-advanced-insights/?utm_source=chatgpt.com
+| Vấn đề        | Giải pháp chính                                   |
+| ------------- | ------------------------------------------------- |
+| **ABA**       | - Dùng version/timestamp (AtomicStampedReference) |
+|               | - Tagged pointers / Pointer + version struct      |
+|               | - Dùng thư viện lock-free đã xử lý ABA            |
+| **Spin loop** | - Backoff strategy (sleep/yield/PAUSE)            |
+|               | - Cấu trúc dữ liệu giảm tranh chấp                |
+|               | - Hybrid: CAS + fallback mutex                    |

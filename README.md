@@ -25,8 +25,8 @@
     - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
 - :white_check_mark: Multiplayer Game Programming: Architecting Networked Games
     - [Done](./1.0.0/d17bqf.md)
-- eCommerce in the Cloud
-    - [1 :arrow_right: 235](./1.0.0/jmzd7s.md) chapter 11
+- :white_check_mark: eCommerce in the Cloud
+    - [1 :arrow_right: DONE](./1.0.0/jmzd7s.md) chapter 11
 - :white_check_mark: gemini for google workspace prompting guide 101
     - [1 :arrow_right: DONE](./1.0.0/9w5kku.md)
 
@@ -77,12 +77,19 @@
 
 # Problem around me
 
-- Explain: `nohup ollama pull llama4:latest > ollama_pull.log 2>&1 &` & `tail -f ollama.log`
-- more details: `/etc/systemd/system/ollama.service`
+- tai sao enable secure dns co the su dung medium? cloufare 1.1.1.1 tren browser la gi?
 - Kafka 4.0 có gì mới? Thay thế zookeeper có tăng performance?
 - Nếu không consistency, có nên dùng Kafka?
 - pnpm update: https://github.com/pnpm/pnpm/releases?page=3
+- compare peerDependencies & dependencies? when conflict?
 - Meteor call before pubsub is better than pure pubsub?
+- write 5 agentic ai pattern for real use case.
+- use langchain for know what is advantage
+- Try more model or tools AIML
+- Optimize STT TTS and trace the bug in App: Audio detect bad in some cases (when demo)
+- Write function check GPU when run model.
+- :white_check_mark: Explain: `nohup ollama pull llama4:latest > ollama_pull.log 2>&1 &` & `tail -f ollama.log`
+- :white_check_mark: more details: `/etc/systemd/system/ollama.service`
 - :white_check_mark: [các thuật toán liên quan cấu trúc dữ liệu không khóa (lockless data structures)](./1.0.0/byxj6f.md)
 - :white_check_mark: Cac model hien tai khac nhau nhu the nao
 - :white_check_mark: logic trong prompt va logic code trong orchestrator?

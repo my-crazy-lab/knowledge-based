@@ -77,6 +77,8 @@
 
 # Problem around me
 
+- Explain: `nohup ollama pull llama4:latest > ollama_pull.log 2>&1 &` & `tail -f ollama.log`
+- more details: `/etc/systemd/system/ollama.service`
 - Meteor call before pubsub is better than pure pubsub?
 - :white_check_mark: [các thuật toán liên quan cấu trúc dữ liệu không khóa (lockless data structures)](./1.0.0/byxj6f.md)
 - :white_check_mark: Cac model hien tai khac nhau nhu the nao

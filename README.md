@@ -1,5 +1,7 @@
 # Books
 
+- Solution Architecture handbook
+    - [1 :arrow_right: 43](./1.0.0/bsyxxk.md)
 - Data Science for Business
     - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
     - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)
@@ -19,10 +21,10 @@
     - [163 :arrow_right: 201](./1.0.0/j4kegr.md)
     - [202 :arrow_right: done](./1.0.0/c7dq63.md)
     - [Summary](./1.0.0/wfu2jf.md)
-- :white_check_mark: Machine Learning Yearning (Vi)
-    - [1 :arrow_right: 60](./1.0.0/w3y60i.md)
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
+- :white_check_mark: Machine Learning Yearning (Vi)
+    - [1 :arrow_right: 60](./1.0.0/w3y60i.md)
 - :white_check_mark: Multiplayer Game Programming: Architecting Networked Games
     - [Done](./1.0.0/d17bqf.md)
 - :white_check_mark: eCommerce in the Cloud
@@ -77,17 +79,23 @@
 
 # Problem around me
 
-- tai sao enable secure dns co the su dung medium? cloufare 1.1.1.1 tren browser la gi?
-- Kafka 4.0 có gì mới? Thay thế zookeeper có tăng performance?
-- Nếu không consistency, có nên dùng Kafka?
-- pnpm update: https://github.com/pnpm/pnpm/releases?page=3
-- compare peerDependencies & dependencies? when conflict?
-- Meteor call before pubsub is better than pure pubsub?
-- write 5 agentic ai pattern for real use case.
-- use langchain for know what is advantage
+## Doer
+
 - Try more model or tools AIML
+- use langchain for know what is advantage
+- Meteor call before pubsub is better than pure pubsub?
 - Optimize STT TTS and trace the bug in App: Audio detect bad in some cases (when demo)
 - Write function check GPU when run model.
+- write 5 agentic ai pattern for real use case.
+
+## Reader
+
+- doc sach prompt sep gui
+- Cach hieu cac thong so cua MontiAPM 
+- tai sao enable secure dns co the su dung medium? cloufare 1.1.1.1 tren browser la gi?
+- :white_check_mark: pnpm update: https://github.com/pnpm/pnpm/releases?page=3
+- :white_check_mark: compare peerDependencies & dependencies? when conflict?
+- :white_check_mark: [Kafka 4.0 có gì mới?](./1.0.0/akmmi6.md)
 - :white_check_mark: Explain: `nohup ollama pull llama4:latest > ollama_pull.log 2>&1 &` & `tail -f ollama.log`
 - :white_check_mark: more details: `/etc/systemd/system/ollama.service`
 - :white_check_mark: [các thuật toán liên quan cấu trúc dữ liệu không khóa (lockless data structures)](./1.0.0/byxj6f.md)
@@ -162,6 +170,7 @@
 - https://pscanf.com/s/341/
 - https://adamfaulkner.github.io/binary_formats_are_better_than_json_in_browsers.html
 - https://www.warpstream.com/blog/taking-out-the-trash-garbage-collection-of-object-storage-at-massive-scale
+- https://nghiant3223.github.io/2025/04/15/go-scheduler.html
 
 # Technical debt
 

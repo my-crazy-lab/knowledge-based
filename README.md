@@ -2,6 +2,8 @@
 
 - Solution Architecture handbook
     - [1 :arrow_right: 43](./1.0.0/bsyxxk.md)
+- Prompt Engineering for LLMs
+    - [1 :arrow_right: 63](./1.0.0/u57umk.md) Chapter 3
 - Data Science for Business
     - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
     - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)
@@ -86,13 +88,13 @@
 - Meteor call before pubsub is better than pure pubsub?
 - Optimize STT TTS and trace the bug in App: Audio detect bad in some cases (when demo)
 - Write function check GPU when run model.
-- write 5 agentic ai pattern for real use case.
+- :white_check_mark: write 5 agentic ai pattern for real use case.
 
 ## Reader
 
-- doc sach prompt sep gui
 - Cach hieu cac thong so cua MontiAPM 
-- tai sao enable secure dns co the su dung medium? cloufare 1.1.1.1 tren browser la gi?
+- :white_check_mark: How process bar work? how it detect the workload to estimate time?
+- :white_check_mark: tai sao enable secure dns co the su dung medium? cloufare 1.1.1.1 tren browser la gi?
 - :white_check_mark: pnpm update: https://github.com/pnpm/pnpm/releases?page=3
 - :white_check_mark: compare peerDependencies & dependencies? when conflict?
 - :white_check_mark: [Kafka 4.0 có gì mới?](./1.0.0/akmmi6.md)
@@ -171,6 +173,7 @@
 - https://adamfaulkner.github.io/binary_formats_are_better_than_json_in_browsers.html
 - https://www.warpstream.com/blog/taking-out-the-trash-garbage-collection-of-object-storage-at-massive-scale
 - https://nghiant3223.github.io/2025/04/15/go-scheduler.html
+- https://www.seangoedecke.com/limitations-of-text-diffusion-models/
 
 # Technical debt
 

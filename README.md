@@ -92,6 +92,8 @@
 
 ## Reader
 
+- su dung voice co can Speech to text? Hay co model co the hieu audio va generate sang text? tuong tu nhu Vision language mode?
+- 
 - Cach hieu cac thong so cua MontiAPM 
 - :white_check_mark: How process bar work? how it detect the workload to estimate time?
 - :white_check_mark: tai sao enable secure dns co the su dung medium? cloufare 1.1.1.1 tren browser la gi?

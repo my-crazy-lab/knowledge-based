@@ -3,7 +3,7 @@
 - Solution Architecture handbook
     - [1 :arrow_right: 43](./1.0.0/bsyxxk.md)
 - Prompt Engineering for LLMs
-    - [1 :arrow_right: 63](./1.0.0/u57umk.md) Chapter 3
+    - [1 :arrow_right: 93](./1.0.0/u57umk.md) Zooming In to the Feedforward Pass
 - Data Science for Business
     - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
     - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)
@@ -162,6 +162,7 @@
 - https://philiplaine.com/posts/getting-forked-by-microsoft/
 - https://nextcloud.com/blog/nextcloud-android-file-upload-issue-google/
 - https://www.thecoder.cafe/p/complex-systems
+- https://blog.alexewerlof.com/p/when-a-team-is-too-big
 
 # Technical market
 

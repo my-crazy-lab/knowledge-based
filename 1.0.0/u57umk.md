@@ -25,3 +25,10 @@
     > Sự song song cho phép tăng tốc độ, nhưng cách tính toán theo hình tam giác này sẽ bị gián đoạn khi mô hình chuyển từ việc đọc lời nhắc (prompt) sang việc tạo ra phần hoàn thành (completion). Mô hình phải chờ cho đến khi một token được xử lý hoàn toàn trước khi chọn token tiếp theo và tính toán trạng thái đầu tiên của "minibrain" mới. Đây là lý do tại sao LLMs nhanh hơn rất nhiều trong việc đọc qua một lời nhắc dài so với việc tạo ra một phần hoàn thành dài. 
 - chỉ đọc qua văn bản một lần và không thể nhìn lại.
 - Vì vậy, trong khi các "minibrains" đang xử lý đoạn văn một lần duy nhất, họ không biết rằng đặc điểm quan trọng mà họ nên tách biệt là số lượng từ, vì yêu cầu đó xuất hiện dưới văn bản của chương. Họ đang bận rộn xem xét các ý nghĩa ngữ nghĩa, tông và phong cách, cùng với vô vàn đặc điểm bề ngoài, và không dành sự chú ý đầy đủ cho điều duy nhất mà cuối cùng sẽ quan trọng. Đó là lý do tại sao thứ tự là rất quan trọng trong việc thiết kế yêu cầu - nó có thể dễ dàng tạo ra sự khác biệt giữa một yêu cầu hoạt động và một yêu cầu thất bại
+
+# Chat & Complete
+
+- Khi mô hình được điều chỉnh mạnh cho vai trò trợ lý ảo, nó có thể mất dần hiệu quả ở những tác vụ khác.
+- Nhiều mô hình LLM không công bố rõ dữ liệu huấn luyện, để tránh bị khai thác (ví dụ: jailbreak).
+Nhưng bạn vẫn có thể hỏi trực tiếp mô hình về loại tài liệu mà nó quen thuộc.
+- 

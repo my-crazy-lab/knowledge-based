@@ -3,7 +3,7 @@
 - Solution Architecture handbook
     - [1 :arrow_right: 43](./1.0.0/bsyxxk.md)
 - Prompt Engineering for LLMs
-    - [1 :arrow_right: 93](./1.0.0/u57umk.md) Zooming In to the Feedforward Pass
+    - [1 :arrow_right: 125](./1.0.0/u57umk.md) Lexical retrieval
 - Data Science for Business
     - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
     - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)

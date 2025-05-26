@@ -94,6 +94,7 @@
 - Mr. Dung
     - thích học cái mới, cái khó, thích nhiều roles lạ và quan trọng, nhưng không tập trung vào 1 major, có đi sai không? Như Mr Dung có thể làm nhiều role dựa trên kinh nghiệm trước đó, nhưng  tỷ lệ đạt được có cao cho số đông, hay cần cơ hội nhiều?
     - không biêt Mr Dung suy nghĩ gì khi cũng khá thực tế, quan tam tới tiền, và chức vụ, cũng như chấp nhận sự bất lực của bản thân như là tới 40 mà cũng chưa làm chủ, ấp ủ nhưng hình như chần chừ?
+- và mình nhận ra là năng lượng tinh thần + cam xuc tới từ những người giỏi thế này nhiều hơn? bai hoc la gi?
 
 ## Doer
 

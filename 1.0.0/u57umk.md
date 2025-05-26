@@ -31,4 +31,8 @@
 - Khi mô hình được điều chỉnh mạnh cho vai trò trợ lý ảo, nó có thể mất dần hiệu quả ở những tác vụ khác.
 - Nhiều mô hình LLM không công bố rõ dữ liệu huấn luyện, để tránh bị khai thác (ví dụ: jailbreak).
 Nhưng bạn vẫn có thể hỏi trực tiếp mô hình về loại tài liệu mà nó quen thuộc.
-- 
+
+#  Prompt Content
+
+- Mô hình embedding không phải là mô hình ngôn ngữ lớn (LLM). Mô hình embedding thường dựa trên kiến trúc Transformer giống LLM, nhưng thay vì dự đoán token tiếp theo, nó tạo ra vector. Cụ thể, mô hình embedding được huấn luyện đặc biệt qua quá trình gọi là contrastive pre-training để những đoạn văn liên quan có vector gần nhau, còn những đoạn không liên quan có vector cách xa.
+

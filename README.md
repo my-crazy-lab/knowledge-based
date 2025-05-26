@@ -3,7 +3,7 @@
 - Solution Architecture handbook
     - [1 :arrow_right: 43](./1.0.0/bsyxxk.md)
 - Prompt Engineering for LLMs
-    - [1 :arrow_right: 125](./1.0.0/u57umk.md) Lexical retrieval
+    - [1 :arrow_right: 165](./1.0.0/u57umk.md) Taming the Model
 - Data Science for Business
     - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
     - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)
@@ -84,15 +84,15 @@
 ## Doer
 
 - Try more model or tools AIML
-- use langchain for know what is advantage
-- Meteor call before pubsub is better than pure pubsub?
-- Optimize STT TTS and trace the bug in App: Audio detect bad in some cases (when demo)
-- Write function check GPU when run model.
-- :white_check_mark: write 5 agentic ai pattern for real use case.
 
 ## Reader
 
-- Cách xử lý tiếng ồn hoặc các kỹ thậut lọc âm trong speech to text?
+- Meteor call before pubsub is better than pure pubsub?
+- :white_check_mark: Optimize STT TTS and trace the bug in App: Audio detect bad in some cases (when demo)
+- :white_check_mark: Cách xử lý tiếng ồn hoặc các kỹ thậut lọc âm trong speech to text?
+- :white_check_mark: Write function check GPU when run model.
+- :white_check_mark: write 5 agentic ai pattern for real use case.
+- :white_check_mark: langchain for know what is advantage
 - :white_check_mark: su dung voice co can Speech to text? Hay co model co the hieu audio va generate sang text? tuong tu nhu Vision language mode?
 - :white_check_mark: Cach hieu cac thong so cua MontiAPM 
 - :white_check_mark: How process bar work? how it detect the workload to estimate time?

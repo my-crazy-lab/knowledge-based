@@ -81,13 +81,28 @@
 
 # Problem around me
 
+## Thinker
+
+- Khi nào học cần hành
+- hôm nay bản thân đã lười và có thể chơi, nhưng xem list video mình note lại, khá hay dễ nghe và hứng thú về database của mr huy hết hơn 2 tiêng :))), vậy đây là trick và có thể tái sử dụng cho tương lai?
+- và có những thứ rất dễ tiếp thu hơn các thứ còn lại, đâu là key?
+- Mr. Huy
+    - nhìn năng lượng mr huy truyền đạt, mới nhận ra có thể cách tiếp thu kiến thức và tư duy vấn đề cũng như chiến lược tư duy để phát triển bản thân sẽ rất khác nhau, mình cần học hỏi gì từ năng luong ấy
+    - và kiến thức rất hệ thống, cực kỳ logic và rõ ràng, tư duy hệ thống này giúp bản thân học nhanh nhớ lâu đúng không? học hỏi được gì?
+    - con đường sự nghiệp giải quyế nhiều bàn toán khó cho nhiều nơi -> experience + trải nghiệm cực kỳ nhiều -> mình rút ra được gì?
+    - có nên chuyên sâu db (không fomo :v)
+- Mr. Dung
+    - thích học cái mới, cái khó, thích nhiều roles lạ và quan trọng, nhưng không tập trung vào 1 major, có đi sai không? Như Mr Dung có thể làm nhiều role dựa trên kinh nghiệm trước đó, nhưng  tỷ lệ đạt được có cao cho số đông, hay cần cơ hội nhiều?
+    - không biêt Mr Dung suy nghĩ gì khi cũng khá thực tế, quan tam tới tiền, và chức vụ, cũng như chấp nhận sự bất lực của bản thân như là tới 40 mà cũng chưa làm chủ, ấp ủ nhưng hình như chần chừ?
+
 ## Doer
 
 - Try more model or tools AIML
 
-## Reader
+## Searcher
 
 - Meteor call before pubsub is better than pure pubsub?
+- Dung RAG nhung van khong dat ket qua mong muon khi documents nhieu va cau hoi cua User chi tiet
 - :white_check_mark: Optimize STT TTS and trace the bug in App: Audio detect bad in some cases (when demo)
 - :white_check_mark: Cách xử lý tiếng ồn hoặc các kỹ thậut lọc âm trong speech to text?
 - :white_check_mark: Write function check GPU when run model.

@@ -196,6 +196,7 @@
 - https://nextcloud.com/blog/nextcloud-android-file-upload-issue-google/
 - https://www.thecoder.cafe/p/complex-systems
 - https://blog.alexewerlof.com/p/when-a-team-is-too-big
+- https://www.allthingsdistributed.com/2025/05/just-make-it-scale-an-aurora-dsql-story.html
 
 # Technical market
 

@@ -108,7 +108,7 @@
 | 🌐 **Graph Neural Networks**              | Mô hình hóa người dùng – sản phẩm như đồ thị và học theo ngữ cảnh lân cận | PinSage (Pinterest), LightGCN, GraphRec                           |
 | 🧩 **Embedding học sâu**                  | Biểu diễn người dùng, item dưới dạng vector không gian ngữ nghĩa          | Word2Vec, Item2Vec, BERT embeddings (cho nội dung)                |
 | 🧭 **Context-aware Models**               | Tận dụng ngữ cảnh như thời gian, vị trí, thiết bị, lịch sử                | DIN, DIEN (Alibaba), Tại thời điểm click                          |
-| 🗣️ **Natural Language Processing (NLP)** | Hiểu nội dung mô tả sản phẩm, review người dùng                           | Dùng BERT, GPT để trích rút đặc trưng nội dung gợi ý              |
+| 🗣️ **Natural Language Processing (NLP)**  | Hiểu nội dung mô tả sản phẩm, review người dùng                           | Dùng BERT, GPT để trích rút đặc trưng nội dung gợi ý              |
 | 🧠 **Knowledge Graph + Reasoning**        | Sử dụng ontology và tri thức liên kết để gợi ý có logic                   | Gợi ý sản phẩm liên quan có quan hệ tri thức (như Ontology-based) |
 | 🔄 **Meta-learning / Few-shot**           | Học nhanh từ dữ liệu ít – cho user mới hoặc item mới                      | Cold-start recommendation                                         |
 | 🧪 **Causal Inference**                   | Hiểu nguyên nhân thay vì chỉ dựa vào tương quan                           | Phân biệt gợi ý tốt do nội dung hay chỉ do vị trí hiển thị        |
@@ -119,7 +119,7 @@
 | ----------------------------- | ------------------------------------------------------------ |
 | 🧬 **Cá thể (chromosome)**    | Một lịch biểu cụ thể (gán job cho thời gian/tài nguyên)      |
 | 🔄 **Lai ghép (crossover)**   | Trộn 2 lịch để tạo lịch mới                                  |
-| ✂️ **Đột biến (mutation)**    | Đổi ngẫu nhiên 1 phần lịch để tránh local optimum            |
+| ✂️ **Đột biến (mutation)**     | Đổi ngẫu nhiên 1 phần lịch để tránh local optimum            |
 | 🧪 **Hàm đánh giá (fitness)** | Đo độ tốt của lịch (tổng thời gian, vi phạm ràng buộc, v.v.) |
 
 # Khai thác dữ liệu
@@ -131,11 +131,11 @@
 | --------------------- | ---------------------------------------- | -------------------------------------------- |
 | 🎯 Mục tiêu chính     | Khám phá tri thức ẩn, mẫu chưa biết      | Trả lời câu hỏi cụ thể, kiểm định giả thuyết |
 | 🧠 Tính phức tạp      | Cao, cần kiến thức ML, thống kê nâng cao | Vừa đến thấp, thường là thống kê cơ bản      |
-| ⚙️ Công cụ/kỹ thuật   | Decision Trees, SVM, Clustering, Apriori | Excel, Pandas, Tableau, Regression           |
+| ⚙️ Công cụ/kỹ thuật    | Decision Trees, SVM, Clustering, Apriori | Excel, Pandas, Tableau, Regression           |
 | 📈 Kết quả            | Mô hình, luật, nhóm, điểm bất thường     | Báo cáo, biểu đồ, bảng thống kê              |
 | 💡 Khả năng dự đoán   | Có (ML-based)                            | Ít hoặc không có                             |
 | 🧪 Tính khám phá      | Mạnh – phát hiện thông tin chưa biết     | Hạn chế – dựa trên giả thuyết sẵn có         |
-| 🛠️ Ứng dụng phổ biến | Phát hiện gian lận, gợi ý sản phẩm       | Phân tích doanh thu, hiệu suất nhân viên     |
+| 🛠️ Ứng dụng phổ biến  | Phát hiện gian lận, gợi ý sản phẩm       | Phân tích doanh thu, hiệu suất nhân viên     |
 
 ## CRISP-DM (Cross-Industry Standard Process for Data Mining) 
 
@@ -154,4 +154,3 @@ Goal:
 | 4. **Modeling**               | Áp dụng các thuật toán khai phá dữ liệu, thử nhiều mô hình để tìm mô hình tốt nhất.                                 |
 | 5. **Evaluation**             | Đánh giá mô hình theo tiêu chí đã đặt ra, kiểm tra xem mô hình có đáp ứng mục tiêu nghiệp vụ không.                 |
 | 6. **Deployment**             | Triển khai mô hình vào thực tế: báo cáo, hệ thống tự động, dashboard, hoặc tích hợp vào ứng dụng.                   |
-

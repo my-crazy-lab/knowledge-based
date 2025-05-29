@@ -113,6 +113,8 @@
 
 ## Searcher
 
+- Kafka deep diving: tai sao can, can khi nao
+- Suy nghi ve solution cho RAG va prompt workflow sau 1 ngay lam viec nhu 1 real engineer!
 - feature của torch và langgraph
 - define questions for jinja2
 - Meteor call before pubsub is better than pure pubsub?

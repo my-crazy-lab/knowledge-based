@@ -1,7 +1,7 @@
 # Books
 
 - Solution Architecture handbook
-    - [1 :arrow_right: 119](./1.0.0/bsyxxk.md)
+    - [1 :arrow_right: 158](./1.0.0/bsyxxk.md)
 - :white_check_mark: Prompt Engineering for LLMs
     - [1 :arrow_right: DONE](./1.0.0/u57umk.md)
 - Data Science for Business
@@ -113,12 +113,15 @@
 
 ## Searcher
 
-- SQL lưu trữ như thế nào? có giống noSQL? lưu theo row hay column
-- 1 package lớn có ảnh hưởng tốc độ truyền, như payload trong http body A = 2x B
+- feature của torch và langgraph
 - define questions for jinja2
 - Meteor call before pubsub is better than pure pubsub?
-- Dung RAG nhung van khong dat ket qua mong muon khi documents nhieu va cau hoi cua User chi tiet
-- List feature of Langgraph
+- :white_check_mark: Conda là gì
+- :white_check_mark: SQL lưu trữ như thế nào? có giống noSQL? lưu theo row hay column
+- :white_check_mark: Objects.keys | Object.values  co tinh la loop khong
+- :white_check_mark: 1 package lớn có ảnh hưởng tốc độ truyền, như payload trong http body A = 2x B
+- :white_check_mark: Dung RAG nhung van khong dat ket qua mong muon khi documents nhieu va cau hoi cua User chi tiet
+- :white_check_mark: List feature of Langgraph
 - :white_check_mark: Optimize STT TTS and trace the bug in App: Audio detect bad in some cases (when demo)
 - :white_check_mark: Cách xử lý tiếng ồn hoặc các kỹ thậut lọc âm trong speech to text?
 - :white_check_mark: Write function check GPU when run model.

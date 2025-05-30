@@ -83,7 +83,7 @@
 
 ## Thinker
 
-
+- tai sao ung dung cua consistent hashing la: redis, distributed database like cassanra, load bnnalancing, cdn
 - Khi nào học cần hành
 - hôm nay bản thân đã lười và có thể chơi, nhưng xem list video mình note lại, khá hay dễ nghe và hứng thú về database của mr huy hết hơn 2 tiêng :))), vậy đây là trick và có thể tái sử dụng cho tương lai?
 - và có những thứ rất dễ tiếp thu hơn các thứ còn lại, đâu là key?

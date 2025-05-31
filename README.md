@@ -1,7 +1,7 @@
 # Books
 
 - Solution Architecture handbook
-    - [1 :arrow_right: 209](./1.0.0/bsyxxk.md)
+    - [1 :arrow_right: 231](./1.0.0/bsyxxk.md) Building a data search
 - :white_check_mark: Prompt Engineering for LLMs
     - [1 :arrow_right: DONE](./1.0.0/u57umk.md)
 - Data Science for Business
@@ -83,6 +83,7 @@
 
 ## Thinker
 
+- ve ban dai hoc cua me va co VanAnh
 - tai sao ung dung cua consistent hashing la: redis, distributed database like cassanra, load bnnalancing, cdn
 - Khi nào học cần hành
 - hôm nay bản thân đã lười và có thể chơi, nhưng xem list video mình note lại, khá hay dễ nghe và hứng thú về database của mr huy hết hơn 2 tiêng :))), vậy đây là trick và có thể tái sử dụng cho tương lai?
@@ -113,6 +114,13 @@
 
 ## Searcher
 
+- Xử lý song song quy mô lớn (MPP – Massive Parallel Processing)
+- 3 loai luu tru: 
+    - Block
+    - File
+    - Object
+- Lưu trữ gắn trực tiếp (DAS) và băng từ
+- bảo vệ dữ liệu với RAID va cac loai
 - Kafka deep diving: tai sao can, can khi nao
 - Suy nghi ve solution cho RAG va prompt workflow sau 1 ngay lam viec nhu 1 real engineer!
 - feature của torch và langgraph
@@ -214,6 +222,8 @@
 - https://www.warpstream.com/blog/taking-out-the-trash-garbage-collection-of-object-storage-at-massive-scale
 - https://nghiant3223.github.io/2025/04/15/go-scheduler.html
 - https://www.seangoedecke.com/limitations-of-text-diffusion-models/
+- https://github.com/wzhudev/reverse-linear-sync-engine?tab=readme-ov-file
+- https://redixhumayun.github.io/systems/2024/01/03/atomics-and-concurrency.html
 
 # Technical debt
 

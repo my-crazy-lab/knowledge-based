@@ -1,7 +1,7 @@
 # Books
 
 - Solution Architecture handbook
-    - [1 :arrow_right: 231](./1.0.0/bsyxxk.md) Building a data search
+    - [1 :arrow_right: 261](./1.0.0/bsyxxk.md) Software vulnerabilities and secure code
 - :white_check_mark: Prompt Engineering for LLMs
     - [1 :arrow_right: DONE](./1.0.0/u57umk.md)
 - Data Science for Business

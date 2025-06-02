@@ -1,7 +1,7 @@
 # Books
 
 - Solution Architecture handbook
-    - [1 :arrow_right: 261](./1.0.0/bsyxxk.md) Software vulnerabilities and secure code
+    - [1 :arrow_right: 297](./1.0.0/bsyxxk.md) Software vulnerabilities and secure code
 - :white_check_mark: Prompt Engineering for LLMs
     - [1 :arrow_right: DONE](./1.0.0/u57umk.md)
 - Data Science for Business
@@ -83,6 +83,7 @@
 
 ## Thinker
 
+- Có 1 gap giữa high level techniques overview và người thực thi, với bản thân mình thực thi thì thấy nó cũng không cần thiết hoặc làm phức tạp hoá vấn đề, nhưng với góc nhìn của Software architecture thì khác, vậy thì ai đang sai hoặc cần cải thiện gì? người thực thi tuy ít kinh nghiệm nhưng họ hiểu rõ cái họ đang làm, nên cũng có thể đánh giá 1 khía cạnh architecture mà đúng không?
 - ve ban dai hoc cua me va co VanAnh
 - tai sao ung dung cua consistent hashing la: redis, distributed database like cassanra, load bnnalancing, cdn
 - Khi nào học cần hành
@@ -121,11 +122,11 @@
     - Object
 - Lưu trữ gắn trực tiếp (DAS) và băng từ
 - bảo vệ dữ liệu với RAID va cac loai
-- Kafka deep diving: tai sao can, can khi nao
-- Suy nghi ve solution cho RAG va prompt workflow sau 1 ngay lam viec nhu 1 real engineer!
-- feature của torch và langgraph
-- define questions for jinja2
 - Meteor call before pubsub is better than pure pubsub?
+- :white_check_mark: Kafka deep diving: tai sao can, can khi nao
+- :white_check_mark: Suy nghi ve solution cho RAG va prompt workflow sau 1 ngay lam viec nhu 1 real ai engineer
+- :white_check_mark: feature của torch
+- :white_check_mark: define questions for jinja2
 - :white_check_mark: Conda là gì
 - :white_check_mark: SQL lưu trữ như thế nào? có giống noSQL? lưu theo row hay column
 - :white_check_mark: Objects.keys | Object.values  co tinh la loop khong
@@ -224,6 +225,7 @@
 - https://www.seangoedecke.com/limitations-of-text-diffusion-models/
 - https://github.com/wzhudev/reverse-linear-sync-engine?tab=readme-ov-file
 - https://redixhumayun.github.io/systems/2024/01/03/atomics-and-concurrency.html
+- https://sakana.ai/dgm/
 
 # Technical debt
 

@@ -1,9 +1,7 @@
 # Books
 
 - Solution Architecture handbook
-    - [1 :arrow_right: 297](./1.0.0/bsyxxk.md) Software vulnerabilities and secure code
-- :white_check_mark: Prompt Engineering for LLMs
-    - [1 :arrow_right: DONE](./1.0.0/u57umk.md)
+    - [1 :arrow_right: 323](./1.0.0/bsyxxk.md) 
 - Data Science for Business
     - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
     - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)
@@ -16,15 +14,18 @@
     - [372 :arrow_right: 410](./1.0.0/o6n1x2.md)
     - [411 :arrow_right: ](./1.0.0/.md)
 - Refactoring - Improving the Design of Existing Code
-- Learning Domain-driven design
+    - 
+- The Web Application Hacker's Handbook
+    - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
+- :white_check_mark: Learning Domain-driven design
     - [29 :arrow_right: 58](./1.0.0/hxzy09.md)
     - [59 :arrow_right: 86](./1.0.0/qqo5s7.md)
     - [87 :arrow_right: 162](./1.0.0/sohwje.md)
     - [163 :arrow_right: 201](./1.0.0/j4kegr.md)
     - [202 :arrow_right: done](./1.0.0/c7dq63.md)
     - [Summary](./1.0.0/wfu2jf.md)
-- The Web Application Hacker's Handbook
-    - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
+- :white_check_mark: Prompt Engineering for LLMs
+    - [1 :arrow_right: DONE](./1.0.0/u57umk.md)
 - :white_check_mark: Machine Learning Yearning (Vi)
     - [1 :arrow_right: 60](./1.0.0/w3y60i.md)
 - :white_check_mark: Multiplayer Game Programming: Architecting Networked Games
@@ -115,14 +116,14 @@
 
 ## Searcher
 
-- Xử lý song song quy mô lớn (MPP – Massive Parallel Processing)
-- 3 loai luu tru: 
+- :white_check_mark: Meteor call before pubsub is better than pure pubsub?
+- :white_check_mark: Xử lý song song quy mô lớn (MPP – Massive Parallel Processing)
+- :white_check_mark: 3 loai luu tru: 
     - Block
     - File
     - Object
-- Lưu trữ gắn trực tiếp (DAS) và băng từ
-- bảo vệ dữ liệu với RAID va cac loai
-- Meteor call before pubsub is better than pure pubsub?
+- :white_check_mark: Lưu trữ gắn trực tiếp (DAS) và băng từ
+- :white_check_mark: bảo vệ dữ liệu với RAID va cac loai
 - :white_check_mark: Kafka deep diving: tai sao can, can khi nao
 - :white_check_mark: Suy nghi ve solution cho RAG va prompt workflow sau 1 ngay lam viec nhu 1 real ai engineer
 - :white_check_mark: feature của torch

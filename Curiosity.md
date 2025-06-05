@@ -5,6 +5,7 @@
 - Gốc rễ (nguyên lý, lịch sử hình thành)
 - Ứng dụng (thực tế, liên ngành)
 - Phản biện (ai nói ngược lại, tại sao?)
+- Rong (Overview)| Sau (Deep)
 
 ## Bộ câu hỏi gợi trí tò mò
 
@@ -15,9 +16,6 @@
 ## Thinker
 
 - Có 1 gap giữa high level techniques overview và người thực thi, với bản thân mình thực thi thì thấy nó cũng không cần thiết hoặc làm phức tạp hoá vấn đề, nhưng với góc nhìn của Software architecture thì khác, vậy thì ai đang sai hoặc cần cải thiện gì? người thực thi tuy ít kinh nghiệm nhưng họ hiểu rõ cái họ đang làm, nên cũng có thể đánh giá 1 khía cạnh architecture mà đúng không?
-- ve ban dai hoc cua me va co VanAnh
-- tai sao ung dung cua consistent hashing la: redis, distributed database like cassanra, load bnnalancing, cdn
-- Khi nào học cần hành
 - hôm nay bản thân đã lười và có thể chơi, nhưng xem list video mình note lại, khá hay dễ nghe và hứng thú về database của mr huy hết hơn 2 tiêng :))), vậy đây là trick và có thể tái sử dụng cho tương lai?
 - và có những thứ rất dễ tiếp thu hơn các thứ còn lại, đâu là key?
 - và mình nhận ra là năng lượng tinh thần + cam xuc tới từ những người giỏi thế này nhiều hơn? bai hoc la gi?
@@ -46,6 +44,7 @@
 
 ## Searcher
 
+- tai sao ung dung cua consistent hashing la: redis, distributed database like cassanra, load bnnalancing, cdn
 - docker compose run đồng thời? hoạt động bên dưới khi image build thành container name?
 - đọc source socket io testing chrome extension
 - đọc dozzle xem nó realtime logs ntn

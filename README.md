@@ -1,7 +1,7 @@
 # Books
 
 - Solution Architecture handbook
-    - [1 :arrow_right: 372](./1.0.0/bsyxxk.md) 
+    - [1 :arrow_right: 416](./1.0.0/bsyxxk.md) Defining the modernization approach
 - Data Science for Business
     - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
     - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)
@@ -90,6 +90,7 @@
 - https://www.thecoder.cafe/p/complex-systems
 - https://blog.alexewerlof.com/p/when-a-team-is-too-big
 - https://www.allthingsdistributed.com/2025/05/just-make-it-scale-an-aurora-dsql-story.html
+- https://www.swift.org/blog/swift-at-apple-migrating-the-password-monitoring-service-from-java/
 
 # Technical market
 
@@ -105,6 +106,9 @@
 - https://github.com/wzhudev/reverse-linear-sync-engine?tab=readme-ov-file
 - https://redixhumayun.github.io/systems/2024/01/03/atomics-and-concurrency.html
 - https://sakana.ai/dgm/
+- https://jimmyhmiller.com/machine-code-isnt-scary
+- https://localmess.github.io/
+- https://austinhenley.com/blog/coord2state.html
 
 # Technical debt
 

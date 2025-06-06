@@ -1,7 +1,5 @@
 # Books
 
-- Solution Architecture handbook
-    - [1 :arrow_right: 416](./1.0.0/bsyxxk.md) Defining the modernization approach
 - Data Science for Business
     - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
     - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)
@@ -17,6 +15,8 @@
     - 
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
+- :white_check_mark: Solution Architecture handbook
+    - [1 :arrow_right: DONE](./1.0.0/bsyxxk.md) Defining the modernization approach
 - :white_check_mark: Learning Domain-driven design
     - [29 :arrow_right: 58](./1.0.0/hxzy09.md)
     - [59 :arrow_right: 86](./1.0.0/qqo5s7.md)

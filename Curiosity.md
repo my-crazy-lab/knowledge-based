@@ -45,11 +45,11 @@
 ## Searcher
 
 - tai sao ung dung cua consistent hashing la: redis, distributed database like cassanra, load bnnalancing, cdn
-- docker compose run đồng thời? hoạt động bên dưới khi image build thành container name?
 - đọc source socket io testing chrome extension
-- đọc dozzle xem nó realtime logs ntn
-- cách tính(best practices) confidence trong AIML cho prompt engineer
-- ColBert?
+- :white_check_mark: đọc dozzle xem nó realtime logs ntn
+- :white_check_mark: docker compose run đồng thời? hoạt động bên dưới khi image build thành container name?
+- :white_check_mark: ColBert?
+- :white_check_mark: cách tính(best practices) confidence trong AIML cho prompt engineer
 - :white_check_mark: Meteor call before pubsub is better than pure pubsub?
 - :white_check_mark: Xử lý song song quy mô lớn (MPP – Massive Parallel Processing)
 - :white_check_mark: 3 loai luu tru: 

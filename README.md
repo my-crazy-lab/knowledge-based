@@ -1,5 +1,9 @@
 # Books
 
+- Building Microservices
+    - [1 :arrow_right: 30](./1.0.0/6e1imr.md) Modules
+- Patterns of Enterprise Application Architecture
+    - [1 :arrow_right: 1](./1.0.0/4qkfz8.md)
 - Data Science for Business
     - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
     - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)

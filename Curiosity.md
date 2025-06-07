@@ -15,19 +15,19 @@
 
 ## Thinker
 
-- Có 1 gap giữa high level techniques overview và người thực thi, với bản thân mình thực thi thì thấy nó cũng không cần thiết hoặc làm phức tạp hoá vấn đề, nhưng với góc nhìn của Software architecture thì khác, vậy thì ai đang sai hoặc cần cải thiện gì? người thực thi tuy ít kinh nghiệm nhưng họ hiểu rõ cái họ đang làm, nên cũng có thể đánh giá 1 khía cạnh architecture mà đúng không?
-- hôm nay bản thân đã lười và có thể chơi, nhưng xem list video mình note lại, khá hay dễ nghe và hứng thú về database của mr huy hết hơn 2 tiêng :))), vậy đây là trick và có thể tái sử dụng cho tương lai?
-- và có những thứ rất dễ tiếp thu hơn các thứ còn lại, đâu là key?
-- và mình nhận ra là năng lượng tinh thần + cam xuc tới từ những người giỏi thế này nhiều hơn? bai hoc la gi?
-- Tư duy hệ thống vẫn yếu, trưa phân tích sai nên làm thừa cái booking flow agent
-- Nang luong luc hoc, lam viec con rat tieu cuc, chua hang hai
-- suy luan logic, mo xe van de va triet ly giai quyet van de van con kem
-- question about "my path"
-    - nên học sâu DB không
-    - cách học, tiếp thu, giải quyết vấn đề hiện tại đã tốt nhất chưa? có thấy của ai tốt hơn để bắt chước không
+- cách học, tiếp thu, giải quyết vấn đề hiện tại đã tốt nhất chưa? có thấy của ai tốt hơn để bắt chước không
+- những người phụng sự quân đội, làm nghiên cứu, họ suy nghĩ và định hướng như thế nào? về tài chính, sự nghiệp, sở thích?
+- :white_check_mark: question about "my path"
+    - nên học sâu DB không -> sap xep thu tu cac skill se chuyen sau: Software -> Db
     - Thích học cái mới vì vậy không tập trung 1 major nhất định, có đi sai không, có hại gì?
     - Khi đã đạt được thứ mình muốn hiện tại nhưng bỏ qua những cái mình tò mò trong quá khứ, không có thời gian để thử, thì có hối tiếc không, mình cần quyết định như thế nào?
-    - những người phụng sự quân đội, làm nghiên cứu, họ suy nghĩ và định hướng như thế nào? về tài chính, sự nghiệp, sở thích?
+- :white_check_mark: Có 1 gap giữa high level techniques overview và người thực thi, với bản thân mình thực thi thì thấy nó cũng không cần thiết hoặc làm phức tạp hoá vấn đề, nhưng với góc nhìn của Software architecture thì khác, vậy thì ai đang sai hoặc cần cải thiện gì? người thực thi tuy ít kinh nghiệm nhưng họ hiểu rõ cái họ đang làm, nên cũng có thể đánh giá 1 khía cạnh architecture mà đúng không?
+- :white_check_mark: hôm nay bản thân đã lười và có thể chơi, nhưng xem list video mình note lại, khá hay dễ nghe và hứng thú về database của mr huy hết hơn 2 tiêng :))), vậy đây là trick và có thể tái sử dụng cho tương lai?
+- :white_check_mark: và có những thứ rất dễ tiếp thu hơn các thứ còn lại, đâu là key?
+- :white_check_mark: và mình nhận ra là năng lượng tinh thần + cam xuc tới từ những người giỏi thế này nhiều hơn? bai hoc la gi?
+- :white_check_mark: Tư duy hệ thống vẫn yếu, trưa phân tích sai nên làm thừa cái booking flow agent
+- :white_check_mark: Nang luong luc hoc, lam viec con rat tieu cuc, chua hang hai
+- :white_check_mark: suy luan logic, mo xe van de va triet ly giai quyet van de van con kem
 - :white_check_mark: Mr. Huy (deeper)
     - con đường sự nghiệp giải quyế nhiều bàn toán khó cho nhiều nơi -> experience + trải nghiệm cực kỳ nhiều -> mình rút ra được gì?
         - có nên chuyên sâu db (không fomo :v)
@@ -40,10 +40,12 @@
 
 ## Doer
 
+- doc sach suc khoe cho minh va Miti (suc khoe dinh duong va tduc)
 - Try more model or tools AIML
 
 ## Searcher
 
+- 10 ideas to use the code generation
 - tai sao ung dung cua consistent hashing la: redis, distributed database like cassanra, load bnnalancing, cdn
 - đọc source socket io testing chrome extension
 - :white_check_mark: đọc dozzle xem nó realtime logs ntn

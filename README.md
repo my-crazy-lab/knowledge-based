@@ -1,7 +1,7 @@
 # Books
 
 - Building Microservices
-    - [1 :arrow_right: 74](./1.0.0/6e1imr.md) Beware Too Much Convenience
+    - [1 :arrow_right: 99](./1.0.0/6e1imr.md) 
 - Patterns of Enterprise Application Architecture
     - [1 :arrow_right: 1](./1.0.0/4qkfz8.md)
 - Data Science for Business
@@ -113,6 +113,8 @@
 - https://jimmyhmiller.com/machine-code-isnt-scary
 - https://localmess.github.io/
 - https://austinhenley.com/blog/coord2state.html
+- https://roman.pt/posts/cursor-under-the-hood/
+- https://eugeneyan.com/writing/recsys-llm/
 
 # Technical debt
 

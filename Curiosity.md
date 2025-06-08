@@ -15,11 +15,15 @@
 
 ## Thinker
 
+## Topics for speaking
+
+- 
+
 ## Searcher
 
 - 10 ideas to use the code generation
 - tai sao Phép chia % tương đối tốn CPU hơn các phép tính nhị phân (bit).
-- 
+- Hethong realtime nhu stock hoat dong nhu the nao? build ntn?
 - :white_check_mark: tai sao ung dung cua consistent hashing la: redis, distributed database like cassanra, load bnnalancing, cdn
 - :white_check_mark: đọc source socket io testing chrome extension
 - :white_check_mark: đọc dozzle xem nó realtime logs ntn

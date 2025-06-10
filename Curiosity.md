@@ -22,8 +22,8 @@
 ## Searcher
 
 - 10 ideas to use the code generation
-- tai sao Phép chia % tương đối tốn CPU hơn các phép tính nhị phân (bit).
-- Hethong realtime nhu stock hoat dong nhu the nao? build ntn?
+- tai sao phép chia % tương đối tốn CPU hơn các phép tính nhị phân (bit).
+- He thong realtime nhu stock hoat dong nhu the nao? build ntn?
 - Some reasons DOM render slowly?
 - :white_check_mark: render html nhieu phan tu take more times:
     - Table 1000 rows need lazy loading?

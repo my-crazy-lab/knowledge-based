@@ -1,7 +1,5 @@
 # Books
 
-- Building Microservices
-    - [1 :arrow_right: 225](./1.0.0/6e1imr.md) 
 - Patterns of Enterprise Application Architecture
     - [1 :arrow_right: 1](./1.0.0/4qkfz8.md)
 - Data Science for Business
@@ -19,6 +17,8 @@
     - 
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
+- :white_check_mark: Building Microservices
+    - [1 :arrow_right: DONE](./1.0.0/6e1imr.md) 
 - :white_check_mark: Solution Architecture handbook
     - [1 :arrow_right: DONE](./1.0.0/bsyxxk.md) Defining the modernization approach
 - :white_check_mark: Learning Domain-driven design

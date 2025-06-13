@@ -25,6 +25,10 @@
 - tai sao phép chia % tương đối tốn CPU hơn các phép tính nhị phân (bit).
 - He thong realtime nhu stock hoat dong nhu the nao? build ntn?
 - Some reasons DOM render slowly?
+- Consul la gi? list features
+    - Serf?
+- Nagios hay Sensu?
+- Eureka?
 - :white_check_mark: render html nhieu phan tu take more times:
     - Table 1000 rows need lazy loading?
     - Or just need for image and large html?

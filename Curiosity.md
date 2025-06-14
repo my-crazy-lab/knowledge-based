@@ -21,18 +21,28 @@
 
 ## Searcher
 
-- 10 ideas to use the code generation
-- Luu do network? Model su dung luu do network?
-- ben duoi tensorflow?
-- mo hinh CNN?
-- distributed training
 - tai sao phép chia % tương đối tốn CPU hơn các phép tính nhị phân (bit).
 - He thong realtime nhu stock hoat dong nhu the nao? build ntn?
 - Some reasons DOM render slowly?
-- Consul la gi? list features
+- :white_check_mark: 10 ideas to use the code generation
+    - build opensource project
+    - clone a product
+    - build my ideas
+    - build project for myself
+    - make github beautiful
+    - learning based on demo
+    - code = garbage -> sell code
+    - POC / boilerplate
+    - freelance
+    - solve daily task
+- :white_check_mark: Luu do network? Model su dung luu do network?
+- :white_check_mark: ben duoi tensorflow?
+- :white_check_mark: mo hinh CNN?
+- :white_check_mark: distributed training
+- :white_check_mark: Consul la gi? list features
     - Serf?
-- Nagios hay Sensu?
-- Eureka?
+- :white_check_mark: Nagios hay Sensu?
+- :white_check_mark: Eureka?
 - :white_check_mark: render html nhieu phan tu take more times:
     - Table 1000 rows need lazy loading?
     - Or just need for image and large html?

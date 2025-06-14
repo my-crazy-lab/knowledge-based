@@ -1,5 +1,12 @@
 # Books
 
+- document software architecture
+    - [1 :arrow_right: 56](./1.0.0/7si7e0.md)
+- Introducing MLOps
+    - [1 :arrow_right: 73](./1.0.0/qbmjfb.md)
+
+## pending
+
 - Patterns of Enterprise Application Architecture
     - [1 :arrow_right: 1](./1.0.0/4qkfz8.md)
 - Data Science for Business
@@ -17,6 +24,9 @@
     - 
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
+
+## Solved
+
 - :white_check_mark: Building Microservices
     - [1 :arrow_right: DONE](./1.0.0/6e1imr.md) 
 - :white_check_mark: Solution Architecture handbook

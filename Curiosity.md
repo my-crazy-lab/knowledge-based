@@ -22,6 +22,10 @@
 ## Searcher
 
 - 10 ideas to use the code generation
+- Luu do network? Model su dung luu do network?
+- ben duoi tensorflow?
+- mo hinh CNN?
+- distributed training
 - tai sao phép chia % tương đối tốn CPU hơn các phép tính nhị phân (bit).
 - He thong realtime nhu stock hoat dong nhu the nao? build ntn?
 - Some reasons DOM render slowly?

@@ -1,9 +1,9 @@
 # Books
 
 - document software architecture
-    - [1 :arrow_right: 56](./1.0.0/7si7e0.md)
+    - [1 :arrow_right: 241](./1.0.0/7si7e0.md)
 - Introducing MLOps
-    - [1 :arrow_right: 73](./1.0.0/qbmjfb.md)
+    - [1 :arrow_right: 143](./1.0.0/qbmjfb.md)
 
 ## pending
 

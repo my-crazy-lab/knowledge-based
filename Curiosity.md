@@ -21,9 +21,9 @@
 
 ## Searcher
 
-- tai sao phép chia % tương đối tốn CPU hơn các phép tính nhị phân (bit).
 - He thong realtime nhu stock hoat dong nhu the nao? build ntn?
-- Some reasons DOM render slowly?
+- :white_check_mark: tai sao phép chia % tương đối tốn CPU hơn các phép tính nhị phân (bit).
+- :white_check_mark: Some reasons DOM render slowly?
 - :white_check_mark: 10 ideas to use the code generation
     - build opensource project
     - clone a product

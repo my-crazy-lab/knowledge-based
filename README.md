@@ -2,8 +2,8 @@
 
 - document software architecture
     - [1 :arrow_right: 241](./1.0.0/7si7e0.md)
-- Introducing MLOps
-    - [1 :arrow_right: 143](./1.0.0/qbmjfb.md)
+- :white_check_mark: Introducing MLOps
+    - [1 :arrow_right: DONE](./1.0.0/qbmjfb.md)
 
 ## pending
 

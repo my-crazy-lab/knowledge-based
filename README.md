@@ -1,9 +1,17 @@
 # Books
 
-- document software architecture
-    - [1 :arrow_right: 241](./1.0.0/7si7e0.md)
-- :white_check_mark: Introducing MLOps
-    - [1 :arrow_right: DONE](./1.0.0/qbmjfb.md)
+- [Foundations of Computer Vision](https://visionbook.mit.edu/) 
+    - [1 :arrow_right: 1](./1.0.0/x7r2ri.md)
+- THE STARTUP CTO'S HANDBOOK
+    - [1 :arrow_right: 483](./1.0.0/7982s9.md)
+- The Phoenix Project
+    - [1 :arrow_right: 1](./1.0.0/h12pa6.md)
+- Infrastructure as Code: Managing Servers in the Cloud
+    - [1 :arrow_right: 58](./1.0.0/9luvs1.md)
+- Site Reliability Engineering
+    - [1 :arrow_right: 20](./1.0.0/q0h2zj.md)
+- The Data Warehouse Toolkit, 3rd Edition
+    - [1 :arrow_right: 37](./1.0.0/44enpa.md)
 
 ## pending
 
@@ -19,14 +27,17 @@
     - [222 :arrow_right: 295](./1.0.0/o70doc.md)
     - [295 :arrow_right: 371](./1.0.0/n20071.md)
     - [372 :arrow_right: 410](./1.0.0/o6n1x2.md)
-    - [411 :arrow_right: ](./1.0.0/.md)
-- Refactoring - Improving the Design of Existing Code
-    - 
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
+- Software Architecture The Hard Parts
+    - [1 :arrow_right: 348](./1.0.0/3pm1sl.md)
 
 ## Solved
 
+- :white_check_mark: document software architecture
+    - [1 :arrow_right: 250](./1.0.0/7si7e0.md) Not need read.
+- :white_check_mark: Introducing MLOps
+    - [1 :arrow_right: DONE](./1.0.0/qbmjfb.md)
 - :white_check_mark: Building Microservices
     - [1 :arrow_right: DONE](./1.0.0/6e1imr.md) 
 - :white_check_mark: Solution Architecture handbook
@@ -43,11 +54,14 @@
 - :white_check_mark: Machine Learning Yearning (Vi)
     - [1 :arrow_right: 60](./1.0.0/w3y60i.md)
 - :white_check_mark: Multiplayer Game Programming: Architecting Networked Games
-    - [Done](./1.0.0/d17bqf.md)
+    - [1 :arrow_right: Done](./1.0.0/d17bqf.md)
 - :white_check_mark: eCommerce in the Cloud
     - [1 :arrow_right: DONE](./1.0.0/jmzd7s.md) chapter 11
 - :white_check_mark: gemini for google workspace prompting guide 101
     - [1 :arrow_right: DONE](./1.0.0/9w5kku.md)
+- :white_check_mark: DevOps Handbook
+- :white_check_mark: The Analytics Setup Guidebook
+- :white_check_mark: Generative AI in practice: 100+ amazing ways
 
 # Mobile
 
@@ -125,6 +139,7 @@
 - https://austinhenley.com/blog/coord2state.html
 - https://roman.pt/posts/cursor-under-the-hood/
 - https://eugeneyan.com/writing/recsys-llm/
+- https://github.com/oils-for-unix/oils.vim/blob/main/doc/algorithms.md
 
 # Technical debt
 

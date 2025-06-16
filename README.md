@@ -2,6 +2,8 @@
 
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
     - [1 :arrow_right: 1](./1.0.0/x7r2ri.md)
+- deep-learning-for-vision-systems
+    - [1 :arrow_right: 113](./1.0.0/sfhs65.md)
 - THE STARTUP CTO'S HANDBOOK
     - [1 :arrow_right: 483](./1.0.0/7982s9.md)
 - The Phoenix Project

@@ -13,6 +13,8 @@
 - Điều này có thể được làm theo cách khác không?
 - Nay có gì lạ không, mới không, bí không?
 
+- Read Tech market or new Product and ask about how make it? how it work?
+
 ## Thinker
 
 ## Topics for speaking
@@ -21,7 +23,14 @@
 
 ## Searcher
 
-- He thong realtime nhu stock hoat dong nhu the nao? build ntn?
+- học về bit và các phép tính bằng binary lại để hiểu rõ tại sao phép chia tốn nhiều chu kỳ xung nhịp
+- Thuat toan Raft trien khai ntn
+- cac loai stress test, cong dung và how implement
+- :white_check_mark: how can implement feature like screenshot or records?
+- :white_check_mark: how can copy text as markdown like a chrome extension?
+- :white_check_mark: why need pdf file, why was it born?
+- :white_check_mark: the limitation of CV
+- :white_check_mark: He thong realtime nhu stock hoat dong nhu the nao? build ntn?
 - :white_check_mark: tai sao phép chia % tương đối tốn CPU hơn các phép tính nhị phân (bit).
 - :white_check_mark: Some reasons DOM render slowly?
 - :white_check_mark: 10 ideas to use the code generation

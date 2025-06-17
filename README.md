@@ -3,9 +3,7 @@
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
     - [1 :arrow_right: 1](./1.0.0/x7r2ri.md)
 - deep-learning-for-vision-systems
-    - [1 :arrow_right: 113](./1.0.0/sfhs65.md)
-- THE STARTUP CTO'S HANDBOOK
-    - [1 :arrow_right: 483](./1.0.0/7982s9.md)
+    - [1 :arrow_right: 362](./1.0.0/sfhs65.md)
 - The Phoenix Project
     - [1 :arrow_right: 1](./1.0.0/h12pa6.md)
 - Infrastructure as Code: Managing Servers in the Cloud
@@ -36,6 +34,8 @@
 
 ## Solved
 
+- :white_check_mark: THE STARTUP CTO'S HANDBOOK
+    - [1 :arrow_right: DONE](./1.0.0/7982s9.md)
 - :white_check_mark: document software architecture
     - [1 :arrow_right: 250](./1.0.0/7si7e0.md) Not need read.
 - :white_check_mark: Introducing MLOps

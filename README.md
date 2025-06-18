@@ -1,15 +1,14 @@
 # Books
 
+- Machine Learning Engineering
+    - [1 :arrow_right: 141](./1.0.0/x7r2ri.md)
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
-    - [1 :arrow_right: 1](./1.0.0/x7r2ri.md)
-- deep-learning-for-vision-systems
-    - [1 :arrow_right: 362](./1.0.0/sfhs65.md)
 - The Phoenix Project
     - [1 :arrow_right: 1](./1.0.0/h12pa6.md)
-- Infrastructure as Code: Managing Servers in the Cloud
-    - [1 :arrow_right: 58](./1.0.0/9luvs1.md)
 - Site Reliability Engineering
     - [1 :arrow_right: 20](./1.0.0/q0h2zj.md)
+- Infrastructure as Code: Managing Servers in the Cloud
+    - [1 :arrow_right: 58](./1.0.0/9luvs1.md)
 - The Data Warehouse Toolkit, 3rd Edition
     - [1 :arrow_right: 37](./1.0.0/44enpa.md)
 
@@ -34,6 +33,8 @@
 
 ## Solved
 
+- :white_check_mark: deep-learning-for-vision-systems
+    - [1 :arrow_right: DONE](./1.0.0/sfhs65.md)
 - :white_check_mark: THE STARTUP CTO'S HANDBOOK
     - [1 :arrow_right: DONE](./1.0.0/7982s9.md)
 - :white_check_mark: document software architecture

@@ -24,8 +24,12 @@
 ## Searcher
 
 - học về bit và các phép tính bằng binary lại để hiểu rõ tại sao phép chia tốn nhiều chu kỳ xung nhịp
-- Thuat toan Raft trien khai ntn
-- cac loai stress test, cong dung và how implement
+- :white_check_mark: Thuat toan Raft trien khai ntn
+- :white_check_mark: cac loai stress test, cong dung và how implement
+- :white_check_mark: tại sao để render image cần tạo url, và url.createurl hoạt động như thế nào
+- :white_check_mark: pydantic settings hoat dong nhu the nao
+- :white_check_mark: giai thich asynccontextmanager
+- :white_check_mark: lifespan in fastapi
 - :white_check_mark: how can implement feature like screenshot or records?
 - :white_check_mark: how can copy text as markdown like a chrome extension?
 - :white_check_mark: why need pdf file, why was it born?

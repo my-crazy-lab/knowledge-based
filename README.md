@@ -1,7 +1,5 @@
 # Books
 
-- Machine Learning Engineering
-    - [1 :arrow_right: 220](./1.0.0/x7r2ri.md)
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - The Phoenix Project
     - [1 :arrow_right: 1](./1.0.0/h12pa6.md)
@@ -33,16 +31,18 @@
 
 ## Solved
 
+- :white_check_mark: Machine Learning Engineering
+    - [1 :arrow_right: DONE](./1.0.0/x7r2ri.md) **
 - :white_check_mark: deep-learning-for-vision-systems
     - [1 :arrow_right: DONE](./1.0.0/sfhs65.md)
 - :white_check_mark: THE STARTUP CTO'S HANDBOOK
-    - [1 :arrow_right: DONE](./1.0.0/7982s9.md)
+    - [1 :arrow_right: DONE](./1.0.0/7982s9.md) **
 - :white_check_mark: document software architecture
     - [1 :arrow_right: 250](./1.0.0/7si7e0.md) Not need read.
 - :white_check_mark: Introducing MLOps
     - [1 :arrow_right: DONE](./1.0.0/qbmjfb.md)
 - :white_check_mark: Building Microservices
-    - [1 :arrow_right: DONE](./1.0.0/6e1imr.md) 
+    - [1 :arrow_right: DONE](./1.0.0/6e1imr.md) **
 - :white_check_mark: Solution Architecture handbook
     - [1 :arrow_right: DONE](./1.0.0/bsyxxk.md) Defining the modernization approach
 - :white_check_mark: Learning Domain-driven design

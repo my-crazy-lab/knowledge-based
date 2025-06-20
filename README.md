@@ -1,5 +1,7 @@
 # Books
 
+- Speech and Language Processing
+    - [1 :arrow_right: 140](./1.0.0/x7r2ri.md)
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - The Phoenix Project
     - [1 :arrow_right: 1](./1.0.0/h12pa6.md)
@@ -32,7 +34,6 @@
 ## Solved
 
 - :white_check_mark: Machine Learning Engineering
-    - [1 :arrow_right: DONE](./1.0.0/x7r2ri.md) **
 - :white_check_mark: deep-learning-for-vision-systems
     - [1 :arrow_right: DONE](./1.0.0/sfhs65.md)
 - :white_check_mark: THE STARTUP CTO'S HANDBOOK

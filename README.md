@@ -1,5 +1,6 @@
 # Books
 
+- The Clean startup 89
 - Speech and Language Processing
     - [1 :arrow_right: 271](./1.0.0/x7r2ri.md)
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 

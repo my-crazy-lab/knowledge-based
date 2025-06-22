@@ -2,7 +2,7 @@
 
 - The Clean startup 89
 - Speech and Language Processing
-    - [1 :arrow_right: 349](./1.0.0/x7r2ri.md) CTC
+    - [1 :arrow_right: 370](./1.0.0/x7r2ri.md)
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - The Phoenix Project
     - [1 :arrow_right: 1](./1.0.0/h12pa6.md)
@@ -124,6 +124,7 @@
 - https://blog.alexewerlof.com/p/when-a-team-is-too-big
 - https://www.allthingsdistributed.com/2025/05/just-make-it-scale-an-aurora-dsql-story.html
 - https://www.swift.org/blog/swift-at-apple-migrating-the-password-monitoring-service-from-java/
+- https://clickhouse.com/blog/scaling-observability-beyond-100pb-wide-events-replacing-otel
 
 # Technical market
 

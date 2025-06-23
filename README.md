@@ -1,6 +1,6 @@
 # Books
 
-- The Clean startup 141 `muac no A0: MOT TU (in (H0? `
+- The Clean startup 162
 - Speech and Language Processing
     - [1 :arrow_right: 400](./1.0.0/x7r2ri.md)
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 

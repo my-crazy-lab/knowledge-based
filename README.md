@@ -1,6 +1,5 @@
 # Books
 
-- The Clean startup 273
 - Speech and Language Processing
     - [1 :arrow_right: 400](./1.0.0/x7r2ri.md)
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
@@ -34,6 +33,7 @@
 
 ## Solved
 
+- :white_check_mark: The Clean startup
 - :white_check_mark: Machine Learning Engineering
 - :white_check_mark: deep-learning-for-vision-systems
     - [1 :arrow_right: DONE](./1.0.0/sfhs65.md)

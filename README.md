@@ -33,6 +33,7 @@
 
 ## Solved
 
+- :white_check_mark: Make: Bootstrapper's handbook
 - :white_check_mark: The Clean startup
 - :white_check_mark: Machine Learning Engineering
 - :white_check_mark: deep-learning-for-vision-systems

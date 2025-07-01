@@ -1,6 +1,6 @@
 # Books
 
-- Company of One 54
+- Company of One 85
 - Speech and Language Processing
     - [1 :arrow_right: 400](./1.0.0/x7r2ri.md)
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 

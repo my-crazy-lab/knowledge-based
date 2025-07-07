@@ -1,0 +1,19 @@
+{
+  "name": "tiny-package-manager",
+  "version": "1.0.0",
+  "description": "A very simple demo package manager for educational purposes",
+  "main": "index.js",
+  "bin": {
+    "tpm": "./bin/tpm.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["package-manager", "npm", "demo"],
+  "author": "Demo Author",
+  "license": "MIT",
+  "dependencies": {
+    "tar": "^6.1.11",
+    "semver": "^7.3.7"
+  }
+}

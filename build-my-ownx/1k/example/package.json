@@ -1,0 +1,17 @@
+{
+  "name": "example-project",
+  "version": "1.0.0",
+  "description": "Example project to test the tiny package manager",
+  "main": "index.js",
+  "scripts": {
+    "preinstall": "echo 'Running preinstall script'",
+    "postinstall": "echo 'Running postinstall script'",
+    "test": "echo 'Running tests'"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  },
+  "keywords": ["example"],
+  "author": "Demo Author",
+  "license": "MIT"
+}

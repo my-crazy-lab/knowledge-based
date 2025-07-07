@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Web Server</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Basic Web Server</h1>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/login">Login</a>
+                <button id="logoutBtn" style="display: none;">Logout</button>
+            </nav>
+        </header>
+
+        <main>
+            <div id="authStatus" class="status-box">
+                <h3>Authentication Status</h3>
+                <p id="authMessage">Checking...</p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <h3>🚀 Routing</h3>
+                    <p>Dynamic URL routing with parameter support</p>
+                    <button onclick="testRouting()">Test Routing</button>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🔐 Sessions</h3>
+                    <p>Session management with automatic cleanup</p>
+                    <button onclick="checkSession()">Check Session</button>
+                </div>
+
+                <div class="feature-card">
+                    <h3>🛡️ Authorization</h3>
+                    <p>Protected routes requiring authentication</p>
+                    <button onclick="testProtected()">Test Protected Route</button>
+                </div>
+
+                <div class="feature-card">
+                    <h3>📊 Server Stats</h3>
+                    <p>Real-time server statistics</p>
+                    <button onclick="getStats()">Get Stats</button>
+                </div>
+            </div>
+
+            <div id="output" class="output-box">
+                <h3>Output</h3>
+                <pre id="outputContent">Click any button above to see the results...</pre>
+            </div>
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>

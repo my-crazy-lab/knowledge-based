@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple 3D Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #000;
+            color: #00ff00;
+            font-family: monospace;
+        }
+        canvas {
+            border: 1px solid #00ff00;
+            background: #111;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple 3D Test</h1>
+    <canvas id="canvas3d" width="800" height="600"></canvas>
+    <div id="debug"></div>
+
+    <!-- Include only necessary files -->
+    <script src="math3d.js"></script>
+    <script src="renderer.js"></script>
+    
+    <script>
+        const debug = document.getElementById('debug');
+        
+        function log(message) {
+            console.log(message);
+            debug.innerHTML += message + '<br>';
+        }
+        
+        try {
+            log('Starting simple test...');
+            
+            const canvas = document.getElementById('canvas3d');
+            const renderer = new Renderer(canvas);
+            
+            // Set gray background
+            renderer.setClearColor(50, 50, 50, 255);
+            
+            // Clear screen
+            renderer.clear();
+            
+            // Draw a simple triangle directly
+            const v1 = new Vector3(400, 200, 0.5);
+            const v2 = new Vector3(200, 400, 0.5);
+            const v3 = new Vector3(600, 400, 0.5);
+            
+            const color = { r: 255, g: 0, b: 0, a: 255 };
+            
+            log('Drawing triangle...');
+            renderer.drawTriangleWireframe(v1, v2, v3, color);
+            
+            // Present to screen
+            renderer.present();
+            
+            log('Triangle drawn!');
+            
+        } catch (error) {
+            log('ERROR: ' + error.message);
+            console.error(error);
+        }
+    </script>
+</body>
+</html>

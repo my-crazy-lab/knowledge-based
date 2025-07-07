@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Engine Demo - Feature Showcase</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Courier New', monospace;
+            background: #1a1a1a;
+            color: #00ff00;
+            overflow-x: auto;
+        }
+        
+        .container {
+            display: flex;
+            gap: 20px;
+            min-height: 100vh;
+        }
+        
+        .canvas-container {
+            flex: 1;
+            background: #000;
+            border: 2px solid #00ff00;
+            position: relative;
+        }
+        
+        #canvas3d {
+            display: block;
+            background: #000;
+        }
+        
+        .controls {
+            width: 350px;
+            background: #2a2a2a;
+            border: 2px solid #00ff00;
+            padding: 20px;
+            border-radius: 5px;
+            height: fit-content;
+        }
+        
+        .section {
+            margin-bottom: 25px;
+            border-bottom: 1px solid #444;
+            padding-bottom: 15px;
+        }
+        
+        .section:last-child {
+            border-bottom: none;
+        }
+        
+        h1, h2 {
+            color: #00ff00;
+            text-shadow: 0 0 10px #00ff00;
+            margin-top: 0;
+        }
+        
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
+        
+        h2 {
+            font-size: 18px;
+            margin-bottom: 15px;
+        }
+        
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .feature-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 8px;
+            padding: 5px;
+            background: #333;
+            border-radius: 3px;
+        }
+        
+        .feature-item.implemented {
+            background: #1a4a1a;
+            border-left: 4px solid #00ff00;
+        }
+        
+        .checkbox {
+            margin-right: 10px;
+            color: #00ff00;
+            font-weight: bold;
+        }
+        
+        button {
+            background: #333;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            padding: 8px 15px;
+            margin: 5px;
+            border-radius: 3px;
+            cursor: pointer;
+            font-family: inherit;
+            transition: all 0.2s;
+        }
+        
+        button:hover {
+            background: #00ff00;
+            color: #000;
+            box-shadow: 0 0 10px #00ff00;
+        }
+        
+        button.active {
+            background: #00ff00;
+            color: #000;
+        }
+        
+        .stats {
+            background: #1a1a1a;
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 12px;
+            line-height: 1.4;
+        }
+        
+        .control-group {
+            margin-bottom: 15px;
+        }
+        
+        .control-group label {
+            display: block;
+            margin-bottom: 5px;
+            color: #ccc;
+        }
+        
+        input[type="range"] {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        
+        select {
+            background: #333;
+            color: #00ff00;
+            border: 1px solid #00ff00;
+            padding: 5px;
+            border-radius: 3px;
+            width: 100%;
+        }
+        
+        .info {
+            background: #2a2a1a;
+            border: 1px solid #ffff00;
+            padding: 10px;
+            border-radius: 3px;
+            margin-bottom: 15px;
+            font-size: 12px;
+            color: #ffff00;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="canvas-container">
+            <canvas id="canvas3d" width="800" height="600"></canvas>
+        </div>
+        
+        <div class="controls">
+            <h1>🎮 3D Engine Demo</h1>
+            
+            <div class="info">
+                <strong>Controls:</strong><br>
+                • Mouse: Rotate camera<br>
+                • WASD: Move camera<br>
+                • Space/Shift: Up/Down<br>
+                • Scroll: Zoom
+            </div>
+            
+            <div class="section">
+                <h2>📋 Implemented Features</h2>
+                <ul class="feature-list">
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>Vector3 & Matrix4 Math</span>
+                    </li>
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>Quaternion Rotations</span>
+                    </li>
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>Model/View/Projection Matrices</span>
+                    </li>
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>Perspective & Orthographic Projection</span>
+                    </li>
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>3D Rendering Pipeline</span>
+                    </li>
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>Z-Buffer Depth Testing</span>
+                    </li>
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>Scene Graph System</span>
+                    </li>
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>Hierarchical Transformations</span>
+                    </li>
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>Phong Lighting Model</span>
+                    </li>
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>Directional & Point Lights</span>
+                    </li>
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>Frustum Culling</span>
+                    </li>
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>Backface Culling</span>
+                    </li>
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>Primitive Mesh Generation</span>
+                    </li>
+                    <li class="feature-item implemented">
+                        <span class="checkbox">[✓]</span>
+                        <span>Material System</span>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="section">
+                <h2>🎨 Render Mode</h2>
+                <button id="wireframe-btn">Wireframe</button>
+                <button id="solid-btn" class="active">Solid</button>
+                <button id="lit-btn">Lit</button>
+            </div>
+            
+            <div class="section">
+                <h2>🔧 Settings</h2>
+                <div class="control-group">
+                    <label>Primitive Shape:</label>
+                    <select id="shape-select">
+                        <option value="cube">Cube</option>
+                        <option value="sphere">Sphere</option>
+                        <option value="cylinder">Cylinder</option>
+                        <option value="pyramid">Pyramid</option>
+                        <option value="torus">Torus</option>
+                        <option value="icosahedron">Icosahedron</option>
+                    </select>
+                </div>
+                
+                <button id="lighting-toggle">Toggle Lighting</button>
+                <button id="culling-toggle">Toggle Culling</button>
+                <button id="projection-toggle">Toggle Projection</button>
+            </div>
+            
+            <div class="section">
+                <h2>📊 Performance Stats</h2>
+                <div class="stats" id="stats">
+                    FPS: --<br>
+                    Frame Time: --<br>
+                    Render Time: --<br>
+                    Objects Culled: --<br>
+                    Triangles Culled: --
+                </div>
+            </div>
+            
+            <div class="section">
+                <h2>💡 About</h2>
+                <p style="font-size: 12px; line-height: 1.4; color: #ccc;">
+                    This is a pure JavaScript 3D engine with no external libraries. 
+                    It implements software rasterization, 3D math, scene graphs, 
+                    lighting, and culling optimizations from scratch.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include all engine files -->
+    <script src="math3d.js"></script>
+    <script src="renderer.js"></script>
+    <script src="scene.js"></script>
+    <script src="lighting.js"></script>
+    <script src="culling.js"></script>
+    <script src="primitives.js"></script>
+    <script src="engine3d.js"></script>
+    
+    <script>
+        // Initialize the 3D engine
+        const canvas = document.getElementById('canvas3d');
+        const engine = new Engine3D(canvas);
+
+        // Set a visible clear color
+        engine.renderer.setClearColor(30, 30, 30, 255);
+        
+        // Camera controls
+        let mouseDown = false;
+        let lastMouseX = 0;
+        let lastMouseY = 0;
+        let cameraRotationX = 0;
+        let cameraRotationY = 0;
+        let cameraDistance = 3;
+        
+        // Create initial scene
+        let currentObject = null;
+        
+        function createShape(shapeType) {
+            console.log('Creating shape:', shapeType);
+
+            // Remove existing object
+            if (currentObject) {
+                engine.scene.root.removeChild(currentObject);
+            }
+
+            // Create new object
+            currentObject = new SceneNode(shapeType);
+            let mesh;
+
+            switch(shapeType) {
+                case 'cube':
+                    mesh = Primitives.createCube(2);
+                    break;
+                case 'sphere':
+                    mesh = Primitives.createSphere(1.5, 16, 12);
+                    break;
+                case 'cylinder':
+                    mesh = Primitives.createCylinder(1, 2, 16);
+                    break;
+                case 'pyramid':
+                    mesh = Primitives.createPyramid(2, 2);
+                    break;
+                case 'torus':
+                    mesh = Primitives.createTorus(1.5, 0.5, 16, 8);
+                    break;
+                case 'icosahedron':
+                    mesh = Primitives.createIcosahedron(1.5);
+                    break;
+            }
+
+            console.log('Created mesh:', mesh);
+            console.log('Mesh vertices:', mesh ? mesh.vertices.length : 'null');
+            console.log('Mesh triangles:', mesh ? mesh.triangles.length : 'null');
+
+            currentObject.mesh = mesh;
+            engine.scene.addObject(currentObject);
+
+            console.log('Added object to scene');
+        }
+        
+        // Initialize with a cube
+        createShape('cube');
+
+        // Disable culling initially for debugging
+        engine.enableCulling = false;
+
+        // Set solid mode for better visibility
+        engine.setRenderMode('solid');
+        
+        // Update camera position
+        function updateCamera() {
+            const camera = engine.scene.activeCamera;
+            const x = Math.sin(cameraRotationY) * Math.cos(cameraRotationX) * cameraDistance;
+            const y = Math.sin(cameraRotationX) * cameraDistance;
+            const z = Math.cos(cameraRotationY) * Math.cos(cameraRotationX) * cameraDistance;
+            
+            camera.setPosition(x, y, z);
+            camera.lookAt(new Vector3(0, 0, 0));
+        }
+        
+        // Mouse controls
+        canvas.addEventListener('mousedown', (e) => {
+            mouseDown = true;
+            lastMouseX = e.clientX;
+            lastMouseY = e.clientY;
+        });
+        
+        canvas.addEventListener('mouseup', () => {
+            mouseDown = false;
+        });
+        
+        canvas.addEventListener('mousemove', (e) => {
+            if (mouseDown) {
+                const deltaX = e.clientX - lastMouseX;
+                const deltaY = e.clientY - lastMouseY;
+                
+                cameraRotationY += deltaX * 0.01;
+                cameraRotationX += deltaY * 0.01;
+                
+                // Clamp vertical rotation
+                cameraRotationX = Math.max(-Math.PI/2 + 0.1, Math.min(Math.PI/2 - 0.1, cameraRotationX));
+                
+                updateCamera();
+                
+                lastMouseX = e.clientX;
+                lastMouseY = e.clientY;
+            }
+        });
+        
+        // Zoom with mouse wheel
+        canvas.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            cameraDistance += e.deltaY * 0.01;
+            cameraDistance = Math.max(2, Math.min(20, cameraDistance));
+            updateCamera();
+        });
+        
+        // Keyboard controls
+        const keys = {};
+        document.addEventListener('keydown', (e) => keys[e.key.toLowerCase()] = true);
+        document.addEventListener('keyup', (e) => keys[e.key.toLowerCase()] = false);
+        
+        function handleKeyboard() {
+            const camera = engine.scene.activeCamera;
+            const speed = 0.1;
+            
+            if (keys['w']) cameraDistance = Math.max(1, cameraDistance - speed);
+            if (keys['s']) cameraDistance = Math.min(20, cameraDistance + speed);
+            if (keys['a']) cameraRotationY -= speed * 0.1;
+            if (keys['d']) cameraRotationY += speed * 0.1;
+            if (keys[' ']) cameraRotationX = Math.max(-Math.PI/2 + 0.1, cameraRotationX - speed * 0.1);
+            if (keys['shift']) cameraRotationX = Math.min(Math.PI/2 - 0.1, cameraRotationX + speed * 0.1);
+            
+            updateCamera();
+        }
+        
+        // UI Controls
+        document.getElementById('wireframe-btn').addEventListener('click', () => {
+            engine.setRenderMode('wireframe');
+            updateActiveButton('wireframe-btn');
+        });
+        
+        document.getElementById('solid-btn').addEventListener('click', () => {
+            engine.setRenderMode('solid');
+            updateActiveButton('solid-btn');
+        });
+        
+        document.getElementById('lit-btn').addEventListener('click', () => {
+            engine.setRenderMode('lit');
+            updateActiveButton('lit-btn');
+        });
+        
+        document.getElementById('lighting-toggle').addEventListener('click', () => {
+            engine.toggleLighting();
+        });
+        
+        document.getElementById('culling-toggle').addEventListener('click', () => {
+            engine.toggleCulling();
+        });
+        
+        document.getElementById('projection-toggle').addEventListener('click', () => {
+            const camera = engine.scene.activeCamera;
+            if (camera.projectionType === 'perspective') {
+                camera.setOrthographic(-3, 3, -3, 3, 0.1, 1000);
+            } else {
+                camera.setPerspective(Math.PI / 4, canvas.width / canvas.height, 0.1, 1000);
+            }
+        });
+        
+        document.getElementById('shape-select').addEventListener('change', (e) => {
+            createShape(e.target.value);
+        });
+        
+        function updateActiveButton(activeId) {
+            document.querySelectorAll('button').forEach(btn => btn.classList.remove('active'));
+            document.getElementById(activeId).classList.add('active');
+        }
+        
+        // Animation loop
+        function animate() {
+            handleKeyboard();
+            
+            // Rotate the object
+            if (currentObject) {
+                currentObject.rotate(0, 0.01, 0);
+            }
+            
+            // Update stats
+            const stats = engine.getStats();
+            document.getElementById('stats').innerHTML = `
+                FPS: ${stats.fps}<br>
+                Frame Time: ${stats.frameTime}<br>
+                Render Time: ${stats.renderTime}<br>
+                Objects Culled: ${stats.cullingStats.culledObjects}/${stats.cullingStats.totalObjects}<br>
+                Triangles Culled: ${stats.cullingStats.culledTriangles}/${stats.cullingStats.totalTriangles}
+            `;
+            
+            requestAnimationFrame(animate);
+        }
+        
+        // Start the engine and animation
+        updateCamera();
+        engine.start();
+        animate();
+        
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            const rect = canvas.parentElement.getBoundingClientRect();
+            canvas.width = rect.width - 4; // Account for border
+            canvas.height = rect.height - 4;
+            engine.resize(canvas.width, canvas.height);
+        });
+    </script>
+</body>
+</html>

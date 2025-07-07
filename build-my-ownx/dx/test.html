@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Engine Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #000;
+            color: #00ff00;
+            font-family: monospace;
+        }
+        canvas {
+            border: 1px solid #00ff00;
+            background: #000;
+        }
+    </style>
+</head>
+<body>
+    <h1>3D Engine Test</h1>
+    <canvas id="canvas3d" width="800" height="600"></canvas>
+    <div id="debug"></div>
+
+    <!-- Include all engine files -->
+    <script src="math3d.js"></script>
+    <script src="renderer.js"></script>
+    <script src="scene.js"></script>
+    <script src="lighting.js"></script>
+    <script src="culling.js"></script>
+    <script src="primitives.js"></script>
+    <script src="engine3d.js"></script>
+    
+    <script>
+        const debug = document.getElementById('debug');
+        
+        function log(message) {
+            console.log(message);
+            debug.innerHTML += message + '<br>';
+        }
+        
+        try {
+            log('Starting 3D engine test...');
+            
+            // Test basic math
+            const v1 = new Vector3(1, 2, 3);
+            const v2 = new Vector3(4, 5, 6);
+            const result = v1.add(v2);
+            log('Vector test: ' + result.toString());
+            
+            // Test matrix
+            const matrix = new Matrix4();
+            log('Matrix created: ' + (matrix ? 'OK' : 'FAIL'));
+            
+            // Test canvas and renderer
+            const canvas = document.getElementById('canvas3d');
+            log('Canvas: ' + (canvas ? 'OK' : 'FAIL'));
+            
+            const renderer = new Renderer(canvas);
+            log('Renderer: ' + (renderer ? 'OK' : 'FAIL'));
+            
+            // Test engine
+            const engine = new Engine3D(canvas);
+            log('Engine: ' + (engine ? 'OK' : 'FAIL'));
+
+            // Set a visible clear color
+            engine.renderer.setClearColor(50, 50, 50, 255);
+            
+            // Test primitive creation
+            const cube = Primitives.createCube(1);
+            log('Cube vertices: ' + cube.vertices.length);
+            log('Cube triangles: ' + cube.triangles.length);
+            
+            // Create a simple scene
+            const cubeNode = new SceneNode('TestCube');
+            cubeNode.mesh = cube;
+            cubeNode.setPosition(0, 0, 0);
+            
+            engine.scene.addObject(cubeNode);
+            log('Added cube to scene');
+            
+            // Set camera position
+            engine.scene.activeCamera.setPosition(0, 0, 5);
+            engine.scene.activeCamera.lookAt(new Vector3(0, 0, 0));
+            log('Camera positioned');
+            
+            // Set wireframe mode for visibility
+            engine.setRenderMode('wireframe');
+
+            // Start rendering
+            engine.start();
+            log('Engine started');
+            
+            // Debug: Check if objects are being rendered
+            setInterval(() => {
+                const renderableObjects = engine.scene.getRenderableObjects();
+                log('Renderable objects: ' + renderableObjects.length);
+                if (renderableObjects.length > 0) {
+                    const obj = renderableObjects[0];
+                    log('Object position: ' + obj.getWorldPosition().toString());
+                    log('Camera position: ' + engine.scene.activeCamera.getWorldPosition().toString());
+                }
+            }, 2000);
+
+            // Simple animation
+            function animate() {
+                cubeNode.rotate(0, 0.01, 0);
+                requestAnimationFrame(animate);
+            }
+            animate();
+            
+        } catch (error) {
+            log('ERROR: ' + error.message);
+            console.error(error);
+        }
+    </script>
+</body>
+</html>

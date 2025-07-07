@@ -9,9 +9,12 @@
     "test": "echo 'Running tests'"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "chalk": "^5.4.1"
   },
-  "keywords": ["example"],
+  "keywords": [
+    "example"
+  ],
   "author": "Demo Author",
   "license": "MIT"
 }

@@ -5,6 +5,7 @@
 - Speech and Language Processing
     - [1 :arrow_right: 400](./1.0.0/x7r2ri.md)
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
+- [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
 - The Phoenix Project
     - [1 :arrow_right: 1](./1.0.0/h12pa6.md) 
 - Infrastructure as Code: Managing Servers in the Cloud

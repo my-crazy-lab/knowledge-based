@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Debug</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #000;
+            color: #00ff00;
+            font-family: monospace;
+        }
+        canvas {
+            border: 2px solid #00ff00;
+            background: #222;
+        }
+        .debug {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <h1>3D Debug Test</h1>
+    <canvas id="canvas3d" width="800" height="600"></canvas>
+    <div class="debug" id="debug"></div>
+
+    <script src="math3d.js"></script>
+    <script src="renderer.js"></script>
+    
+    <script>
+        const debug = document.getElementById('debug');
+        
+        function log(message) {
+            console.log(message);
+            debug.innerHTML += message + '<br>';
+        }
+        
+        const canvas = document.getElementById('canvas3d');
+        const renderer = new Renderer(canvas);
+        
+        // Set background color
+        renderer.setClearColor(50, 50, 50, 255);
+        renderer.clear();
+        
+        log('Canvas size: ' + canvas.width + 'x' + canvas.height);
+        
+        // Test 1: Draw a simple pixel
+        log('Test 1: Drawing a red pixel at center');
+        renderer.setPixel(400, 300, 0.5, {r: 255, g: 0, b: 0, a: 255});
+        renderer.present();
+        
+        setTimeout(() => {
+            // Test 2: Draw a line
+            log('Test 2: Drawing a green line');
+            const p1 = new Vector3(100, 100, 0.5);
+            const p2 = new Vector3(700, 500, 0.5);
+            renderer.drawLine(p1, p2, {r: 0, g: 255, b: 0, a: 255});
+            renderer.present();
+            
+            setTimeout(() => {
+                // Test 3: Draw a triangle wireframe
+                log('Test 3: Drawing a blue triangle wireframe');
+                const v1 = new Vector3(400, 150, 0.5);
+                const v2 = new Vector3(200, 450, 0.5);
+                const v3 = new Vector3(600, 450, 0.5);
+                renderer.drawTriangleWireframe(v1, v2, v3, {r: 0, g: 0, b: 255, a: 255});
+                renderer.present();
+                
+                setTimeout(() => {
+                    // Test 4: Fill a triangle
+                    log('Test 4: Filling a yellow triangle');
+                    const v4 = new Vector3(300, 200, 0.5);
+                    const v5 = new Vector3(250, 350, 0.5);
+                    const v6 = new Vector3(550, 350, 0.5);
+                    renderer.fillTriangle(v4, v5, v6, {r: 255, g: 255, b: 0, a: 255});
+                    renderer.present();
+                    
+                    setTimeout(() => {
+                        // Test 5: 3D to 2D projection test
+                        log('Test 5: Testing 3D projection');
+                        
+                        // Create a simple cube vertices
+                        const cubeVertices = [
+                            new Vector3(-1, -1, -1),
+                            new Vector3( 1, -1, -1),
+                            new Vector3( 1,  1, -1),
+                            new Vector3(-1,  1, -1),
+                            new Vector3(-1, -1,  1),
+                            new Vector3( 1, -1,  1),
+                            new Vector3( 1,  1,  1),
+                            new Vector3(-1,  1,  1)
+                        ];
+                        
+                        // Simple camera setup
+                        const cameraPos = new Vector3(0, 0, 5);
+                        const target = new Vector3(0, 0, 0);
+                        const up = new Vector3(0, 1, 0);
+                        
+                        // Create view matrix
+                        const viewMatrix = Matrix4.lookAt(cameraPos, target, up);
+                        
+                        // Create projection matrix
+                        const projMatrix = Matrix4.perspective(Math.PI/4, canvas.width/canvas.height, 0.1, 100);
+                        
+                        // Combined matrix
+                        const vpMatrix = projMatrix.multiply(viewMatrix);
+                        
+                        log('Camera position: ' + cameraPos.toString());
+                        log('View matrix created');
+                        log('Projection matrix created');
+                        
+                        // Transform and draw cube vertices
+                        cubeVertices.forEach((vertex, i) => {
+                            // Transform to clip space
+                            const clipSpace = vpMatrix.transformVector3(vertex);
+                            log('Vertex ' + i + ': ' + vertex.toString() + ' -> ' + clipSpace.toString());
+                            
+                            // Convert to screen space
+                            const screenPos = renderer.ndcToScreen(clipSpace);
+                            log('Screen pos ' + i + ': ' + screenPos.toString());
+                            
+                            // Draw a small cross at each vertex
+                            if (screenPos.x >= 0 && screenPos.x < canvas.width && 
+                                screenPos.y >= 0 && screenPos.y < canvas.height) {
+                                
+                                const size = 5;
+                                const color = {r: 255, g: 255, b: 255, a: 255};
+                                
+                                // Draw cross
+                                renderer.drawLine(
+                                    new Vector3(screenPos.x - size, screenPos.y, screenPos.z),
+                                    new Vector3(screenPos.x + size, screenPos.y, screenPos.z),
+                                    color
+                                );
+                                renderer.drawLine(
+                                    new Vector3(screenPos.x, screenPos.y - size, screenPos.z),
+                                    new Vector3(screenPos.x, screenPos.y + size, screenPos.z),
+                                    color
+                                );
+                            }
+                        });
+                        
+                        renderer.present();
+                        log('3D projection test complete');
+                        
+                    }, 1000);
+                }, 1000);
+            }, 1000);
+        }, 1000);
+        
+    </script>
+</body>
+</html>

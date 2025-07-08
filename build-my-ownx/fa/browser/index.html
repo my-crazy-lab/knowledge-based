@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Web Browser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="browser-container">
+        <!-- Browser Controls -->
+        <div class="browser-controls">
+            <div class="navigation">
+                <button id="back-btn" class="nav-btn" disabled>←</button>
+                <button id="forward-btn" class="nav-btn" disabled>→</button>
+                <button id="refresh-btn" class="nav-btn">⟳</button>
+            </div>
+            <div class="address-bar">
+                <input type="text" id="url-input" placeholder="Enter URL or HTML content..." value="<html><body><h1>Hello World!</h1><p>This is a test page.</p></body></html>">
+                <button id="go-btn">Go</button>
+                <select id="example-select">
+                    <option value="">Load Example...</option>
+                    <option value="simple">Simple Example</option>
+                    <option value="complex">Complex Example</option>
+                    <option value="test">Test Page</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Browser Viewport -->
+        <div class="browser-viewport">
+            <canvas id="browser-canvas" width="800" height="600"></canvas>
+        </div>
+
+        <!-- Debug Panel -->
+        <div class="debug-panel">
+            <div class="debug-tabs">
+                <button class="debug-tab active" data-tab="dom">DOM Tree</button>
+                <button class="debug-tab" data-tab="css">CSS Rules</button>
+                <button class="debug-tab" data-tab="layout">Layout</button>
+                <button class="debug-tab" data-tab="console">Console</button>
+            </div>
+            <div class="debug-content">
+                <div id="dom-debug" class="debug-section active">
+                    <pre id="dom-tree"></pre>
+                </div>
+                <div id="css-debug" class="debug-section">
+                    <pre id="css-rules"></pre>
+                </div>
+                <div id="layout-debug" class="debug-section">
+                    <pre id="layout-tree"></pre>
+                </div>
+                <div id="console-debug" class="debug-section">
+                    <div id="console-output"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load all JavaScript modules -->
+    <script src="js/html-parser.js"></script>
+    <script src="js/css-parser.js"></script>
+    <script src="js/style-engine.js"></script>
+    <script src="js/layout-engine.js"></script>
+    <script src="js/render-engine.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

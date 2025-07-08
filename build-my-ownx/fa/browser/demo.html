@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Browser Demo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .demo-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .header h1 {
+            color: #333;
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            color: #666;
+            font-size: 18px;
+        }
+        
+        .demo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        
+        .demo-card {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            border: 2px solid #e9ecef;
+            transition: all 0.3s ease;
+        }
+        
+        .demo-card:hover {
+            border-color: #667eea;
+            transform: translateY(-5px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.2);
+        }
+        
+        .demo-card h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+        
+        .demo-card p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+        
+        .demo-button {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+            text-align: center;
+        }
+        
+        .demo-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .instructions {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 30px 0;
+        }
+        
+        .instructions h3 {
+            color: #1976d2;
+            margin-bottom: 15px;
+        }
+        
+        .instructions ol {
+            color: #333;
+            line-height: 1.8;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        
+        .feature {
+            background: #f1f8e9;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #4caf50;
+        }
+        
+        .feature h4 {
+            color: #2e7d32;
+            margin-bottom: 10px;
+        }
+        
+        .feature p {
+            color: #555;
+            font-size: 14px;
+            margin: 0;
+        }
+        
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid #e9ecef;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-container">
+        <div class="header">
+            <h1>🌐 Custom Web Browser Demo</h1>
+            <p>Trình duyệt web được xây dựng từ đầu bằng vanilla JavaScript</p>
+        </div>
+
+        <div class="instructions">
+            <h3>📋 Hướng Dẫn Sử Dụng</h3>
+            <ol>
+                <li>Click vào một trong các button demo bên dưới</li>
+                <li>Browser sẽ mở trong tab/window mới</li>
+                <li>Sử dụng dropdown "Load Example..." để chọn ví dụ</li>
+                <li>Hoặc nhập HTML trực tiếp vào thanh địa chỉ</li>
+                <li>Xem kết quả render trên canvas và debug panels</li>
+            </ol>
+        </div>
+
+        <div class="demo-grid">
+            <div class="demo-card">
+                <h3>🚀 Mở Browser</h3>
+                <p>Khởi động custom browser với giao diện đầy đủ, thanh địa chỉ, và debug panels.</p>
+                <a href="index.html" target="_blank" class="demo-button">Mở Browser</a>
+            </div>
+
+            <div class="demo-card">
+                <h3>🧪 Chạy Tests</h3>
+                <p>Kiểm tra 67 test cases cho tất cả components: HTML parser, CSS parser, Style engine, Layout engine, Render engine.</p>
+                <a href="tests/test-runner.html" target="_blank" class="demo-button">Chạy Tests</a>
+            </div>
+
+            <div class="demo-card">
+                <h3>📖 Tài Liệu</h3>
+                <p>Đọc tài liệu chi tiết về kiến trúc, API reference, và hướng dẫn sử dụng.</p>
+                <a href="docs/README-vi.md" target="_blank" class="demo-button">Xem Docs</a>
+            </div>
+
+            <div class="demo-card">
+                <h3>🎯 Ví Dụ Đơn Giản</h3>
+                <p>Xem file HTML ví dụ đơn giản để hiểu cấu trúc và copy vào browser.</p>
+                <a href="examples/simple.html" target="_blank" class="demo-button">Xem Simple</a>
+            </div>
+
+            <div class="demo-card">
+                <h3>🎨 Ví Dụ Phức Tạp</h3>
+                <p>Ví dụ nâng cao với CSS hiện đại, layout phức tạp và nhiều tính năng.</p>
+                <a href="examples/complex.html" target="_blank" class="demo-button">Xem Complex</a>
+            </div>
+
+            <div class="demo-card">
+                <h3>📝 Hướng Dẫn</h3>
+                <p>Hướng dẫn chi tiết cách chạy examples và sử dụng các tính năng.</p>
+                <a href="HOW-TO-RUN.md" target="_blank" class="demo-button">Xem Guide</a>
+            </div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <h4>🔍 HTML Parser</h4>
+                <p>Parse HTML thành DOM tree với error recovery</p>
+            </div>
+            <div class="feature">
+                <h4>🎨 CSS Engine</h4>
+                <p>Parse CSS với selector matching và specificity</p>
+            </div>
+            <div class="feature">
+                <h4>📐 Layout System</h4>
+                <p>Tính toán bố cục với CSS box model</p>
+            </div>
+            <div class="feature">
+                <h4>🖼️ Render Engine</h4>
+                <p>Vẽ lên canvas với colors, borders, text</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>Custom Web Browser</strong> - Educational project demonstrating browser engine concepts</p>
+            <p>Built with ❤️ using vanilla JavaScript | No external dependencies</p>
+        </div>
+    </div>
+
+    <script>
+        // Add some interactivity
+        document.querySelectorAll('.demo-card').forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.background = '#f0f7ff';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.background = '#f8f9fa';
+            });
+        });
+
+        // Log demo start
+        console.log('🌐 Custom Browser Demo loaded!');
+        console.log('📁 Project structure:');
+        console.log('├── index.html (Main browser)');
+        console.log('├── tests/ (Test suite)');
+        console.log('├── examples/ (Sample HTML files)');
+        console.log('├── docs/ (Documentation)');
+        console.log('└── js/ (Browser components)');
+    </script>
+</body>
+</html>

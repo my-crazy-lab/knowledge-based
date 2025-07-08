@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Test Runner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+        .test-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .test-result {
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 4px;
+        }
+        .test-pass {
+            background-color: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+        .test-fail {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+        .test-summary {
+            font-weight: bold;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        .run-tests-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .run-tests-btn:hover {
+            background-color: #0056b3;
+        }
+        pre {
+            background-color: #f8f9fa;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Web Browser Test Suite</h1>
+    
+    <div class="test-container">
+        <button class="run-tests-btn" onclick="runAllTests()">Run All Tests</button>
+        <div id="test-summary" class="test-summary"></div>
+        <div id="test-results"></div>
+    </div>
+
+    <!-- Load browser components -->
+    <script src="../js/html-parser.js"></script>
+    <script src="../js/css-parser.js"></script>
+    <script src="../js/style-engine.js"></script>
+    <script src="../js/layout-engine.js"></script>
+    <script src="../js/render-engine.js"></script>
+
+    <!-- Load test files -->
+    <script src="html-parser.test.js"></script>
+    <script src="css-parser.test.js"></script>
+    <script src="style-engine.test.js"></script>
+    <script src="layout-engine.test.js"></script>
+    <script src="render-engine.test.js"></script>
+
+    <script>
+        class TestRunner {
+            constructor() {
+                this.tests = [];
+                this.results = [];
+            }
+
+            addTest(name, testFunction) {
+                this.tests.push({ name, testFunction });
+            }
+
+            async runTests() {
+                this.results = [];
+                const resultsDiv = document.getElementById('test-results');
+                const summaryDiv = document.getElementById('test-summary');
+                
+                resultsDiv.innerHTML = '';
+                summaryDiv.innerHTML = 'Running tests...';
+
+                for (const test of this.tests) {
+                    try {
+                        await test.testFunction();
+                        this.results.push({ name: test.name, passed: true, error: null });
+                        this.displayResult(test.name, true, null);
+                    } catch (error) {
+                        this.results.push({ name: test.name, passed: false, error: error.message });
+                        this.displayResult(test.name, false, error.message);
+                    }
+                }
+
+                this.displaySummary();
+            }
+
+            displayResult(testName, passed, error) {
+                const resultsDiv = document.getElementById('test-results');
+                const resultDiv = document.createElement('div');
+                resultDiv.className = `test-result ${passed ? 'test-pass' : 'test-fail'}`;
+                
+                if (passed) {
+                    resultDiv.innerHTML = `✓ ${testName}`;
+                } else {
+                    resultDiv.innerHTML = `✗ ${testName}<br><small>${error}</small>`;
+                }
+                
+                resultsDiv.appendChild(resultDiv);
+            }
+
+            displaySummary() {
+                const summaryDiv = document.getElementById('test-summary');
+                const passed = this.results.filter(r => r.passed).length;
+                const total = this.results.length;
+                const failed = total - passed;
+                
+                summaryDiv.innerHTML = `
+                    Tests completed: ${total} total, ${passed} passed, ${failed} failed
+                    ${failed === 0 ? '🎉 All tests passed!' : '❌ Some tests failed'}
+                `;
+            }
+
+            assert(condition, message) {
+                if (!condition) {
+                    throw new Error(message || 'Assertion failed');
+                }
+            }
+
+            assertEqual(actual, expected, message) {
+                if (actual !== expected) {
+                    throw new Error(message || `Expected ${expected}, got ${actual}`);
+                }
+            }
+
+            assertNotNull(value, message) {
+                if (value === null || value === undefined) {
+                    throw new Error(message || 'Expected non-null value');
+                }
+            }
+
+            assertThrows(fn, message) {
+                try {
+                    fn();
+                    throw new Error(message || 'Expected function to throw');
+                } catch (error) {
+                    // Expected
+                }
+            }
+        }
+
+        const testRunner = new TestRunner();
+
+        function runAllTests() {
+            // Clear previous tests
+            testRunner.tests = [];
+            
+            // Register all tests
+            registerHTMLParserTests(testRunner);
+            registerCSSParserTests(testRunner);
+            registerStyleEngineTests(testRunner);
+            registerLayoutEngineTests(testRunner);
+            registerRenderEngineTests(testRunner);
+            
+            // Run tests
+            testRunner.runTests();
+        }
+
+        // Utility functions for tests
+        function createMockCanvas() {
+            const canvas = document.createElement('canvas');
+            canvas.width = 800;
+            canvas.height = 600;
+            return canvas;
+        }
+
+        function createSimpleDOM() {
+            const parser = new HTMLParser();
+            return parser.parse('<div><p>Hello</p></div>').document;
+        }
+
+        function createSimpleStylesheet() {
+            const parser = new CSSParser();
+            return parser.parse('p { color: red; }').stylesheet;
+        }
+    </script>
+</body>
+</html>

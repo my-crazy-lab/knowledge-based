@@ -57,7 +57,7 @@
 ## [Emulator / Virtual Machine](#build-your-own-emulator--virtual-machine)
 
 ### [**JavaScript**: _GameBoy Emulation in JavaScript_](http://imrannazar.com/GameBoy-Emulation-in-JavaScript)
-- [Builder](./build-my-ownx/p8/README.md)
+- [Builder](./build-my-ownx/p8/README.md): To be continue
 
 ## [Front-end Framework / Library](#build-your-own-front-end-framework--library)
 * [**JavaScript**: _WTF is JSX (Let's Build a JSX Renderer)_](https://jasonformat.com/wtf-is-jsx/)
@@ -112,7 +112,8 @@
 * [**Java**: _Java Voxel Engine Tutorial_](https://www.youtube.com/watch?v=QZ4Vk2PkPZk&list=PL80Zqpd23vJfyWQi-8FKDbeO_ZQamLKJL) [video]
 
 ## [Web Browser](#build-your-own-web-browser)
-* [**Rust**: _Let's build a browser engine_](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
+### [**Rust**: _Let's build a browser engine_](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
+- [Builder](./build-my-ownx/fa/README.md)
 
 ## [Uncategorized](#un-categorized)
 * [**JavaScript**: _Build Your Own Module Bundler - Minipack_](https://github.com/ronami/minipack)
@@ -480,7 +481,7 @@ ok.org/en/500L/a-python-interpreter-written-in-python.html)
 
 #### Build your own `Web Browser`
 
-* [**Rust**: _Let's build a browser engine_](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
+* :white_check_mark: [**Rust**: _Let's build a browser engine_](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
 * :+1: [**Python**: _Browser Engineering_](https://browser.engineering)
 
 #### Build your own `Web Server`

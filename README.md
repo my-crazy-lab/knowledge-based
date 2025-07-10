@@ -34,6 +34,7 @@
 
 ## Solved
 
+- :white_check_mark: (Little OS book from build own X)[https://littleosbook.github.io/]
 - :white_check_mark: Company of One
 - :white_check_mark: Make: Bootstrapper's handbook
 - :white_check_mark: The Clean startup

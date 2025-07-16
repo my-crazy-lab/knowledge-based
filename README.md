@@ -8,8 +8,6 @@
     - [222 :arrow_right: 295](./1.0.0/o70doc.md)
     - [295 :arrow_right: 371](./1.0.0/n20071.md)
     - [372 :arrow_right: 410](./1.0.0/o6n1x2.md)
-- Software Architecture The Hard Parts
-    - [1 :arrow_right: 417](./1.0.0/3pm1sl.md)
 - The Architecture of Open Source Applications volume 1: 2
 - Linux from scratch book
     - 1 :arrow_right: 30
@@ -34,6 +32,8 @@
 
 ## Solved
 
+- :white_check_mark: Software Architecture The Hard Parts
+    - [1 :arrow_right: DONE](./1.0.0/3pm1sl.md)
 - :white_check_mark: (Little OS book from build own X)[https://littleosbook.github.io/]
 - :white_check_mark: Company of One
 - :white_check_mark: Make: Bootstrapper's handbook

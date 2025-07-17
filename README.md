@@ -1,5 +1,7 @@
 # Books
 
+- The Phoenix Project
+    - [1 :arrow_right: 26](./1.0.0/h12pa6.md) 
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
 - Designing Data-Intensive Applications
@@ -17,8 +19,6 @@
     - [1 :arrow_right: 400](./1.0.0/x7r2ri.md)
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
-- The Phoenix Project
-    - [1 :arrow_right: 1](./1.0.0/h12pa6.md) 
 - Infrastructure as Code: Managing Servers in the Cloud
     - [1 :arrow_right: 58](./1.0.0/9luvs1.md)
 - The Data Warehouse Toolkit, 3rd Edition

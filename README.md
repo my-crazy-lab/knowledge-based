@@ -98,6 +98,17 @@
 
 # Database
 
+- Thiết kế Physical Schema chịu tải cao (E-Commerce)	
+    - Tối ưu kiểu dữ liệu, partitioning
+    - Index composite, partial, covering
+    - Lược đồ chuẩn + denormalized tùy use case	
+    - Kiểm soát IO, giảm latency khi DB ở scale lớn (> triệu bản ghi)
+- Sharding kiến trúc Horizontal Scaling	
+    - PostgreSQL: pg_shard, Citus
+    - MongoDB: shard key, zone
+    - Định nghĩa tiêu chí chọn shard key tốt (low cardinality vs high skew)	
+    - Đảm bảo khả năng scale out, giảm bottleneck khi 1 node vượt quá khả năng chịu tải
+
 ## SQL
 
 - [Anatomy Of A SQL Engine](./1.0.0/zc8ms2.md)

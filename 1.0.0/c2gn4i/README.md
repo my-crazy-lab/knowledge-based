@@ -7,7 +7,7 @@
     -  Nếu hiện tại id là INT và > 2 tỷ records thì sao?
         - Online Schema Change: tạo table mới với BIGINT, copy data, rename table, drop old table.
         - Vì thay đổi size nên ALTER sẽ gây block full table
-- [ ] `VARCHAR(255)` vs `TEXT`: khi nào nên dùng cái nào? Ảnh hưởng đến index và sort như thế nào?
+- `VARCHAR(255)` vs `TEXT`: khi nào nên dùng cái nào? Ảnh hưởng đến index và sort như thế nào?
 - [ ] Sử dụng `BOOLEAN` có thực sự chiếm 1 byte trên PostgreSQL/MySQL? Có nên dùng `ENUM` thay cho `VARCHAR` không?
 - [ ] Kiểu `DATE`, `TIMESTAMP`, `UNIX TIME INT` – khác nhau như thế nào về kích thước và hiệu năng truy vấn?
 

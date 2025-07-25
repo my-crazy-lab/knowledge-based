@@ -1,7 +1,7 @@
 # Books
 
 - The Phoenix Project
-    - [1 :arrow_right: 256](./1.0.0/h12pa6.md) 
+    - [1 :arrow_right: 308](./1.0.0/h12pa6.md) 
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
 - Designing Data-Intensive Applications
@@ -98,16 +98,17 @@
 
 # Database
 
-- Thiết kế Physical Schema chịu tải cao (E-Commerce)	
-    - Tối ưu kiểu dữ liệu, partitioning
-    - Index composite, partial, covering
-    - Lược đồ chuẩn + denormalized tùy use case	
-    - Kiểm soát IO, giảm latency khi DB ở scale lớn (> triệu bản ghi)
+- [Thiết kế Physical Schema chịu tải cao](./1.0.0/c2gn4i/README.md)
 - Sharding kiến trúc Horizontal Scaling	
     - PostgreSQL: pg_shard, Citus
     - MongoDB: shard key, zone
     - Định nghĩa tiêu chí chọn shard key tốt (low cardinality vs high skew)	
     - Đảm bảo khả năng scale out, giảm bottleneck khi 1 node vượt quá khả năng chịu tải
+- Tối ưu transaction & concurrency control
+    - PostgreSQL: SERIALIZABLE vs REPEATABLE READ
+    - Deadlock simulation
+    - Advisory locking vs pessimistic locking
+    - Xử lý conflict, đảm bảo tính toàn vẹn dữ liệu khi concurrent transactions tăng cao
 
 ## SQL
 

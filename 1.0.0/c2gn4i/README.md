@@ -4,17 +4,17 @@
 
 ### 1. Footprint & Storage Efficiency
 - Với hàng chục triệu bản ghi, việc chọn `INT` thay vì `BIGINT` giúp tiết kiệm bao nhiêu bộ nhớ? Có đáng không?
-    -  Nếu hiện tại id là INT và > 2 tỷ records thì sao?
+    - Nếu hiện tại id là INT và > 2 tỷ records thì sao?
         - Online Schema Change: tạo table mới với BIGINT, copy data, rename table, drop old table.
         - Vì thay đổi size nên ALTER sẽ gây block full table
 - `VARCHAR(255)` vs `TEXT`: khi nào nên dùng cái nào? Ảnh hưởng đến index và sort như thế nào?
-- [ ] Sử dụng `BOOLEAN` có thực sự chiếm 1 byte trên PostgreSQL/MySQL? Có nên dùng `ENUM` thay cho `VARCHAR` không?
-- [ ] Kiểu `DATE`, `TIMESTAMP`, `UNIX TIME INT` – khác nhau như thế nào về kích thước và hiệu năng truy vấn?
+- Sử dụng `BOOLEAN` có thực sự chiếm 1 byte trên PostgreSQL/MySQL? Có nên dùng `ENUM` thay cho `VARCHAR` không?
+- Kiểu `DATE`, `TIMESTAMP`, `UNIX TIME INT` – khác nhau như thế nào về kích thước và hiệu năng truy vấn?
 
 ### 2. CPU & I/O Cost
-- [ ] So sánh chi phí CPU và I/O giữa truy vấn bảng có `BIGINT` vs `INT` làm khóa chính?
-- [ ] Tác động của kiểu dữ liệu đến kích thước index là gì? (Hint: `UUID` làm PK nặng hơn `INT` gấp 3–4 lần)
-- [ ] Kiểu dữ liệu ảnh hưởng như thế nào đến caching (cache line alignment, index fit in memory)?
+- So sánh chi phí CPU và I/O giữa truy vấn bảng có `BIGINT` vs `INT` làm khóa chính?
+- Tác động của kiểu dữ liệu đến kích thước index là gì? (Hint: `UUID` làm PK nặng hơn `INT` gấp 3–4 lần)
+- Kiểu dữ liệu ảnh hưởng như thế nào đến caching (cache line alignment, index fit in memory)?
 
 ### 3. Index & Query Plan Impact
 - [ ] Kiểu `TEXT` hoặc `JSONB` có thể được index như thế nào? Partial Index? GIN/GiST?

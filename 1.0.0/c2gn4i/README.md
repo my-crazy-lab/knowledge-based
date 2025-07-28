@@ -17,24 +17,29 @@
 - Kiểu dữ liệu ảnh hưởng như thế nào đến caching (cache line alignment, index fit in memory)?
 
 ### 3. Index & Query Plan Impact
-- [ ] Kiểu `TEXT` hoặc `JSONB` có thể được index như thế nào? Partial Index? GIN/GiST?
-- [ ] Nếu một cột thường lọc theo range, kiểu `DATETIME` hay `INT` tốt hơn? Tại sao?
-- [ ] Composite index với cột `VARCHAR(200)` ảnh hưởng gì tới performance nếu sort/join?
+- Kiểu `TEXT` hoặc `JSONB` có thể được index như thế nào? 
+  - Partial Index? 
+  - GIN/GiST in Pg, MySQL recommend apply CDC with external tools
+  - Text index in mongoDB
+  - Fuzzy search, full-text search
+- Nếu một cột thường lọc theo range, kiểu `DATETIME` hay `INT` tốt hơn? Tại sao?
+- Composite index với cột `VARCHAR(200)` ảnh hưởng gì tới performance nếu sort/join?
 
 ### 4. Evolution & Migration
-- [ ] Việc thay đổi kiểu dữ liệu từ `VARCHAR(100)` sang `TEXT` hoặc `INT → BIGINT` có downtime không? Tác động đến hệ thống hiện tại?
-- [ ] Có chiến lược nào để migrate kiểu dữ liệu zero-downtime không?
-- [ ] Dùng kiểu cố định ngay từ đầu (ví dụ: `BIGINT`) có thực sự “an toàn” hơn về lâu dài?
+- Việc thay đổi kiểu dữ liệu từ `VARCHAR(100)` sang `TEXT` hoặc `INT → BIGINT` có downtime không? Tác động đến hệ thống hiện tại?
+- Có chiến lược nào để migrate kiểu dữ liệu zero-downtime không?
+- Dùng kiểu cố định ngay từ đầu (ví dụ: `BIGINT`) có thực sự “an toàn” hơn về lâu dài?
 
 ### 5. Semantics & Correctness
-- [ ] Kiểu `ENUM` giúp enforce business logic tốt hơn không? Có nên dùng ở DB layer không?
-- [ ] Khi nào nên để application kiểm tra logic thay vì rely vào kiểu dữ liệu trong schema?
-- [ ] Sử dụng kiểu dữ liệu `NUMERIC` thay vì `FLOAT/DOUBLE` có ảnh hưởng gì tới accuracy trong use-case tài chính?
+- Kiểu `ENUM` giúp enforce business logic tốt hơn không? Có nên dùng ở DB layer không?
+- Khi nào nên để application kiểm tra logic thay vì rely vào kiểu dữ liệu trong schema?
+- Sử dụng kiểu dữ liệu `NUMERIC` thay vì `FLOAT/DOUBLE` có ảnh hưởng gì tới accuracy trong use-case tài chính?
+  - IEEE 754
 
 ### 6. Special Case – UUID, JSONB, ARRAY
-- [ ] UUID v4 vs INT làm primary key: So sánh về performance và index bloat?
-- [ ] Khi nào nên sử dụng `JSONB` thay vì chia table nhỏ? (Trade-off giữa flexibility và truy vấn chậm)
-- [ ] `ARRAY` trong PostgreSQL có nên dùng không? Có ảnh hưởng gì đến normal form, query planner?
+- UUID v4 vs INT làm primary key: So sánh về performance và index bloat?
+- Khi nào nên sử dụng `JSONB` thay vì chia table nhỏ? (Trade-off giữa flexibility và truy vấn chậm)
+- `ARRAY` trong PostgreSQL có nên dùng không? Có ảnh hưởng gì đến normal form, query planner?
 
 ### 7. Real-World Benchmarking
 - [ ] Bạn có từng benchmark hai bảng giống nhau, chỉ khác kiểu dữ liệu để đo hiệu năng không?

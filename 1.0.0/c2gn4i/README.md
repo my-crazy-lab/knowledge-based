@@ -42,47 +42,48 @@
 - `ARRAY` trong PostgreSQL có nên dùng không? Có ảnh hưởng gì đến normal form, query planner?
 
 ### 7. Real-World Benchmarking
-- [ ] Bạn có từng benchmark hai bảng giống nhau, chỉ khác kiểu dữ liệu để đo hiệu năng không?
-- [ ] Có hiểu và biết cách dùng các công cụ như `pgbench`, `sysbench`, `EXPLAIN ANALYZE`, `perf top`?
+- Bạn có từng benchmark hai bảng giống nhau, chỉ khác kiểu dữ liệu để đo hiệu năng không?
+- Có hiểu và biết cách dùng các công cụ như `pgbench`, `sysbench`, `EXPLAIN ANALYZE`, `perf top`?
 
 ## 🚀 Checklist – Kiểm soát I/O & Giảm Latency ở Scale lớn (High-Throughput DB)
 
 ### 1. Cấu trúc dữ liệu & Storage Engine
-- [ ] Hiểu rõ storage engine đang dùng (PostgreSQL: heap, MySQL: InnoDB/B+Tree...)
-- [ ] Tránh random I/O bằng cách dùng access pattern tuần tự (bulk insert, scan theo index)
-- [ ] Giảm block churn bằng thiết kế bảng nhỏ gọn (narrow table)
+- Hiểu rõ storage engine đang dùng (PostgreSQL: heap, MySQL: InnoDB/B+Tree...)
+- Tránh random I/O bằng cách dùng access pattern tuần tự (bulk insert, scan theo index)
+- Giảm block churn bằng thiết kế bảng nhỏ gọn (narrow table)
 
 ### 2. Index & Access Path
-- [ ] Index fit into memory? Nếu không → tăng random I/O
-- [ ] Sử dụng covering index để tránh truy cập data page
-- [ ] Partial index cho hot subset giúp giảm scan full index
-- [ ] Tránh index không cần thiết (I/O overhead khi write/update)
+- Index fit into memory? Nếu không → tăng random I/O
+  - Cách hoạt động cụ thể của B-tree traversal và I/O page.
+- Sử dụng covering index để tránh truy cập data page
+- Partial index cho hot subset giúp giảm scan full index
+- Tránh index không cần thiết (I/O overhead khi write/update)
 
 ### 3. Caching & Buffer Pool
-- [ ] Theo dõi cache hit ratio (buffer pool hit %)
-- [ ] Tối ưu working set vừa đủ để cache vào memory
-- [ ] Dùng Redis/memcached nếu access pattern phù hợp
-- [ ] Cân nhắc pinned table/index vào memory nếu hệ quản trị hỗ trợ (Oracle, SQL Server...)
+- Theo dõi cache hit ratio (buffer pool hit %)
+- Tối ưu working set vừa đủ để cache vào memory
+- Dùng Redis/memcached nếu access pattern phù hợp
+- Cân nhắc pinned table/index vào memory nếu hệ quản trị hỗ trợ (Oracle, SQL Server...)
 
 ### 4. Sequential vs Random Access
-- [ ] Tránh access theo UUID → gây random seek (so với auto-increment INT hoặc time-based ID)
-- [ ] Bulk update/delete gây I/O spike → dùng batching và throttling
-- [ ] Dùng table partitioning để tránh full scan toàn bảng
+- Tránh access theo UUID → gây random seek (so với auto-increment INT hoặc time-based ID)
+- Bulk update/delete gây I/O spike → dùng batching và throttling
+- Dùng table partitioning để tránh full scan toàn bảng
 
 ### 5. WAL (Write-Ahead Logging) & Checkpoint
-- [ ] Theo dõi WAL size growth, checkpoint interval, checkpoint spikes
-- [ ] Tối ưu wal_buffers, wal_compression, wal_writer_delay (DB-specific tuning)
-- [ ] Tránh large uncommitted transactions → tăng WAL pressure
+- Theo dõi WAL size growth, checkpoint interval, checkpoint spikes
+- Tối ưu wal_buffers, wal_compression, wal_writer_delay (DB-specific tuning)
+- Tránh large uncommitted transactions → tăng WAL pressure
 
 ### 6. Vacuum & Bloat (PostgreSQL)
-- [ ] Tối ưu autovacuum thresholds để không làm chậm query
-- [ ] Theo dõi dead tuples, % table bloat, index bloat
-- [ ] Partitioning hoặc time-based table rotation để tránh update nhiều trên cùng page
+- Tối ưu autovacuum thresholds để không làm chậm query
+- Theo dõi dead tuples, % table bloat, index bloat
+- Partitioning hoặc time-based table rotation để tránh update nhiều trên cùng page
 
 ### 7. Read-Write Path Separation
-- [ ] Replica cho read-heavy workload → giảm latency & IOPS trên primary
-- [ ] Logical sharding: ghi vào node khác, đọc từ node khác
-- [ ] Background job tách khỏi real-time transaction (outbox pattern, async jobs)
+- Replica cho read-heavy workload → giảm latency & IOPS trên primary
+- Logical sharding: ghi vào node khác, đọc từ node khác
+- Background job tách khỏi real-time transaction (outbox pattern, async jobs)
 
 ### 8. Hardware / IOPS Layer
 - [ ] Theo dõi IOPS, latency per operation (via cloud metrics, e.g. AWS CloudWatch, `iostat`, `vmstat`)

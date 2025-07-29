@@ -1,7 +1,5 @@
 # Books
 
-- The Unicorn Project
-    - 1 :arrow_right: 199
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
 - Designing Data-Intensive Applications
@@ -32,6 +30,8 @@
 
 ## Solved
 
+- :white_check_mark: The Unicorn Project
+    - 1 :arrow_right: DONE
 - :white_check_mark: The Phoenix Project
     - 1 :arrow_right: DONE
 - :white_check_mark: Software Architecture The Hard Parts

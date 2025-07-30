@@ -86,14 +86,14 @@
 - Background job tách khỏi real-time transaction (outbox pattern, async jobs)
 
 ### 8. Hardware / IOPS Layer
-- [ ] Theo dõi IOPS, latency per operation (via cloud metrics, e.g. AWS CloudWatch, `iostat`, `vmstat`)
-- [ ] SSD vs HDD ảnh hưởng rõ rệt đến random access latency
-- [ ] Định kỳ stress-test DB dưới tải cao để biết giới hạn IOPS, buffer pool, flush rate
+- Theo dõi IOPS, latency per operation (via cloud metrics, e.g. AWS CloudWatch, `iostat`, `vmstat`)
+- SSD vs HDD ảnh hưởng rõ rệt đến random access latency
+- Định kỳ stress-test DB dưới tải cao để biết giới hạn IOPS, buffer pool, flush rate
 
 ### 9. Query Design & Batching
-- [ ] Tránh N+1 queries → dùng JOIN, subquery, preloading
-- [ ] Batch insert/update/delete theo nhóm nhỏ (ví dụ: 500–1000 record/lần)
-- [ ] Tối ưu pagination để tránh offset lớn (seek pagination với WHERE + ORDER BY)
+- Tránh N+1 queries → dùng JOIN, subquery, preloading
+- Batch insert/update/delete theo nhóm nhỏ (ví dụ: 500–1000 record/lần)
+- Tối ưu pagination để tránh offset lớn (seek pagination với WHERE + ORDER BY)
 
 ## ❓Câu hỏi đào sâu – Hiểu nguyên nhân và kiểm soát I/O
 

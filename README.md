@@ -12,17 +12,17 @@
 - Linux from scratch book
     - 1 :arrow_right: 30
 - [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
-    - [1 :arrow_right: 20](./1.0.0/q0h2zj.md) Chapter 10
+    - 1 :arrow_right: 20 Chapter 10
 - Speech and Language Processing
     - [1 :arrow_right: 400](./1.0.0/x7r2ri.md)
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
 - Infrastructure as Code: Managing Servers in the Cloud
-    - [1 :arrow_right: 58](./1.0.0/9luvs1.md)
+    - 1 :arrow_right: 58
 - The Data Warehouse Toolkit, 3rd Edition
-    - [1 :arrow_right: 37](./1.0.0/44enpa.md)
+    - 1 :arrow_right: 37
 - Patterns of Enterprise Application Architecture
-    - [1 :arrow_right: 1](./1.0.0/4qkfz8.md)
+    - 1 :arrow_right: 1
 - Data Science for Business
     - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
     - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)
@@ -44,13 +44,13 @@
 - :white_check_mark: deep-learning-for-vision-systems
     - [1 :arrow_right: DONE](./1.0.0/sfhs65.md)
 - :white_check_mark: THE STARTUP CTO'S HANDBOOK
-    - [1 :arrow_right: DONE](./1.0.0/7982s9.md) **
+    - 1 :arrow_right: DONE
 - :white_check_mark: document software architecture
     - [1 :arrow_right: 250](./1.0.0/7si7e0.md) Not need read.
 - :white_check_mark: Introducing MLOps
     - [1 :arrow_right: DONE](./1.0.0/qbmjfb.md)
 - :white_check_mark: Building Microservices
-    - [1 :arrow_right: DONE](./1.0.0/6e1imr.md) **
+    - 1 :arrow_right: DONE
 - :white_check_mark: Solution Architecture handbook
     - [1 :arrow_right: DONE](./1.0.0/bsyxxk.md) Defining the modernization approach
 - :white_check_mark: Learning Domain-driven design
@@ -69,7 +69,7 @@
 - :white_check_mark: eCommerce in the Cloud
     - [1 :arrow_right: DONE](./1.0.0/jmzd7s.md) chapter 11
 - :white_check_mark: gemini for google workspace prompting guide 101
-    - [1 :arrow_right: DONE](./1.0.0/9w5kku.md)
+    - 1 :arrow_right: DONE
 - :white_check_mark: DevOps Handbook
 - :white_check_mark: The Analytics Setup Guidebook
 - :white_check_mark: Generative AI in practice: 100+ amazing ways
@@ -210,8 +210,8 @@
     - Tối ưu hóa schema và indexes để tiết kiệm chi phí trên cloud.
 
 ## API - HTTP
-- Xây dựng REST API chuẩn cấp Production cho hệ thống E-commerce	- Thiết kế resource URL hợp lý- Sử dụng status code đúng chuẩn- Caching với ETag, Cache-Control- Versioning bằng Header hoặc URL	Kiểm soát lifecycle của API, tránh breaking changesPhù hợp hệ thống lâu dài và client-side đa dạng
-Tối ưu hóa performance qua kỹ thuật HTTP	- GZIP compression- Keep-Alive & connection reuse- HTTP/2 multiplexing- Giảm round-trip (n+1 calls, eager fetching)	Tối ưu throughput và latency khi backend phục vụ >1000 request/giây
+- [Xây dựng REST API chuẩn cấp Production cho hệ thống lớn](./1.0.0/9w5kku.md)
+- Tối ưu hóa performance qua kỹ thuật HTTP	- GZIP compression- Keep-Alive & connection reuse- HTTP/2 multiplexing- Giảm round-trip (n+1 calls, eager fetching)	Tối ưu throughput và latency khi backend phục vụ >1000 request/giây
 API Rate Limiting và Throttling	- Triển khai rate limit bằng middleware hoặc reverse proxy (nginx, envoy)- Thử brute force script- Hiển thị 429 Too Many Requests + Retry-After	Bảo vệ API khỏi abuse, đảm bảo fairness cho người dùngQuan trọng trong môi trường production
 OpenAPI (Swagger) + API Documentation Lifecycle	- Viết API Spec bằng OpenAPI 3.0- Tự động tạo client SDK (e.g., OpenAPI Generator)- Kiểm thử contract bằng Postman / Dredd	Đảm bảo client/backend đồng bộ, giảm bug integrationBắt buộc cho microservices
 API Gateway: Centralized routing + security layer	- Sử dụng Kong / Traefik / NGINX- Add layer: Auth, request transformation, caching- So sánh với BFF (Backend for Frontend)	Thiết kế tập trung bảo mật, route control, và auditGiúp tổ chức API tốt hơn trong hệ thống lớn
@@ -224,8 +224,8 @@ Security Audit REST API (OWASP Top 10 API)	- Kiểm tra: Broken Auth, Mass assig
 Logging & Trace REST Call Chains Across Services	- Thêm correlation ID- Tích hợp OpenTelemetry hoặc custom trace ID qua header- Xem lại trace log thông qua Jaeger hoặc Zipkin	Quan sát được performance toàn hệ thống phân tánDễ debug và optimize
 
 ## Caching
-Cache-aside với Redis cho REST API	- Cài Redis (Docker)- Tự viết cache layer (Node.js/Python/Java)- Xác định TTL hợp lý cho từng loại data- Cache hit/miss logs	Kỹ thuật nền tảng cho hiệu suất APITăng tốc gấp 10–100 lần với data tĩnh/ngắt quãng
-Write-through cache cho transactional data	- Thử mô hình ghi đồng thời vào DB + cache- Kiểm tra cache consistency khi DB lỗi- Benchmark độ trễ write	Phân biệt write-through & write-backỨng dụng cho dữ liệu đọc nhiều - ghi ít
+- [Cache-aside với Redis cho REST API](./1.0.0/q0h2zj.md)
+- Write-through cache cho transactional data	- Thử mô hình ghi đồng thời vào DB + cache- Kiểm tra cache consistency khi DB lỗi- Benchmark độ trễ write	Phân biệt write-through & write-backỨng dụng cho dữ liệu đọc nhiều - ghi ít
 Invalidate cache thông minh khi dữ liệu thay đổi	- Xác định chiến lược: TTL, Manual Invalidation, Pub/Sub- Dùng Redis Pub/Sub hoặc webhook để xoá cache liên quan	Tránh stale cache gây lỗiRất quan trọng với hệ thống phân tán và dữ liệu động
 CDN Caching + Edge rules (Cloudflare, Fastly)	- Tạo rule caching dựa trên URL, headers- Kiểm thử cache purging- Tối ưu latency cho static/HTML pages	Thực tế cho web-scale systemGiảm chi phí server và tăng tốc độ toàn cầu
 Implement Content Negotiation + Vary caching	- Dùng Vary: Accept-Language, Vary: User-Agent- Cache đa phiên bản response	Tránh xung đột cache khi user agent hoặc ngôn ngữ khác nhau
@@ -239,8 +239,8 @@ Compare Cache Backends: Redis vs Memcached vs Local	- Triển khai từng loại
 
 ## Message Queue
 
-Producer-Consumer với RabbitMQ (Basic)	- Setup RabbitMQ- Viết 1 producer + 1 consumer (Node.js/Python/Java)- Gửi JSON message + xử lý đơn giản	Hiểu cách hoạt động cơ bản của MQThực hành Fanout vs Queue
-Dead Letter Queue (DLQ)	- Định nghĩa retry + dead-letter exchange- Tạo rule: nếu xử lý lỗi → chuyển qua DLQ- Log & monitor DLQ	Xử lý thất bại đúng cách, không làm "chết" hệ thốngBắt buộc cho các hệ thống reliable
+- [Producer-Consumer với RabbitMQ](./1.0.0/4qkfz8.md)
+- Dead Letter Queue (DLQ)	- Định nghĩa retry + dead-letter exchange- Tạo rule: nếu xử lý lỗi → chuyển qua DLQ- Log & monitor DLQ	Xử lý thất bại đúng cách, không làm "chết" hệ thốngBắt buộc cho các hệ thống reliable
 Retry Logic + Backoff (exponential retry)	- Gửi message lỗi vào retry queue- Tăng thời gian chờ theo số lần thất bại- So sánh fixed delay vs exponential backoff	Tránh hệ thống bị "hammered" bởi retry loopTối ưu resilience
 Exactly-once vs At-least-once vs At-most-once Delivery	- Viết consumer xử lý giao dịch tài chính- Tạo thử 2 loại lỗi: duplicate + mất message- Thử các cơ chế Idempotent handling	Phân biệt delivery semantics, critical khi làm data processing hoặc tài chính
 Scaling Consumer Groups (Kafka)	- Setup Kafka Cluster (Docker)- Dùng nhiều consumer group- Quan sát load balancing, partition assignment	Hiểu mô hình scale-out streaming và fault tolerance của Kafka
@@ -256,8 +256,8 @@ Compare: RabbitMQ vs Kafka vs SQS vs NATS (theo use-case)	- So sánh latency, or
 
 ## Clean Arch, Patterns
 
-Implement Clean Architecture (Onion/Hexagonal)	- Xây app CRUD đơn giản (VD: BookStore)- Áp dụng Domain Layer, UseCase, Interface Adapter- Infra phụ thuộc vào Domain (ngược lại không được)	Thực hành separation of concernDễ maintain, test và scale hệ thống
-Dependency Inversion Principle (DIP)	- Tạo Interface + các Adapter cụ thể- Dùng IoC Container (Inversify, Spring, NestJS)	Thực hành DIP - nền tảng của Clean Architecture
+- [Implement Clean Architecture (Onion/Hexagonal)](./1.0.0/6e1imr.md)
+- Dependency Inversion Principle (DIP)	- Tạo Interface + các Adapter cụ thể- Dùng IoC Container (Inversify, Spring, NestJS)	Thực hành DIP - nền tảng của Clean Architecture
 Repository Pattern	- Tạo 2 backend khác nhau (InMemory vs Postgres)- Repository interface trung gian- Viết unit test độc lập DB	Cho phép mocking dễ dàng, tách business logic khỏi data source
 Command Query Responsibility Segregation (CQRS)	- Phân chia handler Read vs Write riêng biệt- Write → DB, Read → cache- Tối ưu scale và read performance	Áp dụng cho hệ thống scale lớn hoặc write-heavy vs read-heavy
 Event-driven domain logic (Domain Events)	- Trigger event trong domain (ex: OrderCreated)- Event handler xử lý logging, email, async ops- Dùng Event Bus hoặc simple pub/sub	Tách biệt domain logic + cross-cutting concern
@@ -274,12 +274,12 @@ DDD Tactical Patterns (Aggregate, ValueObject, Entity, Domain Event)	- Dùng DDD
 
 ## cloud + CI/CD
 
-CI Pipeline với Lint, Test, Build, Cache	- Tạo .github/workflows hoặc GitLab CI- Step: lint → test → build image- Sử dụng cache (node_modules, test output...)	Nền tảng CI để đảm bảo code qualityTối ưu thời gian pipeline
-CD Pipeline: Auto deploy dev/staging với feature branch	- Tự động deploy khi merge vào develop/main- Deploy staging/dev lên Docker hoặc serverless	Liên tục test theo môi trường, tránh config sai môi trường thực
-Tạo Dockerfile chuẩn production	- Multi-stage build- Healthcheck- Slim base image	Đảm bảo nhẹ, nhanh, bảo mật
-CI/CD tích hợp Secret Management (ex: GitHub Actions + Vault / SSM)	- Không hard-code secret- Sử dụng GitHub Secret, AWS SSM, hoặc HashiCorp Vault- Rotate secret	Bảo mật hệ thống triển khai
-IaC với Terraform (AWS/GCP)	- Viết file tạo S3, EC2, EKS, IAM- Apply, destroy, versioned infra	Kiểm soát hạ tầng dưới dạng codeTăng tính tái sử dụng và kiểm tra
-Triển khai ứng dụng lên Cloud (AWS/GCP)	- Dùng ECS/EKS (AWS) hoặc GKE (GCP)- Setup service autoscaling- Deploy thông qua CI/CD	Xây hệ thống cloud-native, tự mở rộngRất cần ở cấp Principle
+- [CD Pipeline: Auto deploy dev/staging với feature branch, tạo Dockerfile chuẩn production, tích hợp Secret Management](./1.0.0/9luvs1.md)
+- IaC với Terraform (AWS/GCP)	
+    - Viết file tạo S3, EC2, EKS, IAM
+    - Apply, destroy, versioned infra	
+    - Kiểm soát hạ tầng dưới dạng code, Tăng tính tái sử dụng và kiểm tra
+- Triển khai ứng dụng lên Cloud (AWS/GCP)	- Dùng ECS/EKS (AWS) hoặc GKE (GCP)- Setup service autoscaling- Deploy thông qua CI/CD	Xây hệ thống cloud-native, tự mở rộngRất cần ở cấp Principle
 Blue/Green hoặc Canary Deployment	- Dùng ArgoCD hoặc Spinnaker hoặc GitOps- Deploy theo tỷ lệ (ex: 10%, 50%, 100%)- Monitor rollback	Triển khai an toàn, rollback dễ dàngGiảm downtime
 Self-healing Infra (Auto restart + Alerting + Healthcheck)	- Kubernetes liveness/readiness probe- Auto-restart pod nếu crash- Alert qua Slack/email nếu lỗi build/deploy	Hệ thống resilient, tự chữa lỗi
 Branch Strategy + Tagging (SemVer, Release Flow)	- Dùng versioning chuẩn: v1.2.3- Auto tag khi merge vào main, release note- Phân nhánh chuẩn CI/CD	Quản lý release rõ ràng, dễ rollback
@@ -292,9 +292,8 @@ Auto rollback khi deploy fail / healthcheck fail	- Implement logic revert commit
 
 ## Monitoring & Logging
 
-Logging chuẩn Structured (JSON log)	- Log theo chuẩn JSON- Thêm trace_id, request_id, user_id, status, v.v.- Sử dụng Winston (Node), Logrus (Go), hoặc Zap	Dễ filter, phân tích tự động. Cần thiết để dùng ELK, Loki, etc.
-Tích hợp log tập trung với ELK / Loki	- Push log đến Elasticsearch hoặc Loki- Tìm kiếm lỗi theo service, time, trace_id	Quan sát hệ thống tập trungDễ điều tra sự cố
-Set up Prometheus + Grafana để monitor app metrics	- Tạo custom metrics (http_requests_total, latency, v.v.)- Export metric endpoint- Visualize với Grafana	Theo dõi hiệu suất realtime
+- [Tích hợp log tập trung với ELK / Loki](./1.0.0/44enpa.md)
+- Set up Prometheus + Grafana để monitor app metrics	- Tạo custom metrics (http_requests_total, latency, v.v.)- Export metric endpoint- Visualize với Grafana	Theo dõi hiệu suất realtime
 Alerting qua Slack / Email / PagerDuty	- Cấu hình cảnh báo Prometheus Alertmanager hoặc Grafana Alert- Rule: 5xx rate tăng, memory leak, disk full	Phản ứng nhanh với sự cố
 Tracing request bằng OpenTelemetry / Jaeger	- Trace xuyên suốt microservices- Xác định bottleneck hoặc service gây lỗi- Kết hợp với Grafana Tempo hoặc Jaeger	Critical trong hệ thống phức tạp, phân tán
 Simulate sự cố & điều tra qua dashboard/log	- Tạo lỗi 500, memory spike, database chậm- Điều tra từ log, metric và trace	Khả năng “runbook thinking”, critical incident handling
@@ -308,29 +307,10 @@ Phân quyền access log/metric (multi-team)	- Phân quyền Grafana dashboard /
 Kết hợp CI/CD pipeline với monitoring	- Gửi notification nếu deploy thành công/thất bại- Monitor ứng dụng sau mỗi deploy (canary checks)	CI/CD kết hợp observability để tăng độ an toàn khi release
 Tạo hệ thống "Chaos Engineering" cơ bản (ex: kube-monkey / stress test)	- Gây lỗi CPU, kill service, network latency- Theo dõi khả năng recover / auto-heal qua monitoring	Kiểm tra thực tế resilience và phản ứng của hệ thống
 
-## System Design
-
-Thiết kế hệ thống quản lý user authentication	- Thiết kế hệ thống đăng ký/đăng nhập (OAuth, JWT)- Hỗ trợ reset mật khẩu, multi-factor authentication	Nắm vững mô hình cơ bản, bảo mật, session quản lý
-Thiết kế hệ thống chat real-time (1-1 & group chat)	- Sử dụng WebSocket hoặc long polling- Thiết kế database lưu tin nhắn (NoSQL hoặc SQL)- Hỗ trợ offline message, delivery status	Thực hành real-time system, latency thấp, đồng bộ hóa message
-Xây dựng hệ thống cache phân tán cho trang web traffic cao	- Chọn loại cache (Redis, Memcached)- Thiết kế cache eviction policy- Cache invalidation	Hiểu caching strategies, giảm tải DB, cải thiện performance
-Thiết kế hệ thống bán vé sự kiện (ticketing system)	- Quản lý seat booking- Giải quyết race condition- Thiết kế API thanh toán	Hiểu concurrency, consistency, phân phối tải và fault tolerance
-Thiết kế hệ thống file storage (ví dụ Dropbox, Google Drive)	- Thiết kế metadata service- Hỗ trợ upload/download file lớn, chunking, replication- Phân quyền access	Hệ thống phức tạp, storage và scalability
-Thiết kế hệ thống tìm kiếm (search engine đơn giản)	- Xây dựng indexing, inverted index- Tối ưu truy vấn- Hỗ trợ pagination và ranking	Kỹ năng về data structures, performance, và scale
-Thiết kế hệ thống recommendation (ví dụ Netflix)	- Thu thập dữ liệu user behavior- Thiết kế mô hình filtering và ranking- Streaming data pipelines	Hệ thống ML + big data cơ bản, scale, latency thấp
-Thiết kế hệ thống order processing (e-commerce)	- Workflow order, inventory, payment- Xử lý thất bại giao dịch- Thiết kế event-driven architecture	Phân tách module, reliable messaging, eventual consistency
-Thiết kế API Gateway & Rate Limiting	- Xây dựng gateway- Implement throttling, rate limit per user, IP	Bảo vệ hệ thống khỏi DDOS, nâng cao trải nghiệm người dùng
-Thiết kế hệ thống logging và monitoring cho app phân tán	- Thu thập logs, metrics- Thiết kế hệ thống cảnh báo	Thiết kế observability từ đầu, giúp hệ thống dễ vận hành, debug
-Thiết kế hệ thống xử lý dữ liệu thời gian thực (stream processing)	- Sử dụng Kafka/Fluentd, Spark Streaming- Thiết kế pipeline xử lý data	Kỹ năng xử lý big data, real-time
-Thiết kế hệ thống notification (email, SMS, push notification)	- Hỗ trợ gửi notification hàng loạt- Thiết kế retry và queue hệ thống	Hệ thống chịu lỗi, phân phối lớn, đảm bảo delivery
-Thiết kế hệ thống phân phối tải (load balancer)	- Xây dựng layer phân phối request- Health check, failover, sticky session	Hiểu cân bằng tải, đảm bảo uptime cao
-Thiết kế hệ thống scale horizontally và vertically	- Thiết kế theo microservices- Scale DB và cache- Data sharding	Khả năng mở rộng hệ thống quy mô lớn
-Thiết kế disaster recovery & backup system	- Lên kế hoạch backup DB, file- Thiết kế failover	Đảm bảo business continuity, giảm downtime
-
 ## Microservices
 
-Xây dựng microservice đơn giản (ví dụ User Service)	- Thiết kế API RESTful riêng cho microservice- Implement CRUD- Đóng gói deploy độc lập	Nắm cơ bản kiến trúc microservices, tách biệt service
-Service Discovery & Load Balancing	- Sử dụng Consul / Eureka để đăng ký service- Thiết kế load balancing giữa các instance	Đảm bảo hệ thống tự động nhận biết và cân bằng tải
-API Gateway Implementation	- Xây dựng API Gateway cho hệ thống microservices- Cài đặt authentication, rate limiting	Tập trung bảo mật, quản lý truy cập và giới hạn yêu cầu
+- [Service Discovery & Load Balancing](./1.0.0/8hy0x3.md)
+- API Gateway Implementation	- Xây dựng API Gateway cho hệ thống microservices- Cài đặt authentication, rate limiting	Tập trung bảo mật, quản lý truy cập và giới hạn yêu cầu
 Inter-service Communication: Synchronous vs Async	- Triển khai REST hoặc gRPC cho sync- Triển khai message queue (Kafka, RabbitMQ) cho async communication	Hiểu trade-offs giữa sync và async, thiết kế hệ thống linh hoạt
 Distributed Transaction & Saga Pattern	- Thiết kế xử lý giao dịch phân tán với Saga- Thực hành compensating transactions	Đảm bảo consistency và reliability trong microservices
 Circuit Breaker & Retry Mechanism	- Triển khai circuit breaker (Resilience4j, Hystrix)- Thiết kế retry logic cho call giữa các service	Tăng resilience, xử lý lỗi mạng và service downtime
@@ -344,68 +324,24 @@ Event-driven Architecture & CQRS	- Thiết kế event sourcing, publish-subscrib
 Blue-Green Deployment & Canary Releases	- Triển khai blue-green hoặc canary để deploy microservices an toàn	Giảm downtime, kiểm soát rủi ro khi cập nhật
 Handling Failures & Chaos Engineering	- Thiết kế test hệ thống với fault injection- Thực hành chaos testing để tăng robustness	Tăng cường khả năng chịu lỗi và phản ứng của hệ thống
 
-## Browser - JS - Nodejs
+## System Design
 
-- **What are the optimizations** in V8's **just-in-time (JIT) compilation** and how does it affect the runtime performance?
-- **What are hidden classes** in V8 and how do they optimize object property access?
-- How does **Garbage Collection (GC)** in JavaScript work and how can you avoid **GC pauses**?
-- **What is V8’s "hidden class" mechanism**?
-- How do **inline caching** and **method caching** optimize code execution in V8?
-- **How does the V8 garbage collector** handle circular references?
+- [Xây dựng hệ thống cache phân tán cho trang web traffic cao](./1.0.0/7982s9.md)
+    - Chọn loại cache (Redis, Memcached)
+    - Thiết kế cache eviction policy
+    - Cache invalidation	
+    - Hiểu caching strategies, giảm tải DB, cải thiện performance
+Thiết kế hệ thống bán vé sự kiện (ticketing system)	- Quản lý seat booking- Giải quyết race condition- Thiết kế API thanh toán	Hiểu concurrency, consistency, phân phối tải và fault tolerance
+Thiết kế hệ thống file storage (ví dụ Dropbox, Google Drive)	- Thiết kế metadata service- Hỗ trợ upload/download file lớn, chunking, replication- Phân quyền access	Hệ thống phức tạp, storage và scalability
+Thiết kế hệ thống tìm kiếm (search engine đơn giản)	- Xây dựng indexing, inverted index- Tối ưu truy vấn- Hỗ trợ pagination và ranking	Kỹ năng về data structures, performance, và scale
+Thiết kế hệ thống recommendation (ví dụ Netflix)	- Thu thập dữ liệu user behavior- Thiết kế mô hình filtering và ranking- Streaming data pipelines	Hệ thống ML + big data cơ bản, scale, latency thấp
+Thiết kế hệ thống order processing (e-commerce)	- Workflow order, inventory, payment- Xử lý thất bại giao dịch- Thiết kế event-driven architecture	Phân tách module, reliable messaging, eventual consistency
+Thiết kế API Gateway & Rate Limiting	- Xây dựng gateway- Implement throttling, rate limit per user, IP	Bảo vệ hệ thống khỏi DDOS, nâng cao trải nghiệm người dùng
+Thiết kế hệ thống logging và monitoring cho app phân tán	- Thu thập logs, metrics- Thiết kế hệ thống cảnh báo	Thiết kế observability từ đầu, giúp hệ thống dễ vận hành, debug
+Thiết kế hệ thống xử lý dữ liệu thời gian thực (stream processing)	- Sử dụng Kafka/Fluentd, Spark Streaming- Thiết kế pipeline xử lý data	Kỹ năng xử lý big data, real-time
+Thiết kế hệ thống notification (email, SMS, push notification)	- Hỗ trợ gửi notification hàng loạt- Thiết kế retry và queue hệ thống	Hệ thống chịu lỗi, phân phối lớn, đảm bảo delivery
+Thiết kế hệ thống phân phối tải (load balancer)	- Xây dựng layer phân phối request- Health check, failover, sticky session	Hiểu cân bằng tải, đảm bảo uptime cao
+Thiết kế hệ thống scale horizontally và vertically	- Thiết kế theo microservices- Scale DB và cache- Data sharding	Khả năng mở rộng hệ thống quy mô lớn
+Thiết kế disaster recovery & backup system	- Lên kế hoạch backup DB, file- Thiết kế failover	Đảm bảo business continuity, giảm downtime
 
-### Execution Context & Call Stack
-What is an execution context in JavaScript? (Understand what an execution context is and how it's created when a function is invoked or a script is executed.)
-What is the call stack, and how does it work in JavaScript? (Learn about the call stack, how functions are pushed and popped, and how this affects execution flow.)
-What is the global execution context and function execution context? (Understand the global context vs function contexts and how scopes are created.)
-
-### Memory Management & Garbage Collection
-What is garbage collection in JavaScript? (Learn the importance of garbage collection, how it works, and why memory management is crucial in JavaScript.)
-How does JavaScript handle memory management? (Understand memory allocation, stack vs heap, and the concept of automatic memory management.)
-What are heap and stack memory? How do they differ in JavaScript? (Learn about the differences in stack-based vs heap-based memory allocation and how JavaScript handles them.)
-What is the concept of "Mark-and-Sweep" garbage collection algorithm? (Study the Mark-and-Sweep technique used in most JS engines for garbage collection.)
-
-### Event Loop and Asynchronous Programming
-How does the JavaScript event loop work? (Learn the mechanics of the event loop, call stack, message queue, and how asynchronous tasks are executed.)
-What are microtasks and macrotasks in JavaScript? (Understand the difference between microtasks (e.g., promises) and macrotasks (e.g., setTimeout) and their execution order.)
-What is the role of the message queue in the JavaScript event loop? (Study how tasks are queued for execution and how the event loop processes them.)
-Explain the concept of setTimeout and requestAnimationFrame and how they interact with the event loop. (Learn how these two functions schedule tasks and the difference between them in the event loop.)
-
-### Just-In-Time (JIT) Compilation
-What is JIT (Just-In-Time) compilation? How does it work in JavaScript engines? (Study how JIT compilation optimizes code execution and improves performance by compiling code just before it's executed.)
-What is the difference between JIT and AOT (Ahead-Of-Time) compilation? (Learn the comparison between JIT and AOT compilation techniques, especially in the context of JavaScript engines.)
-How does the V8 engine optimize code using V8's Ignition and TurboFan? (Deep dive into V8's internal Ignition interpreter and TurboFan optimizer, and how they improve performance.)
-
-### Hidden Classes & Inline Caching
-What are hidden classes in JavaScript? How do they affect performance? (Learn about hidden classes, their role in object creation, and how they impact performance optimizations.)
-What is inline caching? How does it optimize property access in JavaScript engines? (Study the inline caching technique used to speed up property access and its role in optimizing performance.)
-
-### Optimizations in JavaScript Engines
-How does JavaScript's engine optimize code execution? (Explore optimizations like dead code elimination, constant folding, and loop unrolling used by engines.)
-What are deoptimization and recompilation in JavaScript engines? (Understand the scenarios in which the engine might deoptimize compiled code and recompile it.)
-
-### Execution Context vs Lexical Environment
-What is the difference between an execution context and a lexical environment? (Learn the concepts of lexical environments and execution contexts, and how scoping works in JavaScript.)
-
-### Closures & Scope Chains
-What is a closure in JavaScript, and how does it relate to the execution context? (Learn about closures and how they capture and maintain references to variables in their outer scope.)
-Explain how JavaScript handles scope chains during function execution. (Understand the scope chain and how the interpreter looks up variable references in different scopes.)
-
-### The Role of the Event Loop in Handling Asynchronous Code
-How does JavaScript handle asynchronous callbacks and promises? (Dive deeper into the event loop’s handling of asynchronous callbacks and promises.)
-Explain the lifecycle of a Promise. (Understand the mechanics of Promise resolution, including microtask queue, and its interaction with the event loop.)
-
-### Concurrency Model & Parallelism
-How does JavaScript handle concurrency, and how is it different from parallelism? (Learn about JavaScript's single-threaded execution model, and how concurrency is handled with the event loop.)
-What are Web Workers, and how can they be used for parallelism in JavaScript? (Learn how Web Workers enable parallel processing and multithreading in JavaScript.)
-
-### Practical/Hands-on Learning
-How can you measure the performance of JavaScript code in the browser? (Learn how to use tools like Chrome DevTools, Lighthouse, and Performance API to measure code performance.)
-Write a small project that demonstrates JavaScript's event loop and async behavior. (Build a simple project that includes asynchronous functions, callbacks, promises, and demonstrates how the event loop manages these.)
-
-### Research Projects to Practice
-Write a custom JavaScript engine simulation that mimics an event loop and demonstrates asynchronous task management.
-Build a tool to visualize how JavaScript executes code (e.g., a tool that shows the execution of promises, microtasks, and macrotasks).
-Create performance benchmarks that show the difference between JIT-compiled and interpreted JavaScript code.'
-You may wonder what's the difference between the compilation and JIT. Well, there's one major difference: after compilation, the machine code is stored in a portable file. It can be executed at any time – there's no need to rush immediately after the compilation process.
-But in the case of JIT, the machine code needs to execute as soon as the compilation ends.
-
+## [Browser - JS - Nodejs](./1.0.0/3q2t07.md)

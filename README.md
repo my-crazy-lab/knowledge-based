@@ -211,7 +211,8 @@
 
 ## API - HTTP
 - [Xây dựng REST API chuẩn cấp Production cho hệ thống lớn](./1.0.0/9w5kku.md)
-- Tối ưu hóa performance qua kỹ thuật HTTP	- GZIP compression- Keep-Alive & connection reuse- HTTP/2 multiplexing- Giảm round-trip (n+1 calls, eager fetching)	Tối ưu throughput và latency khi backend phục vụ >1000 request/giây
+- Tối ưu hóa performance qua kỹ thuật HTTP	
+    - GZIP compression- Keep-Alive & connection reuse- HTTP/2 multiplexing- Giảm round-trip (n+1 calls, eager fetching)	Tối ưu throughput và latency khi backend phục vụ >1000 request/giây
 API Rate Limiting và Throttling	- Triển khai rate limit bằng middleware hoặc reverse proxy (nginx, envoy)- Thử brute force script- Hiển thị 429 Too Many Requests + Retry-After	Bảo vệ API khỏi abuse, đảm bảo fairness cho người dùngQuan trọng trong môi trường production
 OpenAPI (Swagger) + API Documentation Lifecycle	- Viết API Spec bằng OpenAPI 3.0- Tự động tạo client SDK (e.g., OpenAPI Generator)- Kiểm thử contract bằng Postman / Dredd	Đảm bảo client/backend đồng bộ, giảm bug integrationBắt buộc cho microservices
 API Gateway: Centralized routing + security layer	- Sử dụng Kong / Traefik / NGINX- Add layer: Auth, request transformation, caching- So sánh với BFF (Backend for Frontend)	Thiết kế tập trung bảo mật, route control, và auditGiúp tổ chức API tốt hơn trong hệ thống lớn
@@ -225,7 +226,8 @@ Logging & Trace REST Call Chains Across Services	- Thêm correlation ID- Tích h
 
 ## Caching
 - [Cache-aside với Redis cho REST API](./1.0.0/q0h2zj.md)
-- Write-through cache cho transactional data	- Thử mô hình ghi đồng thời vào DB + cache- Kiểm tra cache consistency khi DB lỗi- Benchmark độ trễ write	Phân biệt write-through & write-backỨng dụng cho dữ liệu đọc nhiều - ghi ít
+- Write-through cache cho transactional data	
+    - Thử mô hình ghi đồng thời vào DB + cache- Kiểm tra cache consistency khi DB lỗi- Benchmark độ trễ write	Phân biệt write-through & write-backỨng dụng cho dữ liệu đọc nhiều - ghi ít
 Invalidate cache thông minh khi dữ liệu thay đổi	- Xác định chiến lược: TTL, Manual Invalidation, Pub/Sub- Dùng Redis Pub/Sub hoặc webhook để xoá cache liên quan	Tránh stale cache gây lỗiRất quan trọng với hệ thống phân tán và dữ liệu động
 CDN Caching + Edge rules (Cloudflare, Fastly)	- Tạo rule caching dựa trên URL, headers- Kiểm thử cache purging- Tối ưu latency cho static/HTML pages	Thực tế cho web-scale systemGiảm chi phí server và tăng tốc độ toàn cầu
 Implement Content Negotiation + Vary caching	- Dùng Vary: Accept-Language, Vary: User-Agent- Cache đa phiên bản response	Tránh xung đột cache khi user agent hoặc ngôn ngữ khác nhau
@@ -240,7 +242,8 @@ Compare Cache Backends: Redis vs Memcached vs Local	- Triển khai từng loại
 ## Message Queue
 
 - [Producer-Consumer với RabbitMQ](./1.0.0/4qkfz8.md)
-- Dead Letter Queue (DLQ)	- Định nghĩa retry + dead-letter exchange- Tạo rule: nếu xử lý lỗi → chuyển qua DLQ- Log & monitor DLQ	Xử lý thất bại đúng cách, không làm "chết" hệ thốngBắt buộc cho các hệ thống reliable
+- Dead Letter Queue (DLQ)	
+    - Định nghĩa retry + dead-letter exchange- Tạo rule: nếu xử lý lỗi → chuyển qua DLQ- Log & monitor DLQ	Xử lý thất bại đúng cách, không làm "chết" hệ thốngBắt buộc cho các hệ thống reliable
 Retry Logic + Backoff (exponential retry)	- Gửi message lỗi vào retry queue- Tăng thời gian chờ theo số lần thất bại- So sánh fixed delay vs exponential backoff	Tránh hệ thống bị "hammered" bởi retry loopTối ưu resilience
 Exactly-once vs At-least-once vs At-most-once Delivery	- Viết consumer xử lý giao dịch tài chính- Tạo thử 2 loại lỗi: duplicate + mất message- Thử các cơ chế Idempotent handling	Phân biệt delivery semantics, critical khi làm data processing hoặc tài chính
 Scaling Consumer Groups (Kafka)	- Setup Kafka Cluster (Docker)- Dùng nhiều consumer group- Quan sát load balancing, partition assignment	Hiểu mô hình scale-out streaming và fault tolerance của Kafka
@@ -257,7 +260,8 @@ Compare: RabbitMQ vs Kafka vs SQS vs NATS (theo use-case)	- So sánh latency, or
 ## Clean Arch, Patterns
 
 - [Implement Clean Architecture (Onion/Hexagonal)](./1.0.0/6e1imr.md)
-- Dependency Inversion Principle (DIP)	- Tạo Interface + các Adapter cụ thể- Dùng IoC Container (Inversify, Spring, NestJS)	Thực hành DIP - nền tảng của Clean Architecture
+- Dependency Inversion Principle (DIP)	
+    - Tạo Interface + các Adapter cụ thể- Dùng IoC Container (Inversify, Spring, NestJS)	Thực hành DIP - nền tảng của Clean Architecture
 Repository Pattern	- Tạo 2 backend khác nhau (InMemory vs Postgres)- Repository interface trung gian- Viết unit test độc lập DB	Cho phép mocking dễ dàng, tách business logic khỏi data source
 Command Query Responsibility Segregation (CQRS)	- Phân chia handler Read vs Write riêng biệt- Write → DB, Read → cache- Tối ưu scale và read performance	Áp dụng cho hệ thống scale lớn hoặc write-heavy vs read-heavy
 Event-driven domain logic (Domain Events)	- Trigger event trong domain (ex: OrderCreated)- Event handler xử lý logging, email, async ops- Dùng Event Bus hoặc simple pub/sub	Tách biệt domain logic + cross-cutting concern
@@ -293,7 +297,8 @@ Auto rollback khi deploy fail / healthcheck fail	- Implement logic revert commit
 ## Monitoring & Logging
 
 - [Tích hợp log tập trung với ELK / Loki](./1.0.0/44enpa.md)
-- Set up Prometheus + Grafana để monitor app metrics	- Tạo custom metrics (http_requests_total, latency, v.v.)- Export metric endpoint- Visualize với Grafana	Theo dõi hiệu suất realtime
+- Set up Prometheus + Grafana để monitor app metrics	
+    - Tạo custom metrics (http_requests_total, latency, v.v.)- Export metric endpoint- Visualize với Grafana	Theo dõi hiệu suất realtime
 Alerting qua Slack / Email / PagerDuty	- Cấu hình cảnh báo Prometheus Alertmanager hoặc Grafana Alert- Rule: 5xx rate tăng, memory leak, disk full	Phản ứng nhanh với sự cố
 Tracing request bằng OpenTelemetry / Jaeger	- Trace xuyên suốt microservices- Xác định bottleneck hoặc service gây lỗi- Kết hợp với Grafana Tempo hoặc Jaeger	Critical trong hệ thống phức tạp, phân tán
 Simulate sự cố & điều tra qua dashboard/log	- Tạo lỗi 500, memory spike, database chậm- Điều tra từ log, metric và trace	Khả năng “runbook thinking”, critical incident handling
@@ -310,7 +315,8 @@ Tạo hệ thống "Chaos Engineering" cơ bản (ex: kube-monkey / stress test)
 ## Microservices
 
 - [Service Discovery & Load Balancing](./1.0.0/8hy0x3.md)
-- API Gateway Implementation	- Xây dựng API Gateway cho hệ thống microservices- Cài đặt authentication, rate limiting	Tập trung bảo mật, quản lý truy cập và giới hạn yêu cầu
+- API Gateway Implementation	
+    - Xây dựng API Gateway cho hệ thống microservices- Cài đặt authentication, rate limiting	Tập trung bảo mật, quản lý truy cập và giới hạn yêu cầu
 Inter-service Communication: Synchronous vs Async	- Triển khai REST hoặc gRPC cho sync- Triển khai message queue (Kafka, RabbitMQ) cho async communication	Hiểu trade-offs giữa sync và async, thiết kế hệ thống linh hoạt
 Distributed Transaction & Saga Pattern	- Thiết kế xử lý giao dịch phân tán với Saga- Thực hành compensating transactions	Đảm bảo consistency và reliability trong microservices
 Circuit Breaker & Retry Mechanism	- Triển khai circuit breaker (Resilience4j, Hystrix)- Thiết kế retry logic cho call giữa các service	Tăng resilience, xử lý lỗi mạng và service downtime

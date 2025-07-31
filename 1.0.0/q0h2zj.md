@@ -1,4 +1,4 @@
-# Câu hỏi đào sâu cho phần Cài đặt Redis (Principle Engineer)
+# ✅ Câu hỏi đào sâu cho phần Cài đặt Redis (Principle Engineer)
 
 1. **Tại sao chọn Redis làm cache layer thay vì các giải pháp khác như Memcached hay cache nội bộ trong ứng dụng?**
 2. Các yếu tố kiến trúc và quy mô hệ thống nào ảnh hưởng đến quyết định cài Redis trên Docker hay cài trực tiếp trên server?

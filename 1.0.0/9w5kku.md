@@ -1,6 +1,6 @@
-# Câu hỏi đào sâu về Thiết kế resource URL hợp lý (Level Principle)
+# ✅ Câu hỏi đào sâu về Thiết kế resource URL hợp lý (Level Principle)
 
-1. **Nguyên tắc cơ bản nào định nghĩa một resource trong REST API?**
+1. Nguyên tắc cơ bản nào định nghĩa một resource trong REST API?
 2. Làm thế nào để phân biệt giữa resource và hành động (action) trong thiết kế URL?
 3. Tại sao nên tránh dùng động từ (verbs) trong URL và thay vào đó tập trung vào danh từ (nouns)?
 4. Quy ước đặt tên resource URL nên theo chuẩn nào (snake_case, kebab-case, camelCase)? Ưu nhược điểm của từng loại là gì?

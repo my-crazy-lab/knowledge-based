@@ -1,43 +1,42 @@
-# Câu hỏi đào sâu RabbitMQ Setup & Basics (Technical Lead / Principle Engineer)
+# Câu hỏi đào sâu RabbitMQ Setup & Basics
 
-### Cài đặt RabbitMQ (Docker hoặc bản native)
+### ✅ Cài đặt RabbitMQ (Docker hoặc bản native)
 1. Những khác biệt, ưu và nhược điểm khi triển khai RabbitMQ trên Docker so với bản native? Khi nào nên dùng từng cách?
 2. Làm thế nào để cấu hình RabbitMQ trên Docker để đạt hiệu suất tối ưu và bảo mật?
 3. Các tham số cấu hình quan trọng khi khởi tạo RabbitMQ cần lưu ý là gì? (vd: memory limits, disk thresholds, file descriptors…)
 
-### Viết producer + consumer mẫu (Node.js/Python/Java)
+### ✅ Viết producer + consumer mẫu (Node.js/Python/Java)
 4. Những design pattern phổ biến khi xây dựng producer và consumer để đảm bảo tính scale và resilience?
 5. Làm sao xử lý lỗi và retry hiệu quả trong producer và consumer mà không gây message duplication?
 6. Cách thiết kế consumer để xử lý message đồng thời (concurrency) nhưng vẫn đảm bảo thứ tự và idempotency?
 
-### Gửi và nhận JSON message, xử lý lỗi cơ bản
+### ✅ Gửi và nhận JSON message, xử lý lỗi cơ bản
 7. Các tiêu chuẩn encoding/serialization khi gửi JSON qua RabbitMQ và cách tránh lỗi parsing?
 8. Khi nhận message lỗi hoặc malformed JSON, chiến lược xử lý lỗi hợp lý để không làm tắc queue là gì?
 9. Làm sao để logging và monitoring lỗi message một cách hiệu quả trong hệ thống producer-consumer?
 
-### Hiểu cách RabbitMQ hoạt động: exchanges, queues, bindings
+### ✅ Hiểu cách RabbitMQ hoạt động: exchanges, queues, bindings
 10. Mô hình luồng message trong RabbitMQ hoạt động ra sao từ producer đến consumer qua exchange và binding?
 11. Làm thế nào để chọn loại exchange phù hợp với use case cụ thể của hệ thống?
 12. Phân tích cách hoạt động của routing key và binding key trong direct vs topic exchange?
 
-### Thực hành các loại exchange: fanout, direct, topic, headers
+### ✅ Thực hành các loại exchange: fanout, direct, topic, headers
 13. So sánh ưu, nhược điểm và use case của từng loại exchange: fanout, direct, topic, headers.
 14. Làm thế nào để thiết kế mô hình routing phức tạp sử dụng nhiều loại exchange cùng lúc?
 15. Các vấn đề về performance hoặc scaling có thể gặp khi sử dụng fanout exchange với số lượng consumer lớn?
 
-### Phân biệt durable queue, transient queue, message persistence
+### ✅ Phân biệt durable queue, transient queue, message persistence
 16. Các ảnh hưởng về độ bền (durability) của queue và message tới tính sẵn sàng và mất dữ liệu khi broker restart?
 17. Khi nào nên sử dụng durable queue và persistent message, khi nào nên chọn transient?
 18. Tác động của việc bật/tắt message persistence tới hiệu suất tổng thể?
 
-### Thiết lập và xử lý acknowledgment, message requeue, dead-letter queue
+### ✅ Thiết lập và xử lý acknowledgment, message requeue, dead-letter queue
 19. Cách hoạt động của cơ chế manual vs auto acknowledgment trong RabbitMQ và tác động đến reliability?
 20. Khi nào và làm thế nào để requeue message một cách an toàn mà không gây infinite retry loop?
 21. Thiết kế dead-letter queue để xử lý message lỗi hiệu quả, các best practice cho việc phân loại và xử lý DLQ?
 22. Làm thế nào để giám sát và cảnh báo các message rơi vào DLQ để kịp thời xử lý?
 
-
-# Câu hỏi đào sâu Advanced RabbitMQ Concepts (Technical Lead / Principle Engineer)
+# Câu hỏi đào sâu Advanced RabbitMQ Concepts
 
 ### Thiết kế mô hình routing phức tạp cho nhiều loại message
 1. Làm thế nào để thiết kế một hệ thống routing đa tầng, kết hợp nhiều loại exchange (direct, topic, headers) để phân phối message chính xác?
@@ -76,7 +75,7 @@
 24. Cách thiết kế mạng riêng, firewall rules, VPN hoặc VPC để đảm bảo an toàn cho RabbitMQ trong môi trường production?
 25. Các kịch bản bảo mật phổ biến khi triển khai RabbitMQ và cách phòng chống (DoS attacks, unauthorized access, man-in-the-middle…)
 
-# Câu hỏi đào sâu Kafka Setup & Basics (Technical Lead / Principle Engineer)
+# Câu hỏi đào sâu Kafka Setup & Basics
 
 ### Cài đặt Kafka cluster (Docker, Confluent Platform)
 1. So sánh ưu nhược điểm khi triển khai Kafka trên Docker so với bản cài đặt trực tiếp (native)?
@@ -101,7 +100,8 @@
 14. Các phương pháp commit offset (auto commit, manual commit) và ưu nhược điểm của từng cách?
 15. Làm thế nào để phát hiện và xử lý trường hợp consumer bị lag lâu ngày hoặc mất kết nối?
 16. Ảnh hưởng của offset commit không đồng bộ hoặc lỗi commit đến tính nhất quán dữ liệu?
-# Câu hỏi đào sâu Advanced Kafka Concepts (Technical Lead / Principle Engineer)
+
+# Câu hỏi đào sâu Advanced Kafka Concepts
 
 ### Thiết kế topic, phân vùng, và replication phù hợp cho scale lớn
 1. Làm sao xác định số lượng partition tối ưu cho topic dựa trên throughput và yêu cầu ordering?
@@ -140,7 +140,7 @@
 24. Làm sao để thiết kế mạng an toàn, phòng chống các tấn công như man-in-the-middle, DoS trong môi trường Kafka?
 25. Các kịch bản bảo mật thực tế gặp phải khi triển khai Kafka và cách xử lý?
 
-# Câu hỏi đào sâu Cross-cutting Concerns (Technical Lead / Principle Engineer)
+# Câu hỏi đào sâu Cross-cutting Concerns
 
 ### So sánh RabbitMQ vs Kafka về use case, performance, reliability
 1. RabbitMQ và Kafka khác nhau thế nào về kiến trúc và mô hình message delivery?

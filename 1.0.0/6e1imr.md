@@ -1,12 +1,12 @@
 # Câu hỏi đào sâu: Xây app CRUD theo Clean Architecture (BookStore example)
 
-### Domain Layer
+### ✅ Domain Layer
 1. Entity Book cần những thuộc tính nào và cách định nghĩa Value Object thế nào cho hợp lý?
 2. Các invariant business rule nào cần được enforce trong Domain Layer?
 3. Làm sao để giữ Domain thuần khiết, không phụ thuộc framework hay infra cụ thể?
 4. Khi nào cần tạo thêm Domain Service thay vì để logic trong Entity?
 
-### UseCase (Application) Layer
+### ✅ UseCase (Application) Layer
 5. UseCase nên chứa những logic gì? Phân biệt rõ với Domain Layer như thế nào?
 6. Làm sao để quản lý transaction và rollback trong UseCase một cách hiệu quả?
 7. Các input/output của UseCase nên thiết kế thế nào để dễ test và mở rộng?

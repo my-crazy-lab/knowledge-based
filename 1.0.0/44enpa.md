@@ -1,6 +1,6 @@
 # Câu hỏi đào sâu về Thu thập và Đẩy log (ELK / Loki)
 
-- **Agent thu thập log**
+- ✅ **Agent thu thập log**
   - Ưu và nhược điểm của các agent phổ biến như Filebeat, Fluentd, Fluent Bit, Promtail là gì?  
   - Cách chọn agent phù hợp dựa trên kiến trúc hệ thống (monolith vs microservices, containerized vs bare metal)?  
   - Làm thế nào để cấu hình agent sao cho tối ưu hiệu suất thu thập, tránh mất log hoặc tạo bottleneck?  
@@ -8,7 +8,7 @@
   - Làm sao đảm bảo agent hoạt động ổn định, có tính fault-tolerance và auto-recovery?  
   - Chiến lược quản lý agent khi có hàng trăm hoặc hàng nghìn node/service?  
 
-- **Định dạng log**
+- ✅ **Định dạng log**
   - Lợi ích của việc chuẩn hóa định dạng log (JSON, structured logs) so với log dạng text tự do?  
   - Các trường metadata quan trọng cần thiết để phục vụ truy vết, phân tích và cảnh báo là gì?  
   - Cách đảm bảo consistent metadata giữa các service, tránh lỗi mismatch hoặc thiếu trường?  

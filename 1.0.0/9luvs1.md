@@ -1,6 +1,7 @@
 ## Dockerfile chuẩn production
 
-1. **Multi-stage build là gì? Tại sao nó lại quan trọng trong tối ưu Docker image?**  
+✅
+1. Multi-stage build là gì? Tại sao nó lại quan trọng trong tối ưu Docker image?
 2. So sánh kích thước và bảo mật giữa image sử dụng multi-stage build và image build truyền thống?  
 3. Làm thế nào multi-stage build giúp tách biệt các giai đoạn build và runtime?  
 4. Khi nào nên dùng multi-stage build? Có những trường hợp nào multi-stage build không phù hợp?  

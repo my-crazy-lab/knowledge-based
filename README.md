@@ -8,7 +8,8 @@
     - [222 :arrow_right: 295](./1.0.0/o70doc.md)
     - [295 :arrow_right: 371](./1.0.0/n20071.md)
     - [372 :arrow_right: 410](./1.0.0/o6n1x2.md)
-- The Architecture of Open Source Applications volume 1: 2
+- The Architecture of Open Source Applications volume 1
+    - Chapter 2
 - Linux from scratch book
     - 1 :arrow_right: 30
 - [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)

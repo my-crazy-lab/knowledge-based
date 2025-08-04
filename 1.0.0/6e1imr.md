@@ -13,19 +13,19 @@
 8. Làm sao để handle lỗi (exceptions) và thông báo trạng thái trong UseCase?
 9. Cách thiết kế UseCase theo chuẩn single responsibility principle (SRP)?
 
-### Interface Adapter Layer
+### ✅ Interface Adapter Layer
 10. Các adapter như Controller (HTTP), Presenter, Repository interface nên đóng vai trò gì?
 11. Cách chuyển đổi dữ liệu giữa DTO, Domain Entity và View Model sao cho tối ưu?
 12. Làm sao để adapter không làm rò rỉ detail infra hay domain?
 13. Cách thiết kế adapter để dễ dàng thay đổi framework hay giao thức (REST, GraphQL)?
 
-### Infrastructure Layer
+### ✅ Infrastructure Layer
 14. Làm thế nào để implement Repository pattern tương thích với Domain interface?
 15. Các kỹ thuật kết nối DB, caching, external API nên được đóng gói như thế nào trong infra?
 16. Cách thiết kế infra để không làm phụ thuộc domain và use case layer?
 17. Làm sao để quản lý config, connection pooling và error handling trong infra?
 
-### Tổng quan & Best Practices
+### ✅ Tổng quan & Best Practices
 18. Cách đảm bảo luồng dữ liệu giữa các layer luôn rõ ràng, tránh circular dependency?
 19. Làm sao để dễ dàng viết unit test cho từng layer riêng biệt?
 20. Các trade-off khi thực hiện layering chặt chẽ so với pragmatic approach?

@@ -15,30 +15,28 @@
   - Làm sao để enrich log (thêm trace_id, request_id) ngay từ application hoặc agent?  
   - Cách xử lý log có kích thước lớn hoặc log nhạy cảm (PII, thông tin cá nhân)?  
 
-- **Đẩy log đến ELK / Loki**
+- ✅ **Đẩy log đến ELK / Loki**
   - Các phương pháp đẩy log (push vs pull) và ưu nhược điểm?  
   - Cách cấu hình batch size, retry và backoff khi gửi log để đảm bảo hiệu suất và reliability?  
   - Làm thế nào để cân bằng giữa latency (độ trễ log) và throughput khi đẩy log?  
   - Chiến lược bảo vệ dữ liệu log trong quá trình truyền tải (TLS, encryption)?  
   - Làm thế nào để kiểm tra, giám sát trạng thái kết nối giữa agent và ELK/Loki?  
 
-- **Quản lý metadata log**
+- ✅ **Quản lý metadata log**
   - Làm sao để thiết kế schema metadata sao cho mở rộng được theo thời gian mà không phá vỡ hệ thống log?  
   - Cách đồng bộ metadata giữa các service và agent để phục vụ tracing và correlation hiệu quả?  
   - Phương pháp lưu trữ và xử lý metadata nhạy cảm (ví dụ, masking, encryption)?  
   - Làm thế nào để metadata hỗ trợ truy vấn đa chiều (service, environment, pod, trace_id, request_id)?  
 
-- **Tính ổn định và mở rộng**
+- ✅ **Tính ổn định và mở rộng**
   - Cách triển khai hệ thống log tập trung đảm bảo tính sẵn sàng và chịu lỗi?  
   - Chiến lược scaling agent và hệ thống đích (Elasticsearch cluster hoặc Loki) để xử lý lượng log tăng trưởng?  
   - Làm thế nào để tối ưu resource usage (CPU, memory, bandwidth) cho agent và backend log system?  
 
-- **Vận hành và troubleshooting**
+- ✅ **Vận hành và troubleshooting**
   - Cách giám sát agent để phát hiện sớm các vấn đề (bottleneck, lỗi kết nối, log bị mất)?  
   - Phương pháp debug log pipeline khi gặp lỗi mất log hoặc delay log?  
   - Quy trình cập nhật agent mà không gây gián đoạn hệ thống?  
-
-
 
 # Câu hỏi đào sâu về Tìm kiếm và Phân tích Log (ELK / Loki)
 

@@ -38,13 +38,13 @@
 
 # Câu hỏi đào sâu Advanced RabbitMQ Concepts
 
-### Thiết kế mô hình routing phức tạp cho nhiều loại message
+### ✅ Thiết kế mô hình routing phức tạp cho nhiều loại message
 1. Làm thế nào để thiết kế một hệ thống routing đa tầng, kết hợp nhiều loại exchange (direct, topic, headers) để phân phối message chính xác?
 2. Các chiến lược quản lý routing key và binding key khi số lượng topic hoặc loại message tăng lên đáng kể?
 3. Làm sao để tránh bottleneck hoặc điểm nghẽn trong mô hình routing phức tạp?
 4. Khi nào nên dùng headers exchange thay vì topic exchange? Những trade-off cụ thể?
 
-### Xử lý concurrency và prefetch count để tối ưu consumer throughput
+### ✅ Xử lý concurrency và prefetch count để tối ưu consumer throughput
 5. Tác động của prefetch count đến hiệu năng và độ ổn định của consumer trong các workloads đa dạng?
 6. Làm thế nào để thiết lập concurrency giữa nhiều consumer mà vẫn tránh tình trạng message starvation hoặc out-of-order processing?
 7. Các vấn đề thường gặp khi tăng concurrency hoặc prefetch count quá cao và cách khắc phục?

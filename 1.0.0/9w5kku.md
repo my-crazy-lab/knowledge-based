@@ -16,9 +16,9 @@
 14. Làm thế nào để thiết kế URL sao cho dễ dàng hỗ trợ các thao tác pagination, filtering, sorting mà vẫn giữ cấu trúc rõ ràng?
 15. Khi thiết kế URL, làm sao để cân bằng giữa tính chuẩn REST và tính thực tế, hiệu quả trong phát triển và bảo trì?
 
-# Câu hỏi đào sâu về Sử dụng status code đúng chuẩn (Level Principle)
+# ✅ Câu hỏi đào sâu về Sử dụng status code đúng chuẩn (Level Principle)
 
-1. **Tại sao việc sử dụng status code HTTP đúng chuẩn lại quan trọng trong thiết kế REST API?**
+1. Tại sao việc sử dụng status code HTTP đúng chuẩn lại quan trọng trong thiết kế REST API?
 2. HTTP status code được phân loại thành các nhóm nào? Ý nghĩa và vai trò của từng nhóm trong API là gì?
 3. Khi nào nên dùng status code 200 (OK) so với 201 (Created) hoặc 204 (No Content)? Ví dụ cụ thể từng trường hợp.
 4. Làm thế nào để chọn status code phù hợp cho các trường hợp lỗi phổ biến như:  
@@ -41,9 +41,9 @@
 14. Những lỗi thường gặp khi dùng status code không chuẩn và tác hại của chúng trong hệ thống lớn là gì?
 15. Làm sao để thiết kế status code sao cho thân thiện với client đa dạng (web, mobile, third-party apps)?
 
-# Câu hỏi đào sâu về Caching với ETag, Cache-Control (Level Principle)
+# ✅ Câu hỏi đào sâu về Caching với ETag, Cache-Control (Level Principle)
 
-1. **Nguyên lý cơ bản của HTTP caching là gì và tại sao caching lại quan trọng trong REST API?**
+1. Nguyên lý cơ bản của HTTP caching là gì và tại sao caching lại quan trọng trong REST API?
 2. ETag là gì? Cách thức hoạt động của ETag trong việc tối ưu cache như thế nào?
 3. So sánh ETag với header Last-Modified: ưu điểm và hạn chế của từng phương pháp là gì?
 4. Header Cache-Control gồm những directive phổ biến nào? Ý nghĩa và cách sử dụng từng directive (ví dụ: no-cache, no-store, max-age, must-revalidate, public, private)?

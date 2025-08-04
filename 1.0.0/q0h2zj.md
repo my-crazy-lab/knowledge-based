@@ -1,6 +1,6 @@
 # ✅ Câu hỏi đào sâu cho phần Cài đặt Redis (Principle Engineer)
 
-1. **Tại sao chọn Redis làm cache layer thay vì các giải pháp khác như Memcached hay cache nội bộ trong ứng dụng?**
+1. Tại sao chọn Redis làm cache layer thay vì các giải pháp khác như Memcached hay cache nội bộ trong ứng dụng?
 2. Các yếu tố kiến trúc và quy mô hệ thống nào ảnh hưởng đến quyết định cài Redis trên Docker hay cài trực tiếp trên server?
 3. Ưu nhược điểm của việc chạy Redis trong container (Docker) so với môi trường bare-metal?
 4. Làm thế nào để đảm bảo Redis hoạt động ổn định, hiệu quả trong môi trường container với các giới hạn tài nguyên (CPU, memory)?
@@ -16,25 +16,25 @@
 14. Làm thế nào để kết hợp Redis với các công cụ monitoring và alerting để đảm bảo hệ thống cache luôn hoạt động ổn định?
 15. Cân nhắc giữa chi phí vận hành và hiệu năng khi thiết lập Redis cluster hoặc nhiều instance cache?
 
-
 # Câu hỏi đào sâu cho phần Xây dựng Cache Layer (Principle Engineer)
 
-1. **Cache-aside là gì? Tại sao cache-aside lại được sử dụng phổ biến trong thiết kế cache cho API?**
+✅
+1. Cache-aside là gì? Tại sao cache-aside lại được sử dụng phổ biến trong thiết kế cache cho API?
 2. Sự khác biệt cơ bản giữa các mô hình cache: cache-aside, read-through, write-through, và write-back là gì? Ưu – nhược điểm của từng mô hình?
 3. Trong các mô hình cache, khi nào nên ưu tiên dùng cache-aside thay vì các mô hình khác?
 4. Làm thế nào để đảm bảo dữ liệu trong cache và database luôn nhất quán khi sử dụng cache-aside, đặc biệt trong môi trường đa thread hoặc đa node?
-5. Các chiến lược cache invalidation phổ biến là gì? Ưu – nhược điểm của từng cách (time-based expiry, explicit invalidation, write-through invalidation...)?
 6. Những thách thức nào có thể gặp phải khi đồng bộ cache và database, ví dụ race conditions, stale data, cache stampede?
 7. Làm thế nào để xử lý các vấn đề liên quan đến đồng bộ hóa cache khi dữ liệu bị cập nhật nhiều lần trong thời gian ngắn?
 8. Vai trò của TTL (Time-To-Live) trong cache và cách chọn giá trị TTL phù hợp với từng loại dữ liệu?
 9. Làm thế nào để thiết kế cache layer có khả năng mở rộng và chịu lỗi, đặc biệt khi backend database hoặc cache service không đồng bộ?
 10. Khi nào nên sử dụng các kỹ thuật như cache warming hoặc preloading để cải thiện hiệu năng?
 11. Làm thế nào để theo dõi, đo lường và tối ưu hiệu suất cache layer (cache hit ratio, latency, overhead)?
-12. Ảnh hưởng của các mô hình cache đến tính năng transactional và consistency trong ứng dụng?
+
+05. ** Các chiến lược cache invalidation phổ biến là gì? Ưu – nhược điểm của từng cách (time-based expiry, explicit invalidation, write-through invalidation...)?
+12. ** Ảnh hưởng của các mô hình cache đến tính năng transactional và consistency trong ứng dụng?
 13. Làm thế nào để xử lý các trường hợp cache bị lỗi hoặc không khả dụng (cache failover)?
 14. Các best practices để viết cache layer code sao cho dễ bảo trì, test và mở rộng?
 15. Làm thế nào để kết hợp cache layer với các kỹ thuật khác như database sharding, CQRS hoặc event sourcing?
-
 
 # Câu hỏi đào sâu về TTL và Expiration (Principle Engineer)
 

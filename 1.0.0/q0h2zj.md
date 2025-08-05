@@ -1,4 +1,4 @@
-# ✅ Câu hỏi đào sâu cho phần Cài đặt Redis (Principle Engineer)
+# ✅ Câu hỏi đào sâu cho phần Cài đặt Redis
 
 1. Tại sao chọn Redis làm cache layer thay vì các giải pháp khác như Memcached hay cache nội bộ trong ứng dụng?
 2. Các yếu tố kiến trúc và quy mô hệ thống nào ảnh hưởng đến quyết định cài Redis trên Docker hay cài trực tiếp trên server?
@@ -16,9 +16,8 @@
 14. Làm thế nào để kết hợp Redis với các công cụ monitoring và alerting để đảm bảo hệ thống cache luôn hoạt động ổn định?
 15. Cân nhắc giữa chi phí vận hành và hiệu năng khi thiết lập Redis cluster hoặc nhiều instance cache?
 
-# Câu hỏi đào sâu cho phần Xây dựng Cache Layer (Principle Engineer)
+# ✅ Câu hỏi đào sâu cho phần Xây dựng Cache Layer
 
-✅
 1. Cache-aside là gì? Tại sao cache-aside lại được sử dụng phổ biến trong thiết kế cache cho API?
 2. Sự khác biệt cơ bản giữa các mô hình cache: cache-aside, read-through, write-through, và write-back là gì? Ưu – nhược điểm của từng mô hình?
 3. Trong các mô hình cache, khi nào nên ưu tiên dùng cache-aside thay vì các mô hình khác?
@@ -29,32 +28,28 @@
 9. Làm thế nào để thiết kế cache layer có khả năng mở rộng và chịu lỗi, đặc biệt khi backend database hoặc cache service không đồng bộ?
 10. Khi nào nên sử dụng các kỹ thuật như cache warming hoặc preloading để cải thiện hiệu năng?
 11. Làm thế nào để theo dõi, đo lường và tối ưu hiệu suất cache layer (cache hit ratio, latency, overhead)?
-
-05. ** Các chiến lược cache invalidation phổ biến là gì? Ưu – nhược điểm của từng cách (time-based expiry, explicit invalidation, write-through invalidation...)?
-12. ** Ảnh hưởng của các mô hình cache đến tính năng transactional và consistency trong ứng dụng?
+05. Các chiến lược cache invalidation phổ biến là gì? Ưu – nhược điểm của từng cách (time-based expiry, explicit invalidation, write-through invalidation...)?
+12. Ảnh hưởng của các mô hình cache đến tính năng transactional và consistency trong ứng dụng?
 13. Làm thế nào để xử lý các trường hợp cache bị lỗi hoặc không khả dụng (cache failover)?
 14. Các best practices để viết cache layer code sao cho dễ bảo trì, test và mở rộng?
 15. Làm thế nào để kết hợp cache layer với các kỹ thuật khác như database sharding, CQRS hoặc event sourcing?
 
-# Câu hỏi đào sâu về TTL và Expiration (Principle Engineer)
+# ✅ Câu hỏi đào sâu về TTL và Expiration
 
-1. **TTL (Time To Live) trong caching là gì và vai trò của nó trong việc quản lý dữ liệu cache?**
 2. Làm thế nào để xác định giá trị TTL phù hợp cho từng loại dữ liệu (data tĩnh, data thường xuyên thay đổi, dữ liệu nhạy cảm)?
-3. Tác động của TTL quá ngắn hoặc quá dài đến hiệu suất hệ thống và độ tươi mới (freshness) của dữ liệu cache như thế nào?
 4. Các chiến lược đặt TTL có thể áp dụng: TTL cố định, TTL động (adaptive TTL), hoặc TTL dựa trên loại dữ liệu và tần suất cập nhật?
 5. Làm thế nào để cân bằng giữa cache hit ratio và rủi ro dữ liệu lỗi thời khi lựa chọn TTL?
 6. Các thách thức khi dữ liệu trong cache hết hạn đồng loạt (cache stampede) và cách giải quyết?
 7. Sự khác biệt giữa expiration (hết hạn) và eviction (loại bỏ) trong Redis và cách chúng ảnh hưởng đến dữ liệu cache?
 8. Làm thế nào để thiết kế hệ thống cache hỗ trợ việc refresh dữ liệu (cache refresh hoặc cache warming) trước khi TTL hết hạn?
 9. Ảnh hưởng của TTL đến chi phí vận hành Redis (memory, CPU) và cách tối ưu?
-10. Làm thế nào để giám sát và điều chỉnh TTL dựa trên các chỉ số thực tế (cache hit/miss, latency, throughput)?
 11. Các kỹ thuật nâng cao liên quan đến TTL như probabilistic early expiration hay cache prefetching?
 12. Ảnh hưởng của TTL đến các mô hình cache phân tán (distributed cache) và đồng bộ dữ liệu cache giữa các node?
 13. Làm thế nào để xử lý các dữ liệu đặc biệt như session, token, hoặc dữ liệu nhạy cảm với TTL đặc thù?
 14. So sánh tác động của TTL trong các mô hình cache khác nhau: cache-aside, read-through, write-through?
 15. Những bài học kinh nghiệm hoặc best practices về TTL từ các hệ thống quy mô lớn thực tế?
 
-# Câu hỏi đào sâu về Cache hit/miss logs và metrics (Principle Engineer)
+# Câu hỏi đào sâu về Cache hit/miss logs và metrics
 
 1. **Cache hit và cache miss là gì? Tại sao việc theo dõi tỷ lệ hit/miss lại quan trọng đối với hiệu suất hệ thống?**
 2. Làm thế nào để thu thập chính xác dữ liệu hit/miss từ Redis hoặc cache layer tùy chỉnh?
@@ -73,7 +68,7 @@
 15. Những bài học kinh nghiệm trong thực tế khi xây dựng hệ thống monitoring cache hiệu quả, hạn chế false positive và false negative?
 
 
-# Câu hỏi đào sâu về Hiệu suất và Tối ưu cache (Principle Engineer)
+# Câu hỏi đào sâu về Hiệu suất và Tối ưu cache
 
 1. **Làm thế nào để đo và so sánh hiệu suất API khi có cache và không có cache một cách chính xác?**
 2. Các chỉ số quan trọng cần theo dõi khi đánh giá hiệu suất cache là gì? (latency, throughput, cache hit ratio, backend load...)
@@ -91,7 +86,7 @@
 14. Cách phối hợp tối ưu cache với các tầng khác (database, application server, CDN) để đạt hiệu suất tổng thể tốt nhất?
 15. Best practices và lessons learned từ các hệ thống quy mô lớn khi tối ưu cache performance và xử lý cache stampede?
 
-# Câu hỏi đào sâu về Bảo mật cache (Principle Engineer)
+# Câu hỏi đào sâu về Bảo mật cache
 
 1. **Các rủi ro bảo mật phổ biến khi sử dụng Redis làm cache layer trong môi trường production là gì?**
 2. Tại sao việc cấu hình authentication (Redis AUTH) lại quan trọng và cách triển khai hiệu quả?
@@ -109,7 +104,7 @@
 14. Các công cụ hoặc framework hỗ trợ bảo mật Redis và cache layer có thể tích hợp vào pipeline CI/CD như thế nào?
 15. Những bài học hoặc sự cố bảo mật thực tế liên quan đến cache mà các hệ thống lớn đã gặp phải?
 
-# Câu hỏi đào sâu về Mở rộng và Resilience của Cache Layer (Principle Engineer)
+# Câu hỏi đào sâu về Mở rộng và Resilience của Cache Layer
 
 1. **Các nguyên nhân phổ biến dẫn đến Redis không khả dụng trong môi trường production là gì?**
 2. Làm thế nào để thiết kế cache layer có khả năng fallback khi Redis gặp sự cố, nhằm đảm bảo hệ thống vẫn hoạt động ổn định?
@@ -127,7 +122,7 @@
 14. Ảnh hưởng của các mô hình Redis phân tán đến chi phí vận hành và độ phức tạp bảo trì hệ thống?
 15. Các bài học kinh nghiệm từ các hệ thống quy mô lớn khi xây dựng cache layer resilient và scalable?
 
-# Câu hỏi đào sâu về Testing và Monitoring Cache Layer (Principle Engineer)
+# Câu hỏi đào sâu về Testing và Monitoring Cache Layer
 
 1. **Mục tiêu chính của việc viết unit test và integration test cho cache layer là gì?**
 2. Làm thế nào để thiết kế các unit test hiệu quả cho các chức năng cache (cache read/write, cache invalidation)?
@@ -145,7 +140,7 @@
 14. Best practices trong việc bảo trì và giám sát cache layer trong môi trường production?
 15. Kinh nghiệm thực tế khi xử lý các sự cố Redis qua dữ liệu monitoring và logs?
 
-# Câu hỏi đào sâu về Tài liệu và Best Practices cho Cache Layer (Principle Engineer)
+# Câu hỏi đào sâu về Tài liệu và Best Practices cho Cache Layer
 
 1. **Tại sao việc viết tài liệu chi tiết về cache layer và quy trình cache invalidation lại quan trọng đối với hệ thống lớn?**
 2. Những nội dung then chốt nào cần có trong tài liệu cache layer để đảm bảo vận hành và bảo trì hiệu quả?

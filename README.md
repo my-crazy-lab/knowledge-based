@@ -9,28 +9,28 @@
     - [295 :arrow_right: 371](./1.0.0/n20071.md)
     - [372 :arrow_right: 410](./1.0.0/o6n1x2.md)
     - 410 :arrow_right: 461
+- Infrastructure as Code: Managing Servers in the Cloud
+    - 1 :arrow_right: 58
 - The Architecture of Open Source Applications volume 1
     - [Chapter 3](./1.0.0/kep0z3.md)
-- Logging and Log Management
-    - 1 :arrow_right: 1
 - Linux from scratch book
     - 1 :arrow_right: 30
+- Logging and Log Management
+    - 1 :arrow_right: 1
+- Patterns of Enterprise Application Architecture
+    - 1 :arrow_right: 1
 - [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
     - 1 :arrow_right: 20 Chapter 10
 - Speech and Language Processing
     - [1 :arrow_right: 400](./1.0.0/x7r2ri.md)
-- [Foundations of Computer Vision](https://visionbook.mit.edu/) 
-- [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
-- Infrastructure as Code: Managing Servers in the Cloud
-    - 1 :arrow_right: 58
 - The Data Warehouse Toolkit, 3rd Edition
     - 1 :arrow_right: 37
-- Patterns of Enterprise Application Architecture
-    - 1 :arrow_right: 1
 - Data Science for Business
     - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
     - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)
     - [97 :arrow_right: 119](./1.0.0/inkjdo.md)
+- [Foundations of Computer Vision](https://visionbook.mit.edu/) 
+- [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
 
 ## Solved
 

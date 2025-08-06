@@ -97,7 +97,7 @@
 
 # Câu hỏi đào sâu về Mở rộng và Resilience của Cache Layer
 
-1. **Các nguyên nhân phổ biến dẫn đến Redis không khả dụng trong môi trường production là gì?**
+1. Các nguyên nhân phổ biến dẫn đến Redis không khả dụng trong môi trường production là gì?
 2. Làm thế nào để thiết kế cache layer có khả năng fallback khi Redis gặp sự cố, nhằm đảm bảo hệ thống vẫn hoạt động ổn định?
 3. Ưu và nhược điểm của việc sử dụng fallback trực tiếp (bypass cache) hoặc fallback có cache dự phòng trong kiến trúc hệ thống?
 4. Các chiến lược phát hiện và xử lý lỗi Redis (circuit breaker, retry policy, exponential backoff) áp dụng trong cache layer như thế nào?

@@ -49,46 +49,37 @@
 14. So sánh tác động của TTL trong các mô hình cache khác nhau: cache-aside, read-through, write-through?
 15. Những bài học kinh nghiệm hoặc best practices về TTL từ các hệ thống quy mô lớn thực tế?
 
-# Câu hỏi đào sâu về Cache hit/miss logs và metrics
+# ✅ Câu hỏi đào sâu về Cache hit/miss logs và metrics
 
-1. **Cache hit và cache miss là gì? Tại sao việc theo dõi tỷ lệ hit/miss lại quan trọng đối với hiệu suất hệ thống?**
+1. Cache hit và cache miss là gì? Tại sao việc theo dõi tỷ lệ hit/miss lại quan trọng đối với hiệu suất hệ thống?
 2. Làm thế nào để thu thập chính xác dữ liệu hit/miss từ Redis hoặc cache layer tùy chỉnh?
 3. Các phương pháp đo lường và tính toán tỷ lệ cache hit/miss hiệu quả trong môi trường phân tán hoặc đa node?
-4. Tác động của tỷ lệ cache hit/miss đến độ trễ (latency) và tải của backend database là gì?
 5. Làm thế nào để phân tích số liệu hit/miss nhằm phát hiện các pattern dữ liệu không phù hợp với chiến lược caching hiện tại?
 6. Khi nào nên điều chỉnh TTL, chiến lược invalidation hoặc cơ chế cache dựa trên các số liệu hit/miss?
 7. Các nguyên nhân phổ biến dẫn đến cache miss tăng cao đột ngột và cách nhận diện từng nguyên nhân?
-8. Thiết lập cảnh báo (alerting) như thế nào để kịp thời phát hiện cache miss tăng hoặc cache service gặp sự cố?
 9. Làm thế nào để phân biệt giữa cache miss do dữ liệu hết hạn, do lỗi cache hay do request truy vấn dữ liệu mới?
 10. Kỹ thuật nào giúp tối ưu logging để vừa đảm bảo đầy đủ thông tin, vừa không ảnh hưởng đến hiệu năng của API?
 11. Làm sao để liên kết dữ liệu cache metrics với các log và trace khác trong hệ thống observability (logs, metrics, tracing)?
-12. Các công cụ phổ biến hỗ trợ thu thập và phân tích cache hit/miss metrics (Prometheus, Grafana, ELK stack...) và cách tích hợp?
 13. Làm thế nào để sử dụng dữ liệu hit/miss để dự báo dung lượng cache cần thiết và kế hoạch scaling?
-14. Ảnh hưởng của cache miss cao đến trải nghiệm người dùng và các biện pháp khắc phục tức thời?
 15. Những bài học kinh nghiệm trong thực tế khi xây dựng hệ thống monitoring cache hiệu quả, hạn chế false positive và false negative?
 
+# ✅ Câu hỏi đào sâu về Hiệu suất và Tối ưu cache
 
-# Câu hỏi đào sâu về Hiệu suất và Tối ưu cache
-
-1. **Làm thế nào để đo và so sánh hiệu suất API khi có cache và không có cache một cách chính xác?**
-2. Các chỉ số quan trọng cần theo dõi khi đánh giá hiệu suất cache là gì? (latency, throughput, cache hit ratio, backend load...)
+1. Làm thế nào để đo và so sánh hiệu suất API khi có cache và không có cache một cách chính xác?
 3. Cách xác định tốc độ tăng hiệu suất (ví dụ 10–100 lần) đến từ cache dựa trên các phép đo thực tế?
 4. Khi nào việc tối ưu truy vấn Redis bằng pipeline và batching trở nên cần thiết? Ưu nhược điểm của từng cách?
 5. Làm thế nào để chọn cấu trúc dữ liệu Redis (string, hash, list, set, sorted set...) phù hợp cho từng loại dữ liệu cache nhằm tối ưu hiệu suất?
-6. Cache stampede (thundering herd problem) là gì và tại sao nó lại gây ra hiện tượng tắc nghẽn hệ thống?
 7. Các chiến thuật phổ biến để giải quyết cache stampede, ví dụ mutex locks, request coalescing, probabilistic early expiration là gì? Ưu – nhược điểm từng cách?
 8. Làm thế nào để thiết kế cache layer và ứng dụng để ngăn chặn hoặc giảm thiểu tác động của thundering herd problem?
-9. Tác động của việc sử dụng mutex lock hoặc semaphore trong cache layer đến hiệu năng tổng thể và scalability?
 10. Làm sao để cân bằng giữa độ phức tạp của giải pháp chống stampede và lợi ích thực tế về hiệu suất?
 11. Khi nào nên áp dụng các kỹ thuật nâng cao như request collapsing hay cache pre-warming để tối ưu hiệu suất?
-12. Làm thế nào để phát hiện và xử lý các bottleneck hiệu suất liên quan đến Redis hoặc cache layer trong môi trường thực tế?
 13. Các phương pháp profiling và benchmark phổ biến để kiểm tra hiệu năng cache layer?
 14. Cách phối hợp tối ưu cache với các tầng khác (database, application server, CDN) để đạt hiệu suất tổng thể tốt nhất?
 15. Best practices và lessons learned từ các hệ thống quy mô lớn khi tối ưu cache performance và xử lý cache stampede?
 
 # Câu hỏi đào sâu về Bảo mật cache
 
-1. **Các rủi ro bảo mật phổ biến khi sử dụng Redis làm cache layer trong môi trường production là gì?**
+1. Các rủi ro bảo mật phổ biến khi sử dụng Redis làm cache layer trong môi trường production là gì?
 2. Tại sao việc cấu hình authentication (Redis AUTH) lại quan trọng và cách triển khai hiệu quả?
 3. Các phương pháp để giới hạn truy cập Redis chỉ trong mạng riêng (VPC, VPN, firewall rules) và lợi ích của chúng?
 4. Redis ACL (Access Control Lists) hoạt động ra sao? Làm thế nào để thiết lập và quản lý ACL phù hợp với các role trong hệ thống?

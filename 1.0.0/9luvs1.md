@@ -33,6 +33,7 @@
 14. Các best practice bảo mật khi triển khai healthcheck (tránh leak thông tin nhạy cảm qua endpoint health)?  
 15. Cách tích hợp healthcheck vào CI/CD pipeline để tự động kiểm tra trạng thái ứng dụng sau deploy?  
 
+✅
 1. Các tiêu chí quan trọng khi lựa chọn base image cho container là gì?
 2. So sánh ưu nhược điểm giữa các base image phổ biến như Alpine, Debian, Ubuntu, Distroless. Khi nào nên dùng từng loại?  
 3. Base image ảnh hưởng thế nào đến kích thước, thời gian build và khởi chạy container?  

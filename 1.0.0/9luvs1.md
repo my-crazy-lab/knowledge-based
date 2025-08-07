@@ -17,7 +17,7 @@
 14. Tác động của multi-stage build đến việc quản lý dependency trong ứng dụng?  
 15. Làm thế nào để bảo đảm rằng các stage cuối cùng không chứa secret hoặc thông tin nhạy cảm được sử dụng trong quá trình build?  
 
-1. Healthcheck là gì? Tại sao healthcheck quan trọng trong container orchestration (Kubernetes, ECS)?
+✅
 2. So sánh các loại healthcheck: livenessProbe, readinessProbe trong Kubernetes? Khi nào dùng mỗi loại?  
 3. Cách định nghĩa healthcheck trong Dockerfile (lệnh `HEALTHCHECK`), các tham số phổ biến như `interval`, `timeout`, `retries` có ý nghĩa gì?  
 4. Healthcheck nên kiểm tra những gì? (ví dụ: response của app, database connection, các service phụ trợ...)  

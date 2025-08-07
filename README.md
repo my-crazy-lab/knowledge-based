@@ -2,13 +2,6 @@
 
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
-- Designing Data-Intensive Applications
-    - [91 :arrow_right: 106](./1.0.0/tkzqg5.md)
-    - [107 :arrow_right: 222](./1.0.0/4mw4a3.md)
-    - [222 :arrow_right: 295](./1.0.0/o70doc.md)
-    - [295 :arrow_right: 371](./1.0.0/n20071.md)
-    - [372 :arrow_right: 410](./1.0.0/o6n1x2.md)
-    - 410 :arrow_right: 461
 - Infrastructure as Code: Managing Servers in the Cloud
     - 1 :arrow_right: 58
 - The Architecture of Open Source Applications volume 1
@@ -34,6 +27,13 @@
 
 ## Solved
 
+- :white_check_mark: Designing Data-Intensive Applications
+    - [91 :arrow_right: 106](./1.0.0/tkzqg5.md)
+    - [107 :arrow_right: 222](./1.0.0/4mw4a3.md)
+    - [222 :arrow_right: 295](./1.0.0/o70doc.md)
+    - [295 :arrow_right: 371](./1.0.0/n20071.md)
+    - [372 :arrow_right: 410](./1.0.0/o6n1x2.md)
+    - 410 :arrow_right: DONE
 - :white_check_mark: The Unicorn Project
     - 1 :arrow_right: DONE
 - :white_check_mark: The Phoenix Project

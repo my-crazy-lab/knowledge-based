@@ -17,7 +17,7 @@
 14. Tác động của multi-stage build đến việc quản lý dependency trong ứng dụng?  
 15. Làm thế nào để bảo đảm rằng các stage cuối cùng không chứa secret hoặc thông tin nhạy cảm được sử dụng trong quá trình build?  
 
-1. **Healthcheck là gì? Tại sao healthcheck quan trọng trong container orchestration (Kubernetes, ECS)?**  
+1. Healthcheck là gì? Tại sao healthcheck quan trọng trong container orchestration (Kubernetes, ECS)?
 2. So sánh các loại healthcheck: livenessProbe, readinessProbe trong Kubernetes? Khi nào dùng mỗi loại?  
 3. Cách định nghĩa healthcheck trong Dockerfile (lệnh `HEALTHCHECK`), các tham số phổ biến như `interval`, `timeout`, `retries` có ý nghĩa gì?  
 4. Healthcheck nên kiểm tra những gì? (ví dụ: response của app, database connection, các service phụ trợ...)  
@@ -33,7 +33,7 @@
 14. Các best practice bảo mật khi triển khai healthcheck (tránh leak thông tin nhạy cảm qua endpoint health)?  
 15. Cách tích hợp healthcheck vào CI/CD pipeline để tự động kiểm tra trạng thái ứng dụng sau deploy?  
 
-1. **Các tiêu chí quan trọng khi lựa chọn base image cho container là gì?**  
+1. Các tiêu chí quan trọng khi lựa chọn base image cho container là gì?
 2. So sánh ưu nhược điểm giữa các base image phổ biến như Alpine, Debian, Ubuntu, Distroless. Khi nào nên dùng từng loại?  
 3. Base image ảnh hưởng thế nào đến kích thước, thời gian build và khởi chạy container?  
 4. Làm thế nào để đánh giá mức độ bảo mật và patch của base image?  

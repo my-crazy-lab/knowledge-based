@@ -77,7 +77,7 @@
 14. Cách phối hợp tối ưu cache với các tầng khác (database, application server, CDN) để đạt hiệu suất tổng thể tốt nhất?
 15. Best practices và lessons learned từ các hệ thống quy mô lớn khi tối ưu cache performance và xử lý cache stampede?
 
-# Câu hỏi đào sâu về Bảo mật cache
+# ✅ Câu hỏi đào sâu về Bảo mật cache
 
 1. Các rủi ro bảo mật phổ biến khi sử dụng Redis làm cache layer trong môi trường production là gì?
 2. Tại sao việc cấu hình authentication (Redis AUTH) lại quan trọng và cách triển khai hiệu quả?

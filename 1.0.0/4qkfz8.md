@@ -50,25 +50,25 @@
 7. Các vấn đề thường gặp khi tăng concurrency hoặc prefetch count quá cao và cách khắc phục?
 8. Làm sao để theo dõi và điều chỉnh prefetch count động theo tải thực tế?
 
-### Triển khai các pattern phổ biến: RPC, work queues, pub-sub
+### ✅ Triển khai các pattern phổ biến: RPC, work queues, pub-sub
 9. Thiết kế và triển khai RPC pattern với RabbitMQ: các thách thức về độ trễ và scalability?
 10. Cách xử lý work queue để đảm bảo load balancing và fault tolerance cho các job nặng?
 11. Khi nào nên dùng pub-sub pattern và làm sao để xử lý các consumer không đồng bộ hoặc offline?
 12. Những điểm cần lưu ý khi kết hợp nhiều pattern trong cùng một hệ thống message queue?
 
-### Quản lý và monitor RabbitMQ (management plugin, metrics, alerts)
+### ✅ Quản lý và monitor RabbitMQ (management plugin, metrics, alerts)
 13. Các chỉ số quan trọng cần theo dõi trên RabbitMQ để phát hiện sớm vấn đề về performance và reliability?
 14. Thiết lập alert hiệu quả cho các tình trạng queue tăng đột biến, consumer không hoạt động, hoặc message backlog?
 15. Làm sao để thu thập và phân tích logs, metrics để tối ưu hiệu suất RabbitMQ?
 16. Kinh nghiệm sử dụng các công cụ monitoring bên ngoài như Prometheus, Grafana cho RabbitMQ?
 
-### Xử lý lỗi, retry strategy, backoff và DLQ nâng cao
+### ✅ Xử lý lỗi, retry strategy, backoff và DLQ nâng cao
 17. Các chiến lược retry phổ biến (immediate retry, delayed retry, exponential backoff) và cách lựa chọn phù hợp theo loại lỗi?
 18. Thiết kế hệ thống DLQ hiệu quả để không gây nghẽn và dễ dàng quản lý các message lỗi lâu dài?
 19. Làm sao để tránh retry loop vô hạn, đồng thời giữ được tính reliable của message processing?
 20. Kết hợp giữa DLQ và alerting để chủ động phát hiện và xử lý các message bị lỗi?
 
-### Bảo mật RabbitMQ: TLS, authentication, permission, network isolation
+### ✅ Bảo mật RabbitMQ: TLS, authentication, permission, network isolation
 21. Triển khai TLS trong RabbitMQ để bảo vệ dữ liệu truyền tải và các best practice cần tuân thủ?
 22. Các phương pháp authentication trong RabbitMQ, ưu nhược điểm của từng phương pháp (username/password, LDAP, OAuth…)
 23. Quản lý permission chi tiết trên RabbitMQ để giới hạn quyền truy cập resource cho từng user hoặc service?

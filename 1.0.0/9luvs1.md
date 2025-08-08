@@ -1,6 +1,5 @@
-## Dockerfile chuẩn production
+## ✅ Dockerfile chuẩn production
 
-✅
 1. Multi-stage build là gì? Tại sao nó lại quan trọng trong tối ưu Docker image?
 2. So sánh kích thước và bảo mật giữa image sử dụng multi-stage build và image build truyền thống?  
 3. Làm thế nào multi-stage build giúp tách biệt các giai đoạn build và runtime?  
@@ -17,7 +16,6 @@
 14. Tác động của multi-stage build đến việc quản lý dependency trong ứng dụng?  
 15. Làm thế nào để bảo đảm rằng các stage cuối cùng không chứa secret hoặc thông tin nhạy cảm được sử dụng trong quá trình build?  
 
-✅
 2. So sánh các loại healthcheck: livenessProbe, readinessProbe trong Kubernetes? Khi nào dùng mỗi loại?  
 3. Cách định nghĩa healthcheck trong Dockerfile (lệnh `HEALTHCHECK`), các tham số phổ biến như `interval`, `timeout`, `retries` có ý nghĩa gì?  
 4. Healthcheck nên kiểm tra những gì? (ví dụ: response của app, database connection, các service phụ trợ...)  
@@ -33,7 +31,6 @@
 14. Các best practice bảo mật khi triển khai healthcheck (tránh leak thông tin nhạy cảm qua endpoint health)?  
 15. Cách tích hợp healthcheck vào CI/CD pipeline để tự động kiểm tra trạng thái ứng dụng sau deploy?  
 
-✅
 1. Các tiêu chí quan trọng khi lựa chọn base image cho container là gì?
 2. So sánh ưu nhược điểm giữa các base image phổ biến như Alpine, Debian, Ubuntu, Distroless. Khi nào nên dùng từng loại?  
 3. Base image ảnh hưởng thế nào đến kích thước, thời gian build và khởi chạy container?  
@@ -55,7 +52,6 @@
 3. Làm thế nào để xác định package/tool nào cần giữ lại và package/tool nào có thể loại bỏ?  
 4. Các kỹ thuật hoặc công cụ hỗ trợ quét và đánh giá package trong image để phát hiện thành phần thừa thãi?  
 5. So sánh cách tiếp cận “minimal base image” và “customized image” trong việc giảm thiểu package không cần thiết?  
-6. Tác động của việc giữ lại các package/tool thừa thãi đến kích thước image và thời gian build, deploy?  
 7. Cách cấu hình Dockerfile để loại bỏ package sau khi cài đặt (ví dụ: dùng multi-stage build, cleanup trong RUN commands)?  
 8. Làm sao để cân bằng giữa việc loại bỏ tool không cần thiết và nhu cầu debugging/giám sát container?  
 9. Tác động của việc giữ lại hoặc loại bỏ package đến khả năng bảo trì và cập nhật image sau này?  
@@ -66,22 +62,21 @@
 14. So sánh hiệu quả giữa việc loại bỏ package/tool ở image level với sử dụng container security scanning tools?  
 15. Các tiêu chí đánh giá rủi ro bảo mật khi quyết định giữ lại hay loại bỏ một package/tool?  
 
-## Không hard-code secrets trong Dockerfile hoặc image
-1. Tại sao việc hard-code secrets trong Dockerfile hoặc image lại là rủi ro bảo mật nghiêm trọng?  
+## ✅ Không hard-code secrets trong Dockerfile hoặc image
 2. Những phương pháp nào phổ biến để quản lý secrets khi deploy container?  
 3. So sánh ưu nhược điểm giữa việc sử dụng environment variables, Docker secrets, và external secret managers (HashiCorp Vault, AWS SSM, Azure Key Vault).  
 4. Làm sao để tích hợp secret management trong pipeline CI/CD một cách an toàn?  
 5. Cách xử lý khi cần secrets ở thời điểm build (build-time secrets) mà không để lại dấu vết trong image cuối cùng?  
 6. Cách audit và phát hiện secrets bị lộ trong các image đã build?  
 
-## Thiết lập user không phải root để chạy container
+## ✅ Thiết lập user không phải root để chạy container
 1. Tại sao chạy container với user root lại là một vấn đề bảo mật?  
 2. Cách thiết lập user không phải root trong Dockerfile (USER directive), và các lưu ý khi cấp quyền?  
 3. Làm thế nào để đảm bảo ứng dụng trong container vẫn chạy ổn định với user không phải root?  
 4. Những vấn đề có thể gặp khi chuyển container sang user không root và cách khắc phục?  
 5. Best practices cho quản lý quyền và file permissions trong container để tăng bảo mật?  
 
-## Quản lý và tối ưu cache layer để tăng tốc độ build và deploy
+## ✅ Quản lý và tối ưu cache layer để tăng tốc độ build và deploy
 1. Docker cache layer hoạt động như thế nào trong quá trình build?  
 2. Làm sao để thiết kế Dockerfile để tận dụng tối đa cache, tránh rebuild không cần thiết?  
 3. Cách sắp xếp các bước trong Dockerfile để tăng hiệu quả cache?  
@@ -91,7 +86,7 @@
 7. Cách tích hợp caching layer trong pipeline CI/CD để tăng tốc build?  
 8. Các công cụ hoặc phương pháp hỗ trợ phân tích và tối ưu cache trong Docker builds?  
 
-## Secret Management
+# Secret Management
 
 ## Không lưu secrets trong repo, config file hay env variables plain text
 1. Tại sao lưu secrets dưới dạng plain text trong repo hoặc config file là rủi ro bảo mật?  
@@ -140,7 +135,7 @@
 3. Kịch bản xử lý khi có cảnh báo về truy cập hoặc lạm dụng secret?  
 4. Làm sao tích hợp giám sát truy cập secret với hệ thống SIEM hoặc các giải pháp bảo mật tổng thể?  
 
-## CD Pipeline & Auto Deploy
+# CD Pipeline & Auto Deploy
 
 ## Tự động build, test và deploy cho mỗi feature branch lên môi trường dev/staging
 1. Làm thế nào để thiết kế pipeline CI/CD để tự động build và deploy feature branch một cách hiệu quả mà không gây ảnh hưởng môi trường chính?  

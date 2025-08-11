@@ -1,5 +1,12 @@
 # Books
 
+- Obserbility Engineering
+    - 1 :arrow_right: 68
+- The Art of Scalability
+    - 1 :arrow_right: 1
+- Systems Performance: Enterprise and the Cloud
+    - 1 :arrow_right: 1
+
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 368](./1.0.0/siqgx4.md)
 - Infrastructure as Code: Managing Servers in the Cloud
@@ -8,12 +15,11 @@
     - [Chapter 3](./1.0.0/kep0z3.md)
 - Linux from scratch book
     - 1 :arrow_right: 30
-- Logging and Log Management
-    - 1 :arrow_right: 1
 - Patterns of Enterprise Application Architecture
     - 1 :arrow_right: 1
 - [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
     - 1 :arrow_right: 20 Chapter 10
+
 - Speech and Language Processing
     - [1 :arrow_right: 400](./1.0.0/x7r2ri.md)
 - The Data Warehouse Toolkit, 3rd Edition

@@ -1,7 +1,7 @@
 # Books
 
 - The Web Application Hacker's Handbook
-    - [1 :arrow_right: 358](./1.0.0/siqgx4.md)
+    - [1 :arrow_right: 368](./1.0.0/siqgx4.md)
 - Infrastructure as Code: Managing Servers in the Cloud
     - 1 :arrow_right: 58
 - The Architecture of Open Source Applications volume 1

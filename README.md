@@ -1,7 +1,5 @@
 # Books
 
-- Obserbility Engineering
-    - 1 :arrow_right: 68
 - The Art of Scalability
     - 1 :arrow_right: 1
 - Systems Performance: Enterprise and the Cloud
@@ -33,6 +31,8 @@
 
 ## Solved
 
+- :white_check_mark: Obserbility Engineering
+    - 1 :arrow_right: DONE
 - :white_check_mark: Designing Data-Intensive Applications
     - [91 :arrow_right: 106](./1.0.0/tkzqg5.md)
     - [107 :arrow_right: 222](./1.0.0/4mw4a3.md)

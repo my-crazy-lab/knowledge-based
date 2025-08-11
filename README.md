@@ -1,7 +1,7 @@
 # Books
 
 - The Art of Scalability
-    - 1 :arrow_right: 1
+    - 1 :arrow_right: 90
 - Systems Performance: Enterprise and the Cloud
     - 1 :arrow_right: 1
 

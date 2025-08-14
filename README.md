@@ -1,9 +1,7 @@
 # Books
 
-- The Art of Scalability
-    - 1 :arrow_right: 116
 - Systems Performance: Enterprise and the Cloud
-    - 1 :arrow_right: 1
+    - 1 :arrow_right: 168
 
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 368](./1.0.0/siqgx4.md)
@@ -31,6 +29,8 @@
 
 ## Solved
 
+- :x: The Art of Scalability
+    - 1 :arrow_right: 116
 - :white_check_mark: Obserbility Engineering
     - 1 :arrow_right: DONE
 - :white_check_mark: Designing Data-Intensive Applications

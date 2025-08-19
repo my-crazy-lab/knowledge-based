@@ -1,5 +1,7 @@
 # Books
 
+- High Performance Browser Networking
+    - 1 :arrow_right: 21
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 368](./1.0.0/siqgx4.md)
 - Infrastructure as Code: Managing Servers in the Cloud

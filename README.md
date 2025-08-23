@@ -1,15 +1,24 @@
 # Books
 
-- High Performance Browser Networking
-    - 1 :arrow_right: 205
+> 56
+
+- (3) 5G and Beyond 1/310
+- (3) Blockchain Revolution 1/324
+- (4 * 2) Interconnecting Smart Objects with IP: The Next Internet 1/432
+- (3 * 3) Quantum Computing : A Gentle Introduction 1/389
+- (6) The VR Book Human-Centered Design for Virtual Reality 1/636
+- (7) Autonomous Driving: Technical, Legal and Social Aspects 1/698
+- (2 * 3) Advanced Signal Processing in Wearable Sensors for Health Monitoring 1/208
+- (3) Database internals 1/347
+- (5) Patterns of Enterprise Application Architecture 1/559
+- (6) Software Architecture in Practice 1/620
+
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 368](./1.0.0/siqgx4.md)
 - The Architecture of Open Source Applications volume 1
     - [Chapter 3](./1.0.0/kep0z3.md)
 - Linux from scratch book
     - 1 :arrow_right: 30
-- Patterns of Enterprise Application Architecture
-    - 1 :arrow_right: 1
 - [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
     - 1 :arrow_right: 20 Chapter 10
 
@@ -24,6 +33,7 @@
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
 
+- :white_check_mark: High Performance Browser Networking
 - :white_check_mark: Infrastructure as Code: Managing Servers in the Cloud
 - :white_check_mark: Systems Performance: Enterprise and the Cloud
 - :x: The Art of Scalability

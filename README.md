@@ -1,7 +1,7 @@
 # Books
 
 - High Performance Browser Networking
-    - 1 :arrow_right: 21
+    - 1 :arrow_right: 205
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 368](./1.0.0/siqgx4.md)
 - The Architecture of Open Source Applications volume 1
@@ -24,27 +24,18 @@
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
 
-## Solved
-
 - :white_check_mark: Infrastructure as Code: Managing Servers in the Cloud
-    - 1 :arrow_right: DONE
 - :white_check_mark: Systems Performance: Enterprise and the Cloud
-    - 1 :arrow_right: DONE
 - :x: The Art of Scalability
-    - 1 :arrow_right: 116
 - :white_check_mark: Obserbility Engineering
-    - 1 :arrow_right: DONE
 - :white_check_mark: Designing Data-Intensive Applications
     - [91 :arrow_right: 106](./1.0.0/tkzqg5.md)
     - [107 :arrow_right: 222](./1.0.0/4mw4a3.md)
     - [222 :arrow_right: 295](./1.0.0/o70doc.md)
     - [295 :arrow_right: 371](./1.0.0/n20071.md)
     - [372 :arrow_right: 410](./1.0.0/o6n1x2.md)
-    - 410 :arrow_right: DONE
 - :white_check_mark: The Unicorn Project
-    - 1 :arrow_right: DONE
 - :white_check_mark: The Phoenix Project
-    - 1 :arrow_right: DONE
 - :white_check_mark: Software Architecture The Hard Parts
     - [1 :arrow_right: DONE](./1.0.0/3pm1sl.md)
 - :white_check_mark: (Little OS book from build own X)[https://littleosbook.github.io/]
@@ -55,13 +46,11 @@
 - :white_check_mark: deep-learning-for-vision-systems
     - [1 :arrow_right: DONE](./1.0.0/sfhs65.md)
 - :white_check_mark: THE STARTUP CTO'S HANDBOOK
-    - 1 :arrow_right: DONE
 - :white_check_mark: document software architecture
     - [1 :arrow_right: 250](./1.0.0/7si7e0.md) Not need read.
 - :white_check_mark: Introducing MLOps
     - [1 :arrow_right: DONE](./1.0.0/qbmjfb.md)
 - :white_check_mark: Building Microservices
-    - 1 :arrow_right: DONE
 - :white_check_mark: Solution Architecture handbook
     - [1 :arrow_right: DONE](./1.0.0/bsyxxk.md) Defining the modernization approach
 - :white_check_mark: Learning Domain-driven design
@@ -80,7 +69,6 @@
 - :white_check_mark: eCommerce in the Cloud
     - [1 :arrow_right: DONE](./1.0.0/jmzd7s.md) chapter 11
 - :white_check_mark: gemini for google workspace prompting guide 101
-    - 1 :arrow_right: DONE
 - :white_check_mark: DevOps Handbook
 - :white_check_mark: The Analytics Setup Guidebook
 - :white_check_mark: Generative AI in practice: 100+ amazing ways

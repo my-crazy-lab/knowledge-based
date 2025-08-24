@@ -1,6 +1,6 @@
 # Books
 
-> 56
+> 73
 
 - (3) 5G and Beyond 1/310
 - (3) Blockchain Revolution 1/324
@@ -12,6 +12,12 @@
 - (3) Database internals 1/347
 - (5) Patterns of Enterprise Application Architecture 1/559
 - (6) Software Architecture in Practice 1/620
+- (1) Designing Distributed Systems 1/164
+- (4) Clean Architecture 1/429
+- (3) Domain-Driven Design Tackling Complexity in the Heart of Software 1/359
+- (3) devops trouble linux best practices 1/235
+- (4) Cloud Native Pattern 1/399
+- (2) Cloud Architecture Patterns  1/182
 
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 368](./1.0.0/siqgx4.md)

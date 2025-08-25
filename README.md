@@ -2,8 +2,8 @@
 
 > 73
 
-- (3) 5G and Beyond 1/310
-- (3) Blockchain Revolution 1/324
+- (3) 5G and Beyond 74/310
+- (3) Blockchain Revolution 63/324
 - (4 * 2) Interconnecting Smart Objects with IP: The Next Internet 1/432
 - (3 * 3) Quantum Computing : A Gentle Introduction 1/389
 - (6) The VR Book Human-Centered Design for Virtual Reality 1/636

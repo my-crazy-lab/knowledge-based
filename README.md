@@ -5,8 +5,8 @@
 - (7) Autonomous Driving: Technical, Legal and Social Aspects 15/698
 - (6) VR Book Human-Centered Design for Virtual Reality 42/636
 
-- (3) Design It 77/345
-- (3) Release It 1/366
+- (3) Design It 112/345
+- (3) Release It 15/366
 - (4) Effective DevOps 1/410
 
 - (6) Software Architecture in Practice 1/620

@@ -1,23 +1,28 @@
 # Books
 
-> 73
+> 82
 
-- (3) 5G and Beyond 74/310
-- (3) Blockchain Revolution 63/324
-- (4 * 2) Interconnecting Smart Objects with IP: The Next Internet 1/432
-- (3 * 3) Quantum Computing : A Gentle Introduction 1/389
-- (6) The VR Book Human-Centered Design for Virtual Reality 1/636
-- (7) Autonomous Driving: Technical, Legal and Social Aspects 1/698
-- (2 * 3) Advanced Signal Processing in Wearable Sensors for Health Monitoring 1/208
-- (3) Database internals 1/347
-- (5) Patterns of Enterprise Application Architecture 1/559
+- (7) Autonomous Driving: Technical, Legal and Social Aspects 15/698
+- (6) VR Book Human-Centered Design for Virtual Reality 42/636
+
+- (3) Design It 31/345
+- (3) Release It 1/366
+- (4) Effective DevOps 1/410
+
 - (6) Software Architecture in Practice 1/620
-- (1) Designing Distributed Systems 1/164
+- (3 * 3) Quantum Computing : A Gentle Introduction 1/389
+
+- (5) Patterns of Enterprise Application Architecture 1/559
+- (5) Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation 1/497
+- (4 * 2) Interconnecting Smart Objects with IP: The Next Internet 1/432
 - (4) Clean Architecture 1/429
-- (3) Domain-Driven Design Tackling Complexity in the Heart of Software 1/359
-- (3) devops trouble linux best practices 1/235
 - (4) Cloud Native Pattern 1/399
+- (3) Database internals 1/347
+- (3) Domain-Driven Design Tackling Complexity in the Heart of Software 1/359
+- (2 * 3) Advanced Signal Processing in Wearable Sensors for Health Monitoring 1/208
+- (3) devops trouble linux best practices 1/235
 - (2) Cloud Architecture Patterns  1/182
+- (1) Designing Distributed Systems 1/164
 
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 368](./1.0.0/siqgx4.md)
@@ -39,6 +44,8 @@
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
 
+- :x: Blockchain Revolution `63/324`: khong phai sach sau ve technical
+- :x: 5G and Beyond `74/310`: tập hợp các nghiên cứu (các research paper hoặc book chapter) được biên soạn lại thành một tài liệu học thuật, giống như một sách chuyên khảo (edited volume)
 - :white_check_mark: High Performance Browser Networking
 - :white_check_mark: Infrastructure as Code: Managing Servers in the Cloud
 - :white_check_mark: Systems Performance: Enterprise and the Cloud

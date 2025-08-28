@@ -1,11 +1,10 @@
 # Books
 
-> 79
+> 76
 
-- (7) Autonomous Driving: Technical, Legal and Social Aspects 15/698
+- (7) Autonomous Driving: Technical, Legal and Social Aspects 81/698
 - (6) VR Book Human-Centered Design for Virtual Reality 42/636
 
-- (3) Release It 103/366
 - (4) Effective DevOps 1/410
 
 - (6) Software Architecture in Practice 1/620
@@ -43,6 +42,7 @@
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
 
+- :white_check_mark: Release It
 - :white_check_mark: Design It
 - :x: Blockchain Revolution `63/324`: khong phai sach sau ve technical
 - :x: 5G and Beyond `74/310`: tập hợp các nghiên cứu (các research paper hoặc book chapter) được biên soạn lại thành một tài liệu học thuật, giống như một sách chuyên khảo (edited volume)

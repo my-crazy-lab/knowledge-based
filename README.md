@@ -1,11 +1,10 @@
 # Books
 
-> 70
+> 64
 
-- (6) VR Book Human-Centered Design for Virtual Reality 106/636
-- (3 * 3) Quantum Computing : A Gentle Introduction 1/389
-- (4 * 2) Interconnecting Smart Objects with IP: The Next Internet 1/432
-- (2 * 3) Advanced Signal Processing in Wearable Sensors for Health Monitoring 1/208
+- (3 * 3) Quantum Computing : A Gentle Introduction 24/389
+- (4 * 2) Interconnecting Smart Objects with IP: The Next Internet 46/432
+- (2 * 3) Advanced Signal Processing in Wearable Sensors for Health Monitoring 40/208
 
 - (4) Effective DevOps 1/410
 - (6) Software Architecture in Practice 1/620
@@ -39,6 +38,7 @@
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
 
+- :white_check_mark: VR Book Human-Centered Design for Virtual Reality
 - :x: Autonomous Driving: Technical, Legal and Social Aspects 81/698
 - :white_check_mark: Release It
 - :white_check_mark: Design It

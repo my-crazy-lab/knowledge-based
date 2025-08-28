@@ -1,23 +1,20 @@
 # Books
 
-> 76
+> 70
 
-- (7) Autonomous Driving: Technical, Legal and Social Aspects 81/698
-- (6) VR Book Human-Centered Design for Virtual Reality 42/636
+- (6) VR Book Human-Centered Design for Virtual Reality 106/636
+- (3 * 3) Quantum Computing : A Gentle Introduction 1/389
+- (4 * 2) Interconnecting Smart Objects with IP: The Next Internet 1/432
+- (2 * 3) Advanced Signal Processing in Wearable Sensors for Health Monitoring 1/208
 
 - (4) Effective DevOps 1/410
-
 - (6) Software Architecture in Practice 1/620
-- (3 * 3) Quantum Computing : A Gentle Introduction 1/389
-
 - (5) Patterns of Enterprise Application Architecture 1/559
 - (5) Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation 1/497
-- (4 * 2) Interconnecting Smart Objects with IP: The Next Internet 1/432
 - (4) Clean Architecture 1/429
 - (4) Cloud Native Pattern 1/399
 - (3) Database internals 1/347
 - (3) Domain-Driven Design Tackling Complexity in the Heart of Software 1/359
-- (2 * 3) Advanced Signal Processing in Wearable Sensors for Health Monitoring 1/208
 - (3) devops trouble linux best practices 1/235
 - (2) Cloud Architecture Patterns  1/182
 - (1) Designing Distributed Systems 1/164
@@ -42,6 +39,7 @@
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
 
+- :x: Autonomous Driving: Technical, Legal and Social Aspects 81/698
 - :white_check_mark: Release It
 - :white_check_mark: Design It
 - :x: Blockchain Revolution `63/324`: khong phai sach sau ve technical

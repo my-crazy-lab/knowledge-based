@@ -1,23 +1,21 @@
 # Books
 
-> 64
+> 56
 
-- (3 * 3) Quantum Computing : A Gentle Introduction 24/389
-- (4 * 2) Interconnecting Smart Objects with IP: The Next Internet 46/432
-- (2 * 3) Advanced Signal Processing in Wearable Sensors for Health Monitoring 40/208
+- (3) devops trouble linux best practices 1/235
+- (2) Cloud Architecture Patterns  1/182
+- (1) Designing Distributed Systems 1/164
+- (6) Software Architecture in Practice 296/620
 
 - (4) Effective DevOps 1/410
-- (6) Software Architecture in Practice 1/620
 - (5) Patterns of Enterprise Application Architecture 1/559
 - (5) Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation 1/497
 - (4) Clean Architecture 1/429
 - (4) Cloud Native Pattern 1/399
 - (3) Database internals 1/347
 - (3) Domain-Driven Design Tackling Complexity in the Heart of Software 1/359
-- (3) devops trouble linux best practices 1/235
-- (2) Cloud Architecture Patterns  1/182
-- (1) Designing Distributed Systems 1/164
 
+- (3 * 3) Quantum Computing : A Gentle Introduction 24/389: Pending, need physical foundation
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 368](./1.0.0/siqgx4.md)
 - The Architecture of Open Source Applications volume 1
@@ -38,6 +36,8 @@
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
 
+- :white_check_mark: Interconnecting Smart Objects with IP: The Next Internet
+- :x: Advanced Signal Processing in Wearable Sensors for Health Monitoring 40/208
 - :white_check_mark: VR Book Human-Centered Design for Virtual Reality
 - :x: Autonomous Driving: Technical, Legal and Social Aspects 81/698
 - :white_check_mark: Release It

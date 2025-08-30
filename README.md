@@ -2,13 +2,7 @@
 
 > 56
 
-- (3) devops trouble linux best practices 1/235
-- (2) Cloud Architecture Patterns  1/182
-- (1) Designing Distributed Systems 1/164
-- (6) Software Architecture in Practice 296/620
-
 - (4) Effective DevOps 1/410
-- (5) Patterns of Enterprise Application Architecture 1/559
 - (5) Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation 1/497
 - (4) Clean Architecture 1/429
 - (4) Cloud Native Pattern 1/399
@@ -36,6 +30,11 @@
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
 
+- :white_check_mark: Designing Distributed Systems
+- :white_check_mark: Cloud Architecture Patterns
+- :white_check_mark: devops trouble linux best practices
+- :white_check_mark: Patterns of Enterprise Application Architecture
+- :white_check_mark: Software Architecture in Practice
 - :white_check_mark: Interconnecting Smart Objects with IP: The Next Internet
 - :x: Advanced Signal Processing in Wearable Sensors for Health Monitoring 40/208
 - :white_check_mark: VR Book Human-Centered Design for Virtual Reality

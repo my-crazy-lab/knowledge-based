@@ -1,13 +1,8 @@
 # Books
 
-> 56
-
-- (4) Effective DevOps 1/410
+- Effective DevOps 307/410
 - (5) Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation 1/497
 - (4) Clean Architecture 1/429
-- (4) Cloud Native Pattern 1/399
-- (3) Database internals 1/347
-- (3) Domain-Driven Design Tackling Complexity in the Heart of Software 1/359
 
 - (3 * 3) Quantum Computing : A Gentle Introduction 24/389: Pending, need physical foundation
 - The Web Application Hacker's Handbook
@@ -30,6 +25,9 @@
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
 
+- :white_check_mark: Cloud Native Pattern
+- :white_check_mark: Domain-Driven Design Tackling Complexity in the Heart of Software
+- :white_check_mark: Database internals
 - :white_check_mark: Designing Distributed Systems
 - :white_check_mark: Cloud Architecture Patterns
 - :white_check_mark: devops trouble linux best practices

@@ -1,6 +1,5 @@
 # Books
 
-- Effective DevOps 307/410
 - (5) Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation 1/497
 - (4) Clean Architecture 1/429
 
@@ -25,6 +24,7 @@
 - [Foundations of Computer Vision](https://visionbook.mit.edu/) 
 - [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
 
+- :white_check_mark: Effective DevOps
 - :white_check_mark: Cloud Native Pattern
 - :white_check_mark: Domain-Driven Design Tackling Complexity in the Heart of Software
 - :white_check_mark: Database internals

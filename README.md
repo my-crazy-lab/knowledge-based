@@ -2,7 +2,6 @@
 
 - (5) Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation 1/497
 - (4) Clean Architecture 1/429
-
 - (3 * 3) Quantum Computing : A Gentle Introduction 24/389: Pending, need physical foundation
 - The Web Application Hacker's Handbook
     - [1 :arrow_right: 368](./1.0.0/siqgx4.md)
@@ -141,7 +140,7 @@
 
 # Job hopping
 
-- `ByteByteGoHq/system-design-101`
+- ByteByteGoHq/system-design-101
     - :white_check_mark: https://bytebytego.com/guides/api-web-development
     - :white_check_mark: https://bytebytego.com/guides/technical-interviews
     - :white_check_mark: https://bytebytego.com/guides/caching-performance
@@ -152,7 +151,45 @@
     - https://bytebytego.com/guides/software-architecture
     - https://bytebytego.com/guides/database-and-storage
     - https://bytebytego.com/guides/real-world-case-studies/
-
+- Deep diving technologies used at bTaskee
+    - [ ]  k3s
+    - [ ]  voice streaming
+    - [ ]  airflow - kafka - flink - debezium - dbt
+    - [ ]  elastic search
+    - [ ]  mongodb
+- Trial tech trending: Database, distributed system, pattern
+    - [ ]  resiliency patterns
+    - [ ]  Cách triển khai **service discovery**
+    - [ ]  **Istio / Linkerd** → service mesh
+    - [ ]  Serverless Computing
+        - [ ]  AWS Lambda
+        - [ ]  Supabase Functions
+        - [ ]  Cloudflare Workers
+        - [ ]  **OpenFaaS / Knative** (open-source serverless)
+        - [ ]  Netlify
+    - [ ]  Event-Driven Design & Streaming
+        - [ ]  **exactly-once, at-least-once** semantics
+        - [ ]  partition & replication kafka
+    - [ ]  **WebAssembly (Wasm)**
+        - [ ]  **Wasmtime**, **WasmEdge**, **Wasmer** (runtime).
+        - [ ]  **Spin (Fermyon)**: build microservices bằng Wasm.
+        - [ ]  **Suborbital** (Wasm functions in backend).
+    - [ ]  Pattern
+        - [ ]  Hiểu **CAP Theorem** (Consistency, Availability, Partition Tolerance).
+        - [ ]  Phân biệt **strong vs eventual consistency**.
+        - [ ]  Học **Saga Pattern** (orchestration vs choreography).
+        - [ ]  Thực hành **CQRS + Event Sourcing** với một service nhỏ.
+        - [ ]  Biết **Outbox Pattern** (DB + message broker integration).
+    - [ ]  Database
+        - [ ]  Làm CRUD project với **PostgreSQL** (transaction, index, view) (SQL)
+        - [ ]  Deploy **Redis cache** cho performance.
+        - [ ]  Thử **Kafka + Postgres Outbox** → đảm bảo event delivery.
+        - [ ]  Nắm **replication, sharding, partitioning**.
+        - [ ]  Thực hành **failover & recovery** trong DB cluster (Postgres Patroni / MongoDB ReplicaSet)
+- System design YT mock interview and practices
+    - 16 https://www.youtube.com/@IGotAnOffer-Engineering/videos
+    - 17 https://www.youtube.com/watch?v=fhdPyoO6aXI&list=PL5q3E8eRUieWtYLmRU3z94-vGRcwKr9tM
+    
 ## Database
 
 - [Thiết kế Physical Schema chịu tải cao](./1.0.0/c2gn4i/README.md)

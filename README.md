@@ -141,6 +141,18 @@
 
 # Job hopping
 
+- `ByteByteGoHq/system-design-101`
+    - :white_check_mark: https://bytebytego.com/guides/api-web-development
+    - :white_check_mark: https://bytebytego.com/guides/technical-interviews
+    - :white_check_mark: https://bytebytego.com/guides/caching-performance
+    - :white_check_mark: https://bytebytego.com/guides/devops-cicd/
+    - :white_check_mark: https://bytebytego.com/guides/security/
+    - :white_check_mark: https://bytebytego.com/guides/cloud-distributed-systems
+    - https://bytebytego.com/guides/computer-fundamentals
+    - https://bytebytego.com/guides/software-architecture
+    - https://bytebytego.com/guides/database-and-storage
+    - https://bytebytego.com/guides/real-world-case-studies/
+
 ## Database
 
 - [Thiết kế Physical Schema chịu tải cao](./1.0.0/c2gn4i/README.md)

@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "654d7ec3a9ed6782",
+        "id": "2bd0cfd0f3af684d",
         "type": "tabs",
         "children": [
           {
-            "id": "9f3142bd0ba2f1df",
+            "id": "5d14ff5a1c6f09a0",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "icon": "lucide-file",
+              "title": "New tab"
             }
           }
         ]
@@ -162,7 +162,7 @@
       "bases:Create new base": false
     }
   },
-  "active": "9f3142bd0ba2f1df",
+  "active": "5d14ff5a1c6f09a0",
   "lastOpenFiles": [
     "Microservices.md",
     "RabbitMQ.md",

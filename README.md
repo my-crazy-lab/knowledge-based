@@ -142,6 +142,32 @@
 
 - ByteByteGoHq/system-design-101
     - https://bytebytego.com/guides/what-are-the-most-important-aws-services-to-learn/
+        - :white_check_mark: S3
+        - Google File System
+        - :white_check_mark: Elastic compute cloud EC2
+        - Lambda
+        - Fargate
+        - ECS
+        - DynamoDB
+        - EBS
+        - EFS
+        - FSx
+        - ELB
+        - Cloudfont
+        - RDS
+        - Aurora
+        - SNS
+        - SQS
+        - MQ
+        - Route53
+        - VPC
+        - Transit gateway
+        - DMS
+        - Snowball
+        - DataSync
+        - SageMaker
+        - Lex
+        - Rekognition
     - :white_check_mark: https://bytebytego.com/guides/api-web-development
     - :white_check_mark: https://bytebytego.com/guides/technical-interviews
     - :white_check_mark: https://bytebytego.com/guides/caching-performance

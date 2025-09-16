@@ -141,6 +141,7 @@
 # Job hopping
 
 - ByteByteGoHq/system-design-101
+    - https://bytebytego.com/guides/what-are-the-most-important-aws-services-to-learn/
     - :white_check_mark: https://bytebytego.com/guides/api-web-development
     - :white_check_mark: https://bytebytego.com/guides/technical-interviews
     - :white_check_mark: https://bytebytego.com/guides/caching-performance
@@ -151,44 +152,42 @@
     - https://bytebytego.com/guides/software-architecture
     - https://bytebytego.com/guides/database-and-storage
     - https://bytebytego.com/guides/real-world-case-studies/
-- Deep diving technologies used at bTaskee
-    - [ ]  k3s
-    - [ ]  voice streaming
-    - [ ]  airflow - kafka - flink - debezium - dbt
-    - [ ]  elastic search
-    - [ ]  mongodb
-- Trial tech trending: Database, distributed system, pattern
-    - [ ]  resiliency patterns
-    - [ ]  Cách triển khai **service discovery**
-    - [ ]  **Istio / Linkerd** → service mesh
-    - [ ]  Serverless Computing
-        - [ ]  AWS Lambda
-        - [ ]  Supabase Functions
-        - [ ]  Cloudflare Workers
-        - [ ]  **OpenFaaS / Knative** (open-source serverless)
-        - [ ]  Netlify
-    - [ ]  Event-Driven Design & Streaming
-        - [ ]  **exactly-once, at-least-once** semantics
-        - [ ]  partition & replication kafka
-    - [ ]  **WebAssembly (Wasm)**
-        - [ ]  **Wasmtime**, **WasmEdge**, **Wasmer** (runtime).
-        - [ ]  **Spin (Fermyon)**: build microservices bằng Wasm.
-        - [ ]  **Suborbital** (Wasm functions in backend).
-    - [ ]  Pattern
-        - [ ]  Hiểu **CAP Theorem** (Consistency, Availability, Partition Tolerance).
-        - [ ]  Phân biệt **strong vs eventual consistency**.
-        - [ ]  Học **Saga Pattern** (orchestration vs choreography).
-        - [ ]  Thực hành **CQRS + Event Sourcing** với một service nhỏ.
-        - [ ]  Biết **Outbox Pattern** (DB + message broker integration).
-    - [ ]  Database
-        - [ ]  Làm CRUD project với **PostgreSQL** (transaction, index, view) (SQL)
-        - [ ]  Deploy **Redis cache** cho performance.
-        - [ ]  Thử **Kafka + Postgres Outbox** → đảm bảo event delivery.
-        - [ ]  Nắm **replication, sharding, partitioning**.
-        - [ ]  Thực hành **failover & recovery** trong DB cluster (Postgres Patroni / MongoDB ReplicaSet)
 - System design YT mock interview and practices
     - 16 https://www.youtube.com/@IGotAnOffer-Engineering/videos
     - 17 https://www.youtube.com/watch?v=fhdPyoO6aXI&list=PL5q3E8eRUieWtYLmRU3z94-vGRcwKr9tM
+- **Deep diving** technologies used at bTaskee
+    - [ ] (theory) mongodb - elastic search
+    - [ ] (advance) Database SQL
+        - [ ]  Làm CRUD project với **PostgreSQL** (transaction, index, view)
+        - [ ]  Deploy **Redis cache** cho performance.
+        - [ ]  **Kafka + Postgres Outbox** → đảm bảo event delivery.
+        - [ ]  **replication, sharding, partitioning**.
+        - [ ]  Thực hành **failover & recovery** trong DB cluster (Postgres Patroni / MongoDB ReplicaSet)
+    - [ ] (theory) spark - airflow - kafka - flink - debezium - dbt
+    - [ ] (apply) voice - streaming - micro agents
+        - [ ]  Event-Driven Design & Streaming
+            - [ ]  **exactly-once, at-least-once** semantics
+            - [ ]  partition & replication kafka
+        - [ ]  Pattern
+            - [ ]  **CAP Theorem** (Consistency, Availability, Partition Tolerance).
+            - [ ]  Phân biệt **strong vs eventual consistency**.
+            - [ ]  **Saga Pattern** (orchestration vs choreography).
+            - [ ]  Thực hành **CQRS + Event Sourcing** với một service nhỏ.
+            - [ ]  **Outbox Pattern** (DB + message broker integration).
+    - [ ] (apply) k8s - k3s - infra - go
+        - [ ]  Cách triển khai **service discovery**
+        - [ ]  **Istio / Linkerd** → service mesh
+        - [ ]  resiliency patterns
+        - [ ]  Serverless Computing
+            - [ ]  AWS Lambda
+            - [ ]  Supabase Functions
+            - [ ]  Cloudflare Workers
+            - [ ]  **OpenFaaS / Knative** (open-source serverless)
+            - [ ]  Netlify
+    - [ ] (trial) **WebAssembly (Wasm)**
+        - [ ]  **Wasmtime**, **WasmEdge**, **Wasmer** (runtime).
+        - [ ]  **Spin (Fermyon)**: build microservices bằng Wasm.
+        - [ ]  **Suborbital** (Wasm functions in backend).
     
 ## Database
 

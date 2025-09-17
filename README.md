@@ -141,33 +141,37 @@
 # Job hopping
 
 - ByteByteGoHq/system-design-101
-    - https://bytebytego.com/guides/what-are-the-most-important-aws-services-to-learn/
+    - :white_check_mark: Google File System
+    - :white_check_mark: https://bytebytego.com/guides/what-are-the-most-important-aws-services-to-learn/
+        - :white_check_mark: DynamoDB
+        - :white_check_mark: Lambda
         - :white_check_mark: S3
-        - Google File System
         - :white_check_mark: Elastic compute cloud EC2
-        - Lambda
-        - Fargate
-        - ECS
-        - DynamoDB
-        - EBS
-        - EFS
-        - FSx
-        - ELB
-        - Cloudfont
-        - RDS
-        - Aurora
-        - SNS
-        - SQS
-        - MQ
-        - Route53
-        - VPC
-        - Transit gateway
-        - DMS
-        - Snowball
-        - DataSync
-        - SageMaker
-        - Lex
-        - Rekognition
+        - :white_check_mark: Fargate
+        - :white_check_mark: ECS
+        - :white_check_mark: ENI
+        - :white_check_mark: EBS
+        - :white_check_mark: EFS
+        - :white_check_mark: ELB
+        - :white_check_mark: FSx
+        - :white_check_mark: Cloudfont
+        - :white_check_mark: RDS
+        - :white_check_mark: Aurora
+        - :white_check_mark: SNS
+        - :white_check_mark: SQS
+        - :white_check_mark: MQ
+        - :white_check_mark: Route53
+        - :white_check_mark: VPC
+        - :white_check_mark: Transit gateway
+        - :white_check_mark: DMS
+        - :white_check_mark: Snowball
+        - :white_check_mark: DataSync
+        - :white_check_mark: SageMaker
+        - :white_check_mark: Lex
+        - :white_check_mark: Rekognition
+        - :white_check_mark: Cloud Map
+        - :white_check_mark: AWS Secrets Manager / SSM Parameter Store
+        - :white_check_mark: CodePipeline + CodeDeploy
     - :white_check_mark: https://bytebytego.com/guides/api-web-development
     - :white_check_mark: https://bytebytego.com/guides/technical-interviews
     - :white_check_mark: https://bytebytego.com/guides/caching-performance
@@ -182,38 +186,49 @@
     - 16 https://www.youtube.com/@IGotAnOffer-Engineering/videos
     - 17 https://www.youtube.com/watch?v=fhdPyoO6aXI&list=PL5q3E8eRUieWtYLmRU3z94-vGRcwKr9tM
 - **Deep diving** technologies used at bTaskee
-    - [ ] (theory) mongodb - elastic search
-    - [ ] (advance) Database SQL
-        - [ ]  Làm CRUD project với **PostgreSQL** (transaction, index, view)
-        - [ ]  Deploy **Redis cache** cho performance.
-        - [ ]  **Kafka + Postgres Outbox** → đảm bảo event delivery.
-        - [ ]  **replication, sharding, partitioning**.
-        - [ ]  Thực hành **failover & recovery** trong DB cluster (Postgres Patroni / MongoDB ReplicaSet)
-    - [ ] (theory) spark - airflow - kafka - flink - debezium - dbt
-    - [ ] (apply) voice - streaming - micro agents
-        - [ ]  Event-Driven Design & Streaming
-            - [ ]  **exactly-once, at-least-once** semantics
-            - [ ]  partition & replication kafka
-        - [ ]  Pattern
-            - [ ]  **CAP Theorem** (Consistency, Availability, Partition Tolerance).
-            - [ ]  Phân biệt **strong vs eventual consistency**.
-            - [ ]  **Saga Pattern** (orchestration vs choreography).
-            - [ ]  Thực hành **CQRS + Event Sourcing** với một service nhỏ.
-            - [ ]  **Outbox Pattern** (DB + message broker integration).
+    - [ ] (diving) db
+        - [ ] SQL - **PostgreSQL** (transaction, index, view, work explain by ComArch)
+        - [ ] Redis
+        - [ ] elastic search
+        - [ ] mongodb
+        - [ ] **Kafka + Postgres Outbox** → đảm bảo event delivery.
+        - [ ] **replication, sharding, partitioning**.
+        - [ ] **failover & recovery** trong DB cluster (Postgres Patroni / MongoDB ReplicaSet)
+    - [ ] (diving) big data
+        - spark 
+        - airflow 
+        - kafka 
+        - flink 
+        - debezium 
+        - dbt 
+        - clickhouse
+    - [ ] (diving) Event-Driven Design
+        - [x] event types, lifecycles
+        - [x] Streaming
+        - [x] **exactly-once, at-least-once** semantics
+        - [x] **CAP Theorem** (Consistency, Availability, Partition Tolerance).
+        - [x] **Strong vs eventual consistency**.
+        - [ ] Voice
+        - [ ] partition & replication kafka
+        - [ ] **Saga Pattern** (orchestration vs choreography).
+        - [ ] **CQRS + Event Sourcing** với một service nhỏ.
+        - [ ] **Outbox Pattern** (DB + message broker integration).
+        - [ ] patterns & anti-patterns, học từ case study
     - [ ] (apply) k8s - k3s - infra - go
-        - [ ]  Cách triển khai **service discovery**
-        - [ ]  **Istio / Linkerd** → service mesh
-        - [ ]  resiliency patterns
-        - [ ]  Serverless Computing
-            - [ ]  AWS Lambda
-            - [ ]  Supabase Functions
-            - [ ]  Cloudflare Workers
-            - [ ]  **OpenFaaS / Knative** (open-source serverless)
-            - [ ]  Netlify
+        - [ ] **service discovery**
+        - [ ] **Istio / Linkerd** → service mesh
+        - [ ] resiliency patterns
+        - [ ] Serverless Computing
+            - [ ] AWS Lambda
+            - [ ] Supabase Functions
+            - [ ] Cloudflare Workers
+            - [ ] **OpenFaaS / Knative** (open-source serverless)
+            - [ ] Netlify
+    - [ ] (build lib) Micro Agents
     - [ ] (trial) **WebAssembly (Wasm)**
-        - [ ]  **Wasmtime**, **WasmEdge**, **Wasmer** (runtime).
-        - [ ]  **Spin (Fermyon)**: build microservices bằng Wasm.
-        - [ ]  **Suborbital** (Wasm functions in backend).
+        - [ ] **Wasmtime**, **WasmEdge**, **Wasmer** (runtime).
+        - [ ] **Spin (Fermyon)**: build microservices bằng Wasm.
+        - [ ] **Suborbital** (Wasm functions in backend).
     
 ## Database
 

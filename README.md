@@ -179,7 +179,7 @@
     - :white_check_mark: https://bytebytego.com/guides/security/
     - :white_check_mark: https://bytebytego.com/guides/cloud-distributed-systems
     - :white_check_mark: https://bytebytego.com/guides/database-and-storage
-    - https://bytebytego.com/guides/computer-fundamentals
+    - :white_check_mark: https://bytebytego.com/guides/computer-fundamentals
     - https://bytebytego.com/guides/software-architecture
     - https://bytebytego.com/guides/real-world-case-studies/
 - System design YT mock interview and practices

@@ -178,9 +178,9 @@
     - :white_check_mark: https://bytebytego.com/guides/devops-cicd/
     - :white_check_mark: https://bytebytego.com/guides/security/
     - :white_check_mark: https://bytebytego.com/guides/cloud-distributed-systems
+    - :white_check_mark: https://bytebytego.com/guides/database-and-storage
     - https://bytebytego.com/guides/computer-fundamentals
     - https://bytebytego.com/guides/software-architecture
-    - https://bytebytego.com/guides/database-and-storage
     - https://bytebytego.com/guides/real-world-case-studies/
 - System design YT mock interview and practices
     - 16 https://www.youtube.com/@IGotAnOffer-Engineering/videos
@@ -214,7 +214,7 @@
         - [ ] **CQRS + Event Sourcing** với một service nhỏ.
         - [ ] **Outbox Pattern** (DB + message broker integration).
         - [ ] patterns & anti-patterns, học từ case study
-    - [ ] (apply) k8s - k3s - infra - go
+    - [ ] (apply) k8s - k3s - infra - go - Arvo
         - [ ] **service discovery**
         - [ ] **Istio / Linkerd** → service mesh
         - [ ] resiliency patterns
@@ -229,7 +229,9 @@
         - [ ] **Wasmtime**, **WasmEdge**, **Wasmer** (runtime).
         - [ ] **Spin (Fermyon)**: build microservices bằng Wasm.
         - [ ] **Suborbital** (Wasm functions in backend).
-    
+- DSA
+    - https://bytebytego.com/guides/8-data-structures-that-power-your-databases/
+
 ## Database
 
 - [Thiết kế Physical Schema chịu tải cao](./1.0.0/c2gn4i/README.md)

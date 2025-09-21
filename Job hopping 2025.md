@@ -1,0 +1,43 @@
+# Job hopping 9/2025
+
+- :white_check_mark: ByteByteGoHq/system-design-101
+    - :white_check_mark: Google File System
+    - :white_check_mark: https://bytebytego.com/guides/what-are-the-most-important-aws-services-to-learn/
+        - :white_check_mark: DynamoDB
+        - :white_check_mark: Lambda
+        - :white_check_mark: S3
+        - :white_check_mark: Elastic compute cloud EC2
+        - :white_check_mark: Fargate
+        - :white_check_mark: ECS
+        - :white_check_mark: ENI
+        - :white_check_mark: EBS
+        - :white_check_mark: EFS
+        - :white_check_mark: ELB
+        - :white_check_mark: FSx
+        - :white_check_mark: Cloudfont
+        - :white_check_mark: RDS
+        - :white_check_mark: Aurora
+        - :white_check_mark: SNS
+        - :white_check_mark: SQS
+        - :white_check_mark: MQ
+        - :white_check_mark: Route53
+        - :white_check_mark: VPC
+        - :white_check_mark: Transit gateway
+        - :white_check_mark: DMS
+        - :white_check_mark: Snowball
+        - :white_check_mark: DataSync
+        - :white_check_mark: SageMaker
+        - :white_check_mark: Lex
+        - :white_check_mark: Rekognition
+        - :white_check_mark: Cloud Map
+        - :white_check_mark: AWS Secrets Manager / SSM Parameter Store
+        - :white_check_mark: CodePipeline + CodeDeploy
+    - :white_check_mark: https://bytebytego.com/guides/api-web-development
+    - :white_check_mark: https://bytebytego.com/guides/technical-interviews
+    - :white_check_mark: https://bytebytego.com/guides/caching-performance
+    - :white_check_mark: https://bytebytego.com/guides/devops-cicd/
+    - :white_check_mark: https://bytebytego.com/guides/security/
+    - :white_check_mark: https://bytebytego.com/guides/cloud-distributed-systems
+    - :white_check_mark: https://bytebytego.com/guides/database-and-storage
+    - :white_check_mark: https://bytebytego.com/guides/computer-fundamentals
+    - :white_check_mark: https://bytebytego.com/guides/software-architecture

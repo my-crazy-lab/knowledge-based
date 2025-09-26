@@ -41,3 +41,33 @@
     - :white_check_mark: https://bytebytego.com/guides/database-and-storage
     - :white_check_mark: https://bytebytego.com/guides/computer-fundamentals
     - :white_check_mark: https://bytebytego.com/guides/software-architecture
+- some infra need diving
+    - [x]  Avro
+    - [x]  **Service discovery**
+    - [x]  **Istio / Linkerd** → service mesh
+    - [x]  Resiliency patterns
+    - [x]  Serverless Computing
+        - [x]  AWS Lambda
+        - [x]  Supabase Functions
+        - [x]  Cloudflare Workers
+        - [x]  **OpenFaaS / Knative** (open-source serverless)
+        - [x]  Netlify
+- [x]  Event types, lifecycles
+- [x]  Streaming
+- [x]  **Exactly-once, at-least-once** semantics
+- [x]  **CAP Theorem** (Consistency, Availability, Partition Tolerance).
+- [x]  **Strong vs eventual consistency**.
+- [x]  chunking - long pulling
+- [x]  hmac - blob/some binary type
+- [x]  socket
+    1. Nếu muốn gửi file lớn qua WebSocket, bạn chọn cách nào (binary frames, chunking, stream API…)?
+    2. Làm sao scale WebSocket server để phục vụ hàng triệu kết nối (load balancing, sticky session, pub/sub backend)?
+    3. Giải thích sự khác biệt khi triển khai WebSocket trên **single server** và **multi-node cluster**.
+    4. Khi nào bạn cần dùng **Redis pub/sub, Kafka, NATS** để hỗ trợ WebSocket backend?
+    5. Cách tổ chức **rooms/channels** trong WebSocket server? (giống chat app).
+    6. Làm sao broadcast một event đến **tất cả clients** mà không gây nghẽn?
+    7. Giải thích sự khác biệt giữa **WebSocket** và **Raw TCP socket**.
+    8. Tại sao WebSocket không built-in hỗ trợ **multiplexing** như HTTP/2, và có giải pháp nào thay thế?
+    9. Ưu/nhược điểm khi dùng WebSocket để stream dữ liệu so với **gRPC bidirectional streaming**.
+    10. WebSocket qua proxy hoặc firewall có vấn đề gì? Cách khắc phục?
+    11. Tại sao một số hệ thống chọn **QUIC/HTTP3** thay cho WebSocket/TCP?

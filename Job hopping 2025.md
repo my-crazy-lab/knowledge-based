@@ -71,3 +71,15 @@
     9. Ưu/nhược điểm khi dùng WebSocket để stream dữ liệu so với **gRPC bidirectional streaming**.
     10. WebSocket qua proxy hoặc firewall có vấn đề gì? Cách khắc phục?
     11. Tại sao một số hệ thống chọn **QUIC/HTTP3** thay cho WebSocket/TCP?
+- [x]  Partition & replication Kafka
+- [x]  **Saga Pattern** (orchestration vs choreography)
+- [x]  **CQRS + Event Sourcing**.
+- [x]  **Outbox Pattern** (DB + message broker integration)
+- [x] Patterns & anti-patterns in DS and MS from  case study
+- Mongodb
+    1. MongoDB lưu dữ liệu theo **BSON**. Tại sao chọn BSON thay vì JSON hay binary khác? Ưu/nhược về performance và storage?
+    2. WiredTiger storage engine tối ưu đọc/ghi bằng cơ chế **document-level locking** thay vì collection/db lock. Ưu/nhược điểm?
+    3. Tại sao MongoDB lại thiết kế **Oplog (operation log)** thay vì **WAL** truyền thống như Postgres?
+    1. Làm sao tối ưu query khi MongoDB không có JOIN như RDBMS? Bạn sẽ chọn **denormalization** hay **manual reference**?
+    2. Giải thích cơ chế **covered query** và lợi ích của nó.
+    3. TTL index và partial index dùng trong trường hợp nào để giảm storage?

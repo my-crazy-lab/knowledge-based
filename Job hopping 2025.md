@@ -118,10 +118,10 @@
     1. Kafka broker nào giữ metadata? Tại sao **Kafka không dùng ZooKeeper nữa (KIP-500)**?
     2. Khi một broker giữ leader partition chết, Kafka làm sao chọn leader mới? Có rủi ro mất dữ liệu không?
     3. ISR (In-Sync Replica) là gì? Nếu follower lag → bị kick khỏi ISR thì ảnh hưởng thế nào đến durability?
-1. Nếu có 1 topic với 100 partition, nhưng chỉ 5 consumer trong cùng group, chuyện gì xảy ra? Nếu có 200 consumer thì sao?
-2. Message ordering trong Kafka có đảm bảo không? Trong trường hợp nào ordering bị phá vỡ?
-3. Khi throughput cực lớn (hàng triệu msg/s), bottleneck thường nằm ở đâu (producer, broker, network, consumer)? Bạn sẽ tối ưu thế nào?
-4. So sánh Kafka với RabbitMQ / Pulsar: tại sao Kafka phù hợp với event streaming hơn?
+    1. Nếu có 1 topic với 100 partition, nhưng chỉ 5 consumer trong cùng group, chuyện gì xảy ra? Nếu có 200 consumer thì sao?
+    2. Message ordering trong Kafka có đảm bảo không? Trong trường hợp nào ordering bị phá vỡ?
+    3. Khi throughput cực lớn (hàng triệu msg/s), bottleneck thường nằm ở đâu (producer, broker, network, consumer)? Bạn sẽ tối ưu thế nào?
+    4. So sánh Kafka với RabbitMQ / Pulsar: tại sao Kafka phù hợp với event streaming hơn?
 1. Nếu replication factor = 3, một broker chết và ISR chỉ còn 1 → Kafka có cho leader election không? Tùy config nào?
 2. Bạn có 1 topic lưu giữ dữ liệu 7 ngày, nếu consumer down 10 ngày rồi restart → chuyện gì xảy ra? Làm sao xử lý?
 3. Kafka log compaction hoạt động thế nào? Khác gì với log retention theo thời gian/dung lượng?

@@ -134,6 +134,10 @@
 - [30 04 25](./1.0.0/d9vx1k.md)
 - [07 05 25](./1.0.0/e1jj8d.md)
 
-# Hard working
+# AI ML
 
 - [Trí tuệ nhân tạo nâng cao](./1.0.0/qrw1qq.md)
+
+# Out of technology
+
+- Mind: Introduction to Cognitive Science

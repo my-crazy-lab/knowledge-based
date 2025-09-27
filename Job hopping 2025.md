@@ -41,7 +41,7 @@
     - :white_check_mark: https://bytebytego.com/guides/database-and-storage
     - :white_check_mark: https://bytebytego.com/guides/computer-fundamentals
     - :white_check_mark: https://bytebytego.com/guides/software-architecture
-- some infra need diving
+- :white_check_mark: some infra need diving
     - [x]  Avro
     - [x]  **Service discovery**
     - [x]  **Istio / Linkerd** → service mesh
@@ -76,7 +76,7 @@
 - [x]  **CQRS + Event Sourcing**.
 - [x]  **Outbox Pattern** (DB + message broker integration)
 - [x] Patterns & anti-patterns in DS and MS from  case study
-- Mongodb
+- :white_check_mark: Mongodb
     1. MongoDB lưu dữ liệu theo **BSON**. Tại sao chọn BSON thay vì JSON hay binary khác? Ưu/nhược về performance và storage?
     2. WiredTiger storage engine tối ưu đọc/ghi bằng cơ chế **document-level locking** thay vì collection/db lock. Ưu/nhược điểm?
     3. Tại sao MongoDB lại thiết kế **Oplog (operation log)** thay vì **WAL** truyền thống như Postgres?
@@ -95,14 +95,13 @@
     2. Khi transaction span nhiều shards, MongoDB xử lý thế nào? Ảnh hưởng performance ra sao?
     3. MongoDB cung cấp **read concern** (local, majority, linearizable). So sánh và trade-off về latency vs consistency.
     1. Nếu primary chết → secondary bầu lên làm primary. Trường hợp replication lag, dữ liệu mới commit có bị mất không?
-2. Khi restore từ backup lớn (TB-level), những challenge chính là gì (oplog replay, consistency, downtime)?
-3. Nếu cluster có nhiều datacenter (multi-region replica set), bạn chọn **read/write concern** như thế nào để cân bằng giữa durability và latency?
-1. MongoDB có hỗ trợ **change stream**. Nó hoạt động dựa vào Oplog. Nếu Oplog quá ngắn, chuyện gì xảy ra với consumer change stream?
-2. Khi cần audit log toàn hệ thống, bạn sẽ chọn **Event Sourcing bằng MongoDB** hay chỉ rely vào Oplog? Tại sao?
-3. Làm thế nào migrate cluster từ **non-sharded → sharded** mà không downtime?
-4. Khi cluster MongoDB trên cloud (Atlas) bị hotspot shard → bạn giải quyết thế nào?
-
-- Kafka
+    2. Khi restore từ backup lớn (TB-level), những challenge chính là gì (oplog replay, consistency, downtime)?
+    3. Nếu cluster có nhiều datacenter (multi-region replica set), bạn chọn **read/write concern** như thế nào để cân bằng giữa durability và latency?
+    1. MongoDB có hỗ trợ **change stream**. Nó hoạt động dựa vào Oplog. Nếu Oplog quá ngắn, chuyện gì xảy ra với consumer change stream?
+    2. Khi cần audit log toàn hệ thống, bạn sẽ chọn **Event Sourcing bằng MongoDB** hay chỉ rely vào Oplog? Tại sao?
+    3. Làm thế nào migrate cluster từ **non-sharded → sharded** mà không downtime?
+    4. Khi cluster MongoDB trên cloud (Atlas) bị hotspot shard → bạn giải quyết thế nào?
+- :white_check_mark: Kafka
     1. Kafka lưu message ở disk nhưng lại cực nhanh, tại sao? Giải thích cơ chế **append-only log + sequential I/O + OS page cache + zero-copy (sendfile)**.
     2. So sánh **Kafka log segment** với **WAL (write-ahead log)** trong database. Điểm giống và khác?
     1. Producer gửi message theo **acks=0,1,all** khác nhau thế nào về **durability** và **throughput**?
@@ -122,11 +121,10 @@
     2. Message ordering trong Kafka có đảm bảo không? Trong trường hợp nào ordering bị phá vỡ?
     3. Khi throughput cực lớn (hàng triệu msg/s), bottleneck thường nằm ở đâu (producer, broker, network, consumer)? Bạn sẽ tối ưu thế nào?
     4. So sánh Kafka với RabbitMQ / Pulsar: tại sao Kafka phù hợp với event streaming hơn?
-1. Nếu replication factor = 3, một broker chết và ISR chỉ còn 1 → Kafka có cho leader election không? Tùy config nào?
-2. Bạn có 1 topic lưu giữ dữ liệu 7 ngày, nếu consumer down 10 ngày rồi restart → chuyện gì xảy ra? Làm sao xử lý?
-3. Kafka log compaction hoạt động thế nào? Khác gì với log retention theo thời gian/dung lượng?
-4. Khi deploy Kafka trên cloud (EKS/GKE), vấn đề lớn nhất về **network & storage** là gì?
-
+    1. Nếu replication factor = 3, một broker chết và ISR chỉ còn 1 → Kafka có cho leader election không? Tùy config nào?
+    2. Bạn có 1 topic lưu giữ dữ liệu 7 ngày, nếu consumer down 10 ngày rồi restart → chuyện gì xảy ra? Làm sao xử lý?
+    3. Kafka log compaction hoạt động thế nào? Khác gì với log retention theo thời gian/dung lượng?
+    4. Khi deploy Kafka trên cloud (EKS/GKE), vấn đề lớn nhất về **network & storage** là gì?
 - Replication, sharding, partitioning
 1. Khi một **Primary** trong replica set chết, election diễn ra thế nào? Các điều kiện để một secondary được bầu làm primary?
 2. Nếu replication lag lớn, dữ liệu mới ghi vào primary có bị mất khi failover không? (write concern ảnh hưởng thế nào?)

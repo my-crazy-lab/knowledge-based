@@ -12,17 +12,14 @@
 - [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
     - 1 :arrow_right: 20 Chapter 10
 
-- Speech and Language Processing
+- :x: Speech and Language Processing
     - [1 :arrow_right: 400](./1.0.0/x7r2ri.md)
-- The Data Warehouse Toolkit, 3rd Edition
+- :x: The Data Warehouse Toolkit, 3rd Edition
     - 1 :arrow_right: 37
-- Data Science for Business
+- :x: Data Science for Business
     - [48 :arrow_right: 67](./1.0.0/cxn9wz.md)
     - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)
     - [97 :arrow_right: 119](./1.0.0/inkjdo.md)
-- [Foundations of Computer Vision](https://visionbook.mit.edu/) 
-- [Computer Graphics from scratch](https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html) 
-
 - :white_check_mark: Effective DevOps
 - :white_check_mark: Cloud Native Pattern
 - :white_check_mark: Domain-Driven Design Tackling Complexity in the Heart of Software

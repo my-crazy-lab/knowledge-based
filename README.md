@@ -7,8 +7,7 @@
     - [1 :arrow_right: 368](./1.0.0/siqgx4.md)
 - The Architecture of Open Source Applications volume 1
     - [Chapter 3](./1.0.0/kep0z3.md)
-- Linux from scratch book
-    - 1 :arrow_right: 30
+- Linux from scratch book: Thứ tự Khởi động BIOS
 - [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
     - 1 :arrow_right: 20 Chapter 10
 

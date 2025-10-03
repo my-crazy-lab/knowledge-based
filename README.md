@@ -11,6 +11,13 @@
 - [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
     - 1 :arrow_right: 20 Chapter 10
 
+- Operating Systems - Three Easy Pieces
+    - Twisted-Pair Copper Wire 30/675
+- Art of Multiprocessor Programming 
+    - /529
+- Computer Networking: A Top-Down Approach (8th) 
+    - /775
+
 - :x: Speech and Language Processing
     - [1 :arrow_right: 400](./1.0.0/x7r2ri.md)
 - :x: The Data Warehouse Toolkit, 3rd Edition

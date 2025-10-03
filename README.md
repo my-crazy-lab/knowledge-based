@@ -7,17 +7,19 @@
     - [1 :arrow_right: 368](./1.0.0/siqgx4.md)
 - The Architecture of Open Source Applications volume 1
     - [Chapter 3](./1.0.0/kep0z3.md)
-- Linux from scratch book: Thứ tự Khởi động BIOS
+- Linux from scratch book
 - [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
     - 1 :arrow_right: 20 Chapter 10
 
 - Operating Systems - Three Easy Pieces
-    - Twisted-Pair Copper Wire 30/675
+    - /675
 - Art of Multiprocessor Programming 
     - /529
 - Computer Networking: A Top-Down Approach (8th) 
-    - /775
+    - 92/775
 
+- :white_check_mark: devops trouble linux best practices Phần mềm email không thể giao tiếp với máy chủ email gửi
+- :white_check_mark: Database internals 
 - :x: Speech and Language Processing
     - [1 :arrow_right: 400](./1.0.0/x7r2ri.md)
 - :x: The Data Warehouse Toolkit, 3rd Edition
@@ -29,10 +31,8 @@
 - :white_check_mark: Effective DevOps
 - :white_check_mark: Cloud Native Pattern
 - :white_check_mark: Domain-Driven Design Tackling Complexity in the Heart of Software
-- :white_check_mark: Database internals
 - :white_check_mark: Designing Distributed Systems
 - :white_check_mark: Cloud Architecture Patterns
-- :white_check_mark: devops trouble linux best practices
 - :white_check_mark: Patterns of Enterprise Application Architecture
 - :white_check_mark: Software Architecture in Practice
 - :white_check_mark: Interconnecting Smart Objects with IP: The Next Internet

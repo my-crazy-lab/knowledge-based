@@ -16,7 +16,9 @@
 - Art of Multiprocessor Programming 
     - /529
 - Computer Networking: A Top-Down Approach (8th) 
-    - 92/775
+    - 315/775
+- (Deep) The Elements of Computing Systems
+    - /410
 
 - :white_check_mark: devops trouble linux best practices Phần mềm email không thể giao tiếp với máy chủ email gửi
 - :white_check_mark: Database internals 

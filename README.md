@@ -14,7 +14,7 @@
 - Operating Systems - Three Easy Pieces
     - /675
 - Art of Multiprocessor Programming 
-    - /529
+    - 49/529
 - Computer Networking: A Top-Down Approach (8th) 
     - 315/775
 - (Deep) The Elements of Computing Systems

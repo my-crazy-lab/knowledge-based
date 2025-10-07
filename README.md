@@ -11,14 +11,33 @@
 - [Site Reliability Engineering](https://sre.google/sre-book/table-of-contents/)
     - 1 :arrow_right: 20 Chapter 10
 
-- Operating Systems - Three Easy Pieces
-    - /675
-- Art of Multiprocessor Programming 
-    - 49/529
-- Computer Networking: A Top-Down Approach (8th) 
+- (5.0/10) Operating Systems - Three Easy Pieces
+    - 61/675
+- (5.5/10) The Elements of Computing Systems
+    - 23/410
+- (6.5/10) Computer Networking: A Top-Down Approach (8th) 
     - 315/775
-- (Deep) The Elements of Computing Systems
-    - /410
+- (6.5/10) Programming Embedded Systems in C and C++ – Michael Barr
+    - 22/187
+- (7.5/10) Computer Systems: A Programmer’s Perspective
+    - 31/1105
+- (8.0/10) Linux Kernel Development – Robert Love
+    - 38/468
+- (8.5/10) Engineering a Compiler – Cooper & Torczon
+    - 26/825
+- (9.0/10) The Art of Multiprocessor Programming 
+    - 49/529
+- (9.5/10) Computer Architecture: A Quantitative Approach – Hennessy & Patterson
+    - 30/1357
+- (2/5) Data-Intensive Text Processing with MapReduce – Jimmy Lin (2010)
+    - 22/175
+- (3/5) Distributed Systems: Concepts and Design – Coulouris et al
+    - 55/1067
+- (3/5) Distributed Systems: Principles and Paradigms – Tanenbaum & van Steen 
+    - 52/705
+- (4/5) Introduction to Reliable and Secure Distributed Programming – Cachin et al. (2011)
+    - 40/388
+- (5/5) Distributed Algorithms – Nancy A. Lynch (1996)
 
 - :white_check_mark: devops trouble linux best practices Phần mềm email không thể giao tiếp với máy chủ email gửi
 - :white_check_mark: Database internals 

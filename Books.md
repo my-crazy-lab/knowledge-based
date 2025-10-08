@@ -1,11 +1,22 @@
 # Distributed Systems & System Design
 
-- (2/5) Data-Intensive Text Processing with MapReduce – Jimmy Lin (2010)
-    - 22/175
+- (2/5) Data-Intensive Text Processing with MapReduce – Jimmy Lin 
+    - 43/175
 - (3/5) Distributed Systems: Concepts and Design – Coulouris et al
     - 55/1067
+    - 1 2 3
+    - 4 5 6
+    - 7 8 9 10
+    - 11 12 13
+    - 14 15
+    - 16 17 18
+    - 19 20 21
 - (3/5) Distributed Systems: Principles and Paradigms – Tanenbaum & van Steen 
     - 52/705
+    - 2 3 4 5
+    - 6 7 8 9
+    - 10 11 12 13
+    - 14
 - (4/5) Introduction to Reliable and Secure Distributed Programming – Cachin et al. (2011)
     - 40/388
 - (5/5) Distributed Algorithms – Nancy A. Lynch (1996)
@@ -13,52 +24,33 @@
 - https://aosabook.org/en/
     - [Chapter 3](./1.0.0/kep0z3.md)
 
-# Specialized mainstream: low level engineer
-
-- (8.0/10) Linux Kernel Development – Robert Love
-    - 38/468
-- (8.5/10) Engineering a Compiler – Cooper & Torczon
-    - 26/825
-- (9.0/10) The Art of Multiprocessor Programming 
-    - 49/529
-- (9.5/10) Computer Architecture: A Quantitative Approach – Hennessy & Patterson
-    - 30/1357
-- http://gitlet.maryrosecook.com/docs/gitlet.html
-- https://browser.engineering/
-- https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html
-- https://webrtcforthecurious.com/#who-this-book-is-for
-
 # Foundations
 
 - (5.0/10) Operating Systems - Three Easy Pieces
-    - 61/675
+    - 82/675
     - Virtualization
     - Concurrentcy
     - Persistence
 - (5.5/10) The Elements of Computing Systems
     - 23/410
     - Mechanism
-    - CA
-    - Assembler
-    - VM
-    - High-level language
-    - Compiler
-    - OS
+    - CA + Assembler + VM
+    - High-level language + Compiler + OS
 - (6.5/10) Computer Networking: A Top-Down Approach (8th) 
     - 406/775 5.3
-    - Chapter 2 Application Layer
-    - Chapter 3 Transport Layer
-    - Chapter 4 The Network Layer: Data Plane
     - Chapter 5 The Network Layer: Control Plane
     - Chapter 6 The Link Layer and LANs
     - Chapter 7 Wireless and Mobile Networks
     - Chapter 8 Security in Computer Networks
 - (6.5/10) Programming Embedded Systems in C and C++ – Michael Barr
     - 22/187
+- (7.0) Operating Systems: Design and Implementation (MINIX)
+    - Dạy nền OS + code MINIX minh họa
+- (7.0) Computer Organization and Design – Patterson & Hennessy (cho RISC-V hoặc ARM)
 - (7.5/10) Computer Systems: A Programmer’s Perspective
     - 31/1105
 - DSA: https://www.interviewbit.com/blog/data-structures-and-algorithms-books/?utm_source=chatgpt.com
-- https://github.com/teivah/100-go-mistakes
+- Git https://github.com/teivah/100-go-mistakes
 
 # Database Systems & Data Infrastructure
 
@@ -79,6 +71,34 @@
 - https://cryptopals.com/
 - https://security-books.notion.site/
 
+# Specialized mainstream: low level engineer
+
+- (7.5/10) Modern Operating Systems – Andrew S. Tanenbaum
+    - Học thuật, tổng quan
+- (8.0/10) Designing Embedded Systems (PIC / ARM)
+    - Thực hành, phần cứng, firmware
+- (8.0/10) Linux Kernel Development – Robert Love
+    - 38/468
+- (8.5/10) Engineering a Compiler – Cooper & Torczon
+    - 26/825
+- (8.5/10) Compilers: Principles, Techniques, and Tools (Dragon Book)
+    - Kinh điển, khó vì ký hiệu và lý thuyết
+- (9.0/10) Understanding the Linux Kernel – Bovet & Cesati
+    - Giải phẫu kernel Linux ở mức chi tiết vi mô
+- (9.0/10) The Art of Multiprocessor Programming 
+    - 49/529
+- (9.0/10) C++ Concurrency in Action
+    - Thực hành, sâu về memory model. Rất kỹ về concurrency primitives
+- (9.0/10) The Art of Computer Systems Performance Analysis (Raj Jain)
+    - Toán – mô hình hóa – thống kê
+    - Kinh điển về performance modeling
+- (9.5/10) Computer Architecture: A Quantitative Approach – Hennessy & Patterson
+    - 30/1357
+- http://gitlet.maryrosecook.com/docs/gitlet.html
+- https://browser.engineering/
+- https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html
+- https://webrtcforthecurious.com/#who-this-book-is-for
+
 # Other technologies
 
 - (5) Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation 1/497
@@ -91,6 +111,20 @@
 2. Think and grow rich
 3. Atomic habits
 4. The Loopholes of the Rich: How the Rich Legally Make More Money and Pay Less Tax
+
+# Book I love or must read again
+
+- :white_check_mark: Designing Data-Intensive Applications
+    - [91 :arrow_right: 106](./1.0.0/tkzqg5.md)
+    - [107 :arrow_right: 222](./1.0.0/4mw4a3.md)
+    - [222 :arrow_right: 295](./1.0.0/o70doc.md)
+    - [295 :arrow_right: 371](./1.0.0/n20071.md)
+    - [372 :arrow_right: 410](./1.0.0/o6n1x2.md)
+- :white_check_mark: Software Architecture The Hard Parts
+    - [1 :arrow_right: DONE](./1.0.0/3pm1sl.md)
+- :white_check_mark: The Phoenix Project
+- :white_check_mark: (Little OS book from build own X)[https://littleosbook.github.io/]
+- :white_check_mark: Systems Performance: Enterprise and the Cloud
 
 # Completed
 
@@ -109,19 +143,8 @@
 - :white_check_mark: Design It
 - :white_check_mark: High Performance Browser Networking
 - :white_check_mark: Infrastructure as Code: Managing Servers in the Cloud
-- :white_check_mark: Systems Performance: Enterprise and the Cloud
 - :white_check_mark: Obserbility Engineering
-- :white_check_mark: Designing Data-Intensive Applications
-    - [91 :arrow_right: 106](./1.0.0/tkzqg5.md)
-    - [107 :arrow_right: 222](./1.0.0/4mw4a3.md)
-    - [222 :arrow_right: 295](./1.0.0/o70doc.md)
-    - [295 :arrow_right: 371](./1.0.0/n20071.md)
-    - [372 :arrow_right: 410](./1.0.0/o6n1x2.md)
 - :white_check_mark: The Unicorn Project
-- :white_check_mark: The Phoenix Project
-- :white_check_mark: Software Architecture The Hard Parts
-    - [1 :arrow_right: DONE](./1.0.0/3pm1sl.md)
-- :white_check_mark: (Little OS book from build own X)[https://littleosbook.github.io/]
 - :white_check_mark: Company of One
 - :white_check_mark: Make: Bootstrapper's handbook
 - :white_check_mark: The Clean startup

@@ -27,7 +27,7 @@
 # Foundations
 
 - (5.0/10) Operating Systems - Three Easy Pieces
-    - 253/675
+    - 315/675
     - Virtualization
     - Concurrentcy
     - Persistence

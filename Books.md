@@ -27,7 +27,7 @@
 # Foundations
 
 - (5.0/10) Operating Systems - Three Easy Pieces
-    - 315/675
+    - 361/675
     - Virtualization
     - Concurrentcy
     - Persistence
@@ -37,7 +37,7 @@
     - CA + Assembler + VM
     - High-level language + Compiler + OS
 - (6.5/10) Computer Networking: A Top-Down Approach (8th) 
-    - 406/775 5.3
+    - 463/775 5.3
     - Chapter 5 The Network Layer: Control Plane
     - Chapter 6 The Link Layer and LANs
     - Chapter 7 Wireless and Mobile Networks

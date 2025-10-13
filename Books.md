@@ -3,7 +3,7 @@
 - (2/5) Data-Intensive Text Processing with MapReduce – Jimmy Lin 
     - 43/175
 - (3/5) Distributed Systems: Concepts and Design – Coulouris et al
-    - 55/1067
+    - 69/1067
     - 1 2 3
     - 4 5 6
     - 7 8 9 10
@@ -11,8 +11,9 @@
     - 14 15
     - 16 17 18
     - 19 20 21
-- (3/5) Distributed Systems: Principles and Paradigms – Tanenbaum & van Steen 
-    - 94/705 3.1.2
+- (4/5) Distributed Systems: Principles and Paradigms – Tanenbaum & van Steen 
+    - 88/705
+    - cung cap nền tảng lý thuyết vững chắc, đặc biệt cho mục đích học thuật hoặc nghiên cứu
     - 2 3 4 5
     - 6 7 8 9
     - 10 11 12 13
@@ -46,7 +47,8 @@
 - (7.0) Operating Systems: Design and Implementation (MINIX)
     - Dạy nền OS + code MINIX minh họa
 - (7.0) Computer Organization and Design – Patterson & Hennessy (cho RISC-V hoặc ARM)
-- (7.5/10) Computer Systems: A Programmer’s Perspective
+    - Kiến trúc máy tính, CPU, ALU, MIPS, pipeline
+- (7.5/10) Computer Systems A Programmer’s Perspective
     - 31/1105
 - DSA: https://www.interviewbit.com/blog/data-structures-and-algorithms-books/?utm_source=chatgpt.com
 - Git https://github.com/teivah/100-go-mistakes
@@ -127,12 +129,12 @@
 
 # Completed
 
+- :white_check_mark: Designing Distributed Systems -> Mẫu Single-Node Đầu Tiên: Mẫu Sidecar
 - :white_check_mark: devops trouble linux best practices Phần mềm email không thể giao tiếp với máy chủ email gửi
 - :white_check_mark: Database internals 
 - :white_check_mark: Effective DevOps
 - :white_check_mark: Cloud Native Pattern
 - :white_check_mark: Domain-Driven Design Tackling Complexity in the Heart of Software
-- :white_check_mark: Designing Distributed Systems
 - :white_check_mark: Cloud Architecture Patterns
 - :white_check_mark: Patterns of Enterprise Application Architecture
 - :white_check_mark: Software Architecture in Practice

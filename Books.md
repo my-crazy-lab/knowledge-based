@@ -12,7 +12,7 @@
     - 16 17 18
     - 19 20 21
 - (3/5) Distributed Systems: Principles and Paradigms – Tanenbaum & van Steen 
-    - 52/705
+    - 94/705 3.1.2
     - 2 3 4 5
     - 6 7 8 9
     - 10 11 12 13
@@ -27,7 +27,7 @@
 # Foundations
 
 - (5.0/10) Operating Systems - Three Easy Pieces
-    - 361/675
+    - 377/675
     - Virtualization
     - Concurrentcy
     - Persistence
@@ -37,8 +37,7 @@
     - CA + Assembler + VM
     - High-level language + Compiler + OS
 - (6.5/10) Computer Networking: A Top-Down Approach (8th) 
-    - 463/775 5.3
-    - Chapter 5 The Network Layer: Control Plane
+    - 472/775 6.3 
     - Chapter 6 The Link Layer and LANs
     - Chapter 7 Wireless and Mobile Networks
     - Chapter 8 Security in Computer Networks

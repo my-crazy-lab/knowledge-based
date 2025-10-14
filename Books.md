@@ -129,7 +129,7 @@
 
 # Completed
 
-- :white_check_mark: Designing Distributed Systems -> Hệ Thống Chia Nhánh Nóng
+- :white_check_mark: Designing Distributed Systems
 - :white_check_mark: devops trouble linux best practices Phần mềm email không thể giao tiếp với máy chủ email gửi
 - :white_check_mark: Database internals 
 - :white_check_mark: Effective DevOps

@@ -3,9 +3,9 @@
 - (2/5) Data-Intensive Text Processing with MapReduce – Jimmy Lin 
     - 43/175
 - (3/5) Distributed Systems: Concepts and Design – Coulouris et al
-    - 69/1067
-    - 1 2 3
-    - 4 5 6
+    - 188/1067
+    - 1 2 3 4
+    - 5 6
     - 7 8 9 10
     - 11 12 13
     - 14 15
@@ -129,7 +129,7 @@
 
 # Completed
 
-- :white_check_mark: Designing Distributed Systems -> Mẫu Single-Node Đầu Tiên: Mẫu Sidecar
+- :white_check_mark: Designing Distributed Systems -> Hệ Thống Chia Nhánh Nóng
 - :white_check_mark: devops trouble linux best practices Phần mềm email không thể giao tiếp với máy chủ email gửi
 - :white_check_mark: Database internals 
 - :white_check_mark: Effective DevOps

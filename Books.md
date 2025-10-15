@@ -129,9 +129,10 @@
 
 # Completed
 
+- :white_check_mark: Release It -> Tự động hóa diễn ra rất nhanh
 - :white_check_mark: Database internals -> Bố cục vật lý của Wide Column Stores
+- :white_check_mark: devops trouble linux best practices -> 
 - :white_check_mark: Designing Distributed Systems
-- :white_check_mark: devops trouble linux best practices -> Giải Quyết Các Vấn Đề Thường Gặp trên Máy Chủ Web
 - :white_check_mark: Effective DevOps
 - :white_check_mark: Cloud Native Pattern
 - :white_check_mark: Domain-Driven Design Tackling Complexity in the Heart of Software
@@ -140,7 +141,6 @@
 - :white_check_mark: Software Architecture in Practice
 - :white_check_mark: Interconnecting Smart Objects with IP: The Next Internet
 - :white_check_mark: VR Book Human-Centered Design for Virtual Reality
-- :white_check_mark: Release It
 - :white_check_mark: Design It
 - :white_check_mark: High Performance Browser Networking
 - :white_check_mark: Infrastructure as Code: Managing Servers in the Cloud

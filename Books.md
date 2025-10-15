@@ -129,9 +129,9 @@
 
 # Completed
 
+- :white_check_mark: Database internals -> Bố cục vật lý của Wide Column Stores
 - :white_check_mark: Designing Distributed Systems
-- :white_check_mark: devops trouble linux best practices Phần mềm email không thể giao tiếp với máy chủ email gửi
-- :white_check_mark: Database internals 
+- :white_check_mark: devops trouble linux best practices -> Giải Quyết Các Vấn Đề Thường Gặp trên Máy Chủ Web
 - :white_check_mark: Effective DevOps
 - :white_check_mark: Cloud Native Pattern
 - :white_check_mark: Domain-Driven Design Tackling Complexity in the Heart of Software

@@ -1,9 +1,7 @@
 # Distributed Systems & System Design
 
-- (2/5) Data-Intensive Text Processing with MapReduce – Jimmy Lin 
-    - 43/175
 - (3/5) Distributed Systems: Concepts and Design – Coulouris et al
-    - 188/1067
+    - 203/1067
     - 1 2 3 4
     - 5 6
     - 7 8 9 10
@@ -23,10 +21,14 @@
 - (5/5) Distributed Algorithms – Nancy A. Lynch (1996)
     - 26/440
 - https://aosabook.org/en/
+    - The Architecture of Open Source Applications
     - [Chapter 3](./1.0.0/kep0z3.md)
 
 # Foundations
 
+- DSA https://www.interviewbit.com/blog/data-structures-and-algorithms-books/?utm_source=chatgpt.com
+- Git http://gitlet.maryrosecook.com/docs/gitlet.html
+- Go https://github.com/teivah/100-go-mistakes
 - (5.0/10) Operating Systems - Three Easy Pieces
     - 377/675
     - Virtualization
@@ -50,11 +52,11 @@
     - Kiến trúc máy tính, CPU, ALU, MIPS, pipeline
 - (7.5/10) Computer Systems A Programmer’s Perspective
     - 31/1105
-- DSA: https://www.interviewbit.com/blog/data-structures-and-algorithms-books/?utm_source=chatgpt.com
-- Git https://github.com/teivah/100-go-mistakes
 
 # Database Systems & Data Infrastructure
 
+- (2/5) Data-Intensive Text Processing with MapReduce – Jimmy Lin 
+    - 43/175
 - Refactoring Databases: Evolutionary Database Design
 - https://kb.databasedesignbook.com/
 - https://cstack.github.io/db_tutorial/
@@ -95,7 +97,6 @@
     - Kinh điển về performance modeling
 - (9.5/10) Computer Architecture: A Quantitative Approach – Hennessy & Patterson
     - 30/1357
-- http://gitlet.maryrosecook.com/docs/gitlet.html
 - https://browser.engineering/
 - https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html
 - https://webrtcforthecurious.com/#who-this-book-is-for
@@ -129,9 +130,9 @@
 
 # Completed
 
-- :white_check_mark: Release It -> Tự động hóa diễn ra rất nhanh
 - :white_check_mark: Database internals -> Bố cục vật lý của Wide Column Stores
-- :white_check_mark: devops trouble linux best practices -> 
+- :white_check_mark: Release It
+- :white_check_mark: devops trouble linux best practices
 - :white_check_mark: Designing Distributed Systems
 - :white_check_mark: Effective DevOps
 - :white_check_mark: Cloud Native Pattern

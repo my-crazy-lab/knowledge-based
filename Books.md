@@ -40,7 +40,7 @@
     - CA + Assembler + VM
     - High-level language + Compiler + OS
 - (6.5/10) Computer Networking: A Top-Down Approach (8th) 
-    - 472/775 6.3 
+    - 619/775 
     - Chapter 6 The Link Layer and LANs
     - Chapter 7 Wireless and Mobile Networks
     - Chapter 8 Security in Computer Networks

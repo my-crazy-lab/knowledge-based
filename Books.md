@@ -126,6 +126,32 @@
 - :white_check_mark: (Little OS book from build own X)[https://littleosbook.github.io/]
 - :white_check_mark: Systems Performance: Enterprise and the Cloud
 
+# Papers
+
+1. :white_check_mark: Kafka https://www.microsoft.com/en-us/research/wp-content/uploads/2017/09/Kafka.pdf
+2. Raft consensus https://raft.github.io/raft.pdf
+3. Memcached https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.8562-6/240873052_277412237132971_6278324660880331641_n.pdf?_nc_cat=101&ccb=1-7&_nc_sid=e280be&_nc_ohc=nlPPMfWAHpEQ7kNvwGgvgSD&_nc_oc=AdlzMkxnR1C8jNWjRUe75M1hIN7jNu4e9MVHsMKRZX9VWADL4fUyBOoRj-dJQP_souE&_nc_zt=14&_nc_ht=scontent.fsgn2-4.fna&_nc_gid=ZSjT3c_fUkpFwG8vyKhCtQ&oh=00_AfZiyoO2PT_nLr_wO304eU3rCPwvrJoj29sWVut9FCuuIw&oe=68E13002
+4. Borg cluster (k8s) https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43438.pdf
+5. Flink https://www.researchgate.net/publication/308993790_Apache_Flink_Stream_and_Batch_Processing_in_a_Single_Engine
+6. Time, Clocks, and the Ordering of Events in a Distributed System https://lamport.azurewebsites.net/pubs/time-clocks.pdf
+7. GGFile system https://static.googleusercontent.com/media/research.google.com/en//archive/gfs-sosp2003.pdf
+8. Geo distributed https://dl.acm.org/doi/pdf/10.1145/3477132.3483546
+9. Distributed system tracing https://static.googleusercontent.com/media/research.google.com/en//archive/papers/dapper-2010-1.pdf
+10. Zanzibar paper → global system for managing access control lists
+11. Monarch paper → time series db
+12. Cross language service https://thrift.apache.org/static/files/thrift-20070401.pdf
+13. Recommendation system https://web.stanford.edu/~rezab/papers/wtf_overview.pdf
+14. Goto harmful https://homepages.cwi.nl/~storm/teaching/reader/Dijkstra68.pdf
+
+1. DynamoDB https://www.allthingsdistributed.com/files/amazon-dynamo-sosp2007.pdf
+2. Cassandra https://www.cs.cornell.edu/projects/ladis2009/papers/lakshman-ladis2009.pdf
+3. LSM-tree DB https://www.vldb.org/pvldb/vol13/p3217-matsunobu.pdf
+4. https://www.foundationdb.org/files/fdb-paper.pdf
+5. Aurora https://web.stanford.edu/class/cs245/readings/aurora.pdf
+6. BigTable https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf
+7. MapReduce https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf
+8. GG distributed db https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf
+
 # Completed
 
 - :white_check_mark: Database internals -> Bố cục vật lý của Wide Column Stores

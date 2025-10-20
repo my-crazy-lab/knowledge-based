@@ -2,6 +2,7 @@
 
 - (3/5) Distributed Systems: Concepts and Design – Coulouris et al
     - 203/1067
+    - boring. better when read by overview knowledge
     - 1 2 3 4
     - 5 6
     - 7 8 9 10
@@ -30,20 +31,16 @@
 - Git http://gitlet.maryrosecook.com/docs/gitlet.html
 - Go https://github.com/teivah/100-go-mistakes
 - (5.0/10) Operating Systems - Three Easy Pieces
-    - 377/675
+    - 382/675 The Producer/Consumer
+    - Need Practice
     - Virtualization
-    - Concurrentcy
+    - Concurrentcy: Need Practice, it hard lol
     - Persistence
 - (5.5/10) The Elements of Computing Systems
     - 23/410
     - Mechanism
     - CA + Assembler + VM
     - High-level language + Compiler + OS
-- (6.5/10) Computer Networking: A Top-Down Approach (8th) 
-    - 619/775 
-    - Chapter 6 The Link Layer and LANs
-    - Chapter 7 Wireless and Mobile Networks
-    - Chapter 8 Security in Computer Networks
 - (6.5/10) Programming Embedded Systems in C and C++ – Michael Barr
     - 22/187
 - (7.0) Operating Systems: Design and Implementation (MINIX)
@@ -57,6 +54,7 @@
 
 - (2/5) Data-Intensive Text Processing with MapReduce – Jimmy Lin 
     - 43/175
+    - Need practice with Hadoop for strong understanding
 - Refactoring Databases: Evolutionary Database Design
 - https://kb.databasedesignbook.com/
 - https://cstack.github.io/db_tutorial/
@@ -131,6 +129,10 @@
 # Completed
 
 - :white_check_mark: Database internals -> Bố cục vật lý của Wide Column Stores
+- :white_check_mark: (6.5/10) Computer Networking: A Top-Down Approach (8th) 
+    - Chapter 6 The Link Layer and LANs
+    - Chapter 7 Wireless and Mobile Networks
+    - Chapter 8 Security in Computer Networks (skimming)
 - :white_check_mark: Release It
 - :white_check_mark: devops trouble linux best practices
 - :white_check_mark: Designing Distributed Systems

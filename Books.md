@@ -169,6 +169,8 @@
 - :white_check_mark: Patterns of Enterprise Application Architecture
 - :white_check_mark: Software Architecture in Practice
 - :white_check_mark: Interconnecting Smart Objects with IP: The Next Internet
+    - Nice book about IoT and IP, I read a haft of it and learn about the charactics of IoT, and somethings arround it.
+    - It's more diving about IP and protocols for IoT, can review again in the future.
 - :white_check_mark: VR Book Human-Centered Design for Virtual Reality
 - :white_check_mark: Design It
 - :white_check_mark: High Performance Browser Networking

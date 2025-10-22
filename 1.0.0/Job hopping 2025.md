@@ -222,45 +222,6 @@
     3. Nếu cluster Elasticsearch bị **hot node** (một node chịu tải query/index nhiều hơn), cách xử lý?
     4. Giải thích **scroll API** và **search_after**. Khi nào dùng cái nào cho pagination?
     5. Khi upgrade version Elasticsearch, tại sao phải reindex trong một số trường hợp? Có cách nào tránh không?
-- :white_check_mark: Redis
-    1. Redis là in-memory database nhưng vẫn hỗ trợ persistence. So sánh chi tiết **RDB snapshot** vs **AOF (Append Only File)**. Khi nào chọn cái nào?
-    2. Redis sử dụng **single-threaded event loop**. Tại sao lại chọn thiết kế này thay vì multi-threaded? Ưu/nhược điểm?
-    3. Cơ chế **IO Multiplexing (epoll/kqueue)** trong Redis hoạt động thế nào để đạt throughput cao?
-    4. Redis lưu dữ liệu theo **data structures** (String, List, Hash, Set, ZSet, HyperLogLog, Stream). Giải thích cách ZSet được implement bằng **skiplist + hash**.
-    1. Redis replication mặc định là **async**. Khi primary crash, có thể mất dữ liệu. Redis 6+ hỗ trợ **PSYNC2** – giải thích cơ chế và lợi ích.
-    2. Khi failover bằng Redis Sentinel, làm sao tránh split-brain? Các kịch bản nào vẫn gây ra split-brain?
-    3. Redis cluster phân mảnh dữ liệu bằng **hash slot**. Cơ chế map key → slot → node hoạt động thế nào?
-    4. Khi một node trong Redis cluster chết, hệ thống có còn hoạt động không? Query nào fail, query nào vẫn chạy được?
-    1. RDB snapshot gây **fork()** → copy-on-write. Tại sao điều này có thể gây latency spike hoặc OOM? Giải pháp?
-    2. Khi Redis khởi động lại với cả RDB và AOF, nó dùng thứ tự nào để recover dữ liệu?
-    3. Nếu AOF bị corrupted (truncate chưa kịp flush), Redis xử lý thế nào? Có rủi ro mất dữ liệu không?
-    1. Redis transaction (`MULTI/EXEC`) có đảm bảo isolation không? Vì sao Redis không phải là full ACID DB?
-    2. So sánh **optimistic locking (WATCH)** và **Lua scripting** để đảm bảo atomic operation. Khi nào chọn cái nào?
-- :white_check_mark: dbt
-    1. DBT hoạt động theo mô hình ELT. Bạn hãy giải thích rõ ELT khác ETL ở điểm nào và lợi ích khi dùng DBT trong ELT?
-    2. DBT chỉ làm transform trong data warehouse. Giải thích cách DBT tương tác với data warehouse như Snowflake, BigQuery, Redshift.
-    3. DBT models được tổ chức như thế nào? Giải thích sự khác biệt giữa **table model, view model và ephemeral model**.
-    4. DBT sử dụng Jinja templates trong SQL. Bạn hãy giải thích ưu nhược điểm của việc dùng Jinja trong DBT models.
-    5. Trong DBT, lineage của dữ liệu được quản lý thế nào? Nó hỗ trợ gì cho documentation và debugging?
-    6. Bạn sẽ tạo **incremental model** trong DBT như thế nào và khi nào nên dùng incremental thay vì full-refresh?
-    7. Giải thích sự khác nhau giữa **ref() và source() trong DBT**. Khi nào nên dùng source()?
-    8. DBT cho phép viết **macros**. Hãy nêu ví dụ macro phức tạp bạn từng viết hoặc có thể viết để reuse logic.
-    9. Khi làm nhiều model liên quan lẫn nhau, DBT build models theo thứ tự nào? Bạn có thể can thiệp thứ tự này không?
-    10. Trong DBT, nếu một model bị lỗi, DBT sẽ xử lý thế nào? Làm thế nào để debug hiệu quả?
-    11. DBT có cơ chế test dữ liệu built-in. Hãy kể các loại test có sẵn và giải thích cách chúng bảo vệ dữ liệu.
-    12. Bạn sẽ viết **custom test** trong DBT như thế nào? Nêu ví dụ thực tế.
-    13. Khi dữ liệu warehouse bị duplicate hoặc null, làm sao DBT test và alert kịp thời?
-    14. DBT supports snapshot. Giải thích snapshot là gì và khi nào nên dùng snapshot thay vì incremental model.
-    15. Bạn có chiến lược nào để kiểm tra **referential integrity giữa nhiều bảng trong DBT**?
-    16. DBT Cloud khác DBT Core ở điểm gì? Khi nào nên dùng Cloud, khi nào Core là đủ?
-    17. Giải thích cách tích hợp DBT vào CI/CD pipelines (GitHub Actions, Airflow, Prefect).
-    18. Nếu bạn có nhiều environment (dev/test/prod), bạn sẽ quản lý cấu hình DBT profiles như thế nào?
-    19. Bạn sẽ version-control DBT project ra sao để team cùng làm việc trên models và macros?
-    20. Khi chạy DBT trong production, bạn có cách nào tối ưu **run time & performance** của các models?
-    21. Làm thế nào để tối ưu **query performance của DBT models trên warehouse**?
-    22. DBT incremental model có thể gặp vấn đề duplicate key. Bạn sẽ giải quyết thế nào?
-    23. Khi warehouse có hàng trăm bảng, bạn quản lý dependency và execution time thế nào trong DBT?
-    25. DBT có thể kết hợp với **streaming data** không? Nếu có, bạn sẽ thiết kế pipeline ra sao?
 - :white_check_mark: Debezium
     1. Debezium là gì? Giải thích cơ chế **Change Data Capture (CDC)** và cách Debezium áp dụng CDC.
     2. Giải thích kiến trúc Debezium: Connector, Kafka Connect, Source, Event, Offset Storage.
@@ -287,3 +248,54 @@
     28. Giải thích cách **transactional integrity** được giữ khi CDC từ DB sang Kafka.
     29. Làm sao để test Debezium pipeline trong staging mà vẫn đảm bảo dữ liệu production an toàn?
     30. Bạn sẽ thiết kế pipeline **Debezium → Kafka → downstream systems (clickhouse, warehouse, cache…)** để đảm bảo low-latency và exactly-once processing?
+- :white_check_mark: Redis
+    1. Redis là in-memory database nhưng vẫn hỗ trợ persistence. So sánh chi tiết **RDB snapshot** vs **AOF (Append Only File)**. Khi nào chọn cái nào?
+    2. Redis sử dụng **single-threaded event loop**. Tại sao lại chọn thiết kế này thay vì multi-threaded? Ưu/nhược điểm?
+    3. Cơ chế **IO Multiplexing (epoll/kqueue)** trong Redis hoạt động thế nào để đạt throughput cao?
+    4. Redis lưu dữ liệu theo **data structures** (String, List, Hash, Set, ZSet, HyperLogLog, Stream). Giải thích cách ZSet được implement bằng **skiplist + hash**.
+    1. Redis replication mặc định là **async**. Khi primary crash, có thể mất dữ liệu. Redis 6+ hỗ trợ **PSYNC2** – giải thích cơ chế và lợi ích.
+    2. Khi failover bằng Redis Sentinel, làm sao tránh split-brain? Các kịch bản nào vẫn gây ra split-brain?
+    3. Redis cluster phân mảnh dữ liệu bằng **hash slot**. Cơ chế map key → slot → node hoạt động thế nào?
+    4. Khi một node trong Redis cluster chết, hệ thống có còn hoạt động không? Query nào fail, query nào vẫn chạy được?
+    1. RDB snapshot gây **fork()** → copy-on-write. Tại sao điều này có thể gây latency spike hoặc OOM? Giải pháp?
+    2. Khi Redis khởi động lại với cả RDB và AOF, nó dùng thứ tự nào để recover dữ liệu?
+    3. Nếu AOF bị corrupted (truncate chưa kịp flush), Redis xử lý thế nào? Có rủi ro mất dữ liệu không?
+    1. Redis transaction (`MULTI/EXEC`) có đảm bảo isolation không? Vì sao Redis không phải là full ACID DB?
+    2. So sánh **optimistic locking (WATCH)** và **Lua scripting** để đảm bảo atomic operation. Khi nào chọn cái nào?
+    3. Redis Streams hỗ trợ **consumer group**. Cơ chế offset tracking của Redis Streams khác Kafka offset tracking ở đâu?
+    1. Tại sao Redis thường nhanh hơn Memcached, mặc dù cả hai đều in-memory?
+    2. Khi key size quá lớn (big hash, big list), Redis có thể gây block event loop. Giải thích tại sao và cách khắc phục.
+    3. Redis hỗ trợ **pipelines**. Tại sao pipeline cải thiện throughput? Trade-off về latency thế nào?
+    4. Eviction policy trong Redis (LRU, LFU, random, noeviction) khác nhau thế nào? Trường hợp nào chọn LFU thay vì LRU?
+    1. Redis Sentinel làm leader election thế nào? Tại sao quorum quá thấp có thể gây mất an toàn dữ liệu?
+    2. Khi cluster rebalance (move slot giữa nodes), Redis đảm bảo consistency thế nào với key đang bị migrate?
+    3. Bạn có 1 cluster Redis với 3 master + 3 replica, replication lag tăng cao khi write-heavy. Giải pháp nào để giảm lag?
+    1. Tại sao Redis cluster không hỗ trợ multi-key operation trên các keys thuộc **khác hash slot**? Cách workaround?
+    2. Khi Redis dùng làm cache, làm sao xử lý **cache stampede** (nhiều client cùng query khi key expire)?
+    3. Nếu Redis được dùng để lưu session trong web app global (multi-region), vấn đề consistency sẽ phát sinh gì?
+    4. Redis có thể dùng làm **primary DB** không? Trong tình huống nào là hợp lý, tình huống nào là anti-pattern?
+- :white_check_mark: dbt
+    1. DBT hoạt động theo mô hình ELT. Bạn hãy giải thích rõ ELT khác ETL ở điểm nào và lợi ích khi dùng DBT trong ELT?
+    2. DBT chỉ làm transform trong data warehouse. Giải thích cách DBT tương tác với data warehouse như Snowflake, BigQuery, Redshift.
+    3. DBT models được tổ chức như thế nào? Giải thích sự khác biệt giữa **table model, view model và ephemeral model**.
+    4. DBT sử dụng Jinja templates trong SQL. Bạn hãy giải thích ưu nhược điểm của việc dùng Jinja trong DBT models.
+    5. Trong DBT, lineage của dữ liệu được quản lý thế nào? Nó hỗ trợ gì cho documentation và debugging?
+    6. Bạn sẽ tạo **incremental model** trong DBT như thế nào và khi nào nên dùng incremental thay vì full-refresh?
+    7. Giải thích sự khác nhau giữa **ref() và source() trong DBT**. Khi nào nên dùng source()?
+    8. DBT cho phép viết **macros**. Hãy nêu ví dụ macro phức tạp bạn từng viết hoặc có thể viết để reuse logic.
+    9. Khi làm nhiều model liên quan lẫn nhau, DBT build models theo thứ tự nào? Bạn có thể can thiệp thứ tự này không?
+    10. Trong DBT, nếu một model bị lỗi, DBT sẽ xử lý thế nào? Làm thế nào để debug hiệu quả?
+    11. DBT có cơ chế test dữ liệu built-in. Hãy kể các loại test có sẵn và giải thích cách chúng bảo vệ dữ liệu.
+    12. Bạn sẽ viết **custom test** trong DBT như thế nào? Nêu ví dụ thực tế.
+    13. Khi dữ liệu warehouse bị duplicate hoặc null, làm sao DBT test và alert kịp thời?
+    14. DBT supports snapshot. Giải thích snapshot là gì và khi nào nên dùng snapshot thay vì incremental model.
+    15. Bạn có chiến lược nào để kiểm tra **referential integrity giữa nhiều bảng trong DBT**?
+    16. DBT Cloud khác DBT Core ở điểm gì? Khi nào nên dùng Cloud, khi nào Core là đủ?
+    17. Giải thích cách tích hợp DBT vào CI/CD pipelines (GitHub Actions, Airflow, Prefect).
+    18. Nếu bạn có nhiều environment (dev/test/prod), bạn sẽ quản lý cấu hình DBT profiles như thế nào?
+    19. Bạn sẽ version-control DBT project ra sao để team cùng làm việc trên models và macros?
+    20. Khi chạy DBT trong production, bạn có cách nào tối ưu **run time & performance** của các models?
+    21. Làm thế nào để tối ưu **query performance của DBT models trên warehouse**?
+    22. DBT incremental model có thể gặp vấn đề duplicate key. Bạn sẽ giải quyết thế nào?
+    23. Khi warehouse có hàng trăm bảng, bạn quản lý dependency và execution time thế nào trong DBT?
+    25. DBT có thể kết hợp với **streaming data** không? Nếu có, bạn sẽ thiết kế pipeline ra sao?

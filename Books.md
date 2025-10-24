@@ -27,9 +27,14 @@
 
 # Foundations
 
-- DSA https://www.interviewbit.com/blog/data-structures-and-algorithms-books/?utm_source=chatgpt.com
-- Git http://gitlet.maryrosecook.com/docs/gitlet.html
-- Go https://github.com/teivah/100-go-mistakes
+- DSA
+    - https://www.interviewbit.com/blog/data-structures-and-algorithms-books/?utm_source=chatgpt.com
+- Git 
+    - http://gitlet.maryrosecook.com/docs/gitlet.html
+    - https://maryrosecook.com/blog/post/git-from-the-inside-out
+- Go
+    - https://github.com/teivah/100-go-mistakes
+    - https://goperf.dev/
 - (5.0/10) Operating Systems - Three Easy Pieces
     - 382/675 The Producer/Consumer
     - Need Practice

@@ -155,9 +155,20 @@
 
 # Completed
 
-- :white_check_mark: Database internals -> Bố cục vật lý của Wide Column Stores
+- :white_check_mark: Database internals
+    -  process -> Bố cục vật lý của Wide Column Stores
 - :white_check_mark: Domain-Driven Design Tackling Complexity in the Heart of Software
-    - Đưa Mô Hình Miền Vào Thực Tiễn
+    - process -> Mô hình được thể hiện trong phần mềm
+    - Để tạo ra phần mềm có giá trị, chúng ta phải vận dụng một kho tri thức liên quan đến các hoạt động mà phần mềm sẽ tham gia. Lượng kiến thức cần thiết có thể rất lớn. Khối lượng và độ phức tạp của thông tin có thể gây choáng ngợp. Đây là lúc nhóm phát triển có thể sử dụng mô hình hóa để xử lý tình trạng quá tải đó. 
+    - Mô hình là một dạng tri thức được đơn giản hóa có chọn lọc và cấu trúc có chủ ý. Một mô hình phù hợp giúp làm sáng tỏ thông tin và áp dụng nó vào vấn đề.
+    - Mô hình miền không phải là một sơ đồ cụ thể; nó là ý tưởng mà sơ đồ muốn truyền đạt. Nó không chỉ là kiến thức trong đầu chuyên gia miền; nó là sự trừu tượng có tổ chức và chọn lọc của kiến thức đó.
+- :white_check_mark: Patterns of Enterprise Application Architecture
+    - process -> Chương 2: Tổ chức Domain Logic
+    - trình bày quan điểm của mình về các phần chính của một ứng dụng doanh nghiệp và các quyết định mà tôi ước gì có thể làm đúng ngay từ đầu
+    - tập trung vào ứng dụng doanh nghiệp, vì vậy các mẫu thiết kế tôi trình bày ở đây đều liên quan đến loại ứng dụng này
+- :white_check_mark: Software Architecture in Practice
+    - process -> 4.1 Kiến trúc và Yêu cầu
+    - Kiến trúc đã trở thành một phần quan trọng trong quá trình thiết kế và là chủ đề chính của cuốn sách này
 - :white_check_mark: (6.5/10) Computer Networking: A Top-Down Approach (8th) 
     - Chapter 6 The Link Layer and LANs
     - Chapter 7 Wireless and Mobile Networks
@@ -168,8 +179,6 @@
 - :white_check_mark: Effective DevOps
 - :white_check_mark: Cloud Native Pattern
 - :white_check_mark: Cloud Architecture Patterns
-- :white_check_mark: Patterns of Enterprise Application Architecture
-- :white_check_mark: Software Architecture in Practice
 - :white_check_mark: Interconnecting Smart Objects with IP: The Next Internet
     - Nice book about IoT and IP, I read a haft of it and learn about the charactics of IoT, and somethings arround it.
     - It's more diving about IP and protocols for IoT, can review again in the future.

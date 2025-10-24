@@ -105,12 +105,13 @@
 - (4) Clean Architecture 1/429
 - (3 * 3) Quantum Computing : A Gentle Introduction 24/389: Pending, need physical foundation
 
-# Out of technical
+# Out of technology
 
 1. (brain) Mind: Introduction to Cognitive Science
 2. Think and grow rich
 3. Atomic habits
 4. The Loopholes of the Rich: How the Rich Legally Make More Money and Pay Less Tax
+5. Mind: Introduction to Cognitive Science
 
 # Book I love or must read again
 
@@ -155,6 +156,8 @@
 # Completed
 
 - :white_check_mark: Database internals -> Bố cục vật lý của Wide Column Stores
+- :white_check_mark: Domain-Driven Design Tackling Complexity in the Heart of Software
+    - Đưa Mô Hình Miền Vào Thực Tiễn
 - :white_check_mark: (6.5/10) Computer Networking: A Top-Down Approach (8th) 
     - Chapter 6 The Link Layer and LANs
     - Chapter 7 Wireless and Mobile Networks
@@ -164,7 +167,6 @@
 - :white_check_mark: Designing Distributed Systems
 - :white_check_mark: Effective DevOps
 - :white_check_mark: Cloud Native Pattern
-- :white_check_mark: Domain-Driven Design Tackling Complexity in the Heart of Software
 - :white_check_mark: Cloud Architecture Patterns
 - :white_check_mark: Patterns of Enterprise Application Architecture
 - :white_check_mark: Software Architecture in Practice

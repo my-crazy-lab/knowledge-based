@@ -299,3 +299,193 @@
     22. DBT incremental model có thể gặp vấn đề duplicate key. Bạn sẽ giải quyết thế nào?
     23. Khi warehouse có hàng trăm bảng, bạn quản lý dependency và execution time thế nào trong DBT?
     25. DBT có thể kết hợp với **streaming data** không? Nếu có, bạn sẽ thiết kế pipeline ra sao?
+- kvrocks
+    - Giải thích kiến trúc của Kvrocks
+        - Kvrocks được cấu trúc nội bộ như thế nào?
+        - Các thành phần chính là gì (lớp mạng, bộ thực thi lệnh, bộ lưu trữ RocksDB)?
+        - Kvrocks khác gì so với Redis trong quản lý bộ nhớ và cơ chế lưu trữ?
+    - Tại sao RocksDB được chọn làm công cụ lưu trữ cho Kvrocks?
+        - Ưu điểm của thiết kế cây LSM (Log-Structured Merge Tree) là gì?
+        - RocksDB xử lý dữ liệu lớn hiệu quả hơn so với các hệ thống trong bộ nhớ như thế nào?
+    - Mô tả luồng dữ liệu từ khi client gửi lệnh ghi đến khi dữ liệu được ghi xuống đĩa
+        - Từ `SET key value` → ghi vào WAL → lưu vào Memtable → tạo tệp SST.
+    - Kvrocks lưu trữ các cấu trúc dữ liệu của Redis trong RocksDB như thế nào?
+        - Hash  
+        - ZSet (Sorted Set)  
+        - List  
+        - Set  
+        - String  
+    - Vai trò của **namespace** là gì và Kvrocks cô lập dữ liệu ra sao?
+        - Cách Kvrocks hỗ trợ nhiều không gian tên (multi-tenant).
+        - Cách cô lập dữ liệu của các ứng dụng hoặc người dùng khác nhau.
+    - Kvrocks xử lý **TTL (time-to-live)** nội bộ như thế nào?
+        - Cơ chế quản lý thời gian sống của key.
+        - Khi nào key hết hạn và bị xóa khỏi RocksDB.
+    - Mô tả cách Kvrocks triển khai **replication (sao chép dữ liệu)** và đảm bảo tính nhất quán
+        - Giao thức sao chép (master–replica).
+        - Cách xử lý độ trễ và đảm bảo dữ liệu đồng bộ.
+    - Kvrocks hỗ trợ **giao thức Redis** như thế nào trong khi sử dụng RocksDB?
+        - Cách Kvrocks duy trì tương thích hoàn toàn với các client Redis.
+        - Lớp chuyển đổi giữa Redis command → RocksDB operation.
+    - Giải thích cách hoạt động của **Log-Structured Merge Tree (LSM)** trong RocksDB
+        - Nguyên lý ghi tuần tự, lưu tạm vào Memtable và hợp nhất (compaction) thành SST.
+    - **SST files** và **Write-Ahead Logs (WAL)** trong RocksDB là gì?
+        - Chức năng, vai trò và mối liên hệ giữa WAL, Memtable và SST.
+    - **Compaction** trong RocksDB là gì và tại sao nó quan trọng?
+        - Quá trình hợp nhất dữ liệu.
+        - Ảnh hưởng của compaction tới hiệu năng đọc/ghi.
+    - Compaction ảnh hưởng đến hiệu năng và độ trễ của Kvrocks như thế nào?
+        - Khi nào compaction gây nghẽn.
+        - Cách tối ưu để giảm tác động.
+    - Vai trò của **memtable** trong RocksDB
+        - Vùng lưu dữ liệu tạm trong RAM trước khi flush xuống đĩa.
+    - Kvrocks sử dụng **column families** của RocksDB như thế nào?
+        - Cách Kvrocks tách dữ liệu theo loại cấu trúc (hash, zset, metadata…).
+    - Các tham số cấu hình RocksDB thường được tinh chỉnh trong Kvrocks
+        - write_buffer_size, max_background_jobs, compaction_style, block_cache_size, v.v.
+    - Theo dõi hiệu năng RocksDB
+        - Các chỉ số như: write stalls, compaction stats, memtable usage, I/O latency.
+    - Kvrocks đảm bảo **persistence** và **durability** như thế nào?
+        - Dữ liệu được ghi vào WAL và đồng bộ xuống SST.
+        - Cách đảm bảo không mất dữ liệu khi crash.
+    - So sánh giữa **AOF/RDB của Redis** và **RocksDB persistence trong Kvrocks**
+        - Redis: snapshot/AOF tốn RAM và CPU.
+        - Kvrocks: RocksDB xử lý bền vững theo cơ chế WAL + LSM-tree.
+    - Mô hình sao chép của Kvrocks
+        - Là đồng bộ, bất đồng bộ hay bán đồng bộ?
+        - Cách xử lý lag và fallback.
+    - Kvrocks xử lý **replication lag** hoặc **failover** ra sao?
+    - Cơ chế phát hiện và khôi phục replica chậm.
+        - Khi node master hỏng, quá trình bầu leader mới diễn ra thế nào.
+    - Cách khôi phục dữ liệu Kvrocks khi bị **corruption** hoặc lỗi đĩa
+        - Sử dụng backup SST/WAL, kiểm tra consistency.
+    - Mô tả **topology cluster** của Kvrocks và cách các node giao tiếp
+        - Mô hình leader–follower, nhân bản, phân vùng dữ liệu.
+    - So sánh giữa **Kvrocks replication** và **Redis Sentinel-based replication**
+        - Kvrocks có cơ chế sao chép riêng, không phụ thuộc Sentinel.
+        - Ưu và nhược điểm của từng mô hình.
+    - Cách tinh chỉnh Kvrocks để đạt throughput ghi cao
+        - Tối ưu batch write, memtable, và compaction threads.
+    - Các tùy chọn RocksDB cho SSD
+        - compaction_style = level/universal  
+        - write_buffer_size, target_file_size_base, max_background_jobs.
+    - Cách xử lý **write amplification** trong hệ thống dựa trên RocksDB
+        - Giảm compaction không cần thiết, tuning size ratio và flush policy.
+    - Cân bằng bộ nhớ giữa RocksDB block cache và OS page cache
+        - Quản lý tài nguyên RAM hiệu quả giữa RocksDB và hệ điều hành.
+    - Các **metrics** cần theo dõi trong môi trường sản xuất
+        - write stalls, compaction pending, read latency, WAL sync time.
+    - Phát hiện và giảm thiểu **compaction stalls**
+        - Giám sát IO throughput, tăng thread background, dùng universal compaction.
+    - Xử lý **replica lag** hoặc tràn backlog
+        - Điều chỉnh replication buffer, batch size, hoặc tốc độ gửi dữ liệu.
+    - Đánh giá hiệu năng Kvrocks
+        - Sử dụng `redis-benchmark`, `memtier_benchmark`, hoặc workload tùy chỉnh.
+    - Cách ánh xạ các kiểu dữ liệu Redis sang RocksDB
+        - String → key-value  
+        - Hash → key prefix + field  
+        - Set → prefix + member  
+        - ZSet → composite key (score + member)  
+        - List → index key
+    - Dựa trên khóa mã hóa (score, member) để hỗ trợ range scan.
+    - Sử dụng prefix (namespace + type + key) để tránh va chạm và hỗ trợ quét phạm vi.
+    - Sử dụng iterator và range scan trên SST files.
+    - Các node master–replica, cấu hình replication, giám sát trạng thái.
+    - Hiện tại chủ yếu là **thủ công (manual)** hoặc dùng proxy layer.
+    - Cơ chế bắt kịp tự động (catch-up) bằng cách đồng bộ lại từ WAL/SST.
+    - Dùng backup RocksDB snapshot hoặc công cụ dump/restore.
+    - Tùy chọn fsync, WAL sync interval, và compaction mode.
+    - Dùng nhiều replica, heartbeat check, và proxy chuyển hướng.
+    - compression (zstd/snappy), write_buffer_size, block_cache_size, max_background_jobs.
+    - So sánh Kvrocks với Redis + RDB/AOF
+        - Ưu: tiết kiệm bộ nhớ, lưu trữ lớn, không mất dữ liệu khi khởi động lại.  
+        - Nhược: độ trễ cao hơn Redis trong một số tác vụ.
+    - So sánh Kvrocks với Redis on Flash hoặc Redis Enterprise
+        - Kvrocks dùng RocksDB (mở nguồn), Redis Enterprise dùng module thương mại.
+        - Kvrocks linh hoạt hơn nhưng ít tính năng phân tán tự động.
+    - So sánh Kvrocks với các hệ thống dựa trên RocksDB khác (TiKV, BadgerDB)
+        - Kvrocks: tương thích Redis.  
+        - TiKV: phân tán theo Raft.  
+        - BadgerDB: dành cho ứng dụng Go nhúng.
+    - Khi nào **không nên** dùng Kvrocks
+        - Khi yêu cầu độ trễ cực thấp (Redis thuần in-memory tốt hơn).
+        - Khi cần cluster tự động mở rộng.
+    - Thiết kế hệ thống lai **Kvrocks + ClickHouse**
+        - Kvrocks làm lớp cache key-value nhanh.  
+        - ClickHouse xử lý phân tích dữ liệu lớn (analytics).
+    - Cân bằng shard, replication, caching layer.
+    - Dùng bán đồng bộ, batch replication.
+    - Cơ chế quorum hoặc version vector.
+    - Compaction scheduling, tune background threads.
+    - Dùng key prefix theo userID / timestamp.
+    - Practice
+        - Di chuyển dữ liệu từ Redis sang Kvrocks.  
+        - Chạy benchmark với `redis-benchmark` hoặc `memtier_benchmark`.  
+        - Tinh chỉnh cấu hình Kvrocks cho SSD + 64GB RAM.  
+        - Phân tích kết quả `INFO` để hiểu thống kê nội bộ.  
+        - Chuẩn đoán vấn đề hiệu năng qua log hoặc metric thực tế.
+- Clickhouse
+    1. Giải thích kiến trúc của ClickHouse: MergeTree, parts, segments, background merges.
+    2. ClickHouse là **columnar database**. Hãy giải thích ưu điểm và nhược điểm so với row-based database.
+    3. Giải thích cơ chế **MergeTree**: primary key, partition key, index granularity.
+    4. ClickHouse hỗ trợ replication và distributed tables. Hãy giải thích cách hoạt động của **ReplicatedMergeTree**.
+    5. ClickHouse xử lý **OLAP workloads** khác OLTP workloads ra sao?
+6. Bạn sẽ thiết kế schema ClickHouse cho dữ liệu log hàng tỷ rows/ngày. Hãy chọn **table engine, partitioning, primary key**.
+7. So sánh các table engine: **MergeTree, CollapsingMergeTree, SummingMergeTree, AggregatingMergeTree, TinyLog, StripeLog**. Khi nào dùng từng loại?
+8. Giải thích cách ClickHouse sử dụng **partition key và primary key** để optimize query.
+9. Làm thế nào để giảm **data duplication và storage size** khi thiết kế table?
+10. Bạn sẽ implement **materialized views** trong ClickHouse để cải thiện performance query như thế nào?
+11. Giải thích cách ClickHouse thực hiện **vectorized execution** và **columnar storage** để tăng tốc query.
+12. So sánh **JOINs trong ClickHouse**: ANY INNER JOIN, ALL LEFT JOIN, GLOBAL JOIN. Khi nào dùng JOIN local vs distributed?
+13. Giải thích cách ClickHouse tối ưu **aggregation queries** với SummingMergeTree / AggregatingMergeTree.
+14. Làm sao để xử lý **high-cardinality dimensions** mà vẫn giữ hiệu suất query?
+15. Giải thích **primary key index, skip index, data skipping** trong ClickHouse và cách dùng chúng để optimize queries.
+16. Giải thích cách hoạt động của **ReplicatedMergeTree** và cách đảm bảo consistency giữa replicas.
+17. Khi triển khai cluster ClickHouse, bạn sẽ cấu hình **sharding & replication** như thế nào để balance load và fault tolerance?
+18. Làm thế nào để monitor **replication lag & failures** trong ClickHouse cluster?
+19. Giải thích cách **distributed table** kết hợp với MergeTree tables. Khi nào nên dùng distributed table?
+20. Bạn sẽ xử lý **node failure** và recovery trong ClickHouse cluster ra sao?
+21. ClickHouse hỗ trợ ingestion từ Kafka, RabbitMQ, hoặc batch files. Bạn sẽ thiết kế pipeline ingestion ra sao cho dữ liệu lớn & realtime?
+22. Giải thích **Buffer table engine** và khi nào nên dùng để ingest dữ liệu nhanh.
+23. Làm sao để xử lý **duplicate data** khi ingest từ nhiều source vào MergeTree?
+24. Bạn sẽ implement **materialized views hoặc aggregation tables** để giảm latency cho OLAP queries như thế nào?
+25. Giải thích cách ClickHouse xử lý **TTL / data expiration** trên table.
+26. Làm thế nào để debug **slow queries** trong ClickHouse? Nêu các tools và query system tables.
+27. Bạn sẽ tối ưu query cho **JOIN nhiều bảng lớn** hoặc high-cardinality keys như thế nào?
+28. Giải thích cách ClickHouse xử lý **memory management & query limits**.
+29. Làm sao để monitor **disk usage, merges, background tasks** trong ClickHouse cluster?
+30. Bạn sẽ thiết kế chiến lược **backup & restore** trong ClickHouse cluster như thế nào?
+- Postgres
+1. PostgreSQL xử lý **ACID** thế nào? Giải thích cơ chế **MVCC** (Multi-Version Concurrency Control).
+2. Giải thích các **isolation levels** trong PostgreSQL: **Read Committed, Repeatable Read, Serializable**. Trade-off về **performance vs consistency**.
+3. Khi 2 transaction update cùng một row, cơ chế nào giúp tránh **lost update**?
+4. Giải thích **Serializable Snapshot Isolation (SSI)** trong PostgreSQL. Khi nào conflict xảy ra?
+5. PostgreSQL xử lý **deadlock detection** như thế nào?
+6. **Savepoints**: sử dụng ra sao và tác dụng trong rollback một phần transaction.
+7. So sánh **locking row-level vs table-level**. Khi nào nên dùng `FOR UPDATE`, `FOR SHARE`?
+8. Khi transaction **crash hoặc server crash**, PostgreSQL recover dữ liệu ra sao? Vai trò của **WAL (Write-Ahead Log)**.
+9. Giải thích cách **checkpoint** hoạt động trong PostgreSQL, và ảnh hưởng tới I/O.
+10. **Long-running transaction** ảnh hưởng gì tới **VACUUM** và bloat?
+1. Các loại index PostgreSQL hỗ trợ: **B-Tree, Hash, GiST, GIN, SP-GiST, BRIN**. Ưu/nhược điểm & use case.
+2. Khi nào nên dùng **partial index** hoặc **expression index**?
+3. Giải thích **covering index (INCLUDE clause)** và tác dụng.
+4. PostgreSQL chọn index như thế nào khi query có nhiều condition (`AND`, `OR`)?
+5. **Multicolumn index**: tác dụng khi query chỉ filter 1 column, hay filter các column khác nhau.
+6. **Index-only scan** là gì? Khi nào có thể xảy ra?
+7. Khi index bị bloat, PostgreSQL xử lý ra sao? Tác động của **REINDEX** và **VACUUM FULL**.
+8. So sánh **B-Tree vs BRIN index** cho data lớn và sequential.
+9. Giải thích cách **GIN index** optimize search text/array.
+1. Khác nhau giữa **view bình thường và materialized view**. Khi nào nên dùng materialized view?
+2. Cách **refresh materialized view**: concurrent vs non-concurrent. Ưu/nhược điểm.
+3. PostgreSQL xử lý **recursive view / CTE** ra sao?
+4. View có ảnh hưởng gì tới **query planner/optimizer**?
+5. Giải thích cách **updatable view** hoạt động, và giới hạn của nó.
+1. PostgreSQL **query planner** và **executor** hoạt động như thế nào?
+2. Giải thích output của **EXPLAIN / EXPLAIN ANALYZE**: Seq Scan, Index Scan, Bitmap Heap Scan.
+3. Khi PostgreSQL chọn **Seq Scan thay vì Index Scan**, nguyên nhân có thể là gì?
+4. **Nested Loop vs Hash Join vs Merge Join**: khi nào PostgreSQL chọn mỗi loại join?
+5. Giải thích **parallel query execution** trong PostgreSQL.
+6. PostgreSQL estimate **row count** ra sao? Khi nào estimate sai (statistics outdated)?
+7. Giải thích **CTE materialization vs inline** (PostgreSQL 12+).
+8. Khi query có nhiều filter và join, PostgreSQL chọn **join order** dựa trên **cost model** như thế nào?
+- MySQL

@@ -430,31 +430,31 @@
     3. Giải thích cơ chế **MergeTree**: primary key, partition key, index granularity.
     4. ClickHouse hỗ trợ replication và distributed tables. Hãy giải thích cách hoạt động của **ReplicatedMergeTree**.
     5. ClickHouse xử lý **OLAP workloads** khác OLTP workloads ra sao?
-6. Bạn sẽ thiết kế schema ClickHouse cho dữ liệu log hàng tỷ rows/ngày. Hãy chọn **table engine, partitioning, primary key**.
-7. So sánh các table engine: **MergeTree, CollapsingMergeTree, SummingMergeTree, AggregatingMergeTree, TinyLog, StripeLog**. Khi nào dùng từng loại?
-8. Giải thích cách ClickHouse sử dụng **partition key và primary key** để optimize query.
-9. Làm thế nào để giảm **data duplication và storage size** khi thiết kế table?
-10. Bạn sẽ implement **materialized views** trong ClickHouse để cải thiện performance query như thế nào?
-11. Giải thích cách ClickHouse thực hiện **vectorized execution** và **columnar storage** để tăng tốc query.
-12. So sánh **JOINs trong ClickHouse**: ANY INNER JOIN, ALL LEFT JOIN, GLOBAL JOIN. Khi nào dùng JOIN local vs distributed?
-13. Giải thích cách ClickHouse tối ưu **aggregation queries** với SummingMergeTree / AggregatingMergeTree.
-14. Làm sao để xử lý **high-cardinality dimensions** mà vẫn giữ hiệu suất query?
-15. Giải thích **primary key index, skip index, data skipping** trong ClickHouse và cách dùng chúng để optimize queries.
-16. Giải thích cách hoạt động của **ReplicatedMergeTree** và cách đảm bảo consistency giữa replicas.
-17. Khi triển khai cluster ClickHouse, bạn sẽ cấu hình **sharding & replication** như thế nào để balance load và fault tolerance?
-18. Làm thế nào để monitor **replication lag & failures** trong ClickHouse cluster?
-19. Giải thích cách **distributed table** kết hợp với MergeTree tables. Khi nào nên dùng distributed table?
-20. Bạn sẽ xử lý **node failure** và recovery trong ClickHouse cluster ra sao?
-21. ClickHouse hỗ trợ ingestion từ Kafka, RabbitMQ, hoặc batch files. Bạn sẽ thiết kế pipeline ingestion ra sao cho dữ liệu lớn & realtime?
-22. Giải thích **Buffer table engine** và khi nào nên dùng để ingest dữ liệu nhanh.
-23. Làm sao để xử lý **duplicate data** khi ingest từ nhiều source vào MergeTree?
-24. Bạn sẽ implement **materialized views hoặc aggregation tables** để giảm latency cho OLAP queries như thế nào?
-25. Giải thích cách ClickHouse xử lý **TTL / data expiration** trên table.
-26. Làm thế nào để debug **slow queries** trong ClickHouse? Nêu các tools và query system tables.
-27. Bạn sẽ tối ưu query cho **JOIN nhiều bảng lớn** hoặc high-cardinality keys như thế nào?
-28. Giải thích cách ClickHouse xử lý **memory management & query limits**.
-29. Làm sao để monitor **disk usage, merges, background tasks** trong ClickHouse cluster?
-30. Bạn sẽ thiết kế chiến lược **backup & restore** trong ClickHouse cluster như thế nào?
+    6. Bạn sẽ thiết kế schema ClickHouse cho dữ liệu log hàng tỷ rows/ngày. Hãy chọn **table engine, partitioning, primary key**.
+    7. So sánh các table engine: **MergeTree, CollapsingMergeTree, SummingMergeTree, AggregatingMergeTree, TinyLog, StripeLog**. Khi nào dùng từng loại?
+    8. Giải thích cách ClickHouse sử dụng **partition key và primary key** để optimize query.
+    9. Làm thế nào để giảm **data duplication và storage size** khi thiết kế table?
+    10. Bạn sẽ implement **materialized views** trong ClickHouse để cải thiện performance query như thế nào?
+    11. Giải thích cách ClickHouse thực hiện **vectorized execution** và **columnar storage** để tăng tốc query.
+    12. So sánh **JOINs trong ClickHouse**: ANY INNER JOIN, ALL LEFT JOIN, GLOBAL JOIN. Khi nào dùng JOIN local vs distributed?
+    13. Giải thích cách ClickHouse tối ưu **aggregation queries** với SummingMergeTree / AggregatingMergeTree.
+    14. Làm sao để xử lý **high-cardinality dimensions** mà vẫn giữ hiệu suất query?
+    15. Giải thích **primary key index, skip index, data skipping** trong ClickHouse và cách dùng chúng để optimize queries.
+    16. Giải thích cách hoạt động của **ReplicatedMergeTree** và cách đảm bảo consistency giữa replicas.
+    17. Khi triển khai cluster ClickHouse, bạn sẽ cấu hình **sharding & replication** như thế nào để balance load và fault tolerance?
+    18. Làm thế nào để monitor **replication lag & failures** trong ClickHouse cluster?
+    19. Giải thích cách **distributed table** kết hợp với MergeTree tables. Khi nào nên dùng distributed table?
+    20. Bạn sẽ xử lý **node failure** và recovery trong ClickHouse cluster ra sao?
+    21. ClickHouse hỗ trợ ingestion từ Kafka, RabbitMQ, hoặc batch files. Bạn sẽ thiết kế pipeline ingestion ra sao cho dữ liệu lớn & realtime?
+    22. Giải thích **Buffer table engine** và khi nào nên dùng để ingest dữ liệu nhanh.
+    23. Làm sao để xử lý **duplicate data** khi ingest từ nhiều source vào MergeTree?
+    24. Bạn sẽ implement **materialized views hoặc aggregation tables** để giảm latency cho OLAP queries như thế nào?
+    25. Giải thích cách ClickHouse xử lý **TTL / data expiration** trên table.
+    26. Làm thế nào để debug **slow queries** trong ClickHouse? Nêu các tools và query system tables.
+    27. Bạn sẽ tối ưu query cho **JOIN nhiều bảng lớn** hoặc high-cardinality keys như thế nào?
+    28. Giải thích cách ClickHouse xử lý **memory management & query limits**.
+    29. Làm sao để monitor **disk usage, merges, background tasks** trong ClickHouse cluster?
+    30. Bạn sẽ thiết kế chiến lược **backup & restore** trong ClickHouse cluster như thế nào?
 - Postgres
 1. PostgreSQL xử lý **ACID** thế nào? Giải thích cơ chế **MVCC** (Multi-Version Concurrency Control).
 2. Giải thích các **isolation levels** trong PostgreSQL: **Read Committed, Repeatable Read, Serializable**. Trade-off về **performance vs consistency**.

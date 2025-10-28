@@ -299,6 +299,37 @@
     22. DBT incremental model có thể gặp vấn đề duplicate key. Bạn sẽ giải quyết thế nào?
     23. Khi warehouse có hàng trăm bảng, bạn quản lý dependency và execution time thế nào trong DBT?
     25. DBT có thể kết hợp với **streaming data** không? Nếu có, bạn sẽ thiết kế pipeline ra sao?
+- :white_check_mark: Clickhouse
+    1. Giải thích kiến trúc của ClickHouse: MergeTree, parts, segments, background merges.
+    2. ClickHouse là **columnar database**. Hãy giải thích ưu điểm và nhược điểm so với row-based database.
+    3. Giải thích cơ chế **MergeTree**: primary key, partition key, index granularity.
+    4. ClickHouse hỗ trợ replication và distributed tables. Hãy giải thích cách hoạt động của **ReplicatedMergeTree**.
+    5. ClickHouse xử lý **OLAP workloads** khác OLTP workloads ra sao?
+    6. Bạn sẽ thiết kế schema ClickHouse cho dữ liệu log hàng tỷ rows/ngày. Hãy chọn **table engine, partitioning, primary key**.
+    7. So sánh các table engine: **MergeTree, CollapsingMergeTree, SummingMergeTree, AggregatingMergeTree, TinyLog, StripeLog**. Khi nào dùng từng loại?
+    8. Giải thích cách ClickHouse sử dụng **partition key và primary key** để optimize query.
+    9. Làm thế nào để giảm **data duplication và storage size** khi thiết kế table?
+    10. Bạn sẽ implement **materialized views** trong ClickHouse để cải thiện performance query như thế nào?
+    11. Giải thích cách ClickHouse thực hiện **vectorized execution** và **columnar storage** để tăng tốc query.
+    12. So sánh **JOINs trong ClickHouse**: ANY INNER JOIN, ALL LEFT JOIN, GLOBAL JOIN. Khi nào dùng JOIN local vs distributed?
+    13. Giải thích cách ClickHouse tối ưu **aggregation queries** với SummingMergeTree / AggregatingMergeTree.
+    14. Làm sao để xử lý **high-cardinality dimensions** mà vẫn giữ hiệu suất query?
+    15. Giải thích **primary key index, skip index, data skipping** trong ClickHouse và cách dùng chúng để optimize queries.
+    16. Giải thích cách hoạt động của **ReplicatedMergeTree** và cách đảm bảo consistency giữa replicas.
+    17. Khi triển khai cluster ClickHouse, bạn sẽ cấu hình **sharding & replication** như thế nào để balance load và fault tolerance?
+    18. Làm thế nào để monitor **replication lag & failures** trong ClickHouse cluster?
+    19. Giải thích cách **distributed table** kết hợp với MergeTree tables. Khi nào nên dùng distributed table?
+    20. Bạn sẽ xử lý **node failure** và recovery trong ClickHouse cluster ra sao?
+    21. ClickHouse hỗ trợ ingestion từ Kafka, RabbitMQ, hoặc batch files. Bạn sẽ thiết kế pipeline ingestion ra sao cho dữ liệu lớn & realtime?
+    22. Giải thích **Buffer table engine** và khi nào nên dùng để ingest dữ liệu nhanh.
+    23. Làm sao để xử lý **duplicate data** khi ingest từ nhiều source vào MergeTree?
+    24. Bạn sẽ implement **materialized views hoặc aggregation tables** để giảm latency cho OLAP queries như thế nào?
+    25. Giải thích cách ClickHouse xử lý **TTL / data expiration** trên table.
+    26. Làm thế nào để debug **slow queries** trong ClickHouse? Nêu các tools và query system tables.
+    27. Bạn sẽ tối ưu query cho **JOIN nhiều bảng lớn** hoặc high-cardinality keys như thế nào?
+    28. Giải thích cách ClickHouse xử lý **memory management & query limits**.
+    29. Làm sao để monitor **disk usage, merges, background tasks** trong ClickHouse cluster?
+    30. Bạn sẽ thiết kế chiến lược **backup & restore** trong ClickHouse cluster như thế nào?
 - kvrocks
     - Giải thích kiến trúc của Kvrocks
         - Kvrocks được cấu trúc nội bộ như thế nào?
@@ -424,52 +455,21 @@
         - Tinh chỉnh cấu hình Kvrocks cho SSD + 64GB RAM.  
         - Phân tích kết quả `INFO` để hiểu thống kê nội bộ.  
         - Chuẩn đoán vấn đề hiệu năng qua log hoặc metric thực tế.
-- Clickhouse
-    1. Giải thích kiến trúc của ClickHouse: MergeTree, parts, segments, background merges.
-    2. ClickHouse là **columnar database**. Hãy giải thích ưu điểm và nhược điểm so với row-based database.
-    3. Giải thích cơ chế **MergeTree**: primary key, partition key, index granularity.
-    4. ClickHouse hỗ trợ replication và distributed tables. Hãy giải thích cách hoạt động của **ReplicatedMergeTree**.
-    5. ClickHouse xử lý **OLAP workloads** khác OLTP workloads ra sao?
-    6. Bạn sẽ thiết kế schema ClickHouse cho dữ liệu log hàng tỷ rows/ngày. Hãy chọn **table engine, partitioning, primary key**.
-    7. So sánh các table engine: **MergeTree, CollapsingMergeTree, SummingMergeTree, AggregatingMergeTree, TinyLog, StripeLog**. Khi nào dùng từng loại?
-    8. Giải thích cách ClickHouse sử dụng **partition key và primary key** để optimize query.
-    9. Làm thế nào để giảm **data duplication và storage size** khi thiết kế table?
-    10. Bạn sẽ implement **materialized views** trong ClickHouse để cải thiện performance query như thế nào?
-    11. Giải thích cách ClickHouse thực hiện **vectorized execution** và **columnar storage** để tăng tốc query.
-    12. So sánh **JOINs trong ClickHouse**: ANY INNER JOIN, ALL LEFT JOIN, GLOBAL JOIN. Khi nào dùng JOIN local vs distributed?
-    13. Giải thích cách ClickHouse tối ưu **aggregation queries** với SummingMergeTree / AggregatingMergeTree.
-    14. Làm sao để xử lý **high-cardinality dimensions** mà vẫn giữ hiệu suất query?
-    15. Giải thích **primary key index, skip index, data skipping** trong ClickHouse và cách dùng chúng để optimize queries.
-    16. Giải thích cách hoạt động của **ReplicatedMergeTree** và cách đảm bảo consistency giữa replicas.
-    17. Khi triển khai cluster ClickHouse, bạn sẽ cấu hình **sharding & replication** như thế nào để balance load và fault tolerance?
-    18. Làm thế nào để monitor **replication lag & failures** trong ClickHouse cluster?
-    19. Giải thích cách **distributed table** kết hợp với MergeTree tables. Khi nào nên dùng distributed table?
-    20. Bạn sẽ xử lý **node failure** và recovery trong ClickHouse cluster ra sao?
-    21. ClickHouse hỗ trợ ingestion từ Kafka, RabbitMQ, hoặc batch files. Bạn sẽ thiết kế pipeline ingestion ra sao cho dữ liệu lớn & realtime?
-    22. Giải thích **Buffer table engine** và khi nào nên dùng để ingest dữ liệu nhanh.
-    23. Làm sao để xử lý **duplicate data** khi ingest từ nhiều source vào MergeTree?
-    24. Bạn sẽ implement **materialized views hoặc aggregation tables** để giảm latency cho OLAP queries như thế nào?
-    25. Giải thích cách ClickHouse xử lý **TTL / data expiration** trên table.
-    26. Làm thế nào để debug **slow queries** trong ClickHouse? Nêu các tools và query system tables.
-    27. Bạn sẽ tối ưu query cho **JOIN nhiều bảng lớn** hoặc high-cardinality keys như thế nào?
-    28. Giải thích cách ClickHouse xử lý **memory management & query limits**.
-    29. Làm sao để monitor **disk usage, merges, background tasks** trong ClickHouse cluster?
-    30. Bạn sẽ thiết kế chiến lược **backup & restore** trong ClickHouse cluster như thế nào?
-- Postgres
-1. PostgreSQL xử lý **ACID** thế nào? Giải thích cơ chế **MVCC** (Multi-Version Concurrency Control).
-2. Giải thích các **isolation levels** trong PostgreSQL: **Read Committed, Repeatable Read, Serializable**. Trade-off về **performance vs consistency**.
-3. Khi 2 transaction update cùng một row, cơ chế nào giúp tránh **lost update**?
-4. Giải thích **Serializable Snapshot Isolation (SSI)** trong PostgreSQL. Khi nào conflict xảy ra?
-5. PostgreSQL xử lý **deadlock detection** như thế nào?
-6. **Savepoints**: sử dụng ra sao và tác dụng trong rollback một phần transaction.
-7. So sánh **locking row-level vs table-level**. Khi nào nên dùng `FOR UPDATE`, `FOR SHARE`?
-8. Khi transaction **crash hoặc server crash**, PostgreSQL recover dữ liệu ra sao? Vai trò của **WAL (Write-Ahead Log)**.
-9. Giải thích cách **checkpoint** hoạt động trong PostgreSQL, và ảnh hưởng tới I/O.
-10. **Long-running transaction** ảnh hưởng gì tới **VACUUM** và bloat?
-1. Các loại index PostgreSQL hỗ trợ: **B-Tree, Hash, GiST, GIN, SP-GiST, BRIN**. Ưu/nhược điểm & use case.
-2. Khi nào nên dùng **partial index** hoặc **expression index**?
-3. Giải thích **covering index (INCLUDE clause)** và tác dụng.
-4. PostgreSQL chọn index như thế nào khi query có nhiều condition (`AND`, `OR`)?
+- Postgres (cơ hội tốt review lại DS + lock)
+    1. PostgreSQL xử lý **ACID** thế nào? Giải thích cơ chế **MVCC** (Multi-Version Concurrency Control).
+    2. Giải thích các **isolation levels** trong PostgreSQL: **Read Committed, Repeatable Read, Serializable**. Trade-off về **performance vs consistency**.
+    3. Khi 2 transaction update cùng một row, cơ chế nào giúp tránh **lost update**?
+    4. Giải thích **Serializable Snapshot Isolation (SSI)** trong PostgreSQL. Khi nào conflict xảy ra?
+    5. PostgreSQL xử lý **deadlock detection** như thế nào?
+    6. **Savepoints**: sử dụng ra sao và tác dụng trong rollback một phần transaction.
+    7. So sánh **locking row-level vs table-level**. Khi nào nên dùng `FOR UPDATE`, `FOR SHARE`?
+    8. Khi transaction **crash hoặc server crash**, PostgreSQL recover dữ liệu ra sao? Vai trò của **WAL (Write-Ahead Log)**.
+    9. Giải thích cách **checkpoint** hoạt động trong PostgreSQL, và ảnh hưởng tới I/O.
+    10. **Long-running transaction** ảnh hưởng gì tới **VACUUM** và bloat?
+    1. Các loại index PostgreSQL hỗ trợ: **B-Tree, Hash, GiST, GIN, SP-GiST, BRIN**. Ưu/nhược điểm & use case.
+    2. Khi nào nên dùng **partial index** hoặc **expression index**?
+    3. Giải thích **covering index (INCLUDE clause)** và tác dụng.
+    4. PostgreSQL chọn index như thế nào khi query có nhiều condition (`AND`, `OR`)?
 5. **Multicolumn index**: tác dụng khi query chỉ filter 1 column, hay filter các column khác nhau.
 6. **Index-only scan** là gì? Khi nào có thể xảy ra?
 7. Khi index bị bloat, PostgreSQL xử lý ra sao? Tác động của **REINDEX** và **VACUUM FULL**.
@@ -488,4 +488,182 @@
 6. PostgreSQL estimate **row count** ra sao? Khi nào estimate sai (statistics outdated)?
 7. Giải thích **CTE materialization vs inline** (PostgreSQL 12+).
 8. Khi query có nhiều filter và join, PostgreSQL chọn **join order** dựa trên **cost model** như thế nào?
+1. PostgreSQL lưu trữ row trong **heap file**, giải thích cách hoạt động của **tup_id (ctid)**.
+2. Cách PostgreSQL **treat deleted rows / dead tuples** và VACUUM.
+3. Giải thích cách **WAL ensures durability**.
+4. Checkpoint frequency, effect on **fsync and latency**.
+5. **Hot Update** là gì? Khi nào PostgreSQL không tạo new tuple.
+6. So sánh **Heap-only Tuple (HOT)** vs bình thường, ảnh hưởng tới I/O.
+7. PostgreSQL xử lý **transaction rollback** bằng WAL như thế nào.
+1. **Long running transaction** + MVCC → bloat & vacuum problems.
+2. **Serializable transaction** bị abort: cách ứng dụng handle retry.
+3. **Partial index + NULL values** → hiệu quả ra sao?
+4. **GIN index + jsonb**: tối ưu query key presence.
+5. Giải thích **table partitioning** và ảnh hưởng tới planner / index.
+6. Khi **query lớn join nhiều partition** → performance implication.
+    1. PostgreSQL hỗ trợ **synchronous vs asynchronous replication** như thế nào?
+    2. Trường hợp **primary crash**, replica nào sẽ được promote? Làm sao đảm bảo **no data loss**?
+    3. Khi **replica lag**, các read-only query trên standby có ảnh hưởng gì tới consistency?
+    4. Giải thích **hot standby + streaming replication** workflow.
+    5. Làm thế nào để **detect replica divergence / failover safely**?
+    6. So sánh **physical vs logical replication**: ưu nhược điểm, khi nào dùng.
+    7. Khi **multi-primary / BDR (Bi-Directional Replication)** xảy ra conflict → PostgreSQL xử lý thế nào?
+    1. PostgreSQL không native sharding; nhưng khi dùng **Citus** hoặc partitioning:
+        - Query planner xử lý **distributed join / aggregation** như thế nào?
+        - Worker nodes / coordinator node giao tiếp ra sao?
+    2. **Distributed transactions across nodes**: cơ chế **2-phase commit** trong Citus.
+    3. **Conflict resolution** trong multi-node write (Citus / BDR) → cách tránh lost update.
+    4. Khi partitioned table query across multiple nodes → network cost, join strategy, caching.
+    5. Tác động của **replica + distributed query** tới latency và throughput.
+    6. Khi **resharding / repartitioning**: dữ liệu di chuyển, impact tới queries và transaction.
+    1. WAL propagation tới standby trong **synchronous replication** đảm bảo **consistency ra sao**?
+    2. Khi dùng **logical replication**:
+        - Conflict resolution, order guarantee giữa publisher / subscriber.
+        - Giải thích **replication slot** & role trong preventing WAL loss.
+    3. Khi **long replication lag** → ảnh hưởng gì tới failover và read consistency.
+    4. **Checkpoint + WAL + replication** → tổng hợp để đảm bảo **durable, consistent state across nodes**.
+    1. **Parallel query execution** trên một node vs nhiều nodes: cost model, coordinator, worker nodes.
+    2. Khi join table lớn giữa nodes khác nhau → network shuffle, redistribution strategy.
+    3. **Query planner** estimate row count across nodes → làm sao tránh skew / bad plan.
+    4. **Partition-wise join / aggregate**: mechanism, benefits, limitations.
+    5. Khi **remote data source / foreign table (FDW)** query → planner estimate và execution ra sao.
+    1. Khi **primary + synchronous standby fail together** → cách thiết kế failover để **no data loss**.
+    2. **Point-in-time recovery (PITR)** trong môi trường distributed.
+    3. Khi **replica diverged** do network partition → cách detect và reconcile.
+    4. Trade-off giữa **high availability vs strong consistency** trong PostgreSQL replication.
+    1. **Distributed deadlocks**: khi transaction lock trên nhiều nodes → detection & resolution.
+    2. **Distributed VACUUM / bloat management** → khi partitioned / sharded table.
+    3. **Hot standby streaming replication + read scaling**: làm sao giữ snapshot isolation.
+    4. **Multi-shard transaction + 2PC**: latency, rollback, and retry strategies.
+    5. **Logical replication lag + long-running transaction** → risk for PITR or conflict.
+    1. MVCC overhead → long-running transaction gây bloat và VACUUM pressure.
+    2. Lock contention → row-level vs table-level locks.
+    3. Serializable / Repeatable Read → higher latency, potential for transaction abort.
+    4. Savepoints / nested transactions → small overhead, nhưng nhiều nested → memory/CPU cost.
+    1. Heap storage & HOT tuples → reduce I/O for updates.
+    2. WAL → extra write overhead for durability.
+    3. Checkpoint frequency → impacts I/O spikes and latency.
+    4. Vacuum / autovacuum → performance cost if delayed.
 - MySQL
+    1. Phân biệt `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN` và `FULL OUTER JOIN`? Cho ví dụ trường hợp sử dụng thực tế.
+    2. Viết một query để tìm ra **Top N khách hàng mua nhiều nhất mỗi tháng**.
+    3. Làm thế nào để **tính thứ hạng (ranking)** của một item trong bảng theo một cột mà không dùng stored procedure?
+    4. Giải thích và viết query sử dụng **window functions** (`ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`) trong MySQL.
+    5. So sánh `GROUP BY` với `DISTINCT`. Khi nào dùng cái nào hiệu quả hơn?
+    6. Viết query để **chèn dữ liệu mới nếu chưa tồn tại**, hoặc cập nhật nếu tồn tại (UPSERT).
+    7. Phân tích cách hoạt động của **B-Tree vs Hash Index** trong MySQL. Khi nào dùng cái nào?
+    8. Khi nào một query **không sử dụng index**? Làm sao để debug và tối ưu?
+    9. Giải thích **covering index** và cách dùng để tăng tốc query.
+    10. Index compound vs single-column index: lợi ích và lưu ý.
+    11. Query plan: giải thích output của `EXPLAIN` và cách tối ưu query từ đó.
+    12. Giải thích các **isolation levels** trong MySQL (`READ UNCOMMITTED`, `READ COMMITTED`, `REPEATABLE READ`, `SERIALIZABLE`) và ví dụ vấn đề có thể xảy ra ở mỗi level.
+    13. **Deadlock** là gì và làm sao để xử lý trong MySQL?
+    14. So sánh **pessimistic lock vs optimistic lock**. Khi nào dùng mỗi loại?
+    15. Viết ví dụ query để **lock một hàng** để tránh race condition (`SELECT ... FOR UPDATE`).
+    16. Sử dụng **CTE (Common Table Expression)** để viết query đệ quy.
+    17. Giải thích **JSON support trong MySQL 8+**. Query JSON field và tạo index cho JSON.
+    18. `STORED GENERATED COLUMN` vs `VIRTUAL GENERATED COLUMN`. Khi nào dùng mỗi loại?
+    19. Sử dụng **window frames** (`ROWS BETWEEN ...`) trong phân tích dữ liệu.
+    20. Sử dụng **prepared statement** trong MySQL và lợi ích về performance / security.
+    21. Thiết kế schema cho hệ thống **ticket support** hoặc **chat conversations**, lưu ý normalization vs denormalization.
+    22. **Partitioning** trong MySQL: RANGE, LIST, HASH, KEY. Khi nào dùng và lợi ích.
+    23. Giải thích **foreign key constraints**, `ON DELETE CASCADE` vs `ON DELETE SET NULL`.
+    24. Khi nào nên **shard database** và cách shard MySQL.
+    25. Làm thế nào để **tối ưu query với hàng triệu rows**? (Ví dụ: phân trang, batch processing)
+    26. Phân tích một query chậm bằng **EXPLAIN + ANALYZE**.
+    27. Viết query để **tìm duplicate records** và cách loại bỏ chúng.
+    28. Làm thế nào để **monitor MySQL performance** (slow query log, performance schema).
+    29. MySQL có **strict mode**. Khi nào nó ảnh hưởng đến query và insert/update?
+    30. `AUTO_INCREMENT` hoạt động như thế nào khi rollback hoặc delete row?
+    31. Tại sao **`NULL` không bằng NULL** trong SQL và cách xử lý khi so sánh.
+    32. Phân biệt **CHAR vs VARCHAR**, `TEXT` và ảnh hưởng đến indexing.
+    33. Khi nào nên dùng **transaction-safe storage engine** (InnoDB) vs non-transactional (MyISAM)?
+- Java
+    1. Phân biệt **`==` vs `equals()`** trong Java. Khi nào nên override `equals()` và `hashCode()`?
+    2. `String`, `StringBuilder`, `StringBuffer`: điểm khác biệt, thread-safety và hiệu năng.
+    3. **Autoboxing / unboxing** có thể gây vấn đề gì không? Cho ví dụ.
+    4. Giải thích **immutability** trong Java. Lợi ích và cách tạo class immutable.
+    5. Phân biệt **abstract class vs interface** (Java 8+) và **default methods**.
+    6. `final`, `finally`, `finalize()` khác nhau như thế nào?
+    7. **Varargs** hoạt động thế nào bên dưới JVM?
+    8. **Generics type erasure** là gì? Tại sao phải có?
+    9. Sự khác nhau giữa **`List<?>`, `List<Object>`, `List<T>`**.
+    10. So sánh **HashMap vs TreeMap vs LinkedHashMap**: khi nào dùng mỗi loại?
+    11. **ConcurrentHashMap internals**: làm sao thread-safe mà không lock toàn bộ map?
+    12. Sự khác nhau giữa **`ArrayList` vs `LinkedList`** về performance.
+    13. Viết code để **thread-safe iterate + modify collection**.
+    14. Phân biệt **`synchronized` vs ReentrantLock**. Khi nào dùng lock fairness?
+    15. `volatile` làm gì? Khi nào phải dùng `Atomic` classes?
+    16. **Thread pools**: CachedPool vs FixedPool vs ScheduledPool. Khi nào dùng?
+    17. **Deadlock, livelock, starvation** là gì? Làm sao debug?
+    18. Giải thích **fork/join framework** và **parallel streams**.
+    19. **CompletableFuture** vs traditional Future. Async exception handling thế nào?
+    20. `ThreadLocal` là gì, ưu nhược điểm, use case.
+    21. Giải thích **JVM memory model**: heap, stack, metaspace, permgen.
+    22. **Garbage Collection**: Serial, Parallel, G1, ZGC – ưu/nhược điểm.
+    23. **Strong, weak, soft, phantom references** và use case.
+    24. **Escape analysis**: JVM optimize local objects ra sao?
+    25. Memory leak trong Java: nguyên nhân phổ biến.
+    26. Profiling Java app: công cụ và cách đọc heap / thread dump.
+    27. `String` concatenation – compile-time vs runtime.
+    28. JIT compiler hoạt động ra sao? Hotspot method optimization.
+    29. Caching strategies: soft references vs guava cache vs Caffeine.
+    30. Làm sao tối ưu **stream processing và lambda expressions**.
+    31. **Reflection**: dùng reflection như thế nào và rủi ro.
+    32. **Annotations**: custom annotation, retention policy, proxy usage.
+    33. **Serialization**: default vs custom `readObject/writeObject`.
+    34. Java Modules (JPMS): lợi ích và hạn chế.
+    35. **Reactive programming** trong Java (Project Reactor, RxJava).
+    36. Singleton pattern: lazy vs eager, thread-safe cách implement.
+    37. Factory, Builder, Strategy, Observer – ví dụ thực tế.
+    38. **Immutable object pattern** và lợi ích trong concurrency.
+    39. **Dependency Injection** và cách implement không dùng framework.
+    40. Microservices design: patterns liên quan caching, resiliency, async messaging.
+    41. Khi nào nên override `equals` nhưng không override `compareTo`?
+    42. Sự khác nhau giữa `HashSet` và `TreeSet` trong ordering và performance.
+    43. Khi nào `synchronized` không đủ để bảo vệ shared state?
+    44. Sự khác nhau giữa **fail-fast vs fail-safe iterators**.
+    45. Viết code demo **ABA problem** trong concurrency và cách giải quyết.
+- SpringBoot
+    1. Giải thích **Spring Boot autoconfiguration** hoạt động thế nào? `@ConditionalOn...` dùng ra sao?
+    2. `@SpringBootApplication` thực sự là gì? Có bao nhiêu annotation được composite?
+    3. Spring Boot **starter** là gì và cách nó hoạt động?
+    4. Giải thích **bean lifecycle**: instantiation, dependency injection, post-processing, destruction.
+    5. Phân biệt **singleton, prototype, request, session scoped beans**. Khi nào dùng mỗi loại?
+    6. **Profile** trong Spring Boot: cách cấu hình và override properties cho nhiều môi trường.
+    7. Giải thích **constructor injection vs field injection vs setter injection**: ưu/nhược điểm.
+    8. **Circular dependency** trong Spring là gì? Làm sao phát hiện và giải quyết?
+    9. `@Transactional` hoạt động như thế nào? Proxy-based hay AspectJ-based?
+    10. Giải thích **Spring AOP**: proxy, pointcut, advice.
+    11. Làm thế nào để **custom annotation** và áp dụng aspect cho nó?
+    12. **Spring Data JPA**: cách `CrudRepository` / `JpaRepository` hoạt động?
+    13. Viết query **dynamic với Specification hoặc Criteria API**.
+    14. Phân biệt **EntityManager vs JdbcTemplate vs NamedParameterJdbcTemplate**.
+    15. Làm thế nào Spring Boot **quản lý transactions** với multiple datasources?
+    16. **Optimistic vs Pessimistic locking** trong Spring Data JPA.
+    17. Cấu hình **JWT authentication** trong Spring Boot.
+    18. So sánh **method security (`@PreAuthorize`) vs URL security**.
+    19. Cách Spring Security **prevents CSRF, XSS, Session Fixation**.
+    20. Custom **UserDetailsService** và **PasswordEncoder**.
+    21. Giải thích **filter chain trong Spring Security**.
+    22. `@RestController` vs `@Controller` + `@ResponseBody`.
+    23. Spring Boot **error handling**: `@ControllerAdvice` và `ResponseEntityExceptionHandler`.
+    24. Giải thích **HATEOAS** và cách implement trong Spring Boot.
+    25. **Asynchronous request handling**: `@Async`, `DeferredResult`, `CompletableFuture`.
+    26. Spring Boot support **WebSocket / STOMP** – cách setup.
+    27. Spring Boot với **Kafka/RabbitMQ**: cách cấu hình producer/consumer và error handling.
+    28. Spring Boot **caching abstraction**: `@Cacheable`, `@CacheEvict`, `@CachePut`.
+    29. Tối ưu **startup time** của Spring Boot application.
+    30. Làm thế nào để **profile slow queries / performance bottleneck**.
+    31. **Lazy vs Eager initialization** trong Spring Boot.
+    32. Spring Boot actuator: **health, metrics, info, custom endpoints**.
+    33. Phân biệt **unit test vs integration test** trong Spring Boot.
+    34. Cách test **controllers** với MockMvc và @WebMvcTest.
+    35. Test **services with @MockBean vs real repository**.
+    36. Test **asynchronous methods** annotated with `@Async`.
+    37. Làm sao để **mock SecurityContext** trong Spring Boot tests.
+    38. Cấu hình **multi-tenancy** trong Spring Boot với JPA.
+    39. Cách implement **retry logic** với Spring Retry hoặc AOP.
+    40. Khi nào nên dùng **functional bean registration** vs annotation-based configuration.
+    41. Cách Spring Boot xử lý **configuration properties binding** (`@ConfigurationProperties`).
+    42. Giải thích **Spring Boot DevTools**: hot reload hoạt động thế nào?

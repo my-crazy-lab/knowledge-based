@@ -470,16 +470,16 @@
     2. Khi nào nên dùng **partial index** hoặc **expression index**?
     3. Giải thích **covering index (INCLUDE clause)** và tác dụng.
     4. PostgreSQL chọn index như thế nào khi query có nhiều condition (`AND`, `OR`)?
-5. **Multicolumn index**: tác dụng khi query chỉ filter 1 column, hay filter các column khác nhau.
-6. **Index-only scan** là gì? Khi nào có thể xảy ra?
-7. Khi index bị bloat, PostgreSQL xử lý ra sao? Tác động của **REINDEX** và **VACUUM FULL**.
-8. So sánh **B-Tree vs BRIN index** cho data lớn và sequential.
-9. Giải thích cách **GIN index** optimize search text/array.
-1. Khác nhau giữa **view bình thường và materialized view**. Khi nào nên dùng materialized view?
-2. Cách **refresh materialized view**: concurrent vs non-concurrent. Ưu/nhược điểm.
-3. PostgreSQL xử lý **recursive view / CTE** ra sao?
-4. View có ảnh hưởng gì tới **query planner/optimizer**?
-5. Giải thích cách **updatable view** hoạt động, và giới hạn của nó.
+    5. **Multicolumn index**: tác dụng khi query chỉ filter 1 column, hay filter các column khác nhau.
+    6. **Index-only scan** là gì? Khi nào có thể xảy ra?
+    7. Khi index bị bloat, PostgreSQL xử lý ra sao? Tác động của **REINDEX** và **VACUUM FULL**.
+    8. So sánh **B-Tree vs BRIN index** cho data lớn và sequential.
+    9. Giải thích cách **GIN index** optimize search text/array.
+    1. Khác nhau giữa **view bình thường và materialized view**. Khi nào nên dùng materialized view?
+    2. Cách **refresh materialized view**: concurrent vs non-concurrent. Ưu/nhược điểm.
+    3. PostgreSQL xử lý **recursive view / CTE** ra sao?
+    4. View có ảnh hưởng gì tới **query planner/optimizer**?
+    5. Giải thích cách **updatable view** hoạt động, và giới hạn của nó.
 1. PostgreSQL **query planner** và **executor** hoạt động như thế nào?
 2. Giải thích output của **EXPLAIN / EXPLAIN ANALYZE**: Seq Scan, Index Scan, Bitmap Heap Scan.
 3. Khi PostgreSQL chọn **Seq Scan thay vì Index Scan**, nguyên nhân có thể là gì?

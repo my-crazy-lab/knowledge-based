@@ -330,7 +330,7 @@
     28. Giải thích cách ClickHouse xử lý **memory management & query limits**.
     29. Làm sao để monitor **disk usage, merges, background tasks** trong ClickHouse cluster?
     30. Bạn sẽ thiết kế chiến lược **backup & restore** trong ClickHouse cluster như thế nào?
-- kvrocks
+- :white_check_mark: kvrocks
     - Giải thích kiến trúc của Kvrocks
         - Kvrocks được cấu trúc nội bộ như thế nào?
         - Các thành phần chính là gì (lớp mạng, bộ thực thi lệnh, bộ lưu trữ RocksDB)?
@@ -364,91 +364,78 @@
     - Compaction ảnh hưởng đến hiệu năng và độ trễ của Kvrocks như thế nào?
         - Khi nào compaction gây nghẽn.
         - Cách tối ưu để giảm tác động.
-- Kvrocks sử dụng **column families** của RocksDB như thế nào?
-    - Cách Kvrocks tách dữ liệu theo loại cấu trúc (hash, zset, metadata…).
-- Các tham số cấu hình RocksDB thường được tinh chỉnh trong Kvrocks
-    - write_buffer_size, max_background_jobs, compaction_style, block_cache_size, v.v.
-- Theo dõi hiệu năng RocksDB
-    - Các chỉ số như: write stalls, compaction stats, memtable usage, I/O latency.
-- Kvrocks đảm bảo **persistence** và **durability** như thế nào?
-    - Dữ liệu được ghi vào WAL và đồng bộ xuống SST.
-    - Cách đảm bảo không mất dữ liệu khi crash.
-- So sánh giữa **AOF/RDB của Redis** và **RocksDB persistence trong Kvrocks**
-    - Redis: snapshot/AOF tốn RAM và CPU.
-    - Kvrocks: RocksDB xử lý bền vững theo cơ chế WAL + LSM-tree.
-- Mô hình sao chép của Kvrocks
-    - Là đồng bộ, bất đồng bộ hay bán đồng bộ?
-    - Cách xử lý lag và fallback.
-- Kvrocks xử lý **replication lag** hoặc **failover** ra sao?
-- Cơ chế phát hiện và khôi phục replica chậm.
-    - Khi node master hỏng, quá trình bầu leader mới diễn ra thế nào.
-- Cách khôi phục dữ liệu Kvrocks khi bị **corruption** hoặc lỗi đĩa
-    - Sử dụng backup SST/WAL, kiểm tra consistency.
-- Mô tả **topology cluster** của Kvrocks và cách các node giao tiếp
-    - Mô hình leader–follower, nhân bản, phân vùng dữ liệu.
-- So sánh giữa **Kvrocks replication** và **Redis Sentinel-based replication**
-    - Kvrocks có cơ chế sao chép riêng, không phụ thuộc Sentinel.
-    - Ưu và nhược điểm của từng mô hình.
-- Cách tinh chỉnh Kvrocks để đạt throughput ghi cao
-    - Tối ưu batch write, memtable, và compaction threads.
-- Các tùy chọn RocksDB cho SSD
-    - compaction_style = level/universal  
-    - write_buffer_size, target_file_size_base, max_background_jobs.
-- Cách xử lý **write amplification** trong hệ thống dựa trên RocksDB
-    - Giảm compaction không cần thiết, tuning size ratio và flush policy.
-- Cân bằng bộ nhớ giữa RocksDB block cache và OS page cache
-    - Quản lý tài nguyên RAM hiệu quả giữa RocksDB và hệ điều hành.
-- Các **metrics** cần theo dõi trong môi trường sản xuất
-    - write stalls, compaction pending, read latency, WAL sync time.
-- Phát hiện và giảm thiểu **compaction stalls**
-    - Giám sát IO throughput, tăng thread background, dùng universal compaction.
-- Xử lý **replica lag** hoặc tràn backlog
-    - Điều chỉnh replication buffer, batch size, hoặc tốc độ gửi dữ liệu.
-- Đánh giá hiệu năng Kvrocks
-    - Sử dụng `redis-benchmark`, `memtier_benchmark`, hoặc workload tùy chỉnh.
-- Cách ánh xạ các kiểu dữ liệu Redis sang RocksDB
-    - String → key-value  
-    - Hash → key prefix + field  
-    - Set → prefix + member  
-    - ZSet → composite key (score + member)  
-    - List → index key
-- Dựa trên khóa mã hóa (score, member) để hỗ trợ range scan.
-- Sử dụng prefix (namespace + type + key) để tránh va chạm và hỗ trợ quét phạm vi.
-- Sử dụng iterator và range scan trên SST files.
-- Các node master–replica, cấu hình replication, giám sát trạng thái.
-- Hiện tại chủ yếu là **thủ công (manual)** hoặc dùng proxy layer.
-- Cơ chế bắt kịp tự động (catch-up) bằng cách đồng bộ lại từ WAL/SST.
-- Dùng backup RocksDB snapshot hoặc công cụ dump/restore.
-- Tùy chọn fsync, WAL sync interval, và compaction mode.
-- Dùng nhiều replica, heartbeat check, và proxy chuyển hướng.
-- compression (zstd/snappy), write_buffer_size, block_cache_size, max_background_jobs.
-- So sánh Kvrocks với Redis + RDB/AOF
-    - Ưu: tiết kiệm bộ nhớ, lưu trữ lớn, không mất dữ liệu khi khởi động lại.  
-    - Nhược: độ trễ cao hơn Redis trong một số tác vụ.
-- So sánh Kvrocks với Redis on Flash hoặc Redis Enterprise
-    - Kvrocks dùng RocksDB (mở nguồn), Redis Enterprise dùng module thương mại.
-    - Kvrocks linh hoạt hơn nhưng ít tính năng phân tán tự động.
-- So sánh Kvrocks với các hệ thống dựa trên RocksDB khác (TiKV, BadgerDB)
-    - Kvrocks: tương thích Redis.  
-    - TiKV: phân tán theo Raft.  
-    - BadgerDB: dành cho ứng dụng Go nhúng.
-- Khi nào **không nên** dùng Kvrocks
-    - Khi yêu cầu độ trễ cực thấp (Redis thuần in-memory tốt hơn).
-    - Khi cần cluster tự động mở rộng.
-- Thiết kế hệ thống lai **Kvrocks + ClickHouse**
-    - Kvrocks làm lớp cache key-value nhanh.  
-    - ClickHouse xử lý phân tích dữ liệu lớn (analytics).
-- Cân bằng shard, replication, caching layer.
-- Dùng bán đồng bộ, batch replication.
-- Cơ chế quorum hoặc version vector.
-- Compaction scheduling, tune background threads.
-- Dùng key prefix theo userID / timestamp.
-- Practice
-    - Di chuyển dữ liệu từ Redis sang Kvrocks.  
-    - Chạy benchmark với `redis-benchmark` hoặc `memtier_benchmark`.  
-    - Tinh chỉnh cấu hình Kvrocks cho SSD + 64GB RAM.  
-    - Phân tích kết quả `INFO` để hiểu thống kê nội bộ.  
-    - Chuẩn đoán vấn đề hiệu năng qua log hoặc metric thực tế.
+    - Kvrocks sử dụng **column families** của RocksDB như thế nào?
+        - Cách Kvrocks tách dữ liệu theo loại cấu trúc (hash, zset, metadata…).
+    - Các tham số cấu hình RocksDB thường được tinh chỉnh trong Kvrocks
+        - write_buffer_size, max_background_jobs, compaction_style, block_cache_size, v.v.
+    - Theo dõi hiệu năng RocksDB
+        - Các chỉ số như: write stalls, compaction stats, memtable usage, I/O latency.
+    - Kvrocks đảm bảo **persistence** và **durability** như thế nào?
+        - Dữ liệu được ghi vào WAL và đồng bộ xuống SST.
+        - Cách đảm bảo không mất dữ liệu khi crash.
+    - So sánh giữa **AOF/RDB của Redis** và **RocksDB persistence trong Kvrocks**
+        - Redis: snapshot/AOF tốn RAM và CPU.
+        - Kvrocks: RocksDB xử lý bền vững theo cơ chế WAL + LSM-tree.
+    - Mô hình sao chép của Kvrocks
+        - Là đồng bộ, bất đồng bộ hay bán đồng bộ?
+        - Cách xử lý lag và fallback.
+    - Kvrocks xử lý **replication lag** hoặc **failover** ra sao?
+    - Cơ chế phát hiện và khôi phục replica chậm.
+        - Khi node master hỏng, quá trình bầu leader mới diễn ra thế nào.
+    - Cách khôi phục dữ liệu Kvrocks khi bị **corruption** hoặc lỗi đĩa
+    - Mô tả **topology cluster** của Kvrocks và cách các node giao tiếp
+        - Mô hình leader–follower, nhân bản, phân vùng dữ liệu.
+    - So sánh giữa **Kvrocks replication** và **Redis Sentinel-based replication**
+        - Kvrocks có cơ chế sao chép riêng, không phụ thuộc Sentinel.
+        - Ưu và nhược điểm của từng mô hình.
+    - Cách tinh chỉnh Kvrocks để đạt throughput ghi cao
+        - Tối ưu batch write, memtable, và compaction threads.
+    - Các tùy chọn RocksDB cho SSD
+        - compaction_style = level/universal  
+        - write_buffer_size, target_file_size_base, max_background_jobs.
+    - Cách xử lý **write amplification** trong hệ thống dựa trên RocksDB
+    - Cân bằng bộ nhớ giữa RocksDB block cache và OS page cache
+    - Các **metrics** cần theo dõi trong môi trường sản xuất
+    - Phát hiện và giảm thiểu **compaction stalls**
+        - Giám sát IO throughput, tăng thread background, dùng universal compaction.
+    - Xử lý **replica lag** hoặc tràn backlog
+        - Điều chỉnh replication buffer, batch size, hoặc tốc độ gửi dữ liệu.
+    - Đánh giá hiệu năng Kvrocks
+    - Cách ánh xạ các kiểu dữ liệu Redis sang RocksDB
+        - String → key-value  
+        - Hash → key prefix + field  
+        - Set → prefix + member  
+        - ZSet → composite key (score + member)  
+        - List → index key
+    - Dựa trên khóa mã hóa (score, member) để hỗ trợ range scan.
+    - Sử dụng prefix (namespace + type + key) để tránh va chạm và hỗ trợ quét phạm vi.
+    - Sử dụng iterator và range scan trên SST files.
+    - Các node master–replica, cấu hình replication, giám sát trạng thái.
+    - Hiện tại chủ yếu là **thủ công (manual)** hoặc dùng proxy layer.
+    - Cơ chế bắt kịp tự động (catch-up) bằng cách đồng bộ lại từ WAL/SST.
+    - Dùng backup RocksDB snapshot hoặc công cụ dump/restore.
+    - Tùy chọn fsync, WAL sync interval, và compaction mode.
+    - Dùng nhiều replica, heartbeat check, và proxy chuyển hướng.
+    - compression (zstd/snappy), write_buffer_size, block_cache_size, max_background_jobs.
+    - So sánh Kvrocks với Redis + RDB/AOF
+    - So sánh Kvrocks với Redis on Flash hoặc Redis Enterprise
+        - Kvrocks dùng RocksDB (mở nguồn), Redis Enterprise dùng module thương mại.
+        - Kvrocks linh hoạt hơn nhưng ít tính năng phân tán tự động.
+    - So sánh Kvrocks với các hệ thống dựa trên RocksDB khác (TiKV, BadgerDB)
+        - Kvrocks: tương thích Redis.  
+        - TiKV: phân tán theo Raft.  
+        - BadgerDB: dành cho ứng dụng Go nhúng.
+    - Khi nào **không nên** dùng Kvrocks
+        - Khi yêu cầu độ trễ cực thấp (Redis thuần in-memory tốt hơn).
+        - Khi cần cluster tự động mở rộng.
+    - Thiết kế hệ thống lai **Kvrocks + ClickHouse**
+        - Kvrocks làm lớp cache key-value nhanh.  
+        - ClickHouse xử lý phân tích dữ liệu lớn (analytics).
+    - Cân bằng shard, replication, caching layer.
+    - Dùng bán đồng bộ, batch replication.
+    - Cơ chế quorum hoặc version vector.
+    - Compaction scheduling, tune background threads.
+    - Dùng key prefix theo userID / timestamp.
 - Postgres (cơ hội tốt review lại DS + lock)
     1. PostgreSQL xử lý **ACID** thế nào? Giải thích cơ chế **MVCC** (Multi-Version Concurrency Control).
     2. Giải thích các **isolation levels** trong PostgreSQL: **Read Committed, Repeatable Read, Serializable**. Trade-off về **performance vs consistency**.
@@ -539,39 +526,71 @@
     3. Checkpoint frequency → impacts I/O spikes and latency.
     4. Vacuum / autovacuum → performance cost if delayed.
 - MySQL
-    1. Phân biệt `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN` và `FULL OUTER JOIN`? Cho ví dụ trường hợp sử dụng thực tế.
-    2. Viết một query để tìm ra **Top N khách hàng mua nhiều nhất mỗi tháng**.
-    3. Làm thế nào để **tính thứ hạng (ranking)** của một item trong bảng theo một cột mà không dùng stored procedure?
-    4. Giải thích và viết query sử dụng **window functions** (`ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`) trong MySQL.
-    5. So sánh `GROUP BY` với `DISTINCT`. Khi nào dùng cái nào hiệu quả hơn?
-6. Viết query để **chèn dữ liệu mới nếu chưa tồn tại**, hoặc cập nhật nếu tồn tại (UPSERT).
-7. Phân tích cách hoạt động của **B-Tree vs Hash Index** trong MySQL. Khi nào dùng cái nào?
-8. Khi nào một query **không sử dụng index**? Làm sao để debug và tối ưu?
-9. Giải thích **covering index** và cách dùng để tăng tốc query.
-10. Index compound vs single-column index: lợi ích và lưu ý.
-11. Query plan: giải thích output của `EXPLAIN` và cách tối ưu query từ đó.
-12. Giải thích các **isolation levels** trong MySQL (`READ UNCOMMITTED`, `READ COMMITTED`, `REPEATABLE READ`, `SERIALIZABLE`) và ví dụ vấn đề có thể xảy ra ở mỗi level.
-13. **Deadlock** là gì và làm sao để xử lý trong MySQL?
-14. So sánh **pessimistic lock vs optimistic lock**. Khi nào dùng mỗi loại?
-15. Viết ví dụ query để **lock một hàng** để tránh race condition (`SELECT ... FOR UPDATE`).
-16. Sử dụng **CTE (Common Table Expression)** để viết query đệ quy.
-17. Giải thích **JSON support trong MySQL 8+**. Query JSON field và tạo index cho JSON.
-18. `STORED GENERATED COLUMN` vs `VIRTUAL GENERATED COLUMN`. Khi nào dùng mỗi loại?
-19. Sử dụng **window frames** (`ROWS BETWEEN ...`) trong phân tích dữ liệu.
-20. Sử dụng **prepared statement** trong MySQL và lợi ích về performance / security.
-21. Thiết kế schema cho hệ thống **ticket support** hoặc **chat conversations**, lưu ý normalization vs denormalization.
-22. **Partitioning** trong MySQL: RANGE, LIST, HASH, KEY. Khi nào dùng và lợi ích.
-23. Giải thích **foreign key constraints**, `ON DELETE CASCADE` vs `ON DELETE SET NULL`.
-24. Khi nào nên **shard database** và cách shard MySQL.
-25. Làm thế nào để **tối ưu query với hàng triệu rows**? (Ví dụ: phân trang, batch processing)
-26. Phân tích một query chậm bằng **EXPLAIN + ANALYZE**.
-27. Viết query để **tìm duplicate records** và cách loại bỏ chúng.
-28. Làm thế nào để **monitor MySQL performance** (slow query log, performance schema).
-29. MySQL có **strict mode**. Khi nào nó ảnh hưởng đến query và insert/update?
-30. `AUTO_INCREMENT` hoạt động như thế nào khi rollback hoặc delete row?
-31. Tại sao **`NULL` không bằng NULL** trong SQL và cách xử lý khi so sánh.
-32. Phân biệt **CHAR vs VARCHAR**, `TEXT` và ảnh hưởng đến indexing.
-33. Khi nào nên dùng **transaction-safe storage engine** (InnoDB) vs non-transactional (MyISAM)?
+1. Giải thích kiến trúc tổng thể của MySQL — gồm SQL Layer, Storage Engine Layer, và vai trò của mỗi phần.
+2. MySQL xử lý một câu lệnh `SELECT` như thế nào từ khi nhận đến khi trả kết quả?
+3. Sự khác biệt giữa InnoDB và MyISAM về cơ chế lưu trữ, khóa, và transaction.
+4. Redo Log, Undo Log, và Binary Log khác nhau thế nào? Tại sao cần cả ba?
+5. InnoDB Buffer Pool là gì? Cách hoạt động của LRU trong đó ra sao?
+6. Giải thích cơ chế *doublewrite buffer* trong InnoDB.
+7. MySQL optimizer hoạt động thế nào khi chọn execution plan?
+8. Thế nào là *cost-based optimization* trong MySQL? Làm sao để phân tích plan?
+9. Giải thích cơ chế metadata lock (MDL) và tác động của nó khi DDL chạy song song với DML.
+10. MySQL lưu metadata (table schema, indexes, constraints) ở đâu và như thế nào trong phiên bản 8.x?
+1. Khi nào một index **không được sử dụng** dù tồn tại?
+2. Sự khác nhau giữa `EXPLAIN` và `EXPLAIN ANALYZE`. Khi nào nên dùng từng cái?
+3. `EXPLAIN` có thể sai hoặc gây hiểu lầm trong trường hợp nào?
+4. Phân biệt `index merge`, `range scan`, và `ref` trong plan output.
+5. Khi nào nên dùng **covering index**, và làm sao để thiết kế nó tối ưu?
+6. Tác động của `JOIN buffer` và `sort buffer` size tới hiệu năng.
+7. Sự khác biệt giữa `LIMIT OFFSET` và `keyset pagination` về hiệu năng.
+8. Nêu ví dụ truy vấn có thể “đánh lừa” optimizer và cần hint để tối ưu.
+9. Cách đo thời gian từng bước query thực thi mà không chỉ dựa vào tổng thời gian.
+10. Khi nào nên bật/tắt `query cache` (hoặc tương tự trong MySQL 8.x)?
+1. Giải thích 4 mức **isolation level** và ảnh hưởng của từng mức.
+2. MVCC trong InnoDB hoạt động như thế nào?
+3. Row-level locking được thực hiện ra sao trong InnoDB?
+4. Sự khác nhau giữa **intention locks** và **record locks**?
+5. Deadlock detection trong InnoDB hoạt động thế nào?
+6. Cách xử lý deadlock tự động trong code ứng dụng.
+7. Khi nào MySQL lock **gap**, và hậu quả của nó là gì?
+8. Làm sao để debug tình trạng **lock contention** trên production?
+9. Giải thích `SHOW ENGINE INNODB STATUS` và cách đọc phần “LATEST DETECTED DEADLOCK”.
+10. Vì sao MySQL vẫn có thể bị *phantom reads* ở REPEATABLE READ?
+1. Giải thích 3 loại replication: statement-based, row-based, mixed. Ưu/nhược điểm?
+2. Khi replication delay xảy ra, nguyên nhân phổ biến là gì?
+3. Cơ chế replication trong MySQL 8.x hoạt động thế nào (GTID vs non-GTID)?
+4. Cách phát hiện và xử lý **replica lag** trong hệ thống lớn.
+5. Làm sao đảm bảo tính nhất quán dữ liệu giữa master và replica?
+6. Khi nào nên chọn semi-sync replication?
+7. Làm sao để migrate từ master–slave sang group replication mà không downtime?
+8. Khác biệt giữa backup logic (`mysqldump`) và physical (`xtrabackup`).
+9. Cách restore nhanh hàng chục TB dữ liệu MySQL.
+10. Kịch bản thực tế: Một replica bị hỏng GTID, làm sao khôi phục mà không mất dữ liệu?
+1. Khi nào bạn chọn **sharding** thay vì **replication**?
+2. Làm sao để thiết kế schema MySQL có thể mở rộng hàng tỷ record?
+3. Partitioning có ảnh hưởng gì đến index và query optimizer?
+4. So sánh hash vs range partitioning.
+5. Làm sao để thiết kế schema tránh *hotspot* write (VD: auto_increment)?
+6. Khi nào nên dùng `uuid` thay vì `auto_increment`, và tác động đến performance?
+7. Làm sao đảm bảo consistency giữa MySQL và cache layer (Redis)?
+8. Nếu 1 bảng có 500 triệu record, bạn làm gì để query top 100 mới nhất nhanh nhất?
+9. Cách đánh giá và tối ưu I/O khi MySQL chạy trên SSD vs HDD.
+10. Thực tế: khi hệ thống MySQL bị quá tải CPU, bạn sẽ kiểm tra và tối ưu theo thứ tự nào?
+1. Một transaction update 1000 record và bị crash giữa chừng — điều gì xảy ra sau khi restart?
+2. Bạn phát hiện `SELECT` bị chậm bất thường, CPU cao, I/O cao — mô hình điều tra chi tiết?
+3. Làm sao xử lý lỗi replication “Duplicate key on update” trong row-based replication?
+4. Khi nào nên sử dụng `READ COMMITTED` thay vì `REPEATABLE READ`?
+5. MySQL server load cao do quá nhiều connection. Cách giải quyết lâu dài?
+6. Một bảng log có 2 tỷ dòng, cần purge định kỳ — giải pháp tối ưu không lock toàn bảng?
+7. Khi nào nên dùng `MEMORY` engine, và rủi ro đi kèm?
+8. MySQL crash recovery hoạt động thế nào (các bước cụ thể)?
+9. Làm sao để monitor slow queries hiệu quả trên production (tool & kỹ thuật)?
+10. Cách đảm bảo query plan không “thoái hóa” sau khi upgrade MySQL version?
+    - Viết truy vấn để tìm top 3 sản phẩm có doanh thu cao nhất trong từng tháng (tối ưu hóa tốt).
+    - Cho log table 100 triệu dòng (user_id, action, timestamp). Làm sao để tìm unique users mỗi ngày nhanh nhất?
+    - Làm sao phát hiện index không được sử dụng?
+    - Viết script SQL + shell để backup & verify tự động mỗi ngày.
+    - Thiết kế schema lưu versioning cho dữ liệu (soft delete + history table).
 - Java
     1. Phân biệt **`==` vs `equals()`** trong Java. Khi nào nên override `equals()` và `hashCode()`?
     2. `String`, `StringBuilder`, `StringBuffer`: điểm khác biệt, thread-safety và hiệu năng.

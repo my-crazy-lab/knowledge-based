@@ -358,103 +358,97 @@
     - Kvrocks hỗ trợ **giao thức Redis** như thế nào trong khi sử dụng RocksDB?
         - Cách Kvrocks duy trì tương thích hoàn toàn với các client Redis.
         - Lớp chuyển đổi giữa Redis command → RocksDB operation.
-    - Giải thích cách hoạt động của **Log-Structured Merge Tree (LSM)** trong RocksDB
-        - Nguyên lý ghi tuần tự, lưu tạm vào Memtable và hợp nhất (compaction) thành SST.
-    - **SST files** và **Write-Ahead Logs (WAL)** trong RocksDB là gì?
-        - Chức năng, vai trò và mối liên hệ giữa WAL, Memtable và SST.
-    - **Compaction** trong RocksDB là gì và tại sao nó quan trọng?
-        - Quá trình hợp nhất dữ liệu.
-        - Ảnh hưởng của compaction tới hiệu năng đọc/ghi.
+    - Nguyên lý ghi tuần tự, lưu tạm vào Memtable và hợp nhất (compaction) thành SST.
+    - Chức năng, vai trò và mối liên hệ giữa WAL, Memtable và SST.
+    - Ảnh hưởng của compaction tới hiệu năng đọc/ghi.
     - Compaction ảnh hưởng đến hiệu năng và độ trễ của Kvrocks như thế nào?
         - Khi nào compaction gây nghẽn.
         - Cách tối ưu để giảm tác động.
-    - Vai trò của **memtable** trong RocksDB
-        - Vùng lưu dữ liệu tạm trong RAM trước khi flush xuống đĩa.
-    - Kvrocks sử dụng **column families** của RocksDB như thế nào?
-        - Cách Kvrocks tách dữ liệu theo loại cấu trúc (hash, zset, metadata…).
-    - Các tham số cấu hình RocksDB thường được tinh chỉnh trong Kvrocks
-        - write_buffer_size, max_background_jobs, compaction_style, block_cache_size, v.v.
-    - Theo dõi hiệu năng RocksDB
-        - Các chỉ số như: write stalls, compaction stats, memtable usage, I/O latency.
-    - Kvrocks đảm bảo **persistence** và **durability** như thế nào?
-        - Dữ liệu được ghi vào WAL và đồng bộ xuống SST.
-        - Cách đảm bảo không mất dữ liệu khi crash.
-    - So sánh giữa **AOF/RDB của Redis** và **RocksDB persistence trong Kvrocks**
-        - Redis: snapshot/AOF tốn RAM và CPU.
-        - Kvrocks: RocksDB xử lý bền vững theo cơ chế WAL + LSM-tree.
-    - Mô hình sao chép của Kvrocks
-        - Là đồng bộ, bất đồng bộ hay bán đồng bộ?
-        - Cách xử lý lag và fallback.
-    - Kvrocks xử lý **replication lag** hoặc **failover** ra sao?
-    - Cơ chế phát hiện và khôi phục replica chậm.
-        - Khi node master hỏng, quá trình bầu leader mới diễn ra thế nào.
-    - Cách khôi phục dữ liệu Kvrocks khi bị **corruption** hoặc lỗi đĩa
-        - Sử dụng backup SST/WAL, kiểm tra consistency.
-    - Mô tả **topology cluster** của Kvrocks và cách các node giao tiếp
-        - Mô hình leader–follower, nhân bản, phân vùng dữ liệu.
-    - So sánh giữa **Kvrocks replication** và **Redis Sentinel-based replication**
-        - Kvrocks có cơ chế sao chép riêng, không phụ thuộc Sentinel.
-        - Ưu và nhược điểm của từng mô hình.
-    - Cách tinh chỉnh Kvrocks để đạt throughput ghi cao
-        - Tối ưu batch write, memtable, và compaction threads.
-    - Các tùy chọn RocksDB cho SSD
-        - compaction_style = level/universal  
-        - write_buffer_size, target_file_size_base, max_background_jobs.
-    - Cách xử lý **write amplification** trong hệ thống dựa trên RocksDB
-        - Giảm compaction không cần thiết, tuning size ratio và flush policy.
-    - Cân bằng bộ nhớ giữa RocksDB block cache và OS page cache
-        - Quản lý tài nguyên RAM hiệu quả giữa RocksDB và hệ điều hành.
-    - Các **metrics** cần theo dõi trong môi trường sản xuất
-        - write stalls, compaction pending, read latency, WAL sync time.
-    - Phát hiện và giảm thiểu **compaction stalls**
-        - Giám sát IO throughput, tăng thread background, dùng universal compaction.
-    - Xử lý **replica lag** hoặc tràn backlog
-        - Điều chỉnh replication buffer, batch size, hoặc tốc độ gửi dữ liệu.
-    - Đánh giá hiệu năng Kvrocks
-        - Sử dụng `redis-benchmark`, `memtier_benchmark`, hoặc workload tùy chỉnh.
-    - Cách ánh xạ các kiểu dữ liệu Redis sang RocksDB
-        - String → key-value  
-        - Hash → key prefix + field  
-        - Set → prefix + member  
-        - ZSet → composite key (score + member)  
-        - List → index key
-    - Dựa trên khóa mã hóa (score, member) để hỗ trợ range scan.
-    - Sử dụng prefix (namespace + type + key) để tránh va chạm và hỗ trợ quét phạm vi.
-    - Sử dụng iterator và range scan trên SST files.
-    - Các node master–replica, cấu hình replication, giám sát trạng thái.
-    - Hiện tại chủ yếu là **thủ công (manual)** hoặc dùng proxy layer.
-    - Cơ chế bắt kịp tự động (catch-up) bằng cách đồng bộ lại từ WAL/SST.
-    - Dùng backup RocksDB snapshot hoặc công cụ dump/restore.
-    - Tùy chọn fsync, WAL sync interval, và compaction mode.
-    - Dùng nhiều replica, heartbeat check, và proxy chuyển hướng.
-    - compression (zstd/snappy), write_buffer_size, block_cache_size, max_background_jobs.
-    - So sánh Kvrocks với Redis + RDB/AOF
-        - Ưu: tiết kiệm bộ nhớ, lưu trữ lớn, không mất dữ liệu khi khởi động lại.  
-        - Nhược: độ trễ cao hơn Redis trong một số tác vụ.
-    - So sánh Kvrocks với Redis on Flash hoặc Redis Enterprise
-        - Kvrocks dùng RocksDB (mở nguồn), Redis Enterprise dùng module thương mại.
-        - Kvrocks linh hoạt hơn nhưng ít tính năng phân tán tự động.
-    - So sánh Kvrocks với các hệ thống dựa trên RocksDB khác (TiKV, BadgerDB)
-        - Kvrocks: tương thích Redis.  
-        - TiKV: phân tán theo Raft.  
-        - BadgerDB: dành cho ứng dụng Go nhúng.
-    - Khi nào **không nên** dùng Kvrocks
-        - Khi yêu cầu độ trễ cực thấp (Redis thuần in-memory tốt hơn).
-        - Khi cần cluster tự động mở rộng.
-    - Thiết kế hệ thống lai **Kvrocks + ClickHouse**
-        - Kvrocks làm lớp cache key-value nhanh.  
-        - ClickHouse xử lý phân tích dữ liệu lớn (analytics).
-    - Cân bằng shard, replication, caching layer.
-    - Dùng bán đồng bộ, batch replication.
-    - Cơ chế quorum hoặc version vector.
-    - Compaction scheduling, tune background threads.
-    - Dùng key prefix theo userID / timestamp.
-    - Practice
-        - Di chuyển dữ liệu từ Redis sang Kvrocks.  
-        - Chạy benchmark với `redis-benchmark` hoặc `memtier_benchmark`.  
-        - Tinh chỉnh cấu hình Kvrocks cho SSD + 64GB RAM.  
-        - Phân tích kết quả `INFO` để hiểu thống kê nội bộ.  
-        - Chuẩn đoán vấn đề hiệu năng qua log hoặc metric thực tế.
+- Kvrocks sử dụng **column families** của RocksDB như thế nào?
+    - Cách Kvrocks tách dữ liệu theo loại cấu trúc (hash, zset, metadata…).
+- Các tham số cấu hình RocksDB thường được tinh chỉnh trong Kvrocks
+    - write_buffer_size, max_background_jobs, compaction_style, block_cache_size, v.v.
+- Theo dõi hiệu năng RocksDB
+    - Các chỉ số như: write stalls, compaction stats, memtable usage, I/O latency.
+- Kvrocks đảm bảo **persistence** và **durability** như thế nào?
+    - Dữ liệu được ghi vào WAL và đồng bộ xuống SST.
+    - Cách đảm bảo không mất dữ liệu khi crash.
+- So sánh giữa **AOF/RDB của Redis** và **RocksDB persistence trong Kvrocks**
+    - Redis: snapshot/AOF tốn RAM và CPU.
+    - Kvrocks: RocksDB xử lý bền vững theo cơ chế WAL + LSM-tree.
+- Mô hình sao chép của Kvrocks
+    - Là đồng bộ, bất đồng bộ hay bán đồng bộ?
+    - Cách xử lý lag và fallback.
+- Kvrocks xử lý **replication lag** hoặc **failover** ra sao?
+- Cơ chế phát hiện và khôi phục replica chậm.
+    - Khi node master hỏng, quá trình bầu leader mới diễn ra thế nào.
+- Cách khôi phục dữ liệu Kvrocks khi bị **corruption** hoặc lỗi đĩa
+    - Sử dụng backup SST/WAL, kiểm tra consistency.
+- Mô tả **topology cluster** của Kvrocks và cách các node giao tiếp
+    - Mô hình leader–follower, nhân bản, phân vùng dữ liệu.
+- So sánh giữa **Kvrocks replication** và **Redis Sentinel-based replication**
+    - Kvrocks có cơ chế sao chép riêng, không phụ thuộc Sentinel.
+    - Ưu và nhược điểm của từng mô hình.
+- Cách tinh chỉnh Kvrocks để đạt throughput ghi cao
+    - Tối ưu batch write, memtable, và compaction threads.
+- Các tùy chọn RocksDB cho SSD
+    - compaction_style = level/universal  
+    - write_buffer_size, target_file_size_base, max_background_jobs.
+- Cách xử lý **write amplification** trong hệ thống dựa trên RocksDB
+    - Giảm compaction không cần thiết, tuning size ratio và flush policy.
+- Cân bằng bộ nhớ giữa RocksDB block cache và OS page cache
+    - Quản lý tài nguyên RAM hiệu quả giữa RocksDB và hệ điều hành.
+- Các **metrics** cần theo dõi trong môi trường sản xuất
+    - write stalls, compaction pending, read latency, WAL sync time.
+- Phát hiện và giảm thiểu **compaction stalls**
+    - Giám sát IO throughput, tăng thread background, dùng universal compaction.
+- Xử lý **replica lag** hoặc tràn backlog
+    - Điều chỉnh replication buffer, batch size, hoặc tốc độ gửi dữ liệu.
+- Đánh giá hiệu năng Kvrocks
+    - Sử dụng `redis-benchmark`, `memtier_benchmark`, hoặc workload tùy chỉnh.
+- Cách ánh xạ các kiểu dữ liệu Redis sang RocksDB
+    - String → key-value  
+    - Hash → key prefix + field  
+    - Set → prefix + member  
+    - ZSet → composite key (score + member)  
+    - List → index key
+- Dựa trên khóa mã hóa (score, member) để hỗ trợ range scan.
+- Sử dụng prefix (namespace + type + key) để tránh va chạm và hỗ trợ quét phạm vi.
+- Sử dụng iterator và range scan trên SST files.
+- Các node master–replica, cấu hình replication, giám sát trạng thái.
+- Hiện tại chủ yếu là **thủ công (manual)** hoặc dùng proxy layer.
+- Cơ chế bắt kịp tự động (catch-up) bằng cách đồng bộ lại từ WAL/SST.
+- Dùng backup RocksDB snapshot hoặc công cụ dump/restore.
+- Tùy chọn fsync, WAL sync interval, và compaction mode.
+- Dùng nhiều replica, heartbeat check, và proxy chuyển hướng.
+- compression (zstd/snappy), write_buffer_size, block_cache_size, max_background_jobs.
+- So sánh Kvrocks với Redis + RDB/AOF
+    - Ưu: tiết kiệm bộ nhớ, lưu trữ lớn, không mất dữ liệu khi khởi động lại.  
+    - Nhược: độ trễ cao hơn Redis trong một số tác vụ.
+- So sánh Kvrocks với Redis on Flash hoặc Redis Enterprise
+    - Kvrocks dùng RocksDB (mở nguồn), Redis Enterprise dùng module thương mại.
+    - Kvrocks linh hoạt hơn nhưng ít tính năng phân tán tự động.
+- So sánh Kvrocks với các hệ thống dựa trên RocksDB khác (TiKV, BadgerDB)
+    - Kvrocks: tương thích Redis.  
+    - TiKV: phân tán theo Raft.  
+    - BadgerDB: dành cho ứng dụng Go nhúng.
+- Khi nào **không nên** dùng Kvrocks
+    - Khi yêu cầu độ trễ cực thấp (Redis thuần in-memory tốt hơn).
+    - Khi cần cluster tự động mở rộng.
+- Thiết kế hệ thống lai **Kvrocks + ClickHouse**
+    - Kvrocks làm lớp cache key-value nhanh.  
+    - ClickHouse xử lý phân tích dữ liệu lớn (analytics).
+- Cân bằng shard, replication, caching layer.
+- Dùng bán đồng bộ, batch replication.
+- Cơ chế quorum hoặc version vector.
+- Compaction scheduling, tune background threads.
+- Dùng key prefix theo userID / timestamp.
+- Practice
+    - Di chuyển dữ liệu từ Redis sang Kvrocks.  
+    - Chạy benchmark với `redis-benchmark` hoặc `memtier_benchmark`.  
+    - Tinh chỉnh cấu hình Kvrocks cho SSD + 64GB RAM.  
+    - Phân tích kết quả `INFO` để hiểu thống kê nội bộ.  
+    - Chuẩn đoán vấn đề hiệu năng qua log hoặc metric thực tế.
 - Postgres (cơ hội tốt review lại DS + lock)
     1. PostgreSQL xử lý **ACID** thế nào? Giải thích cơ chế **MVCC** (Multi-Version Concurrency Control).
     2. Giải thích các **isolation levels** trong PostgreSQL: **Read Committed, Repeatable Read, Serializable**. Trade-off về **performance vs consistency**.

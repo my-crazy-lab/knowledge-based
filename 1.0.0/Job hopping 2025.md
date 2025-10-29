@@ -544,34 +544,34 @@
     3. Làm thế nào để **tính thứ hạng (ranking)** của một item trong bảng theo một cột mà không dùng stored procedure?
     4. Giải thích và viết query sử dụng **window functions** (`ROW_NUMBER()`, `RANK()`, `DENSE_RANK()`) trong MySQL.
     5. So sánh `GROUP BY` với `DISTINCT`. Khi nào dùng cái nào hiệu quả hơn?
-    6. Viết query để **chèn dữ liệu mới nếu chưa tồn tại**, hoặc cập nhật nếu tồn tại (UPSERT).
-    7. Phân tích cách hoạt động của **B-Tree vs Hash Index** trong MySQL. Khi nào dùng cái nào?
-    8. Khi nào một query **không sử dụng index**? Làm sao để debug và tối ưu?
-    9. Giải thích **covering index** và cách dùng để tăng tốc query.
-    10. Index compound vs single-column index: lợi ích và lưu ý.
-    11. Query plan: giải thích output của `EXPLAIN` và cách tối ưu query từ đó.
-    12. Giải thích các **isolation levels** trong MySQL (`READ UNCOMMITTED`, `READ COMMITTED`, `REPEATABLE READ`, `SERIALIZABLE`) và ví dụ vấn đề có thể xảy ra ở mỗi level.
-    13. **Deadlock** là gì và làm sao để xử lý trong MySQL?
-    14. So sánh **pessimistic lock vs optimistic lock**. Khi nào dùng mỗi loại?
-    15. Viết ví dụ query để **lock một hàng** để tránh race condition (`SELECT ... FOR UPDATE`).
-    16. Sử dụng **CTE (Common Table Expression)** để viết query đệ quy.
-    17. Giải thích **JSON support trong MySQL 8+**. Query JSON field và tạo index cho JSON.
-    18. `STORED GENERATED COLUMN` vs `VIRTUAL GENERATED COLUMN`. Khi nào dùng mỗi loại?
-    19. Sử dụng **window frames** (`ROWS BETWEEN ...`) trong phân tích dữ liệu.
-    20. Sử dụng **prepared statement** trong MySQL và lợi ích về performance / security.
-    21. Thiết kế schema cho hệ thống **ticket support** hoặc **chat conversations**, lưu ý normalization vs denormalization.
-    22. **Partitioning** trong MySQL: RANGE, LIST, HASH, KEY. Khi nào dùng và lợi ích.
-    23. Giải thích **foreign key constraints**, `ON DELETE CASCADE` vs `ON DELETE SET NULL`.
-    24. Khi nào nên **shard database** và cách shard MySQL.
-    25. Làm thế nào để **tối ưu query với hàng triệu rows**? (Ví dụ: phân trang, batch processing)
-    26. Phân tích một query chậm bằng **EXPLAIN + ANALYZE**.
-    27. Viết query để **tìm duplicate records** và cách loại bỏ chúng.
-    28. Làm thế nào để **monitor MySQL performance** (slow query log, performance schema).
-    29. MySQL có **strict mode**. Khi nào nó ảnh hưởng đến query và insert/update?
-    30. `AUTO_INCREMENT` hoạt động như thế nào khi rollback hoặc delete row?
-    31. Tại sao **`NULL` không bằng NULL** trong SQL và cách xử lý khi so sánh.
-    32. Phân biệt **CHAR vs VARCHAR**, `TEXT` và ảnh hưởng đến indexing.
-    33. Khi nào nên dùng **transaction-safe storage engine** (InnoDB) vs non-transactional (MyISAM)?
+6. Viết query để **chèn dữ liệu mới nếu chưa tồn tại**, hoặc cập nhật nếu tồn tại (UPSERT).
+7. Phân tích cách hoạt động của **B-Tree vs Hash Index** trong MySQL. Khi nào dùng cái nào?
+8. Khi nào một query **không sử dụng index**? Làm sao để debug và tối ưu?
+9. Giải thích **covering index** và cách dùng để tăng tốc query.
+10. Index compound vs single-column index: lợi ích và lưu ý.
+11. Query plan: giải thích output của `EXPLAIN` và cách tối ưu query từ đó.
+12. Giải thích các **isolation levels** trong MySQL (`READ UNCOMMITTED`, `READ COMMITTED`, `REPEATABLE READ`, `SERIALIZABLE`) và ví dụ vấn đề có thể xảy ra ở mỗi level.
+13. **Deadlock** là gì và làm sao để xử lý trong MySQL?
+14. So sánh **pessimistic lock vs optimistic lock**. Khi nào dùng mỗi loại?
+15. Viết ví dụ query để **lock một hàng** để tránh race condition (`SELECT ... FOR UPDATE`).
+16. Sử dụng **CTE (Common Table Expression)** để viết query đệ quy.
+17. Giải thích **JSON support trong MySQL 8+**. Query JSON field và tạo index cho JSON.
+18. `STORED GENERATED COLUMN` vs `VIRTUAL GENERATED COLUMN`. Khi nào dùng mỗi loại?
+19. Sử dụng **window frames** (`ROWS BETWEEN ...`) trong phân tích dữ liệu.
+20. Sử dụng **prepared statement** trong MySQL và lợi ích về performance / security.
+21. Thiết kế schema cho hệ thống **ticket support** hoặc **chat conversations**, lưu ý normalization vs denormalization.
+22. **Partitioning** trong MySQL: RANGE, LIST, HASH, KEY. Khi nào dùng và lợi ích.
+23. Giải thích **foreign key constraints**, `ON DELETE CASCADE` vs `ON DELETE SET NULL`.
+24. Khi nào nên **shard database** và cách shard MySQL.
+25. Làm thế nào để **tối ưu query với hàng triệu rows**? (Ví dụ: phân trang, batch processing)
+26. Phân tích một query chậm bằng **EXPLAIN + ANALYZE**.
+27. Viết query để **tìm duplicate records** và cách loại bỏ chúng.
+28. Làm thế nào để **monitor MySQL performance** (slow query log, performance schema).
+29. MySQL có **strict mode**. Khi nào nó ảnh hưởng đến query và insert/update?
+30. `AUTO_INCREMENT` hoạt động như thế nào khi rollback hoặc delete row?
+31. Tại sao **`NULL` không bằng NULL** trong SQL và cách xử lý khi so sánh.
+32. Phân biệt **CHAR vs VARCHAR**, `TEXT` và ảnh hưởng đến indexing.
+33. Khi nào nên dùng **transaction-safe storage engine** (InnoDB) vs non-transactional (MyISAM)?
 - Java
     1. Phân biệt **`==` vs `equals()`** trong Java. Khi nào nên override `equals()` và `hashCode()`?
     2. `String`, `StringBuilder`, `StringBuffer`: điểm khác biệt, thread-safety và hiệu năng.

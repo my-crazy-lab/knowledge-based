@@ -588,7 +588,7 @@
     10. Cách đảm bảo query plan không “thoái hóa” sau khi upgrade MySQL version?
     - Làm sao phát hiện index không được sử dụng?
     - Viết script SQL + shell để backup & verify tự động mỗi ngày.
-- Java
+- :white_check_mark: Java
     1. Phân biệt **`==` vs `equals()`** trong Java. Khi nào nên override `equals()` và `hashCode()`?
     2. `String`, `StringBuilder`, `StringBuffer`: điểm khác biệt, thread-safety và hiệu năng.
     3. **Autoboxing / unboxing** có thể gây vấn đề gì không? Cho ví dụ.
@@ -634,7 +634,7 @@
     43. Khi nào `synchronized` không đủ để bảo vệ shared state?
     44. Sự khác nhau giữa **fail-fast vs fail-safe iterators**.
     45. Viết code demo **ABA problem** trong concurrency và cách giải quyết.
-- SpringBoot
+- :white_check_mark: SpringBoot
     1. Giải thích **Spring Boot autoconfiguration** hoạt động thế nào? `@ConditionalOn...` dùng ra sao?
     2. `@SpringBootApplication` thực sự là gì? Có bao nhiêu annotation được composite?
     3. Spring Boot **starter** là gì và cách nó hoạt động?

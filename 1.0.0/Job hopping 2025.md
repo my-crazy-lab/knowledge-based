@@ -436,7 +436,7 @@
     - Cơ chế quorum hoặc version vector.
     - Compaction scheduling, tune background threads.
     - Dùng key prefix theo userID / timestamp.
-- Postgres (cơ hội tốt review lại DS + lock)
+- :white_check_mark: Postgres
     1. PostgreSQL xử lý **ACID** thế nào? Giải thích cơ chế **MVCC** (Multi-Version Concurrency Control).
     2. Giải thích các **isolation levels** trong PostgreSQL: **Read Committed, Repeatable Read, Serializable**. Trade-off về **performance vs consistency**.
     3. Khi 2 transaction update cùng một row, cơ chế nào giúp tránh **lost update**?
@@ -461,27 +461,27 @@
     3. PostgreSQL xử lý **recursive view / CTE** ra sao?
     4. View có ảnh hưởng gì tới **query planner/optimizer**?
     5. Giải thích cách **updatable view** hoạt động, và giới hạn của nó.
-1. PostgreSQL **query planner** và **executor** hoạt động như thế nào?
-2. Giải thích output của **EXPLAIN / EXPLAIN ANALYZE**: Seq Scan, Index Scan, Bitmap Heap Scan.
-3. Khi PostgreSQL chọn **Seq Scan thay vì Index Scan**, nguyên nhân có thể là gì?
-4. **Nested Loop vs Hash Join vs Merge Join**: khi nào PostgreSQL chọn mỗi loại join?
-5. Giải thích **parallel query execution** trong PostgreSQL.
-6. PostgreSQL estimate **row count** ra sao? Khi nào estimate sai (statistics outdated)?
-7. Giải thích **CTE materialization vs inline** (PostgreSQL 12+).
-8. Khi query có nhiều filter và join, PostgreSQL chọn **join order** dựa trên **cost model** như thế nào?
-1. PostgreSQL lưu trữ row trong **heap file**, giải thích cách hoạt động của **tup_id (ctid)**.
-2. Cách PostgreSQL **treat deleted rows / dead tuples** và VACUUM.
-3. Giải thích cách **WAL ensures durability**.
-4. Checkpoint frequency, effect on **fsync and latency**.
-5. **Hot Update** là gì? Khi nào PostgreSQL không tạo new tuple.
-6. So sánh **Heap-only Tuple (HOT)** vs bình thường, ảnh hưởng tới I/O.
-7. PostgreSQL xử lý **transaction rollback** bằng WAL như thế nào.
-1. **Long running transaction** + MVCC → bloat & vacuum problems.
-2. **Serializable transaction** bị abort: cách ứng dụng handle retry.
-3. **Partial index + NULL values** → hiệu quả ra sao?
-4. **GIN index + jsonb**: tối ưu query key presence.
-5. Giải thích **table partitioning** và ảnh hưởng tới planner / index.
-6. Khi **query lớn join nhiều partition** → performance implication.
+    1. PostgreSQL **query planner** và **executor** hoạt động như thế nào?
+    2. Giải thích output của **EXPLAIN / EXPLAIN ANALYZE**: Seq Scan, Index Scan, Bitmap Heap Scan.
+    3. Khi PostgreSQL chọn **Seq Scan thay vì Index Scan**, nguyên nhân có thể là gì?
+    4. **Nested Loop vs Hash Join vs Merge Join**: khi nào PostgreSQL chọn mỗi loại join?
+    5. Giải thích **parallel query execution** trong PostgreSQL.
+    6. PostgreSQL estimate **row count** ra sao? Khi nào estimate sai (statistics outdated)?
+    7. Giải thích **CTE materialization vs inline** (PostgreSQL 12+).
+    8. Khi query có nhiều filter và join, PostgreSQL chọn **join order** dựa trên **cost model** như thế nào?
+    1. PostgreSQL lưu trữ row trong **heap file**, giải thích cách hoạt động của **tup_id (ctid)**.
+    2. Cách PostgreSQL **treat deleted rows / dead tuples** và VACUUM.
+    3. Giải thích cách **WAL ensures durability**.
+    4. Checkpoint frequency, effect on **fsync and latency**.
+    5. **Hot Update** là gì? Khi nào PostgreSQL không tạo new tuple.
+    6. So sánh **Heap-only Tuple (HOT)** vs bình thường, ảnh hưởng tới I/O.
+    7. PostgreSQL xử lý **transaction rollback** bằng WAL như thế nào.
+    1. **Long running transaction** + MVCC → bloat & vacuum problems.
+    2. **Serializable transaction** bị abort: cách ứng dụng handle retry.
+    3. **Partial index + NULL values** → hiệu quả ra sao?
+    4. **GIN index + jsonb**: tối ưu query key presence.
+    5. Giải thích **table partitioning** và ảnh hưởng tới planner / index.
+    6. Khi **query lớn join nhiều partition** → performance implication.
     1. PostgreSQL hỗ trợ **synchronous vs asynchronous replication** như thế nào?
     2. Trường hợp **primary crash**, replica nào sẽ được promote? Làm sao đảm bảo **no data loss**?
     3. Khi **replica lag**, các read-only query trên standby có ảnh hưởng gì tới consistency?
@@ -525,72 +525,69 @@
     2. WAL → extra write overhead for durability.
     3. Checkpoint frequency → impacts I/O spikes and latency.
     4. Vacuum / autovacuum → performance cost if delayed.
-- MySQL
-1. Giải thích kiến trúc tổng thể của MySQL — gồm SQL Layer, Storage Engine Layer, và vai trò của mỗi phần.
-2. MySQL xử lý một câu lệnh `SELECT` như thế nào từ khi nhận đến khi trả kết quả?
-3. Sự khác biệt giữa InnoDB và MyISAM về cơ chế lưu trữ, khóa, và transaction.
-4. Redo Log, Undo Log, và Binary Log khác nhau thế nào? Tại sao cần cả ba?
-5. InnoDB Buffer Pool là gì? Cách hoạt động của LRU trong đó ra sao?
-6. Giải thích cơ chế *doublewrite buffer* trong InnoDB.
-7. MySQL optimizer hoạt động thế nào khi chọn execution plan?
-8. Thế nào là *cost-based optimization* trong MySQL? Làm sao để phân tích plan?
-9. Giải thích cơ chế metadata lock (MDL) và tác động của nó khi DDL chạy song song với DML.
-10. MySQL lưu metadata (table schema, indexes, constraints) ở đâu và như thế nào trong phiên bản 8.x?
-1. Khi nào một index **không được sử dụng** dù tồn tại?
-2. Sự khác nhau giữa `EXPLAIN` và `EXPLAIN ANALYZE`. Khi nào nên dùng từng cái?
-3. `EXPLAIN` có thể sai hoặc gây hiểu lầm trong trường hợp nào?
-4. Phân biệt `index merge`, `range scan`, và `ref` trong plan output.
-5. Khi nào nên dùng **covering index**, và làm sao để thiết kế nó tối ưu?
-6. Tác động của `JOIN buffer` và `sort buffer` size tới hiệu năng.
-7. Sự khác biệt giữa `LIMIT OFFSET` và `keyset pagination` về hiệu năng.
-8. Nêu ví dụ truy vấn có thể “đánh lừa” optimizer và cần hint để tối ưu.
-9. Cách đo thời gian từng bước query thực thi mà không chỉ dựa vào tổng thời gian.
-10. Khi nào nên bật/tắt `query cache` (hoặc tương tự trong MySQL 8.x)?
-1. Giải thích 4 mức **isolation level** và ảnh hưởng của từng mức.
-2. MVCC trong InnoDB hoạt động như thế nào?
-3. Row-level locking được thực hiện ra sao trong InnoDB?
-4. Sự khác nhau giữa **intention locks** và **record locks**?
-5. Deadlock detection trong InnoDB hoạt động thế nào?
-6. Cách xử lý deadlock tự động trong code ứng dụng.
-7. Khi nào MySQL lock **gap**, và hậu quả của nó là gì?
-8. Làm sao để debug tình trạng **lock contention** trên production?
-9. Giải thích `SHOW ENGINE INNODB STATUS` và cách đọc phần “LATEST DETECTED DEADLOCK”.
-10. Vì sao MySQL vẫn có thể bị *phantom reads* ở REPEATABLE READ?
-1. Giải thích 3 loại replication: statement-based, row-based, mixed. Ưu/nhược điểm?
-2. Khi replication delay xảy ra, nguyên nhân phổ biến là gì?
-3. Cơ chế replication trong MySQL 8.x hoạt động thế nào (GTID vs non-GTID)?
-4. Cách phát hiện và xử lý **replica lag** trong hệ thống lớn.
-5. Làm sao đảm bảo tính nhất quán dữ liệu giữa master và replica?
-6. Khi nào nên chọn semi-sync replication?
-7. Làm sao để migrate từ master–slave sang group replication mà không downtime?
-8. Khác biệt giữa backup logic (`mysqldump`) và physical (`xtrabackup`).
-9. Cách restore nhanh hàng chục TB dữ liệu MySQL.
-10. Kịch bản thực tế: Một replica bị hỏng GTID, làm sao khôi phục mà không mất dữ liệu?
-1. Khi nào bạn chọn **sharding** thay vì **replication**?
-2. Làm sao để thiết kế schema MySQL có thể mở rộng hàng tỷ record?
-3. Partitioning có ảnh hưởng gì đến index và query optimizer?
-4. So sánh hash vs range partitioning.
-5. Làm sao để thiết kế schema tránh *hotspot* write (VD: auto_increment)?
-6. Khi nào nên dùng `uuid` thay vì `auto_increment`, và tác động đến performance?
-7. Làm sao đảm bảo consistency giữa MySQL và cache layer (Redis)?
-8. Nếu 1 bảng có 500 triệu record, bạn làm gì để query top 100 mới nhất nhanh nhất?
-9. Cách đánh giá và tối ưu I/O khi MySQL chạy trên SSD vs HDD.
-10. Thực tế: khi hệ thống MySQL bị quá tải CPU, bạn sẽ kiểm tra và tối ưu theo thứ tự nào?
-1. Một transaction update 1000 record và bị crash giữa chừng — điều gì xảy ra sau khi restart?
-2. Bạn phát hiện `SELECT` bị chậm bất thường, CPU cao, I/O cao — mô hình điều tra chi tiết?
-3. Làm sao xử lý lỗi replication “Duplicate key on update” trong row-based replication?
-4. Khi nào nên sử dụng `READ COMMITTED` thay vì `REPEATABLE READ`?
-5. MySQL server load cao do quá nhiều connection. Cách giải quyết lâu dài?
-6. Một bảng log có 2 tỷ dòng, cần purge định kỳ — giải pháp tối ưu không lock toàn bảng?
-7. Khi nào nên dùng `MEMORY` engine, và rủi ro đi kèm?
-8. MySQL crash recovery hoạt động thế nào (các bước cụ thể)?
-9. Làm sao để monitor slow queries hiệu quả trên production (tool & kỹ thuật)?
-10. Cách đảm bảo query plan không “thoái hóa” sau khi upgrade MySQL version?
-    - Viết truy vấn để tìm top 3 sản phẩm có doanh thu cao nhất trong từng tháng (tối ưu hóa tốt).
-    - Cho log table 100 triệu dòng (user_id, action, timestamp). Làm sao để tìm unique users mỗi ngày nhanh nhất?
+- :white_check_mark: MySQL
+    1. Giải thích kiến trúc tổng thể của MySQL — gồm SQL Layer, Storage Engine Layer, và vai trò của mỗi phần.
+    2. MySQL xử lý một câu lệnh `SELECT` như thế nào từ khi nhận đến khi trả kết quả?
+    3. Sự khác biệt giữa InnoDB và MyISAM về cơ chế lưu trữ, khóa, và transaction.
+    4. Redo Log, Undo Log, và Binary Log khác nhau thế nào? Tại sao cần cả ba?
+    5. InnoDB Buffer Pool là gì? Cách hoạt động của LRU trong đó ra sao?
+    6. Giải thích cơ chế *doublewrite buffer* trong InnoDB.
+    7. MySQL optimizer hoạt động thế nào khi chọn execution plan?
+    8. Thế nào là *cost-based optimization* trong MySQL? Làm sao để phân tích plan?
+    9. Giải thích cơ chế metadata lock (MDL) và tác động của nó khi DDL chạy song song với DML.
+    10. MySQL lưu metadata (table schema, indexes, constraints) ở đâu và như thế nào trong phiên bản 8.x?
+    1. Khi nào một index **không được sử dụng** dù tồn tại?
+    2. Sự khác nhau giữa `EXPLAIN` và `EXPLAIN ANALYZE`. Khi nào nên dùng từng cái?
+    3. `EXPLAIN` có thể sai hoặc gây hiểu lầm trong trường hợp nào?
+    4. Phân biệt `index merge`, `range scan`, và `ref` trong plan output.
+    5. Khi nào nên dùng **covering index**, và làm sao để thiết kế nó tối ưu?
+    6. Tác động của `JOIN buffer` và `sort buffer` size tới hiệu năng.
+    7. Sự khác biệt giữa `LIMIT OFFSET` và `keyset pagination` về hiệu năng.
+    8. Nêu ví dụ truy vấn có thể “đánh lừa” optimizer và cần hint để tối ưu.
+    9. Cách đo thời gian từng bước query thực thi mà không chỉ dựa vào tổng thời gian.
+    10. Khi nào nên bật/tắt `query cache` (hoặc tương tự trong MySQL 8.x)?
+    1. Giải thích 4 mức **isolation level** và ảnh hưởng của từng mức.
+    2. MVCC trong InnoDB hoạt động như thế nào?
+    3. Row-level locking được thực hiện ra sao trong InnoDB?
+    4. Sự khác nhau giữa **intention locks** và **record locks**?
+    5. Deadlock detection trong InnoDB hoạt động thế nào?
+    6. Cách xử lý deadlock tự động trong code ứng dụng.
+    7. Khi nào MySQL lock **gap**, và hậu quả của nó là gì?
+    8. Làm sao để debug tình trạng **lock contention** trên production?
+    9. Giải thích `SHOW ENGINE INNODB STATUS` và cách đọc phần “LATEST DETECTED DEADLOCK”.
+    10. Vì sao MySQL vẫn có thể bị *phantom reads* ở REPEATABLE READ?
+    1. Giải thích 3 loại replication: statement-based, row-based, mixed. Ưu/nhược điểm?
+    2. Khi replication delay xảy ra, nguyên nhân phổ biến là gì?
+    3. Cơ chế replication trong MySQL 8.x hoạt động thế nào (GTID vs non-GTID)?
+    4. Cách phát hiện và xử lý **replica lag** trong hệ thống lớn.
+    5. Làm sao đảm bảo tính nhất quán dữ liệu giữa master và replica?
+    6. Khi nào nên chọn semi-sync replication?
+    7. Làm sao để migrate từ master–slave sang group replication mà không downtime?
+    8. Khác biệt giữa backup logic (`mysqldump`) và physical (`xtrabackup`).
+    9. Cách restore nhanh hàng chục TB dữ liệu MySQL.
+    10. Kịch bản thực tế: Một replica bị hỏng GTID, làm sao khôi phục mà không mất dữ liệu?
+    1. Khi nào bạn chọn **sharding** thay vì **replication**?
+    2. Làm sao để thiết kế schema MySQL có thể mở rộng hàng tỷ record?
+    3. Partitioning có ảnh hưởng gì đến index và query optimizer?
+    4. So sánh hash vs range partitioning.
+    5. Làm sao để thiết kế schema tránh *hotspot* write (VD: auto_increment)?
+    6. Khi nào nên dùng `uuid` thay vì `auto_increment`, và tác động đến performance?
+    7. Làm sao đảm bảo consistency giữa MySQL và cache layer (Redis)?
+    8. Nếu 1 bảng có 500 triệu record, bạn làm gì để query top 100 mới nhất nhanh nhất?
+    9. Cách đánh giá và tối ưu I/O khi MySQL chạy trên SSD vs HDD.
+    10. Thực tế: khi hệ thống MySQL bị quá tải CPU, bạn sẽ kiểm tra và tối ưu theo thứ tự nào?
+    1. Một transaction update 1000 record và bị crash giữa chừng — điều gì xảy ra sau khi restart?
+    2. Bạn phát hiện `SELECT` bị chậm bất thường, CPU cao, I/O cao — mô hình điều tra chi tiết?
+    3. Làm sao xử lý lỗi replication “Duplicate key on update” trong row-based replication?
+    4. Khi nào nên sử dụng `READ COMMITTED` thay vì `REPEATABLE READ`?
+    5. MySQL server load cao do quá nhiều connection. Cách giải quyết lâu dài?
+    6. Một bảng log có 2 tỷ dòng, cần purge định kỳ — giải pháp tối ưu không lock toàn bảng?
+    7. Khi nào nên dùng `MEMORY` engine, và rủi ro đi kèm?
+    8. MySQL crash recovery hoạt động thế nào (các bước cụ thể)?
+    9. Làm sao để monitor slow queries hiệu quả trên production (tool & kỹ thuật)?
+    10. Cách đảm bảo query plan không “thoái hóa” sau khi upgrade MySQL version?
     - Làm sao phát hiện index không được sử dụng?
     - Viết script SQL + shell để backup & verify tự động mỗi ngày.
-    - Thiết kế schema lưu versioning cho dữ liệu (soft delete + history table).
 - Java
     1. Phân biệt **`==` vs `equals()`** trong Java. Khi nào nên override `equals()` và `hashCode()`?
     2. `String`, `StringBuilder`, `StringBuffer`: điểm khác biệt, thread-safety và hiệu năng.

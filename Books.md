@@ -27,6 +27,11 @@
 
 # Foundations
 
+- Java
+    - Java Threads - 3rd Edition
+        - 29/364
+    - Java Concurrency In Practice
+        - 40/235
 - DSA
     - https://www.interviewbit.com/blog/data-structures-and-algorithms-books/?utm_source=chatgpt.com
 - Git 
@@ -36,10 +41,9 @@
     - https://github.com/teivah/100-go-mistakes
     - https://goperf.dev/
 - (5.0/10) Operating Systems - Three Easy Pieces
-    - 382/675 The Producer/Consumer
-    - Need Practice
+    - 439/675
     - Virtualization
-    - Concurrentcy: Need Practice, it hard lol
+    - Concurrentcy
     - Persistence
 - (5.5/10) The Elements of Computing Systems
     - 23/410

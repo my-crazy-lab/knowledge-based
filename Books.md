@@ -56,9 +56,10 @@
 - (2/5) Data-Intensive Text Processing with MapReduce – Jimmy Lin 
     - 54/175
     - Need practice with Hadoop for strong understanding
-- Refactoring Databases: Evolutionary Database Design
-    - 1/394
 - https://kb.databasedesignbook.com/
+    - Database design case studies
+    - Classic relational modeling topics
+    - SQL
 - https://cstack.github.io/db_tutorial/
 
 # Operating Systems & Networking
@@ -239,8 +240,15 @@
     - [68 :arrow_right: 96](./1.0.0/s2nnpb.md)
     - [97 :arrow_right: 119](./1.0.0/inkjdo.md)
 - :x: Advanced Signal Processing in Wearable Sensors for Health Monitoring 40/208
-- :x: Blockchain Revolution `63/324`: khong phai sach sau ve technical
-- :x: Autonomous Driving: Technical, Legal and Social Aspects 81/698
-- :x: 5G and Beyond `74/310`: tập hợp các nghiên cứu (các research paper hoặc book chapter) được biên soạn lại thành một tài liệu học thuật, giống như một sách chuyên khảo (edited volume)
+- :x: Blockchain Revolution `63/324`
+    -  khong phai sach sau ve technical
+- :x: Autonomous Driving
+    - Technical, Legal and Social Aspects 81/698
+- :x: 5G and Beyond `74/310`
+    - tập hợp các nghiên cứu (các research paper hoặc book chapter) được biên soạn lại thành một tài liệu học thuật, giống như một sách chuyên khảo (edited volume)
 - :x: The Art of Scalability
-- :x: Java Threads - 3rd Edition: outdated
+    - Talk more about the art of business, not software
+- :x: Java Threads - 3rd Edition 
+    - outdated
+- :x: Refactoring Databases: Evolutionary Database Design
+    - It's ok but for directory of situations (AI can help)

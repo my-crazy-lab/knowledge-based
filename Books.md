@@ -27,11 +27,8 @@
 
 # Foundations
 
-- Java
-    - Java Threads - 3rd Edition
-        - 29/364
-    - Java Concurrency In Practice
-        - 40/235
+- Java Concurrency In Practice
+    - 40/235
 - DSA
     - https://www.interviewbit.com/blog/data-structures-and-algorithms-books/?utm_source=chatgpt.com
 - Git 
@@ -40,11 +37,6 @@
 - Go
     - https://github.com/teivah/100-go-mistakes
     - https://goperf.dev/
-- (5.0/10) Operating Systems - Three Easy Pieces
-    - 439/675
-    - Virtualization
-    - Concurrentcy
-    - Persistence
 - (5.5/10) The Elements of Computing Systems
     - 23/410
     - Mechanism
@@ -62,9 +54,10 @@
 # Database Systems & Data Infrastructure
 
 - (2/5) Data-Intensive Text Processing with MapReduce – Jimmy Lin 
-    - 43/175
+    - 54/175
     - Need practice with Hadoop for strong understanding
 - Refactoring Databases: Evolutionary Database Design
+    - 1/394
 - https://kb.databasedesignbook.com/
 - https://cstack.github.io/db_tutorial/
 
@@ -164,6 +157,10 @@
 
 # Completed
 
+- :white_check_mark: Operating Systems - Three Easy Pieces
+    - Virtualization
+    - Concurrentcy
+    - Persistence
 - :white_check_mark: Database internals
     -  process -> Bố cục vật lý của Wide Column Stores
 - :white_check_mark: Domain-Driven Design Tackling Complexity in the Heart of Software
@@ -246,3 +243,4 @@
 - :x: Autonomous Driving: Technical, Legal and Social Aspects 81/698
 - :x: 5G and Beyond `74/310`: tập hợp các nghiên cứu (các research paper hoặc book chapter) được biên soạn lại thành một tài liệu học thuật, giống như một sách chuyên khảo (edited volume)
 - :x: The Art of Scalability
+- :x: Java Threads - 3rd Edition: outdated

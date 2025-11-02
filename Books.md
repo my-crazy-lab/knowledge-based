@@ -28,7 +28,7 @@
 # Foundations
 
 - Java Concurrency In Practice
-    - 40/235
+    - 89/235
 - DSA
     - https://www.interviewbit.com/blog/data-structures-and-algorithms-books/?utm_source=chatgpt.com
 - Git 
@@ -56,11 +56,8 @@
 - (2/5) Data-Intensive Text Processing with MapReduce – Jimmy Lin 
     - 54/175
     - Need practice with Hadoop for strong understanding
-- https://kb.databasedesignbook.com/
-    - Database design case studies
-    - Classic relational modeling topics
-    - SQL
 - https://cstack.github.io/db_tutorial/
+    - Part 1/15
 
 # Operating Systems & Networking
 
@@ -132,7 +129,6 @@
 
 # Papers
 
-1. :white_check_mark: Kafka https://www.microsoft.com/en-us/research/wp-content/uploads/2017/09/Kafka.pdf
 2. Raft consensus https://raft.github.io/raft.pdf
 3. Memcached https://scontent.fsgn2-4.fna.fbcdn.net/v/t39.8562-6/240873052_277412237132971_6278324660880331641_n.pdf?_nc_cat=101&ccb=1-7&_nc_sid=e280be&_nc_ohc=nlPPMfWAHpEQ7kNvwGgvgSD&_nc_oc=AdlzMkxnR1C8jNWjRUe75M1hIN7jNu4e9MVHsMKRZX9VWADL4fUyBOoRj-dJQP_souE&_nc_zt=14&_nc_ht=scontent.fsgn2-4.fna&_nc_gid=ZSjT3c_fUkpFwG8vyKhCtQ&oh=00_AfZiyoO2PT_nLr_wO304eU3rCPwvrJoj29sWVut9FCuuIw&oe=68E13002
 4. Borg cluster (k8s) https://static.googleusercontent.com/media/research.google.com/en//pubs/archive/43438.pdf
@@ -158,24 +154,29 @@
 
 # Completed
 
-- :white_check_mark: Operating Systems - Three Easy Pieces
-    - Virtualization
-    - Concurrentcy
-    - Persistence
-- :white_check_mark: Database internals
-    -  process -> Bố cục vật lý của Wide Column Stores
-- :white_check_mark: Domain-Driven Design Tackling Complexity in the Heart of Software
+- Database internals
+    -  process -> Cấu trúc Trang (Page Structure)
+- Domain-Driven Design Tackling Complexity in the Heart of Software
     - process -> Mô hình được thể hiện trong phần mềm
     - Để tạo ra phần mềm có giá trị, chúng ta phải vận dụng một kho tri thức liên quan đến các hoạt động mà phần mềm sẽ tham gia. Lượng kiến thức cần thiết có thể rất lớn. Khối lượng và độ phức tạp của thông tin có thể gây choáng ngợp. Đây là lúc nhóm phát triển có thể sử dụng mô hình hóa để xử lý tình trạng quá tải đó. 
     - Mô hình là một dạng tri thức được đơn giản hóa có chọn lọc và cấu trúc có chủ ý. Một mô hình phù hợp giúp làm sáng tỏ thông tin và áp dụng nó vào vấn đề.
     - Mô hình miền không phải là một sơ đồ cụ thể; nó là ý tưởng mà sơ đồ muốn truyền đạt. Nó không chỉ là kiến thức trong đầu chuyên gia miền; nó là sự trừu tượng có tổ chức và chọn lọc của kiến thức đó.
-- :white_check_mark: Patterns of Enterprise Application Architecture
+- Patterns of Enterprise Application Architecture
     - process -> Chương 2: Tổ chức Domain Logic
     - trình bày quan điểm của mình về các phần chính của một ứng dụng doanh nghiệp và các quyết định mà tôi ước gì có thể làm đúng ngay từ đầu
     - tập trung vào ứng dụng doanh nghiệp, vì vậy các mẫu thiết kế tôi trình bày ở đây đều liên quan đến loại ứng dụng này
-- :white_check_mark: Software Architecture in Practice
+- Software Architecture in Practice
     - process -> 4.1 Kiến trúc và Yêu cầu
     - Kiến trúc đã trở thành một phần quan trọng trong quá trình thiết kế và là chủ đề chính của cuốn sách này
+- :white_check_mark: Operating Systems - Three Easy Pieces
+    - Virtualization
+    - Concurrentcy
+    - Persistence
+- :white_check_mark: Kafka Papers https://www.microsoft.com/en-us/research/wp-content/uploads/2017/09/Kafka.pdf
+- https://kb.databasedesignbook.com/
+    - Database design case studies
+    - Classic relational modeling topics
+    - SQL
 - :white_check_mark: (6.5/10) Computer Networking: A Top-Down Approach (8th) 
     - Chapter 6 The Link Layer and LANs
     - Chapter 7 Wireless and Mobile Networks

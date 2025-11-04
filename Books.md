@@ -157,18 +157,6 @@
 
 # Completed
 
-- Domain-Driven Design Tackling Complexity in the Heart of Software
-    - process -> Mô hình được thể hiện trong phần mềm
-    - Để tạo ra phần mềm có giá trị, chúng ta phải vận dụng một kho tri thức liên quan đến các hoạt động mà phần mềm sẽ tham gia. Lượng kiến thức cần thiết có thể rất lớn. Khối lượng và độ phức tạp của thông tin có thể gây choáng ngợp. Đây là lúc nhóm phát triển có thể sử dụng mô hình hóa để xử lý tình trạng quá tải đó. 
-    - Mô hình là một dạng tri thức được đơn giản hóa có chọn lọc và cấu trúc có chủ ý. Một mô hình phù hợp giúp làm sáng tỏ thông tin và áp dụng nó vào vấn đề.
-    - Mô hình miền không phải là một sơ đồ cụ thể; nó là ý tưởng mà sơ đồ muốn truyền đạt. Nó không chỉ là kiến thức trong đầu chuyên gia miền; nó là sự trừu tượng có tổ chức và chọn lọc của kiến thức đó.
-- Patterns of Enterprise Application Architecture
-    - process -> Chương 2: Tổ chức Domain Logic
-    - trình bày quan điểm của mình về các phần chính của một ứng dụng doanh nghiệp và các quyết định mà tôi ước gì có thể làm đúng ngay từ đầu
-    - tập trung vào ứng dụng doanh nghiệp, vì vậy các mẫu thiết kế tôi trình bày ở đây đều liên quan đến loại ứng dụng này
-- Software Architecture in Practice
-    - process -> 4.1 Kiến trúc và Yêu cầu
-    - Kiến trúc đã trở thành một phần quan trọng trong quá trình thiết kế và là chủ đề chính của cuốn sách này
 - :white_check_mark: Operating Systems - Three Easy Pieces
     - Virtualization
     - Concurrentcy
@@ -254,3 +242,15 @@
     - outdated
 - :x: Refactoring Databases: Evolutionary Database Design
     - It's ok but for directory of situations (AI can help)
+- :x: Software Architecture in Practice
+    - Chưa cần, đọc chán quá
+    - Kiến trúc đã trở thành một phần quan trọng trong quá trình thiết kế và là chủ đề chính của cuốn sách này
+- :x: Domain-Driven Design Tackling Complexity in the Heart of Software
+    - Chưa cần, đọc chán quá
+    - Để tạo ra phần mềm có giá trị, chúng ta phải vận dụng một kho tri thức liên quan đến các hoạt động mà phần mềm sẽ tham gia. Lượng kiến thức cần thiết có thể rất lớn. Khối lượng và độ phức tạp của thông tin có thể gây choáng ngợp. Đây là lúc nhóm phát triển có thể sử dụng mô hình hóa để xử lý tình trạng quá tải đó. 
+    - Mô hình là một dạng tri thức được đơn giản hóa có chọn lọc và cấu trúc có chủ ý. Một mô hình phù hợp giúp làm sáng tỏ thông tin và áp dụng nó vào vấn đề.
+    - Mô hình miền không phải là một sơ đồ cụ thể; nó là ý tưởng mà sơ đồ muốn truyền đạt. Nó không chỉ là kiến thức trong đầu chuyên gia miền; nó là sự trừu tượng có tổ chức và chọn lọc của kiến thức đó.
+- :x: Patterns of Enterprise Application Architecture
+    - Chưa cần, đọc chán quá
+    - trình bày quan điểm của mình về các phần chính của một ứng dụng doanh nghiệp và các quyết định mà tôi ước gì có thể làm đúng ngay từ đầu
+    - tập trung vào ứng dụng doanh nghiệp, vì vậy các mẫu thiết kế tôi trình bày ở đây đều liên quan đến loại ứng dụng này

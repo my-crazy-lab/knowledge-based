@@ -38,18 +38,24 @@
     - https://github.com/teivah/100-go-mistakes
     - https://goperf.dev/
 - (5.5/10) The Elements of Computing Systems
-    - 23/410
+    - 34/410
     - Mechanism
     - CA + Assembler + VM
     - High-level language + Compiler + OS
 - (6.5/10) Programming Embedded Systems in C and C++ – Michael Barr
     - 22/187
+    - Nắm cách lập trình device-level thực tế
+    - Thiên về: Thực hành
 - (7.0) Operating Systems: Design and Implementation (MINIX)
     - Dạy nền OS + code MINIX minh họa
+    - Thấy cơ chế OS thực thi thật trong kernel thay vì mô tả lý thuyết.
 - (7.0) Computer Organization and Design – Patterson & Hennessy (cho RISC-V hoặc ARM)
     - Kiến trúc máy tính, CPU, ALU, MIPS, pipeline
+    - Hiểu CPU làm gì khi chạy lệnh, cơ chế pipeline, register, cache.
 - (7.5/10) Computer Systems A Programmer’s Perspective
     - 31/1105
+    - Bản chất thực thi chương trình, từ C đến binary
+    - Rất cân bằng (lý thuyết + lab + thực hành)
 
 # Database Systems & Data Infrastructure
 
@@ -62,6 +68,7 @@
 # Operating Systems & Networking
 
 - Linux from scratch book
+    - tự tay xây dựng một hệ thống Linux từ con số 0
 
 # Security & Reliability Engineering
 
@@ -76,12 +83,19 @@
 
 - (7.5/10) Modern Operating Systems – Andrew S. Tanenbaum
     - Học thuật, tổng quan
+    - Hdh đương đại
 - (8.0/10) Designing Embedded Systems (PIC / ARM)
     - Thực hành, phần cứng, firmware
+    - Embedded developers mới bắt đầu
+    - Nhiều project, code ngoại vi, giao tiếp phần cứng.
 - (8.0/10) Linux Kernel Development – Robert Love
     - 38/468
+    - Không “sơ cấp”. Cần nền tảng C & OS cơ bản mới đọc mượt.
+    - muốn lập trình kernel, viết driver, tối ưu Linux system
 - (8.5/10) Engineering a Compiler – Cooper & Torczon
     - 26/825
+    - Người muốn viết compiler, interpreter, VM
+    - Nặng tư duy thuật toán, cấu trúc ngôn ngữ, tối ưu.
 - (8.5/10) Compilers: Principles, Techniques, and Tools (Dragon Book)
     - Kinh điển, khó vì ký hiệu và lý thuyết
 - (9.0/10) Understanding the Linux Kernel – Bovet & Cesati

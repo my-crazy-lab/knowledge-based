@@ -38,7 +38,7 @@
     - https://github.com/teivah/100-go-mistakes
     - https://goperf.dev/
 - (5.5/10) The Elements of Computing Systems
-    - 52/410
+    - 123/410
     - Mechanism
     - CA + Assembler + VM
     - High-level language + Compiler + OS

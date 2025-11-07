@@ -108,19 +108,72 @@
 - https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html
 - https://webrtcforthecurious.com/#who-this-book-is-for
 
-# Other technologies
+# CS technologies
 
-- (5) Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation 1/497
-- (4) Clean Architecture 1/429
-- (3 * 3) Quantum Computing : A Gentle Introduction 24/389: Pending, need physical foundation
-
+- Robot operation system
+    - (2/10) A Gentle Introduction to ROS
+        - 21/153
+        - Dạy tư duy ROS (publish/subscribe).
+        - Có code C++ & Python.
+    - (5/10) ROS by Example
+        - 1/280
+        - Có video YouTube kèm.
+        - Phù hợp người mới 0 kinh nghiệm.
+        - Miễn phí sample code trên GitHub.
+- Quant / HFT (High-Frequency Trading)
+    - (4/10) Quantitative Trading: How to Build Your Own Algorithmic Trading Business
+        - 31/190
+        - Backtest được ngay (Excel).
+        - Chiến lược thực tế kiếm tiền (retail).
+        - Có blog + code bổ sung (quantitative-trading.net).
+    - (6/10) Algorithmic Trading
+        - 1/225
+        - Dạy cointegration thực tế (pairs trading).
+        - Phù hợp retail + small fund.
+        - Tác giả live trading thật.
+- Reverse Engineering
+    - (3/10) Reverse Engineering for Beginners
+        - 26/898
+        - Không có lab thực hành.
+        - Không dạy tool (IDA/Ghidra).
+        - truyền cảm hứng cho bạn cải tiến các kỹ thuật hiện có
+- Malware Analysis
+    - (5/10) Hacking: The Art of Exploitation - Jon Erickson
+        - 19/463
+        - Dạy từ zero (assembly + exploit).
+        - Live CD chạy được trên VM.
+        - Rất vui, dễ đọc.
+    - (6/10) Practical Malware Analysis
+        - 1/802
+        - Lab cực chất, có file mẫu chạy được.
+        - Dễ áp dụng công việc SOC/DFIR.
+        - Cân bằng lý thuyết + thực hành.
+        - Dù cũ nhưng 90% vẫn đúng.
+- Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation
+    - 1/497
+- Clean Architecture
+    - 1/429
+- Quantum Computing : A Gentle Introduction 
+    - 24/389: Pending, need physical foundation
+    
 # Out of technology
 
-1. (brain) Mind: Introduction to Cognitive Science
-2. Think and grow rich
-3. Atomic habits
-4. The Loopholes of the Rich: How the Rich Legally Make More Money and Pay Less Tax
-5. Mind: Introduction to Cognitive Science
+- Brain
+    - Friedenberg_Cognitive science
+        - 26/483
+        - Bao quát toàn diện các cách tiếp cận cổ điển và hiện đại.
+        - Nhấn mạnh lý thuyết + đánh giá phê phán.
+    - Mind: Introduction to Cognitive Science
+        - 1/279
+        - Tập trung vào cách máy tính mô phỏng tâm trí (logic, rules, concepts, analogies, connections).
+        - Đánh giá ưu/nhược điểm của các mô hình tính toán.
+- Physics
+    - Stuff Matters
+        - 15/196
+- Business
+    - Think and grow rich
+    - Atomic habits
+    - The Loopholes of the Rich: How the Rich Legally Make More Money and Pay Less Tax
 
 # Papers
 

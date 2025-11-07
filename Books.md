@@ -37,11 +37,6 @@
 - Go
     - https://github.com/teivah/100-go-mistakes
     - https://goperf.dev/
-- (5.5/10) The Elements of Computing Systems
-    - 123/410
-    - Mechanism
-    - CA + Assembler + VM
-    - High-level language + Compiler + OS
 - (6.5/10) Programming Embedded Systems in C and C++ – Michael Barr
     - 22/187
     - Nắm cách lập trình device-level thực tế
@@ -171,6 +166,10 @@
 
 # Completed
 
+- :white_check_mark: (5.5/10) The Elements of Computing Systems
+    - Mechanism
+    - CA + Assembler + VM
+    - High-level language + Compiler + OS
 - :white_check_mark: Operating Systems - Three Easy Pieces
     - Virtualization
     - Concurrentcy

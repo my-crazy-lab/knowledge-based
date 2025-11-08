@@ -40,17 +40,21 @@
 - (6.5/10) Programming Embedded Systems in C and C++ – Michael Barr
     - 22/187
     - Nắm cách lập trình device-level thực tế
-    - Thiên về: Thực hành
-- (7.0) Operating Systems: Design and Implementation (MINIX)
+    - Thiên về: Thực hành, Cần phần cứng.
+- (7.0/10) Operating Systems: Design and Implementation (MINIX)
+    - 45/629 (1071)
     - Dạy nền OS + code MINIX minh họa
-    - Thấy cơ chế OS thực thi thật trong kernel thay vì mô tả lý thuyết.
-- (7.0) Computer Organization and Design – Patterson & Hennessy (cho RISC-V hoặc ARM)
+    - build MINIX simulator
+    - OS can hoc hon firmware, vi firmware xin khong co OS cung nhu khong
+- (7.0/10) Computer Organization and Design – Patterson & Hennessy (cho RISC-V hoặc ARM)
     - Kiến trúc máy tính, CPU, ALU, MIPS, pipeline
     - Hiểu CPU làm gì khi chạy lệnh, cơ chế pipeline, register, cache.
+    - Build duoc OS xong moi toi buoc toi uu hardware
 - (7.5/10) Computer Systems A Programmer’s Perspective
     - 31/1105
     - Bản chất thực thi chương trình, từ C đến binary
     - Rất cân bằng (lý thuyết + lab + thực hành)
+    - Cuoi cung la viec tuong tac giua hardware va OS
 
 # Database Systems & Data Infrastructure
 
@@ -121,16 +125,14 @@
         - Phù hợp người mới 0 kinh nghiệm.
         - Miễn phí sample code trên GitHub.
 - Quant / HFT (High-Frequency Trading)
-    - (4/10) Quantitative Trading: How to Build Your Own Algorithmic Trading Business
-        - 31/190
-        - Backtest được ngay (Excel).
-        - Chiến lược thực tế kiếm tiền (retail).
-        - Có blog + code bổ sung (quantitative-trading.net).
-    - (6/10) Algorithmic Trading
+    - (4/10) (For trading) Quantitative Trading: How to Build Your Own Algorithmic Trading Business
+        - 53/190
+        - phù hợp nếu bạn muốn hiểu “làm thế nào để vận hành một business/trading desk” hơn là “hệ thống cực nhanh”
+        - mong muốn “thiết kế hệ thống HFT, network, latency, hardware, co‑location” thì vẫn sẽ thiếu
+    - (6/10) (For trading) Algorithmic Trading
         - 1/225
         - Dạy cointegration thực tế (pairs trading).
-        - Phù hợp retail + small fund.
-        - Tác giả live trading thật.
+        - tập trung hơn vào chiến lược, back‑testing, quant logic thay vì “hệ thống HFT tốc độ cao”
 - Reverse Engineering
     - (3/10) Reverse Engineering for Beginners
         - 26/898

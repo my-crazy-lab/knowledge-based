@@ -42,7 +42,7 @@
     - Nắm cách lập trình device-level thực tế
     - Thiên về: Thực hành, Cần phần cứng.
 - (7.0/10) Operating Systems: Design and Implementation (MINIX)
-    - 45/629 (1071)
+    - 74/629 (1071)
     - Dạy nền OS + code MINIX minh họa
     - build MINIX simulator
     - OS can hoc hon firmware, vi firmware xin khong co OS cung nhu khong

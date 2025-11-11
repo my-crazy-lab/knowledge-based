@@ -42,19 +42,9 @@
     - Nắm cách lập trình device-level thực tế
     - Thiên về: Thực hành, Cần phần cứng.
 - (7.0/10) Operating Systems: Design and Implementation (MINIX)
-    - 74/629 (1071)
+    - 90/629 (1071)
+    - Đọc để review lại kiến thức OS thôi chứ không có cái mới
     - Dạy nền OS + code MINIX minh họa
-    - build MINIX simulator
-    - OS can hoc hon firmware, vi firmware xin khong co OS cung nhu khong
-- (7.0/10) Computer Organization and Design – Patterson & Hennessy (cho RISC-V hoặc ARM)
-    - Kiến trúc máy tính, CPU, ALU, MIPS, pipeline
-    - Hiểu CPU làm gì khi chạy lệnh, cơ chế pipeline, register, cache.
-    - Build duoc OS xong moi toi buoc toi uu hardware
-- (7.5/10) Computer Systems A Programmer’s Perspective
-    - 31/1105
-    - Bản chất thực thi chương trình, từ C đến binary
-    - Rất cân bằng (lý thuyết + lab + thực hành)
-    - Cuoi cung la viec tuong tac giua hardware va OS
 
 # Database Systems & Data Infrastructure
 
@@ -63,11 +53,6 @@
     - Need practice with Hadoop for strong understanding
 - https://cstack.github.io/db_tutorial/
     - Part 1/15
-
-# Operating Systems & Networking
-
-- Linux from scratch book
-    - tự tay xây dựng một hệ thống Linux từ con số 0
 
 # Security & Reliability Engineering
 
@@ -80,40 +65,78 @@
 
 # Specialized mainstream: low level engineer
 
+- (6.0/10) Linux from scratch book
+    - tự tay xây dựng một hệ thống Linux từ con số 0
+- (8.0/10) Linux Kernel Development – Robert Love
+    - 38/433 (468)
+    - Cách lập trình và hiểu kernel Linux thực tế
+    - Goal: Viết, sửa, test kernel thực tế
 - (7.5/10) Modern Operating Systems – Andrew S. Tanenbaum
-    - Học thuật, tổng quan
-    - Hdh đương đại
+    - 1/1137
+    - Nguyên lý hệ điều hành tổng quát (đa nền tảng)
+    - Goal: Hiểu nguyên lý, cơ chế, mô hình
+- (9.0/10) Understanding the Linux Kernel – Bovet & Cesati
+    - 1/944
+    - Giải phẫu kernel Linux ở mức chi tiết vi mô
+    - Goal: Nghiên cứu sâu nội bộ Linux
+
+- (7.0/10) Computer Organization and Design – Patterson & Hennessy (cho RISC-V hoặc ARM)
+    - 67/642 (689)
+    - Kiến trúc máy tính, CPU, ALU, MIPS, pipeline
+    - Hiểu CPU làm gì khi chạy lệnh, cơ chế pipeline, register, cache.
+- (7.5/10) Computer Systems A Programmer’s Perspective
+    - 60/1067 (1105)
+    - hiểu cách chương trình được biểu diễn trên máy
+    - Rất cân bằng, có Các phòng thí nghiệm đi kèm
+    - lệnh switch có luôn hiệu quả hơn if-else không? Lệnh while có nhanh hơn for không? Truy cập con trỏ có nhanh hơn chỉ số mảng không? Tại sao vòng lặp chạy nhanh hơn khi cộng vào biến cục bộ thay vì tham số truyền theo tham chiếu?
+- (9.5/10) Computer Architecture: A Quantitative Approach – Hennessy & Patterson
+    - 30/1357
+    - Giải thích cách thiết kế phần cứng và kiến trúc máy tính để đạt hiệu năng cao
+    
+- (8.5/10) Compilers: Principles, Techniques, and Tools (Dragon Book)
+    - 1/930 (947)
+    - Giải thích nguyên lý, thuật toán và lý thuyết nền tảng của biên dịch
+- (8.5/10) Engineering a Compiler – Cooper & Torczon
+    - 26/788 (825)
+    - Trình bày kỹ thuật thiết kế và triển khai compiler hiện đại.
+    - Người muốn viết compiler, interpreter, VM
+
+- (9.0/10) The Art of Multiprocessor Programming 
+    - 49/529
+    - Giải thích từ gốc đến ngọn cách các thuật toán đa luồng hoạt động và làm sao đảm bảo tính đúng đắn
+- (9.0/10) C++ Concurrency in Action
+    - 1/530
+    - Dạy cách viết mã C++ song song hiện đại – từ cơ bản đến nâng cao
+
+- (9.0/10) The Art of Computer Systems Performance Analysis (Raj Jain)
+    - Cung cấp phương pháp luận đánh giá hiệu năng một cách khoa học, tránh sai lầm thống kê
+
 - (8.0/10) Designing Embedded Systems (PIC / ARM)
     - Thực hành, phần cứng, firmware
     - Embedded developers mới bắt đầu
     - Nhiều project, code ngoại vi, giao tiếp phần cứng.
-- (8.0/10) Linux Kernel Development – Robert Love
-    - 38/468
-    - Không “sơ cấp”. Cần nền tảng C & OS cơ bản mới đọc mượt.
-    - muốn lập trình kernel, viết driver, tối ưu Linux system
-- (8.5/10) Engineering a Compiler – Cooper & Torczon
-    - 26/825
-    - Người muốn viết compiler, interpreter, VM
-    - Nặng tư duy thuật toán, cấu trúc ngôn ngữ, tối ưu.
-- (8.5/10) Compilers: Principles, Techniques, and Tools (Dragon Book)
-    - Kinh điển, khó vì ký hiệu và lý thuyết
-- (9.0/10) Understanding the Linux Kernel – Bovet & Cesati
-    - Giải phẫu kernel Linux ở mức chi tiết vi mô
-- (9.0/10) The Art of Multiprocessor Programming 
-    - 49/529
-- (9.0/10) C++ Concurrency in Action
-    - Thực hành, sâu về memory model. Rất kỹ về concurrency primitives
-- (9.0/10) The Art of Computer Systems Performance Analysis (Raj Jain)
-    - Toán – mô hình hóa – thống kê
-    - Kinh điển về performance modeling
-- (9.5/10) Computer Architecture: A Quantitative Approach – Hennessy & Patterson
-    - 30/1357
 - https://browser.engineering/
 - https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html
 - https://webrtcforthecurious.com/#who-this-book-is-for
 
 # CS technologies
 
+- Reverse Engineering
+    - (3/10) Reverse Engineering for Beginners
+        - 26/898
+        - truyền cảm hứng cho bạn cải tiến các kỹ thuật hiện có
+- Malware Analysis
+    - (5/10) Hacking: The Art of Exploitation - Jon Erickson
+        - 19/463
+        - Dạy từ zero (assembly + exploit)
+        - Live CD chạy được trên VM.
+        - Rất vui, dễ đọc.
+    - (6/10) Practical Malware Analysis
+        - 1/802
+        - Lab cực chất, có file mẫu chạy được.
+        - Dễ áp dụng công việc SOC/DFIR.
+        - Cân bằng lý thuyết + thực hành.
+        - Dù cũ nhưng 90% vẫn đúng.
 - Robot operation system
     - (2/10) A Gentle Introduction to ROS
         - 21/153
@@ -133,24 +156,6 @@
         - 1/225
         - Dạy cointegration thực tế (pairs trading).
         - tập trung hơn vào chiến lược, back‑testing, quant logic thay vì “hệ thống HFT tốc độ cao”
-- Reverse Engineering
-    - (3/10) Reverse Engineering for Beginners
-        - 26/898
-        - Không có lab thực hành.
-        - Không dạy tool (IDA/Ghidra).
-        - truyền cảm hứng cho bạn cải tiến các kỹ thuật hiện có
-- Malware Analysis
-    - (5/10) Hacking: The Art of Exploitation - Jon Erickson
-        - 19/463
-        - Dạy từ zero (assembly + exploit).
-        - Live CD chạy được trên VM.
-        - Rất vui, dễ đọc.
-    - (6/10) Practical Malware Analysis
-        - 1/802
-        - Lab cực chất, có file mẫu chạy được.
-        - Dễ áp dụng công việc SOC/DFIR.
-        - Cân bằng lý thuyết + thực hành.
-        - Dù cũ nhưng 90% vẫn đúng.
 - Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation
     - 1/497
 - Clean Architecture

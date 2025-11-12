@@ -58,6 +58,7 @@
 # Specialized mainstream: low level engineer
 
 - (6.0/10) Linux from scratch book
+    - 31/385
     - tự tay xây dựng một hệ thống Linux từ con số 0
 - (7.0/10) Operating Systems: Design and Implementation (MINIX)
     - 90/629 (1071)
@@ -101,7 +102,7 @@
     - 49/529
     - Giải thích từ gốc đến ngọn cách các thuật toán đa luồng hoạt động và làm sao đảm bảo tính đúng đắn
 - (9.0/10) C++ Concurrency in Action
-    - 1/530
+    - 38/337 (530)
     - Dạy cách viết mã C++ song song hiện đại – từ cơ bản đến nâng cao
 
 - (9.0/10) The Art of Computer Systems Performance Analysis (Raj Jain)
@@ -126,12 +127,12 @@
     - (3/10) Reverse Engineering for Beginners
         - 28/898 (943) 3.1
         - truyền cảm hứng cho bạn cải tiến các kỹ thuật hiện có
-- Malware Analysis
+        - Hướng tới người muốn học phân tích mã nhị phân, hiểu code không có source
     - (5/10) Hacking: The Art of Exploitation - Jon Erickson
         - 51/463 (492) 0x260
-        - Dạy từ zero (assembly + exploit)
-        - Live CD chạy được trên VM.
-        - Rất vui, dễ đọc.
+        - Rất vui, dễ đọc, talk about common software, overview
+        - Hướng tới người muốn hiểu cách tấn công hoạt động từ cấp thấp đến cấp cao.
+- Malware Analysis
     - (6/10) Practical Malware Analysis
         - 1/802
         - Lab cực chất, có file mẫu chạy được.
@@ -207,6 +208,9 @@
 - BigTable https://static.googleusercontent.com/media/research.google.com/en//archive/bigtable-osdi06.pdf
 - MapReduce https://static.googleusercontent.com/media/research.google.com/en//archive/mapreduce-osdi04.pdf
 - GG distributed db https://static.googleusercontent.com/media/research.google.com/en//archive/spanner-osdi2012.pdf
+
+- Neuron network https://arxiv.org/abs/1706.03762
+- Vector DB https://arxiv.org/pdf/2310.11703
 
 # Book I love or must read again
 

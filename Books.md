@@ -37,14 +37,6 @@
 - Go
     - https://github.com/teivah/100-go-mistakes
     - https://goperf.dev/
-- (6.5/10) Programming Embedded Systems in C and C++ – Michael Barr
-    - 22/187
-    - Nắm cách lập trình device-level thực tế
-    - Thiên về: Thực hành, Cần phần cứng.
-- (7.0/10) Operating Systems: Design and Implementation (MINIX)
-    - 90/629 (1071)
-    - Đọc để review lại kiến thức OS thôi chứ không có cái mới
-    - Dạy nền OS + code MINIX minh họa
 
 # Database Systems & Data Infrastructure
 
@@ -67,6 +59,10 @@
 
 - (6.0/10) Linux from scratch book
     - tự tay xây dựng một hệ thống Linux từ con số 0
+- (7.0/10) Operating Systems: Design and Implementation (MINIX)
+    - 90/629 (1071)
+    - Đọc để review lại components trong OS
+    - Dạy nền OS + code MINIX minh họa
 - (8.0/10) Linux Kernel Development – Robert Love
     - 38/433 (468)
     - Cách lập trình và hiểu kernel Linux thực tế
@@ -81,20 +77,20 @@
     - Goal: Nghiên cứu sâu nội bộ Linux
 
 - (7.0/10) Computer Organization and Design – Patterson & Hennessy (cho RISC-V hoặc ARM)
-    - 67/642 (689)
+    - 125/642 (689)
     - Kiến trúc máy tính, CPU, ALU, MIPS, pipeline
     - Hiểu CPU làm gì khi chạy lệnh, cơ chế pipeline, register, cache.
 - (7.5/10) Computer Systems A Programmer’s Perspective
     - 60/1067 (1105)
     - hiểu cách chương trình được biểu diễn trên máy
-    - Rất cân bằng, có Các phòng thí nghiệm đi kèm
+    - Rất cân bằng, có các phòng thí nghiệm đi kèm
     - lệnh switch có luôn hiệu quả hơn if-else không? Lệnh while có nhanh hơn for không? Truy cập con trỏ có nhanh hơn chỉ số mảng không? Tại sao vòng lặp chạy nhanh hơn khi cộng vào biến cục bộ thay vì tham số truyền theo tham chiếu?
 - (9.5/10) Computer Architecture: A Quantitative Approach – Hennessy & Patterson
     - 30/1357
     - Giải thích cách thiết kế phần cứng và kiến trúc máy tính để đạt hiệu năng cao
     
 - (8.5/10) Compilers: Principles, Techniques, and Tools (Dragon Book)
-    - 1/930 (947)
+    - 64/930 (947)
     - Giải thích nguyên lý, thuật toán và lý thuyết nền tảng của biên dịch
 - (8.5/10) Engineering a Compiler – Cooper & Torczon
     - 26/788 (825)
@@ -111,10 +107,15 @@
 - (9.0/10) The Art of Computer Systems Performance Analysis (Raj Jain)
     - Cung cấp phương pháp luận đánh giá hiệu năng một cách khoa học, tránh sai lầm thống kê
 
+- (6.5/10) Programming Embedded Systems in C and C++ – Michael Barr
+    - 22/187
+    - Nắm cách lập trình device-level thực tế
+    - Thiên về: Thực hành, cần phần cứng
 - (8.0/10) Designing Embedded Systems (PIC / ARM)
     - Thực hành, phần cứng, firmware
     - Embedded developers mới bắt đầu
-    - Nhiều project, code ngoại vi, giao tiếp phần cứng.
+    - Nhiều project, code ngoại vi, giao tiếp phần cứng
+
 - https://browser.engineering/
 - https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html
 - https://webrtcforthecurious.com/#who-this-book-is-for
@@ -123,11 +124,11 @@
 
 - Reverse Engineering
     - (3/10) Reverse Engineering for Beginners
-        - 26/898
+        - 28/898 (943) 3.1
         - truyền cảm hứng cho bạn cải tiến các kỹ thuật hiện có
 - Malware Analysis
     - (5/10) Hacking: The Art of Exploitation - Jon Erickson
-        - 19/463
+        - 51/463 (492) 0x260
         - Dạy từ zero (assembly + exploit)
         - Live CD chạy được trên VM.
         - Rất vui, dễ đọc.

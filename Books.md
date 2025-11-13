@@ -78,11 +78,11 @@
     - Goal: Nghiên cứu sâu nội bộ Linux
 
 - (7.0/10) Computer Organization and Design – Patterson & Hennessy (cho RISC-V hoặc ARM)
-    - 125/642 (689)
+    - 177/642 (689)
     - Kiến trúc máy tính, CPU, ALU, MIPS, pipeline
     - Hiểu CPU làm gì khi chạy lệnh, cơ chế pipeline, register, cache.
 - (7.5/10) Computer Systems A Programmer’s Perspective
-    - 60/1067 (1105)
+    - 77/1067 (1105)
     - hiểu cách chương trình được biểu diễn trên máy
     - Rất cân bằng, có các phòng thí nghiệm đi kèm
     - lệnh switch có luôn hiệu quả hơn if-else không? Lệnh while có nhanh hơn for không? Truy cập con trỏ có nhanh hơn chỉ số mảng không? Tại sao vòng lặp chạy nhanh hơn khi cộng vào biến cục bộ thay vì tham số truyền theo tham chiếu?
@@ -125,7 +125,7 @@
 
 - Reverse Engineering
     - (3/10) Reverse Engineering for Beginners
-        - 28/898 (943) 3.1
+        - 30/898 (943) 3.1
         - truyền cảm hứng cho bạn cải tiến các kỹ thuật hiện có
         - Hướng tới người muốn học phân tích mã nhị phân, hiểu code không có source
     - (5/10) Hacking: The Art of Exploitation - Jon Erickson

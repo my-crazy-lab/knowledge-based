@@ -78,7 +78,7 @@
     - Goal: Nghiên cứu sâu nội bộ Linux
 
 - (7.0/10) Computer Organization and Design – Patterson & Hennessy (cho RISC-V hoặc ARM)
-    - 177/642 (689)
+    - 208/642 (689)
     - Kiến trúc máy tính, CPU, ALU, MIPS, pipeline
     - Hiểu CPU làm gì khi chạy lệnh, cơ chế pipeline, register, cache.
 - (7.5/10) Computer Systems A Programmer’s Perspective
@@ -214,18 +214,18 @@
 
 # Book I love or must read again
 
-- :white_check_mark: Designing Data-Intensive Applications
+- Designing Data-Intensive Applications
     - [91 :arrow_right: 106](./1.0.0/tkzqg5.md)
     - [107 :arrow_right: 222](./1.0.0/4mw4a3.md)
     - [222 :arrow_right: 295](./1.0.0/o70doc.md)
     - [295 :arrow_right: 371](./1.0.0/n20071.md)
     - [372 :arrow_right: 410](./1.0.0/o6n1x2.md)
-- :white_check_mark: Software Architecture The Hard Parts
+- Software Architecture The Hard Parts
     - [1 :arrow_right: DONE](./1.0.0/3pm1sl.md)
-- :white_check_mark: The Phoenix Project
-- :white_check_mark: (Little OS book from build own X)[https://littleosbook.github.io/]
-- :white_check_mark: Systems Performance: Enterprise and the Cloud
-- :white_check_mark: Database internals
+- The Phoenix Project
+- (Little OS book from build own X)[https://littleosbook.github.io/]
+- Systems Performance: Enterprise and the Cloud
+- Database internals
     - Talk about the Storage Engine from sciences and lab, more new algorithm from lab
     - Must have when want to deep dive and build Database engine 
 

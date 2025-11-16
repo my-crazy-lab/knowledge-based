@@ -78,7 +78,7 @@
     - Goal: Nghiên cứu sâu nội bộ Linux
 
 - (7.0/10) Computer Organization and Design – Patterson & Hennessy (cho RISC-V hoặc ARM)
-    - 208/642 (689)
+    - 308/642 (689)
     - Kiến trúc máy tính, CPU, ALU, MIPS, pipeline
     - Hiểu CPU làm gì khi chạy lệnh, cơ chế pipeline, register, cache.
 - (7.5/10) Computer Systems A Programmer’s Perspective

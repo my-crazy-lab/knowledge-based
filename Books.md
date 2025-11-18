@@ -10,9 +10,9 @@
     - 14 15
     - 16 17 18
     - 19 20 21
-- (4/5) Distributed Systems: Principles and Paradigms – Tanenbaum & van Steen 
+- (4/5) Distributed Systems: Principles and Paradigms – Tanenbaum & van Steen
     - 88/705
-    - cung cap nền tảng lý thuyết vững chắc, đặc biệt cho mục đích học thuật hoặc nghiên cứu
+    - provides solid theoretical foundation, especially for academic or research purposes
     - 2 3 4 5
     - 6 7 8 9
     - 10 11 12 13
@@ -59,63 +59,63 @@
 
 - (6.0/10) Linux from scratch book
     - 31/385
-    - tự tay xây dựng một hệ thống Linux từ con số 0
+    - build a Linux system from scratch by hand
 - (7.0/10) Operating Systems: Design and Implementation (MINIX)
     - 90/629 (1071)
-    - Đọc để review lại components trong OS
-    - Dạy nền OS + code MINIX minh họa
+    - Read to review components in OS
+    - Teaches OS foundation + MINIX code illustration
 - (8.0/10) Linux Kernel Development – Robert Love
     - 38/433 (468)
-    - Cách lập trình và hiểu kernel Linux thực tế
-    - Goal: Viết, sửa, test kernel thực tế
+    - How to program and understand real Linux kernel
+    - Goal: Write, fix, test real kernel
 - (7.5/10) Modern Operating Systems – Andrew S. Tanenbaum
     - 1/1137
-    - Nguyên lý hệ điều hành tổng quát (đa nền tảng)
-    - Goal: Hiểu nguyên lý, cơ chế, mô hình
+    - General operating system principles (multi-platform)
+    - Goal: Understand principles, mechanisms, models
 - (9.0/10) Understanding the Linux Kernel – Bovet & Cesati
     - 1/944
-    - Giải phẫu kernel Linux ở mức chi tiết vi mô
-    - Goal: Nghiên cứu sâu nội bộ Linux
+    - Dissect Linux kernel at microscopic detail level
+    - Goal: Deep research into Linux internals
 
-- (7.0/10) Computer Organization and Design – Patterson & Hennessy (cho RISC-V hoặc ARM)
+- (7.0/10) Computer Organization and Design – Patterson & Hennessy (for RISC-V or ARM)
     - 308/642 (689)
-    - Kiến trúc máy tính, CPU, ALU, MIPS, pipeline
-    - Hiểu CPU làm gì khi chạy lệnh, cơ chế pipeline, register, cache.
+    - Computer architecture, CPU, ALU, MIPS, pipeline
+    - Understand what CPU does when running instructions, pipeline mechanism, register, cache.
 - (7.5/10) Computer Systems A Programmer’s Perspective
     - 77/1067 (1105)
-    - hiểu cách chương trình được biểu diễn trên máy
-    - Rất cân bằng, có các phòng thí nghiệm đi kèm
-    - lệnh switch có luôn hiệu quả hơn if-else không? Lệnh while có nhanh hơn for không? Truy cập con trỏ có nhanh hơn chỉ số mảng không? Tại sao vòng lặp chạy nhanh hơn khi cộng vào biến cục bộ thay vì tham số truyền theo tham chiếu?
+    - understand how programs are represented on machines
+    - Very balanced, has accompanying labs
+    - is switch always more efficient than if-else? Is while faster than for? Is pointer access faster than array index? Why does loop run faster when adding to local variable instead of parameter passed by reference?
 - (9.5/10) Computer Architecture: A Quantitative Approach – Hennessy & Patterson
     - 30/1357
-    - Giải thích cách thiết kế phần cứng và kiến trúc máy tính để đạt hiệu năng cao
+    - Explains how to design hardware and computer architecture to achieve high performance
     
 - (8.5/10) Compilers: Principles, Techniques, and Tools (Dragon Book)
     - 64/930 (947)
-    - Giải thích nguyên lý, thuật toán và lý thuyết nền tảng của biên dịch
+    - Explains principles, algorithms and foundational theory of compilation
 - (8.5/10) Engineering a Compiler – Cooper & Torczon
     - 26/788 (825)
-    - Trình bày kỹ thuật thiết kế và triển khai compiler hiện đại.
-    - Người muốn viết compiler, interpreter, VM
+    - Presents techniques for designing and implementing modern compilers.
+    - People who want to write compiler, interpreter, VM
 
 - (9.0/10) The Art of Multiprocessor Programming 
     - 49/529
-    - Giải thích từ gốc đến ngọn cách các thuật toán đa luồng hoạt động và làm sao đảm bảo tính đúng đắn
+    - Explains from root to tip how multithreading algorithms work and how to ensure correctness
 - (9.0/10) C++ Concurrency in Action
     - 38/337 (530)
-    - Dạy cách viết mã C++ song song hiện đại – từ cơ bản đến nâng cao
+    - Teaches how to write modern parallel C++ code – from basic to advanced
 
 - (9.0/10) The Art of Computer Systems Performance Analysis (Raj Jain)
-    - Cung cấp phương pháp luận đánh giá hiệu năng một cách khoa học, tránh sai lầm thống kê
+    - Provides methodology for evaluating performance scientifically, avoiding statistical errors
 
 - (6.5/10) Programming Embedded Systems in C and C++ – Michael Barr
     - 22/187
-    - Nắm cách lập trình device-level thực tế
-    - Thiên về: Thực hành, cần phần cứng
+    - Master real device-level programming
+    - Leans toward: Practice, requires hardware
 - (8.0/10) Designing Embedded Systems (PIC / ARM)
-    - Thực hành, phần cứng, firmware
-    - Embedded developers mới bắt đầu
-    - Nhiều project, code ngoại vi, giao tiếp phần cứng
+    - Practice, hardware, firmware
+    - Beginner embedded developers
+    - Many projects, peripheral code, hardware communication
 
 - https://browser.engineering/
 - https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html
@@ -126,56 +126,56 @@
 - Reverse Engineering
     - (3/10) Reverse Engineering for Beginners
         - 30/898 (943) 3.1
-        - truyền cảm hứng cho bạn cải tiến các kỹ thuật hiện có
-        - Hướng tới người muốn học phân tích mã nhị phân, hiểu code không có source
+        - inspire you to improve existing techniques
+        - Aimed at people who want to learn binary code analysis, understand code without source
     - (5/10) Hacking: The Art of Exploitation - Jon Erickson
         - 51/463 (492) 0x260
-        - Rất vui, dễ đọc, talk about common software, overview
-        - Hướng tới người muốn hiểu cách tấn công hoạt động từ cấp thấp đến cấp cao.
+        - Very fun, easy to read, talk about common software, overview
+        - Aimed at people who want to understand how attacks work from low level to high level.
 - Malware Analysis
     - (6/10) Practical Malware Analysis
         - 1/802
-        - Lab cực chất, có file mẫu chạy được.
-        - Dễ áp dụng công việc SOC/DFIR.
-        - Cân bằng lý thuyết + thực hành.
-        - Dù cũ nhưng 90% vẫn đúng.
+        - Excellent labs, has runnable sample files.
+        - Easy to apply to SOC/DFIR work.
+        - Balance theory + practice.
+        - Although old but 90% still correct.
 - Robot operation system
     - (2/10) A Gentle Introduction to ROS
         - 21/153
-        - Dạy tư duy ROS (publish/subscribe).
-        - Có code C++ & Python.
+        - Teaches ROS thinking (publish/subscribe).
+        - Has C++ & Python code.
     - (5/10) ROS by Example
         - 1/280
-        - Có video YouTube kèm.
-        - Phù hợp người mới 0 kinh nghiệm.
-        - Miễn phí sample code trên GitHub.
+        - Has accompanying YouTube videos.
+        - Suitable for people with 0 experience.
+        - Free sample code on GitHub.
 - Quant / HFT (High-Frequency Trading)
     - (4/10) (For trading) Quantitative Trading: How to Build Your Own Algorithmic Trading Business
         - 53/190
-        - phù hợp nếu bạn muốn hiểu “làm thế nào để vận hành một business/trading desk” hơn là “hệ thống cực nhanh”
-        - mong muốn “thiết kế hệ thống HFT, network, latency, hardware, co‑location” thì vẫn sẽ thiếu
+        - suitable if you want to understand "how to operate a business/trading desk" rather than "extremely fast system"
+        - desire to "design HFT system, network, latency, hardware, co‑location" will still be lacking
     - (6/10) (For trading) Algorithmic Trading
         - 1/225
-        - Dạy cointegration thực tế (pairs trading).
-        - tập trung hơn vào chiến lược, back‑testing, quant logic thay vì “hệ thống HFT tốc độ cao”
+        - Teaches real cointegration (pairs trading).
+        - focuses more on strategy, back‑testing, quant logic instead of "high-speed HFT system"
 - Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation
     - 1/497
 - Clean Architecture
     - 1/429
-- Quantum Computing : A Gentle Introduction 
+- Quantum Computing : A Gentle Introduction
     - 24/389: Pending, need physical foundation
-    
+
 # Out of technology
 
 - Brain
     - Friedenberg_Cognitive science
         - 26/483
-        - Bao quát toàn diện các cách tiếp cận cổ điển và hiện đại.
-        - Nhấn mạnh lý thuyết + đánh giá phê phán.
+        - Comprehensively covers classical and modern approaches.
+        - Emphasizes theory + critical evaluation.
     - Mind: Introduction to Cognitive Science
         - 1/279
-        - Tập trung vào cách máy tính mô phỏng tâm trí (logic, rules, concepts, analogies, connections).
-        - Đánh giá ưu/nhược điểm của các mô hình tính toán.
+        - Focuses on how computers simulate mind (logic, rules, concepts, analogies, connections).
+        - Evaluates advantages/disadvantages of computational models.
 - Physics
     - Stuff Matters
         - 15/196
@@ -309,11 +309,11 @@
     - [97 :arrow_right: 119](./1.0.0/inkjdo.md)
 - :x: Advanced Signal Processing in Wearable Sensors for Health Monitoring 40/208
 - :x: Blockchain Revolution `63/324`
-    -  khong phai sach sau ve technical
+    -  not a deep technical book
 - :x: Autonomous Driving
     - Technical, Legal and Social Aspects 81/698
 - :x: 5G and Beyond `74/310`
-    - tập hợp các nghiên cứu (các research paper hoặc book chapter) được biên soạn lại thành một tài liệu học thuật, giống như một sách chuyên khảo (edited volume)
+    - collection of research (research papers or book chapters) compiled into an academic document, like an edited volume
 - :x: The Art of Scalability
     - Talk more about the art of business, not software
 - :x: Java Threads - 3rd Edition 
@@ -321,14 +321,14 @@
 - :x: Refactoring Databases: Evolutionary Database Design
     - It's ok but for directory of situations (AI can help)
 - :x: Software Architecture in Practice
-    - Chưa cần, đọc chán quá
-    - Kiến trúc đã trở thành một phần quan trọng trong quá trình thiết kế và là chủ đề chính của cuốn sách này
+    - Not needed yet, too boring to read
+    - Architecture has become an important part of the design process and is the main topic of this book
 - :x: Domain-Driven Design Tackling Complexity in the Heart of Software
-    - Chưa cần, đọc chán quá
-    - Để tạo ra phần mềm có giá trị, chúng ta phải vận dụng một kho tri thức liên quan đến các hoạt động mà phần mềm sẽ tham gia. Lượng kiến thức cần thiết có thể rất lớn. Khối lượng và độ phức tạp của thông tin có thể gây choáng ngợp. Đây là lúc nhóm phát triển có thể sử dụng mô hình hóa để xử lý tình trạng quá tải đó. 
-    - Mô hình là một dạng tri thức được đơn giản hóa có chọn lọc và cấu trúc có chủ ý. Một mô hình phù hợp giúp làm sáng tỏ thông tin và áp dụng nó vào vấn đề.
-    - Mô hình miền không phải là một sơ đồ cụ thể; nó là ý tưởng mà sơ đồ muốn truyền đạt. Nó không chỉ là kiến thức trong đầu chuyên gia miền; nó là sự trừu tượng có tổ chức và chọn lọc của kiến thức đó.
+    - Not needed yet, too boring to read
+    - To create valuable software, we must apply a body of knowledge related to the activities that the software will participate in. The amount of knowledge needed can be very large. The volume and complexity of information can be overwhelming. This is when the development team can use modeling to handle that overload. 
+    - A model is a form of knowledge that is selectively simplified and intentionally structured. An appropriate model helps clarify information and apply it to the problem.
+    - A domain model is not a specific diagram; it is the idea that the diagram wants to convey. It is not just knowledge in the domain expert's head; it is an organized and selective abstraction of that knowledge.
 - :x: Patterns of Enterprise Application Architecture
-    - Chưa cần, đọc chán quá
-    - trình bày quan điểm của mình về các phần chính của một ứng dụng doanh nghiệp và các quyết định mà tôi ước gì có thể làm đúng ngay từ đầu
-    - tập trung vào ứng dụng doanh nghiệp, vì vậy các mẫu thiết kế tôi trình bày ở đây đều liên quan đến loại ứng dụng này
+    - Not needed yet, too boring to read
+    - presents perspectives on the main parts of an enterprise application and the decisions that need to be made right from the start
+    - focuses on enterprise applications, so the design patterns I present here are all related to this type of application

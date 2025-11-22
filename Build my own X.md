@@ -160,7 +160,7 @@
 #### Build your own `3D Renderer`
 
 * :white_check_mark: [**C# / TypeScript / JavaScript**: _Learning how to write a 3D soft engine from scratch in C#, TypeScript or JavaScript_](https://www.davrous.com/2013/06/13/tutorial-series-learning-how-to-write-a-3d-soft-engine-from-scratch-in-c-typescript-or-javascript/)
-* :+1: [**C++**: _How OpenGL works: software rendering in 500 lines of code_](https://github.com/ssloy/tinyrenderer/wiki)
+* :white_check_mark: [**C++**: _How OpenGL works: software rendering in 500 lines of code_](https://github.com/ssloy/tinyrenderer/wiki)
 * [**C++**: _Introduction to Ray Tracing: a Simple Method for Creating 3D Images_](https://www.scratchapixel.com/lessons/3d-basic-rendering/introduction-to-ray-tracing/how-does-it-work)
 * [**C++**: _Raycasting engine of Wolfenstein 3D_](http://lodev.org/cgtutor/raycasting.html)
 * [**C++**: _Physically Based Rendering:From Theory To Implementation_](http://www.pbr-book.org/)
@@ -195,7 +195,7 @@
 * [**Crystal**: _Write your own blockchain and PoW algorithm using Crystal_](https://medium.com/@bradford_hamilton/write-your-own-blockchain-and-pow-algorithm-using-crystal-d53d5d9d0c52)
 * [**Go**: _Building Blockchain in Go_](https://jeiwan.net/posts/building-blockchain-in-go-part-1/)
 * [**Go**: _Code your own blockchain in less than 200 lines of Go_](https://medium.com/@mycoralhealth/code-your-own-blockchain-in-less-than-200-lines-of-go-e296282bcffc)
-* :+1: [**Java**: _Creating Your First Blockchain with Java_](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa)
+* :x: [**Java**: _Creating Your First Blockchain with Java_](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa)
 * [**JavaScript**: _A cryptocurrency implementation in less than 1500 lines of code_](https://github.com/conradoqg/naivecoin)
 * [**JavaScript**: _Build your own Blockchain in JavaScript_](https://github.com/nambrot/blockchain-in-js)
 * [**JavaScript**: _Learn & Build a JavaScript Blockchain_](https://medium.com/digital-alchemy-holdings/learn-build-a-javascript-blockchain-part-1-ca61c285821e)
@@ -247,8 +247,8 @@
 
 #### Build your own `Database`
 
-* :+1: [**C**: _Let's Build a Simple Database_](https://cstack.github.io/db_tutorial/)
-* :+1: [**C++**: _Build Your Own Redis from Scratch_](https://build-your-own.org/redis)
+* :white_check_mark: [**C**: _Let's Build a Simple Database_](https://cstack.github.io/db_tutorial/)
+* :white_check_mark: [**C++**: _Build Your Own Redis from Scratch_](https://build-your-own.org/redis)
 * [**C#**: _Build Your Own Database_](https://www.codeproject.com/Articles/1029838/Build-Your-Own-Database)
 * [**Clojure**: _An Archaeology-Inspired Database_](http://aosabook.org/en/500L/an-archaeology-inspired-database.html)
 * [**Crystal**: _Why you should build your own NoSQL Database_](https://medium.com/@marceloboeira/why-you-should-build-your-own-nosql-database-9bbba42039f5)
@@ -271,9 +271,9 @@
 
 #### Build your own `Emulator / Virtual Machine`
 
-* :+1: [**C**: _Home-grown bytecode interpreters_](https://medium.com/bumble-tech/home-grown-bytecode-interpreters-51e12d59b25c)
-* :+1: [**C**: _Virtual machine in C_](http://web.archive.org/web/20200121100942/https://blog.felixangell.com/virtual-machine-in-c/)
-* :+1: [**C**: _Write your Own Virtual Machine_](https://justinmeiners.github.io/lc3-vm/)
+* :white_check_mark: [**C**: _Home-grown bytecode interpreters_](https://medium.com/bumble-tech/home-grown-bytecode-interpreters-51e12d59b25c)
+* :white_check_mark: [**C**: _Virtual machine in C_](http://web.archive.org/web/20200121100942/https://blog.felixangell.com/virtual-machine-in-c/)
+* :white_check_mark: [**C**: _Write your Own Virtual Machine_](https://justinmeiners.github.io/lc3-vm/)
 * [**C**: _Writing a Game Boy emulator, Cinoop_](https://cturt.github.io/cinoop.html)
 * [**C++**: _How to write an emulator (CHIP-8 interpreter)_](http://www.multigesture.net/articles/how-to-write-an-emulator-chip-8-interpreter/)
 * [**C++**: _Emulation tutorial (CHIP-8 interpreter)_](http://www.codeslinger.co.uk/pages/projects/chip8.html)
@@ -323,8 +323,8 @@
 * [**C#**: _Creating a Roguelike Game in C#_](https://roguesharp.wordpress.com/)
 * [**C#**: _Build a C#/WPF RPG_](https://scottlilly.com/build-a-cwpf-rpg/)
 * [**Go**: _Games With Go_](https://www.youtube.com/playlist?list=PLDZujg-VgQlZUy1iCqBbe5faZLMkA3g2x) [video]
-* :+1: [**Java**: _Code a 2D Game Engine using Java - Full Course for Beginners_](https://www.youtube.com/watch?v=025QFeZfeyM) [video]
-* :+1: [**Java**: _3D Game Development with LWJGL 3_](https://lwjglgamedev.gitbooks.io/3d-game-development-with-lwjgl/content/)
+* :white_check_mark: [**Java**: _Code a 2D Game Engine using Java - Full Course for Beginners_](https://www.youtube.com/watch?v=025QFeZfeyM) [video]
+* :x: [**Java**: _3D Game Development with LWJGL 3_](https://lwjglgamedev.gitbooks.io/3d-game-development-with-lwjgl/content/)
 * [**JavaScript**: _2D breakout game using Phaser_](https://developer.mozilla.org/en-US/docs/Games/Tutorials/2D_breakout_game_Phaser)
 * [**JavaScript**: _How to Make Flappy Bird in HTML5 With Phaser_](http://www.lessmilk.com/tutorial/flappy-bird-phaser-1)
 * [**JavaScript**: _Developing Games with React, Redux, and SVG_](https://auth0.com/blog/developing-games-with-react-redux-and-svg-part-1/)
@@ -352,9 +352,9 @@
 
 #### Build your own `Network Stack`
 
-* :+1: [**C**: _Beej's Guide to Network Programming_](http://beej.us/guide/bgnet/)
-* :+1: [**C**: _Let's code a TCP/IP stack_](http://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/)
-* :+1: [**C / Python**: _Build your own VPN/Virtual Switch_](https://github.com/peiyuanix/build-your-own-zerotier)
+* :white_check_mark: [**C**: _Beej's Guide to Network Programming_](http://beej.us/guide/bgnet/)
+* :white_check_mark: [**C**: _Let's code a TCP/IP stack_](http://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/)
+* :white_check_mark: [**C / Python**: _Build your own VPN/Virtual Switch_](https://github.com/peiyuanix/build-your-own-zerotier)
 * [**Ruby**: _How to build a network stack in Ruby_](https://medium.com/geckoboard-under-the-hood/how-to-build-a-network-stack-in-ruby-f73aeb1b661b)
 
 #### Build your own `Neural Network`
@@ -364,7 +364,7 @@
 * [**Go**: _Build a multilayer perceptron with Golang_](https://made2591.github.io/posts/neuralnetwork)
 * [**Go**: _How to build a simple artificial neural network with Go_](https://sausheong.github.io/posts/how-to-build-a-simple-artificial-neural-network-with-go/)
 * [**Go**: _Building a Neural Net from Scratch in Go_](https://datadan.io/blog/neural-net-with-go)
-* :+1: [**JavaScript / Java**: _Neural Networks - The Nature of Code_](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aCibgK1PTWWu9by6XFdCfh) [video]
+* :white_check_mark: [**JavaScript / Java**: _Neural Networks - The Nature of Code_](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aCibgK1PTWWu9by6XFdCfh) [video]
 * [**JavaScript**: _Neural networks from scratch for JavaScript linguists (Part1 — The Perceptron)_](https://hackernoon.com/neural-networks-from-scratch-for-javascript-linguists-part1-the-perceptron-632a4d1fbad2)
 * [**Python**: _A Neural Network in 11 lines of Python_](https://iamtrask.github.io/2015/07/12/basic-python-network/)
 * [**Python**: _Implement a Neural Network from Scratch_](https://victorzhou.com/blog/intro-to-neural-networks/)
@@ -377,24 +377,24 @@
 #### Build your own `Operating System`
 
 * [**Assembly**: _Writing a Tiny x86 Bootloader_](http://joebergeron.io/posts/post_two.html)
-* :+1: [**Assembly**: _Baking Pi – Operating Systems Development_](http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/index.html)
+* :white_check_mark: [**Assembly**: _Baking Pi – Operating Systems Development_](http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/index.html)
 * [**C**: _Building a software and hardware stack for a simple computer from scratch_](https://www.youtube.com/watch?v=ZjwvMcP3Nf0&list=PLU94OURih-CiP4WxKSMt3UcwMSDM3aTtX) [video]
-* :+1: [**C**: _Operating Systems: From 0 to 1_](https://tuhdo.github.io/os01/)
-* :+1: [**C**: _The little book about OS development_](https://littleosbook.github.io/)
+* :white_check_mark: [**C**: _Operating Systems: From 0 to 1_](https://tuhdo.github.io/os01/)
+* :white_check_mark: [**C**: _The little book about OS development_](https://littleosbook.github.io/)
 * :x: [**C**: _Roll your own toy UNIX-clone OS_](http://jamesmolloy.co.uk/tutorial_html/)
 * [**C**: _Kernel 101 – Let’s write a Kernel_](https://arjunsreedharan.org/post/82710718100/kernel-101-lets-write-a-kernel)
 * [**C**: _Kernel 201 – Let’s write a Kernel with keyboard and screen support_](https://arjunsreedharan.org/post/99370248137/kernel-201-lets-write-a-kernel-with-keyboard)
 * [**C**: _Build a minimal multi-tasking kernel for ARM from scratch_](https://github.com/jserv/mini-arm-os)
-* :+1: [**C**: _How to create an OS from scratch_](https://github.com/cfenollosa/os-tutorial)
+* :white_check_mark: [**C**: _How to create an OS from scratch_](https://github.com/cfenollosa/os-tutorial)
 * [**C**: _Malloc tutorial_](https://danluu.com/malloc-tutorial/)
 * [**C**: _Hack the virtual memory_](https://blog.holbertonschool.com/hack-the-virtual-memory-c-strings-proc/)
 * [**C**: _Learning operating system development using Linux kernel and Raspberry Pi_](https://github.com/s-matyukevich/raspberry-pi-os)
 * [**C**: _Operating systems development for Dummies_](https://medium.com/@lduck11007/operating-systems-development-for-dummies-3d4d786e8ac)
 * [**C++**: _Write your own Operating System_](https://www.youtube.com/playlist?list=PLHh55M_Kq4OApWScZyPl5HhgsTJS9MZ6M) [video]
 * [**C++**: _Writing a Bootloader_](http://3zanders.co.uk/2017/10/13/writing-a-bootloader/)
-* :+1: [**Rust**: _Writing an OS in Rust_](https://os.phil-opp.com/)
+* :white_check_mark: [**Rust**: _Writing an OS in Rust_](https://os.phil-opp.com/)
 * [**Rust**: _Add RISC-V Rust Operating System Tutorial_](https://osblog.stephenmarz.com/)
-* :+1: [**(any)**: _Linux from scratch_](https://linuxfromscratch.org/lfs)
+* :white_check_mark: [**(any)**: _Linux from scratch_](https://linuxfromscratch.org/lfs)
 
 #### Build your own `Physics Engine`
 
@@ -411,7 +411,7 @@
 * [**(any)**: _mal - Make a Lisp_](https://github.com/kanaka/mal#mal---make-a-lisp)
 * [**Assembly**: _Jonesforth_](https://github.com/nornagon/jonesforth/blob/master/jonesforth.S)
 * [**C**: _Baby's First Garbage Collector_](http://journal.stuffwithstuff.com/2013/12/08/babys-first-garbage-collector/)
-* :+1: [**C**: _Build Your Own Lisp: Learn C and build your own programming language in 1000 lines of code_](http://www.buildyourownlisp.com/)
+* :white_check_mark: [**C**: _Build Your Own Lisp: Learn C and build your own programming language in 1000 lines of code_](http://www.buildyourownlisp.com/)
 * [**C**: _Writing a Simple Garbage Collector in C_](http://maplant.com/gc.html)
 * [**C**: _C interpreter that interprets itself._](https://github.com/lotabout/write-a-C-interpreter)
 * [**C**: _A C & x86 version of the "Let's Build a Compiler" by Jack Crenshaw_](https://github.com/lotabout/Let-s-build-a-compiler)
@@ -425,14 +425,14 @@
 * [**Go**: _Lexical Scanning in Go_](https://www.youtube.com/watch?v=HxaD_trXwRE) [video]
 * [**Haskell**: _Let's Build a Compiler_](https://g-ford.github.io/cradle/)
 * [**Haskell**: _Write You a Haskell_](http://dev.stephendiehl.com/fun/)
-* :+1: [**Haskell**: _Write Yourself a Scheme in 48 Hours_](https://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours)
-* :+1: [**Haskell**: _Write You A Scheme_](https://www.wespiser.com/writings/wyas/home.html)
-* :+1: [**Java**: _Crafting interpreters: A handbook for making programming languages_](http://www.craftinginterpreters.com/)
-* :+1: [**Java**: _Creating JVM Language_](http://jakubdziworski.github.io/categories.html#Enkel-ref)
+* :x: [**Haskell**: _Write Yourself a Scheme in 48 Hours_](https://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours)
+* :x: [**Haskell**: _Write You A Scheme_](https://www.wespiser.com/writings/wyas/home.html)
+* :white_check_mark: [**Java**: _Crafting interpreters: A handbook for making programming languages_](http://www.craftinginterpreters.com/)
+* :white_check_mark: [**Java**: _Creating JVM Language_](http://jakubdziworski.github.io/categories.html#Enkel-ref)
 * [**JavaScript**: _The Super Tiny Compiler_](https://github.com/jamiebuilds/the-super-tiny-compiler)
 * [**JavaScript**: _The Super Tiny Interpreter_](https://github.com/keyanzhang/the-super-tiny-interpreter)
 * [**JavaScript**: _Little Lisp interpreter_](https://maryrosecook.com/blog/post/little-lisp-interpreter)
-* :+1: [**JavaScript**: _How to implement a programming language in JavaScript_](http://lisperator.net/pltut/)
+* :white_check_mark: [**JavaScript**: _How to implement a programming language in JavaScript_](http://lisperator.net/pltut/)
 * [**JavaScript**: _Let’s go write a Lisp_](https://idiocy.org/lets-go-write-a-lisp/part-1.html)
 * [**OCaml**: _Writing a C Compiler_](https://norasandler.com/2017/11/29/Write-a-Compiler.html)
 * [**OCaml**: _Writing a Lisp, the series_](https://bernsteinbear.com/blog/lisp/)
@@ -475,12 +475,12 @@ ok.org/en/500L/a-python-interpreter-written-in-python.html)
 
 #### Build your own `Shell`
 
-* :+1: [**C**: _Tutorial - Write a Shell in C_](https://brennan.io/2015/01/16/write-a-shell-in-c/)
-* :+1: [**C**: _Let's build a shell!_](https://github.com/kamalmarhubi/shell-workshop)
-* :+1: [**C**: _Writing a UNIX Shell_](https://indradhanush.github.io/blog/writing-a-unix-shell-part-1/)
-* :+1: [**C**: _Build Your Own Shell_](https://github.com/tokenrove/build-your-own-shell)
-* :+1: [**C**: Write a shell in C](https://danishpraka.sh/posts/write-a-shell/)
-* :+1: [**Go**: _Writing a simple shell in Go_](https://sj14.gitlab.io/post/2018-07-01-go-unix-shell/)
+* :white_check_mark: [**C**: _Tutorial - Write a Shell in C_](https://brennan.io/2015/01/16/write-a-shell-in-c/)
+* :white_check_mark: [**C**: _Let's build a shell!_](https://github.com/kamalmarhubi/shell-workshop)
+* :white_check_mark: [**C**: _Writing a UNIX Shell_](https://indradhanush.github.io/blog/writing-a-unix-shell-part-1/)
+* :white_check_mark: [**C**: _Build Your Own Shell_](https://github.com/tokenrove/build-your-own-shell)
+* :white_check_mark: [**C**: Write a shell in C](https://danishpraka.sh/posts/write-a-shell/)
+* :white_check_mark: [**Go**: _Writing a simple shell in Go_](https://sj14.gitlab.io/post/2018-07-01-go-unix-shell/)
 * [**Rust**: _Build Your Own Shell using Rust_](https://www.joshmcguigan.com/blog/build-your-own-shell-rust/)
 
 #### Build your own `Template Engine`
@@ -507,18 +507,18 @@ ok.org/en/500L/a-python-interpreter-written-in-python.html)
 
 #### Build your own `Voxel Engine`
 
-* :+1: [**C++**: _Let's Make a Voxel Engine_](https://sites.google.com/site/letsmakeavoxelengine/home)
+* :white_check_mark: [**C++**: _Let's Make a Voxel Engine_](https://sites.google.com/site/letsmakeavoxelengine/home)
 * :x: [**Java**: _Java Voxel Engine Tutorial_](https://www.youtube.com/watch?v=QZ4Vk2PkPZk&list=PL80Zqpd23vJfyWQi-8FKDbeO_ZQamLKJL) [video]
 
 #### Build your own `Web Browser`
 
 * :white_check_mark: [**Rust**: _Let's build a browser engine_](https://limpet.net/mbrubeck/2014/08/08/toy-layout-engine-1.html)
-* :+1: [**Python**: _Browser Engineering_](https://browser.engineering)
+* :white_check_mark: [**Python**: _Browser Engineering_](https://browser.engineering)
 
 #### Build your own `Web Server`
 
 * :white_check_mark: [**C#**: _Writing a Web Server from Scratch_](https://www.codeproject.com/Articles/859108/Writing-a-Web-Server-from-Scratch)
-* :+1: [**Node.js**: _Build Your Own Web Server From Scratch In JavaScript_](https://build-your-own.org/webserver/)
+* :white_check_mark: [**Node.js**: _Build Your Own Web Server From Scratch In JavaScript_](https://build-your-own.org/webserver/)
 * [**Node.js**: _Let's code a web server from scratch with NodeJS Streams_](https://www.codementor.io/@ziad-saab/let-s-code-a-web-server-from-scratch-with-nodejs-streams-h4uc9utji)
 * [**Node.js**: _lets-build-express_](https://github.com/antoaravinth/lets-build-express)
 * [**PHP**: _Writing a webserver in pure PHP_](http://station.clancats.com/writing-a-webserver-in-pure-php/)
@@ -533,11 +533,11 @@ ok.org/en/500L/a-python-interpreter-written-in-python.html)
 
 * [Have book to focuse] [**(any)**: _From NAND to Tetris: Building a Modern Computer From First Principles_](http://nand2tetris.org/)
 * [**Alloy**: _The Same-Origin Policy_](http://aosabook.org/en/500L/the-same-origin-policy.html)
-* :+1: [**C**: _How to Write a Video Player in Less Than 1000 Lines_](http://dranger.com/ffmpeg/ffmpeg.html)
-* :+1: [**C**: _Learn how to write a hash table in C_](https://github.com/jamesroutley/write-a-hash-table)
-* :+1: [**C**: _The very basics of a terminal emulator_](https://www.uninformativ.de/blog/postings/2018-02-24/0/POSTING-en.html)
-* :+1: [**C**: _Write a System Call_](https://brennan.io/2016/11/14/kernel-dev-ep3/)
-* :+1: [**C**: _Sol - An MQTT broker from scratch_](https://codepr.github.io/posts/sol-mqtt-broker)
+* :white_check_mark: [**C**: _How to Write a Video Player in Less Than 1000 Lines_](http://dranger.com/ffmpeg/ffmpeg.html)
+* :white_check_mark: [**C**: _Learn how to write a hash table in C_](https://github.com/jamesroutley/write-a-hash-table)
+* :white_check_mark: [**C**: _The very basics of a terminal emulator_](https://www.uninformativ.de/blog/postings/2018-02-24/0/POSTING-en.html)
+* :white_check_mark: [**C**: _Write a System Call_](https://brennan.io/2016/11/14/kernel-dev-ep3/)
+* :white_check_mark: [**C**: _Sol - An MQTT broker from scratch_](https://codepr.github.io/posts/sol-mqtt-broker)
 * [**C++**: _Build your own VR headset for $200_](https://github.com/relativty/Relativ)
 * [**C++**: _How X Window Managers work and how to write one_](https://seasonofcode.com/posts/how-x-window-managers-work-and-how-to-write-one-part-i.html)
 * [**C++**: _Writing a Linux Debugger_](https://blog.tartanllama.xyz/writing-a-linux-debugger-setup/)

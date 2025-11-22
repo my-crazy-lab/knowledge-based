@@ -3,10 +3,19 @@
 ### Assembly
 
 - (10/24) https://github.com/cfenollosa/os-tutorial?tab=readme-ov-file
+- [**Assembly**: _Baking Pi – Operating Systems Development_](http://www.cl.cam.ac.uk/projects/raspberrypi/tutorials/os/index.html)
 
-### C
+### Rust
+
+- [**Rust**: _Writing an OS in Rust_](https://os.phil-opp.com/)
+
+### C / C++
 
 * [**C++**: _Build Your Own Redis from Scratch_](https://build-your-own.org/redis)
+* [**C++**: _Let's Make a Voxel Engine_](https://sites.google.com/site/letsmakeavoxelengine/home)
+* [**C++**: _How OpenGL works: software rendering in 500 lines of code_](https://github.com/ssloy/tinyrenderer/wiki)
+
+* [**C**: _How to create an OS from scratch_](https://github.com/cfenollosa/os-tutorial)
 
 * [**C**: _Let's code a TCP/IP stack_](http://www.saminiir.com/lets-code-tcp-ip-stack-1-ethernet-arp/)
 * [**C**: _Beej's Guide to Network Programming_](http://beej.us/guide/bgnet/)
@@ -30,10 +39,11 @@
 * [**C**: _Write a System Call_](https://brennan.io/2016/11/14/kernel-dev-ep3/)
 * [**C**: _Sol - An MQTT broker from scratch_](https://codepr.github.io/posts/sol-mqtt-broker)
 
+* [**C**: _Build Your Own Lisp: Learn C and build your own programming language in 1000 lines of code_](http://www.buildyourownlisp.com/)
+
 ### Java
 
 * :ok: [**Java**: _Creating JVM Language_](http://jakubdziworski.github.io/categories.html#Enkel-ref)
-* :x: [**Java**: _Creating Your First Blockchain with Java_](https://medium.com/programmers-blockchain/create-simple-blockchain-java-tutorial-from-scratch-6eeed3cb03fa)
 * II [**Java**: _Crafting interpreters: A handbook for making programming languages_](http://www.craftinginterpreters.com/)
 * [**Java**: _Code a 2D Game Engine using Java - Full Course for Beginners_](https://www.youtube.com/watch?v=025QFeZfeyM) [video]
 * [**JavaScript / Java**: _Neural Networks - The Nature of Code_](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aCibgK1PTWWu9by6XFdCfh) [video]
@@ -42,22 +52,16 @@
 
 * [**Go**: _Writing a simple shell in Go_](https://sj14.gitlab.io/post/2018-07-01-go-unix-shell/)
 
+### JS
+
+* [**JavaScript**: _How to implement a programming language in JavaScript_](http://lisperator.net/pltut/)
+
 ## Challenges
 
 - BugFreeDB
 - ProofDB
 - Sociaty simulator
 
-## Platform
+## Build database
 
-- **Message Brokers**
-    - https://www.morling.dev/blog/what-if-we-could-rebuild-kafka-from-scratch/
-    - RabbitMQ, NATS, Pulsar, Redpanda, AutoMQ.
-- **Workflow / Orchestration**
-    - Airflow, Argo Workflows, Temporal.
-- **Databases / Storage**
-    - Cassandra, ScyllaDB, ClickHouse, Iceberg/Hudi/Delta Lake.
-- **Infra & Ops**
-    - Terraform, ArgoCD, Istio/Linkerd for service mesh.
-- **Monitoring / Observability**
-    - OpenTelemetry, Prometheus + Grafana, Jaeger/Tempo.
+- https://cstack.github.io/db_tutorial/

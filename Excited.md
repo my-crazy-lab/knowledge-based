@@ -1,3 +1,7 @@
+## build AI ML
+
+* [_Neural Networks - The Nature of Code_](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aCibgK1PTWWu9by6XFdCfh) [video]
+
 ## Programming
 
 ### Assembly
@@ -97,11 +101,10 @@
 
 * :ok: [**Java**: _Creating JVM Language_](http://jakubdziworski.github.io/categories.html#Enkel-ref)
 * II 5 [**Java**: _Crafting interpreters: A handbook for making programming languages_](http://www.craftinginterpreters.com/)
-* [**Java**: _Neural Networks - The Nature of Code_](https://www.youtube.com/playlist?list=PLRqwX-V7Uu6aCibgK1PTWWu9by6XFdCfh) [video]
 
-### JS
+## Build database
 
-* [**JavaScript**: _How to implement a programming language in JavaScript_](http://lisperator.net/pltut/)
+- https://cstack.github.io/db_tutorial/
 
 ## Challenges
 
@@ -109,6 +112,6 @@
 - ProofDB
 - Sociaty simulator
 
-## Build database
+- ds-simulators
+    * Payments / Acquiring Gateway (PCI DSS, tokenization, fraud mitigation) 
 
-- https://cstack.github.io/db_tutorial/

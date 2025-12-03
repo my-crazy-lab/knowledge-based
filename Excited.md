@@ -112,6 +112,11 @@
 - ProofDB
 - Sociaty simulator
 
-- ds-simulators
-    * Payments / Acquiring Gateway (PCI DSS, tokenization, fraud mitigation) 
-
+- Payments / Acquiring Gateway (PCI DSS, tokenization, fraud mitigation) 
+    - create source, quickly define plan
+    - system architecture or write technical spec
+        - define workflow each case
+        - define non functional
+        - code convention, design pattern, code structure
+    - generate code + unit test
+    - manual test

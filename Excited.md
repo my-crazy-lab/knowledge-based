@@ -113,7 +113,7 @@
 - Sociaty simulator
 
 - Payments / Acquiring Gateway (PCI DSS, tokenization, fraud mitigation) 
-    - create source, quickly define plan
+    - :ok: create source, quickly define plan
     - system architecture or write technical spec
         - define workflow each case
         - define non functional

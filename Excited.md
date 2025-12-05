@@ -114,9 +114,11 @@
 
 - Payments / Acquiring Gateway (PCI DSS, tokenization, fraud mitigation) 
     - :ok: create source, quickly define plan
-    - system architecture or write technical spec
+    - :ok: system architecture or write technical spec
         - define workflow each case
         - define non functional
         - code convention, design pattern, code structure
-    - generate code + unit test
+    - :ok: generate code + unit test
+    - review structure, features
     - manual test
+    - review code

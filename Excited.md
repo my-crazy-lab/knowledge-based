@@ -119,6 +119,6 @@
         - define non functional
         - code convention, design pattern, code structure
     - :ok: generate code + unit test
-    - review structure, features
+    - :ok: review structure, features
     - manual test
     - review code

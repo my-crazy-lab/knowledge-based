@@ -111,3 +111,11 @@
 - BugFreeDB
 - ProofDB
 - Sociaty simulator
+
+## Simulator
+
+- AI ML
+- Distributed databases
+- Data-warehousing
+- Distributed system
+    - Micro services

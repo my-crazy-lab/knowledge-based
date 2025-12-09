@@ -131,3 +131,8 @@
   - **Bulkhead Pattern:** Separate thread pool/queue per dependency; failure of B does not crash A.  
   - **Circuit Breaker:** Open circuit when dependency fails repeatedly to avoid cascade failure.  
   - **Rate Limiting / Throttling:** Limit requests to reduce load → system degrades "softly."
+
+# Lab
+
+- Test the project in Vin, research paper related for excited
+

@@ -134,5 +134,18 @@
 
 # Lab
 
-- Test the project in Vin, research paper related for excited
+- Do the task, lab test related in Vsf
+- Research related paper and docs, curious
 
+## Lab test
+
+## Research related
+
+- non functional
+- uuidv7
+- local cache - spring caffein
+- kiro
+
+- stress test
+- java image layer, java vuner problem
+- jvm optimized

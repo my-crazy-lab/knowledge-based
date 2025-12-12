@@ -145,7 +145,9 @@
 - uuidv7
 - local cache - spring caffein
 - kiro
-
+- redis pubsub
 - stress test
 - java image layer, java vuner problem
 - jvm optimized
+
+- 

@@ -220,3 +220,15 @@
 - Data-warehousing
 - Distributed system
     - Micro services
+
+## Next level distribute system
+
+### Temporal
+
+- Deterministic replay tại sao cực khó
+- Durable execution khác queue thế nào
+- Exactly-once illusion thực sự ra sao
+- Failure handling ở orchestration layer
+- Temporal trade-off consistency vs throughput
+
+

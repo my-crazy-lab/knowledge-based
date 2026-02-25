@@ -11,8 +11,109 @@
 
 ### Rust
 
+**Blocking TCP Server**
+- Core Server
+    - [x]  Create TCP listener
+        - [ ]  create socket
+        - [ ]  config socket option
+        - [ ]  prepare address structure
+        - [ ]  bind socket
+        - [ ]  start listening
+        - [ ]  validate listener state
+        - [ ]  error edge case to verify
+        - [ ] cleanup on failure
+    - [ ]  Accept incoming connections
+        - [ ] Validate listen fd
+        - [ ] Accept connection
+        - [ ] Handle retryable errors
+        - [ ] Handle fatal errors
+        - [ ] Apply post-accept config
+        - [ ] Verify client fd
+    - [ ]  Implement echo logic
+        - [ ] Read from client
+        - [ ] Handle partial read
+        - [ ] Write back to client
+        - [ ] Handle partial write
+        - [ ] Detect EOF
+    - [ ]  Handle client disconnect
+        - [ ] Detect graceful close
+        - [ ] Detect abnormal close
+        - [ ] Close client fd
+        - [ ] Release resources
+    - [ ]  Add proper error handling
+        - [ ] Check all syscall returns
+        - [ ] Classify retry vs fatal
+        - [ ] Prevent fd leak
+        - [ ] Avoid busy loop
+    - [ ]  Add logging (connection open/close)
+        - [ ] Log server start
+        - [ ] Log connection open
+        - [ ] Log connection close
+        - [ ] Log errors
+- Multi-thread (thread-per-connection)
+    - [ ]  Spawn thread per accepted connection
+    - [ ]  Ensure stream ownership moved correctly
+    - [ ]  Handle thread panic safely
+    - [ ]  Limit max concurrent threads (optional guard)
+    - [ ]  Measure active thread count
+- Robustness
+    - [ ]  Handle partial reads
+    - [ ]  Handle partial writes
+    - [ ]  Add graceful shutdown (CTRL+C handling)
+    - [ ]  Set TCP_NODELAY (optional test)
+    - [ ]  Set socket read/write timeout
+**Async Version (Tokio)**
+- Setup
+    - [ ]  Add tokio dependency
+    - [ ]  Use #[tokio::main]
+    - [ ]  Replace std::net with tokio::net
+    - [ ]  Replace blocking read/write with async version
+- Async Handling
+    - [ ]  Spawn async task per connection
+    - [ ]  Use non-blocking read loop
+    - [ ]  Handle connection close properly
+    - [ ]  Avoid large buffer reallocation
+    - [ ]  Verify no blocking calls inside async context
+- Event Loop Understanding
+    - [ ]  Confirm epoll is used (Linux)
+    - [ ]  Validate single-thread runtime
+    - [ ]  Validate multi-thread runtime
+    - [ ]  Compare task count vs OS thread count
+**Throughput Benchmark**
+- Benchmark Tooling
+    - [ ]  Choose benchmarking client (wrk / custom client / bombardier)
+    - [ ]  Create load generator for raw TCP
+    - [ ]  Support configurable concurrency
+    - [ ]  Support configurable message size
+    - [ ]  Measure requests/sec
+    - [ ]  Measure latency (avg, p95, p99)
+- Metrics Collection
+    - [ ]  Record CPU usage
+    - [ ]  Record memory usage
+    - [ ]  Record context switches
+    - [ ]  Record open file descriptors
+    - [ ]  Record network throughput (MB/s)
+- Test Matrix
+    - [ ]  1 connection
+    - [ ]  100 connections
+    - [ ]  1k connections
+    - [ ]  10k connections (if possible)
+    Test both:
+    - [ ]  Blocking multi-thread
+    - [ ]  Tokio single-thread runtime
+    - [ ]  Tokio multi-thread runtime
+**Deeper System Insight**
+    - [ ]  Compare thread count vs connection count
+    - [ ]  Measure thread stack memory impact
+    - [ ]  Test ulimit -n limit
+    - [ ]  Observe TIME_WAIT behavior
+    - [ ]  Profile with perf
+    - [ ]  Profile with flamegraph
+
+**OwnX**
+
 - [**Rust**: _Writing an OS in Rust_](https://os.phil-opp.com/)
-* [**Rust**: _Tokio docs_](https://tokio.rs/tokio/tutorial/setup)
+- [**Rust**: _Tokio docs_](https://tokio.rs/tokio/tutorial/setup)
 
 * Building a DNS server: https://github.com/EmilHernvall/dnsguide/blob/master/README.md
 * WebGL: https://www.chinedufn.com/3d-webgl-basic-water-tutorial/

@@ -221,10 +221,9 @@
 - Distributed system
     - Micro services
 
-## Next level distribute system
-
 ### Temporal
 
+Question: 
 - Deterministic replay tại sao cực khó
 - Durable execution khác queue thế nào
 - Exactly-once illusion thực sự ra sao
@@ -232,3 +231,269 @@
 - Temporal trade-off consistency vs throughput
 
 
+# Make
+
+```
+                ┌───────────────┐
+                │   SOURCES     │
+                │               │
+                │ Reddit        │
+                │ Twitter       │
+                │ News sites    │
+                │ Forums        │
+                │ GitHub        │
+                └───────┬───────┘
+                        │
+                many custom crawlers
+                        │
+        ┌───────────────┼────────────────┐
+        │               │                │
+   reddit crawler   twitter crawler   news crawler
+        │               │                │
+        └───────────────┴────────────────┘
+                        │
+                parsing + cleaning
+                        │
+                schema normalization
+                        │
+                     queue
+                 (Kafka / Redis)
+                        │
+                   processing
+                (embedding / NLP)
+                        │
+                     storage
+             (ClickHouse / Elastic)
+             
+ -------------------------------------------------------
+ 
+                 ┌───────────────┐
+                 │    SOURCES    │
+                 │               │
+                 │ Reddit        │
+                 │ Twitter       │
+                 │ News sites    │
+                 │ Forums        │
+                 │ GitHub        │
+                 └───────┬───────┘
+                         │
+                   Aggregators
+         ┌───────────────┼────────────────┐
+         │               │                │
+       RSSHub          GDELT          GH Archive
+         │               │                │
+         └───────────────┴────────────────┘
+                         │
+                     unified feeds
+                         │
+                     collectors
+                         │
+                 normalization layer
+                         │
+                        queue
+                    (Kafka / Redis)
+                         │
+                     processing
+                  (embedding / NLP)
+                         │
+                       storage
+               (ClickHouse / Elastic)             
+```
+
+https://github.com/praw-dev/praw
+
+https://github.com/JustAnotherArchivist/snscrape
+
+https://github.com/codelucas/newspaper
+
+http://gdeltproject.org/
+
+https://github.com/DIYgod/RSSHub
+
+system ingest:
+
+```
+reddit
+twitter
+news
+github
+forums
+```
+
+Real-time pipeline detect:
+
+```
+emerging technology
+global events
+memes
+security incidents
+```
+
+Không phải news aggregator.
+
+Mà là:
+
+```
+early signal detector
+```
+
+Distributed pipeline kiểu:
+
+```
+stream ingest
+topic detection
+clustering
+trend emergence
+```
+
+Rất giống research về **information diffusion**
+
+---
+
+```jsx
+data sources
+      ↓
+ ingestion layer
+      ↓
+ data warehouse
+      ↓
+ indexing layer
+      ↓
+ search engine
+      ↓
+ analytics / dashboard
+```
+
+# Read
+
+https://github.com/cockroachdb/cockroach
+
+https://github.com/apache/flink
+
+https://github.com/apple/foundationdb
+
+https://github.com/redpanda-data/redpanda
+
+https://github.com/temporalio/temporal
+
+## 1️⃣ Compute systems
+
+Đây là phần bạn đang nghĩ tới với `minh-cloud`.
+
+Các component:
+
+```
+job queue
+worker system
+scheduler
+resource allocator
+```
+
+Project tương ứng:
+
+```
+task queue
+worker pool
+job scheduler
+```
+
+Concept:
+
+```
+backpressure
+retry
+priority scheduling
+resource allocation
+```
+
+---
+
+## 2️⃣ Coordination systems
+
+Distributed systems cần **coordination**.
+
+Problem:
+
+```
+ai là leader?
+ai giữ lock?
+node nào còn sống?
+```
+
+Project:
+
+```
+distributed lock
+leader election
+service registry
+```
+
+Concept:
+
+```
+heartbeat
+consensus basics
+failure detection
+```
+
+System nổi tiếng:
+
+- Apache ZooKeeper
+- etcd
+
+---
+
+## 3️⃣ Networking systems
+
+Rất nhiều system design nằm ở **network layer**.
+
+Project:
+
+```
+build simple RPC framework
+build load balancer
+build service discovery
+```
+
+Concept:
+
+```
+retry
+timeout
+circuit breaker
+connection pooling
+```
+
+System liên quan:
+
+- gRPC
+- NGINX
+
+---
+
+## 4️⃣ Storage systems
+
+Đây là phần **deep nhất**.
+
+Project:
+
+```
+key-value store
+LSM tree
+write ahead log
+replication
+```
+
+Concept:
+
+```
+durability
+consistency
+compaction
+indexing
+```
+
+System thực:
+
+- RocksDB
+- LevelDB

@@ -497,3 +497,26 @@ System thực:
 
 - RocksDB
 - LevelDB
+
+# Review book
+
+## Data intensive
+
+35/613: Describing Performance
+
+### goal
+
+- read by Eng, learn Eng + review knowledge
+- exercise: new concept -> practices
+- nắm >80% để interview
+
+### note
+
+- 3 important concerns in software system
+    - reliability
+    - scalability
+    - maintainability
+
+### practices
+
+- 

@@ -1,3 +1,20 @@
+# 11/2026 updated
+
+- The Ultra-Scale Playbook
+- Quantum Computing for Everyone
+- Programming Massively Parallel Processors: A Hands-on Approach: done
+- How thing work: the physics of everyday life: done
+- The Smol Training Playbook: done
+- BrainFacts — Society for Neuroscience
+  - Chapter 12
+- Motion Mountain
+  - Book 2 - chapter 2
+- Principles of Social Psychology
+  - Chapter 12
+- OpenStax — Anatomy & Physiology 2e
+  - Chapter 12
+- CORE Econ – The Economy 2.0: done
+
 # Distributed Systems & System Design
 
 - (3/5) Distributed Systems: Concepts and Design – Coulouris et al

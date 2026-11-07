@@ -14,6 +14,7 @@
 - OpenStax — Anatomy & Physiology 2e
   - Chapter 12
 - CORE Econ – The Economy 2.0: done
+- Elements of Robotics: done
 
 # Distributed Systems & System Design
 

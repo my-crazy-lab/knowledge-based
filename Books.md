@@ -1,5 +1,7 @@
 # 11/2026 updated
 
+- AI at the Edge: Solving Real-World Problems with Embedded Machine Learning
+- Think DSP: Digital Signal Processing in Python
 - The Ultra-Scale Playbook
 - Quantum Computing for Everyone
 - Programming Massively Parallel Processors: A Hands-on Approach: done
@@ -126,6 +128,7 @@
 - (9.0/10) The Art of Computer Systems Performance Analysis (Raj Jain)
     - Provides methodology for evaluating performance scientifically, avoiding statistical errors
 
+- Không nên đọc cả hai nếu mục tiêu là trực giác và overview. Hai cuốn đó là sách tuyển chọn chi tiết, gắn với board và vi điều khiển cụ thể
 - (6.5/10) Programming Embedded Systems in C and C++ – Michael Barr
     - 22/187
     - Master real device-level programming

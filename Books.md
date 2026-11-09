@@ -138,11 +138,11 @@
     - Master real device-level programming
     - Leans toward: Practice, requires hardware
     - cũ nhất, nên thay thế, cuốn này ra từ thời 8/16-bit
-- (8.0/10) Designing Embedded Systems (PIC / ARM)
+- :x Designing Embedded Systems (PIC / ARM)
     - Practice, hardware, firmware
     - Beginner embedded developers
     - Many projects, peripheral code, hardware communication
-
+    - bỏ, thay bằng nguồn hiện đại
 - https://browser.engineering/
 - https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html
 - https://webrtcforthecurious.com/#who-this-book-is-for

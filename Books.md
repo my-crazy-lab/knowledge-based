@@ -165,12 +165,12 @@
         - Easy to apply to SOC/DFIR work.
         - Balance theory + practice.
         - Although old but 90% still correct.
-- Robot operation system
-    - (2/10) A Gentle Introduction to ROS
+- Robot operation system: outdate rồi, cái này có AI nó dạy mình nhanh hơn
+    - :x A Gentle Introduction to ROS
         - 21/153
         - Teaches ROS thinking (publish/subscribe).
         - Has C++ & Python code.
-    - (5/10) ROS by Example
+    - :x ROS by Example
         - 1/280
         - Has accompanying YouTube videos.
         - Suitable for people with 0 experience.

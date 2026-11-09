@@ -80,12 +80,12 @@
 - (6.0/10) Linux from scratch book
     - 31/385
     - build a Linux system from scratch by hand
-- (7.0/10) Operating Systems: Design and Implementation (MINIX)
+- :x Operating Systems: Design and Implementation (MINIX)
     - 90/629 (1071)
     - Read to review components in OS
     - Teaches OS foundation + MINIX code illustration
     - đã đọc các cuốn khác, nên ignore
-- (8.0/10) Linux Kernel Development – Robert Love
+- :x Linux Kernel Development – Robert Love
     - 38/433 (468)
     - How to program and understand real Linux kernel
     - Goal: Write, fix, test real kernel
@@ -94,7 +94,7 @@
     - 1/1137
     - General operating system principles (multi-platform)
     - Goal: Understand principles, mechanisms, models
-- (9.0/10) Understanding the Linux Kernel – Bovet & Cesati
+- :x Understanding the Linux Kernel – Bovet & Cesati
     - 1/944
     - Dissect Linux kernel at microscopic detail level
     - Goal: Deep research into Linux internals
@@ -113,9 +113,10 @@
     - 30/1357
     - Explains how to design hardware and computer architecture to achieve high performance
     
-- (8.5/10) Compilers: Principles, Techniques, and Tools (Dragon Book)
+- [x] Compilers: Principles, Techniques, and Tools (Dragon Book)
     - 64/930 (947)
     - Explains principles, algorithms and foundational theory of compilation
+    - chỉ nên làm sách tham khảo đối chiếu
 - (8.5/10) Engineering a Compiler – Cooper & Torczon
     - 26/788 (825)
     - Presents techniques for designing and implementing modern compilers.
@@ -132,10 +133,11 @@
     - Provides methodology for evaluating performance scientifically, avoiding statistical errors
 
 - Không nên đọc cả hai nếu mục tiêu là trực giác và overview. Hai cuốn đó là sách tuyển chọn chi tiết, gắn với board và vi điều khiển cụ thể
-- (6.5/10) Programming Embedded Systems in C and C++ – Michael Barr
+- :x Programming Embedded Systems in C and C++ – Michael Barr
     - 22/187
     - Master real device-level programming
     - Leans toward: Practice, requires hardware
+    - cũ nhất, nên thay thế, cuốn này ra từ thời 8/16-bit
 - (8.0/10) Designing Embedded Systems (PIC / ARM)
     - Practice, hardware, firmware
     - Beginner embedded developers

@@ -84,10 +84,12 @@
     - 90/629 (1071)
     - Read to review components in OS
     - Teaches OS foundation + MINIX code illustration
+    - đã đọc các cuốn khác, nên ignore
 - (8.0/10) Linux Kernel Development – Robert Love
     - 38/433 (468)
     - How to program and understand real Linux kernel
     - Goal: Write, fix, test real kernel
+    - đáng đọc nhanh (một đến hai tuần) để nắm từ vựng và cấu trúc -> đã đọc các cuốn khác, nên ignore
 - (7.5/10) Modern Operating Systems – Andrew S. Tanenbaum
     - 1/1137
     - General operating system principles (multi-platform)
@@ -96,6 +98,7 @@
     - 1/944
     - Dissect Linux kernel at microscopic detail level
     - Goal: Deep research into Linux internals
+    - Rất chi tiết nhưng nhiều subsystem đã được viết lại. Dùng làm tài liệu tham khảo, 2026 AI ML không cần đọc
 
 - (7.0/10) Computer Organization and Design – Patterson & Hennessy (for RISC-V or ARM)
     - 308/642 (689)

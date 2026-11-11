@@ -1,5 +1,6 @@
 # 11/2026 updated
 
+- Modern Robotics (Kevin Lynch & Frank Park)
 - AI at the Edge: Solving Real-World Problems with Embedded Machine Learning
 - Think DSP: Digital Signal Processing in Python
 - The Ultra-Scale Playbook

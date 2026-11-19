@@ -1,10 +1,19 @@
 # 11/2026 updated
 
+- Reinforcement Learning An introduction
 - Modern Robotics (Kevin Lynch & Frank Park)
 - AI at the Edge: Solving Real-World Problems with Embedded Machine Learning
 - Think DSP: Digital Signal Processing in Python
+- Reverse Engineering
+    - (3/10) Reverse Engineering for Beginners
+        - 30/898 (943) 3.1
+        - inspire you to improve existing techniques
+        - Aimed at people who want to learn binary code analysis, understand code without source
 - The Ultra-Scale Playbook
-- Quantum Computing for Everyone
+- https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html
+- Linux from scratch book
+  - build a Linux system from scratch by hand
+- Quantum Computing for Everyone: done
 - Programming Massively Parallel Processors: A Hands-on Approach: done
 - How thing work: the physics of everyday life: done
 - The Smol Training Playbook: done
@@ -48,7 +57,7 @@
 
 # Foundations
 
-- Java Concurrency In Practice
+- :x Java Concurrency In Practice
     - 89/235
 - DSA
     - https://www.interviewbit.com/blog/data-structures-and-algorithms-books/?utm_source=chatgpt.com
@@ -78,15 +87,12 @@
 
 # Specialized mainstream: low level engineer
 
-- (6.0/10) Linux from scratch book
-    - 31/385
-    - build a Linux system from scratch by hand
-- :x Operating Systems: Design and Implementation (MINIX)
+- [x] Operating Systems: Design and Implementation (MINIX)
     - 90/629 (1071)
     - Read to review components in OS
     - Teaches OS foundation + MINIX code illustration
     - đã đọc các cuốn khác, nên ignore
-- :x Linux Kernel Development – Robert Love
+- [x] Linux Kernel Development – Robert Love
     - 38/433 (468)
     - How to program and understand real Linux kernel
     - Goal: Write, fix, test real kernel
@@ -95,12 +101,11 @@
     - 1/1137
     - General operating system principles (multi-platform)
     - Goal: Understand principles, mechanisms, models
-- :x Understanding the Linux Kernel – Bovet & Cesati
+- [x] Understanding the Linux Kernel – Bovet & Cesati
     - 1/944
     - Dissect Linux kernel at microscopic detail level
     - Goal: Deep research into Linux internals
     - Rất chi tiết nhưng nhiều subsystem đã được viết lại. Dùng làm tài liệu tham khảo, 2026 AI ML không cần đọc
-
 - (7.0/10) Computer Organization and Design – Patterson & Hennessy (for RISC-V or ARM)
     - 308/642 (689)
     - Computer architecture, CPU, ALU, MIPS, pipeline
@@ -134,31 +139,25 @@
     - Provides methodology for evaluating performance scientifically, avoiding statistical errors
 
 - Không nên đọc cả hai nếu mục tiêu là trực giác và overview. Hai cuốn đó là sách tuyển chọn chi tiết, gắn với board và vi điều khiển cụ thể
-- :x Programming Embedded Systems in C and C++ – Michael Barr
-    - 22/187
-    - Master real device-level programming
-    - Leans toward: Practice, requires hardware
-    - cũ nhất, nên thay thế, cuốn này ra từ thời 8/16-bit
-- :x Designing Embedded Systems (PIC / ARM)
-    - Practice, hardware, firmware
-    - Beginner embedded developers
-    - Many projects, peripheral code, hardware communication
-    - bỏ, thay bằng nguồn hiện đại
-- https://browser.engineering/
-- https://www.gabrielgambetta.com/computer-graphics-from-scratch/00-introduction.html
-- https://webrtcforthecurious.com/#who-this-book-is-for
+  - [x] Programming Embedded Systems in C and C++ – Michael Barr
+      - 22/187
+      - Master real device-level programming
+      - Leans toward: Practice, requires hardware
+      - cũ nhất, nên thay thế, cuốn này ra từ thời 8/16-bit
+  - [x] Designing Embedded Systems (PIC / ARM)
+      - Practice, hardware, firmware
+      - Beginner embedded developers
+      - Many projects, peripheral code, hardware communication
+      - bỏ, thay bằng nguồn hiện đại
+- [:x] https://browser.engineering/
+- [:x] https://webrtcforthecurious.com/#who-this-book-is-for
 
 # CS technologies
 
-- Reverse Engineering
-    - (3/10) Reverse Engineering for Beginners
-        - 30/898 (943) 3.1
-        - inspire you to improve existing techniques
-        - Aimed at people who want to learn binary code analysis, understand code without source
-    - (5/10) Hacking: The Art of Exploitation - Jon Erickson
-        - 51/463 (492) 0x260
-        - Very fun, easy to read, talk about common software, overview
-        - Aimed at people who want to understand how attacks work from low level to high level.
+- (5/10) Hacking: The Art of Exploitation - Jon Erickson
+    - 51/463 (492) 0x260
+    - Very fun, easy to read, talk about common software, overview
+    - Aimed at people who want to understand how attacks work from low level to high level.
 - Malware Analysis
     - (6/10) Practical Malware Analysis
         - 1/802
@@ -185,12 +184,13 @@
         - 1/225
         - Teaches real cointegration (pairs trading).
         - focuses more on strategy, back‑testing, quant logic instead of "high-speed HFT system"
-- Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation
+- [x] Continuous Delivery: Reliable Software Releases Through Build, Test, and Deployment Automation
     - 1/497
-- Clean Architecture
+- [x] Clean Architecture
     - 1/429
 - Quantum Computing : A Gentle Introduction
     - 24/389: Pending, need physical foundation
+    - giáo trình đại học chuyên sâu hơn về thuật toán và kỹ thuật sửa lỗi
 
 # Out of technology
 

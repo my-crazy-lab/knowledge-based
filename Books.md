@@ -1,6 +1,7 @@
 # 11/2026 updated
 
 - Reinforcement Learning An introduction
+- The Elements of Statistical learning
 - Modern Robotics (Kevin Lynch & Frank Park)
 - AI at the Edge: Solving Real-World Problems with Embedded Machine Learning
 - Think DSP: Digital Signal Processing in Python
